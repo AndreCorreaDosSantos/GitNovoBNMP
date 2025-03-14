@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Projudi - Processo Eletrônico do Judiciário de Roraima",
+  "Type": "App",
+  "Id": "pa2gTQ4l3EOuR7f2PTNFgA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/pa2gTQ4l3EOuR7f2PTNFgA",
+  "Created": "2025-02-25T14:12:20.3341087Z",
+  "Updated": "2025-02-25T14:12:20.3341087Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

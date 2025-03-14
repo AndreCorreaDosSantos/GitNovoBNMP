@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Rótulo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "8qt0DB9GvES6zQ5im_ZL_A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/8qt0DB9GvES6zQ5im_ZL_A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/sS6_HgyMUUal4meaBROArQ",
+  "Created": "2025-03-10T17:04:16.1681997Z",
+  "Updated": "2025-03-10T17:04:16.1681997Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

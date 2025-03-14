@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pesquise no Google Maps",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "9cmbpuYnwkmx5f2FMecbZw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/9cmbpuYnwkmx5f2FMecbZw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/sS6_HgyMUUal4meaBROArQ",
+  "Created": "2025-03-10T17:00:29.411155Z",
+  "Updated": "2025-03-10T17:00:29.411155Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

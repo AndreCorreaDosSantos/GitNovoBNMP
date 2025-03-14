@@ -1,0 +1,1079 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_6___Faz_a_leitura_da_decisão_e_sentença" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uibi="http://schemas.uipath.com/workflow/infrastructure/baf/uibi" xmlns:uiisi="http://schemas.uipath.com/workflow/infrastructure/is/uiisi" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uoia="clr-namespace:UiPath.OpenAI.IntegrationService.Activities;assembly=UiPath.OpenAI.IntegrationService.Activities" xmlns:uoic="clr-namespace:UiPath.OpenAI.IntegrationService.Client;assembly=UiPath.OpenAI.IntegrationService" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inNProcesso" Type="InArgument(x:String)" />
+    <x:Property Name="in_dicReus" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="in_dicVitimas" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>_6___Faz_a_leitura_da_decisão_e_sentença_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OpenAI.IntegrationService.Client</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Descriptor</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
+      <x:String>UiPath.BAF.Infrastructure</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.OpenAI.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OpenAI.IntegrationService</AssemblyReference>
+      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.OpenAI.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_6___Faz_a_leitura_da_decisão_e_sentença" sap:VirtualizedContainerService.HintSize="1125,3427" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="755,3404" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Projudi - Processo Eletrônico do Judiciá" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="721,3321" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="1347b2f0-701a-492c-af1c-45bb919086eb" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="687,3081" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="DT_LinhasProcesso" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Navega e cria um dt com as linhas do processo" sap:VirtualizedContainerService.HintSize="653,1390" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Voltar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1347b2f0-701a-492c-af1c-45bb919086eb" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="3XUOUPUgZkKOnFd6P6t2UQ" DesignTimeRectangle="20, 146, 32, 16" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Início' check:innerText='Início' /&gt;" Guid="ca626627-b99a-4e86-811a-44d3b90c11db" InformativeScreenshot="dd7046ac7ea7b20a1fe3ad59045a771d.png" Reference="NkYqdf221EmIXN1TRDnl6w/-VHvGl_QLkmFhdmblK8gPQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="37, 99, 629, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl name='topFrame' tag='FRAME' /&gt;&lt;webctrl tag='A' type='' class='header-title-large' aaname='Projudi - Processo Eletrônico do Judiciário de Roraima' check:innerText='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Guid="4b134f3b-bfbc-471f-9fe1-bd4e9c5b32a3" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Processo(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1347b2f0-701a-492c-af1c-45bb919086eb" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="b5zhMDJKskiKet35tH92qw" DesignTimeRectangle="1416, 184, 104, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='shortcuts' type='' tag='A' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Processo &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;' check:innerText='Processo' /&gt;" Guid="e3aa9352-a0a9-4ef8-baee-d8946243d95e" InformativeScreenshot="058be186a1a4ac972abffa4eb39cfece.png" Reference="NkYqdf221EmIXN1TRDnl6w/4Aq9IiW_lUSQDrfVPnJH1Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="1530, 184, 104, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Histórico &amp;#x9;&amp;#x9;    &amp;#x9;' class='shortcuts' type='' tag='A' check:innerText='Histórico' /&gt;" Guid="2d79784a-7728-4955-8864-f2a97421a1ab" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Número do Processo'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1347b2f0-701a-492c-af1c-45bb919086eb" Text="[inNProcesso + &quot;[k(Enter)]&quot;]" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="IDplvMbNukK4dax6hg4lQg" DesignTimeRectangle="243, 341, 269, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='Número do Processo:' /&gt;" Guid="e1cae652-28f6-4a11-8b07-ca8e3b2294c8" InformativeScreenshot="b179fe87e288e4934f545f510243da58.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/wyKo_YKq7EmPOAqLpudBnQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="68, 342, 164, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Número do Processo:' check:innerText='Número do Processo:' /&gt;" Guid="3c2e0973-6f9c-4abb-91bb-f1f3d863f0f4" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NSelectItem DisplayName="Select Item 'Primeira Página'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="1000 por pág." ScopeIdentifier="1347b2f0-701a-492c-af1c-45bb919086eb" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="3">
+                      <x:String>250 por pág.</x:String>
+                      <x:String>500 por pág.</x:String>
+                      <x:String>1000 por pág.</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="QyHWMjuRi0Ky_Nnj5_KYFw" DesignTimeRectangle="1611, 748, 135, 22" DesignTimeScaleFactor="1.25" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Seq. Data Evento Movimentado Por Ações' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="58fe0dc6-bf5e-4092-9cc7-697263d69f03" InformativeScreenshot="8f39d1d078f40e04ceaa39ecba04baf8.png" Reference="KgXpFwu4tU683A8Ljiajuw/tcvnT_TDzE-z1Nj5ivn_uQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="1360, 778, 441, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl aaname='Movimentado Por' type='' tag='TH' class='' check:innerText='Movimentado Por' /&gt;" Guid="a4d3c767-5f3a-43a3-ad7a-cce75f72e063" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NSelectItem>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Seq.'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1347b2f0-701a-492c-af1c-45bb919086eb" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="103, 778, 100, 35" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TH' aaname='' check:innerText='Seq.' /&gt;" Guid="b0961054-674d-49c2-bdad-0adc8e2b4245" InformativeScreenshot="f25d1df43c43a8bb80a24732c048cf8e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="203, 778, 164, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tableRow='2' tag='TABLE' /&gt;&lt;webctrl aaname='Data' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl aaname='Data' type='' tag='TH' class='' check:innerText='Data' /&gt;" Guid="b5bbe3c6-2d2b-4236-bffe-053dd55ae9c0" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="Element 'Data'" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="iOWlP3eMFE60H1mesz5yKw" DesignTimeRectangle="104, 635, 98, 33" DesignTimeScaleFactor="1" Guid="26bbc2aa-db15-4cb4-91ae-0c3e0113be08" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAhCAYAAAAiaX7MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVGhD7ZbPSwJREMf7Tzt06GBI1CWKIoIIo1OHCKJThBhRGhVReNB+UBIEBRp41vAm5mrYYXKe+9tpXTfXHWi+8Lk8Z5/yPjtvnAAJi4gIJlEipuYnhQgREUwQEUwQEUwQEUwQEUwQEUwQEUwQEUwQEUwQEUzwL6JQUcXuaOUkXS8MBWaAiCSUWqqumwrk+9bta9GzubOhfumwofYaJxhvEZkiaKqMfvvzNaeIVNmoNqJBKeN+Rv/InVrOUReEudU4HJ4eQPurrW/qnY9aFfaTe+Re4wTjWwS0ipCiahRW51QL+pp5nVkyTAnmXraOG4EIJLY4DdnbG6g36vrGdFDC8cURuce4wQycEb7eYPPQ7R2Sg6q+qrrJJtWUFYIIg6eXx187o6l9wtl1mnwuCjB/GtbGwfdfSc4oEUSHhCkCr6mH5zt9c2fSVycQX46Rz0UBxp8IF/YuwbfbEuExvMcsAlnfXuvKuNe/oJfL7DksJRbI+qjAeIvoHh75F9XWIeqaIQ/Zhd+ryb23fY8AbO0m4O39FTrfHXVdcZOAYAaKUHENas+h66jtrfcOlHr7wxeB4N/aRrMBsysz5OdRgwk8rKlOoWeFvUusAd6XEEVwBxNoRowOqkv+HxgRwQCMiGAAJmIRAiIimCAimCAimCAimCAimCAimAAA8AMFhSJSImxwXgAAAABJRU5ErkJggg==" InformativeScreenshot="5faa45e6fe86c9a8e5887fba0fa4ad58.png" Reference="2-DZoQmemkuCTB89xYXpJA/-c7V5cZ-xEeTh1KR3hcUdQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="d537d390-ac99-497d-806d-3f6e9a91319d" CvTextArea="266, 646, 38, 13" CvTextArgument="Data" CvType="Text" DesignTimeRectangle="203, 635, 164, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl aaname='Data' type='' tag='TH' class='' check:innerText='Data' /&gt;" Guid="f77320fd-469f-4658-aaf7-011d13df46e0" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:VerifyExecutionOptions.Target>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_LinhasProcesso]" DisplayName="Seq. Data Evento EventoUrl MovimentadoPor" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0 Src' ReferenceIdx='1' Name='Column-0 Src' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0 Url' ReferenceIdx='2' Name='Column-0 Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Seq.' ReferenceIdx='3' Name='Seq.'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Data' ReferenceIdx='4' Name='Data'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Evento' ReferenceIdx='5' Name='Evento'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Evento Url' ReferenceIdx='6' Name='EventoUrl'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Movimentado Por' ReferenceIdx='7' Name='MovimentadoPor'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Movimentado Por Src' ReferenceIdx='8' Name='Movimentado Por Src' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações' ReferenceIdx='9' Name='Ações' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações Src' ReferenceIdx='10' Name='Ações Src' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Ações Url' ReferenceIdx='11' Name='Ações Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' name2='Column-0 Src' attr2='src' name3='Column-0 Url' attr3='href' /&gt;&lt;column name='Seq.' attr='fulltext' /&gt;&lt;column name='Data' attr='fulltext' /&gt;&lt;column name='Evento' attr='fulltext' name2='Evento Url' attr2='href' /&gt;&lt;column name='Movimentado Por' attr='fulltext' name2='Movimentado Por Src' attr2='src' /&gt;&lt;column name='Ações' attr='fulltext' name2='Ações Src' attr2='src' name3='Ações Url' attr3='href' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1347b2f0-701a-492c-af1c-45bb919086eb" Version="V4">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://projudi.tjrr.jus.br/projudi/" ContentHash="diMpbSVWb0GqKupIQ3Mj_A" DesignTimeRectangle="85, 716, 1730, 6696" DesignTimeScaleFactor="1.5625" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tableRow='2' tag='TABLE' /&gt;" Guid="d43e9237-f8fd-4402-b45f-59052946f560" InformativeScreenshot="d293ee39a9ef0c6dbe2342401e6c26d0.png" Reference="NkYqdf221EmIXN1TRDnl6w/3YmpKzt8gUasudWeJs68cg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+              </Sequence>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_LinhasProcesso]" DisplayName="Itera sobre os réus" sap:VirtualizedContainerService.HintSize="653,1629" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="651,1456" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[Not String.IsNullOrWhiteSpace(CurrentRow(&quot;EventoUrl&quot;).ToString)]" DisplayName="Limpa a tabela com o link dos dados do réu " sap:VirtualizedContainerService.HintSize="617,1396" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="615,1178" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge Projudi - Processo Eletrônico do Judiciá(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="581,1118" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="97d322b7-09be-4d68-8204-ad9571d03b05" Version="V2" WindowResize="Maximize">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="547,838" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="strTextoReus" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Salva os dados do réu em um dicinário" sap:VirtualizedContainerService.HintSize="513,776" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="strNome" />
+                                        <Variable x:TypeArguments="x:String" Name="strCPF" />
+                                        <Variable x:TypeArguments="x:String" Name="strNomeMae" />
+                                        <Variable x:TypeArguments="x:String" Name="strNaturalidade" />
+                                        <Variable x:TypeArguments="x:String" Name="strGenero" />
+                                        <Variable x:TypeArguments="x:String" Name="strBairro" />
+                                        <Variable x:TypeArguments="x:String" Name="strCidade" />
+                                        <Variable x:TypeArguments="x:String" Name="strTelefone" />
+                                        <Variable x:TypeArguments="x:String" Name="strRua" />
+                                        <Variable x:TypeArguments="x:String" Name="strNumeroResidencia" />
+                                        <Variable x:TypeArguments="x:String" Name="strCEP" />
+                                        <Variable x:TypeArguments="x:String" Name="strEnderecoCompleto" />
+                                        <Variable x:TypeArguments="uoic:GenerateChatCompletion" Name="strRepostaIA" />
+                                        <Variable x:TypeArguments="x:String" Name="strNomePai" />
+                                        <Variable x:TypeArguments="x:String" Name="strDataNascimento" />
+                                        <Variable x:TypeArguments="x:String" Name="strEstado" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uoia:GenerateChatCompletion ActivityInstanceId="68e837d0-ae26-4bbe-b4b3-4bd00e03c76a" BindingsVersion="2.1" BusinessEntityName="Gerar conclusão de chat" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="257dde6a-b6a8-495f-b1a2-bd84315bec31" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Envia o texo  p/ a IA" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1" Language="pt-BR">
+                                        <uoia:GenerateChatCompletion.BusinessEntity>
+                                          <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID14}" Name="generateChatCompletion">
+                                            <uibi:BusinessEntity.AllFields>
+                                              <scg:List x:TypeArguments="uibi:EntityField" Capacity="15">
+                                                <uiisi:OperationEntityField x:TypeArguments="uoic:GenerateChatCompletion" ArgumentDirection="In" ArgumentType="uoic:GenerateChatCompletion" DataType="GenerateChatCompletion" Description="The request data in JSON format for the chat completion" DisplayName="Completion Request" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="True" IsIdField="False" IsMandatory="True" IsParameter="True" IsPriority="False" IsSelected="False" Location="Undefined" Name="body" ShouldFilterOnChange="False" />
+                                                <x:Reference>__ReferenceID15</x:Reference>
+                                                <x:Reference>__ReferenceID16</x:Reference>
+                                                <x:Reference>__ReferenceID17</x:Reference>
+                                                <x:Reference>__ReferenceID18</x:Reference>
+                                                <x:Reference>__ReferenceID19</x:Reference>
+                                                <x:Reference>__ReferenceID20</x:Reference>
+                                                <x:Reference>__ReferenceID21</x:Reference>
+                                                <x:Reference>__ReferenceID22</x:Reference>
+                                                <x:Reference>__ReferenceID23</x:Reference>
+                                                <x:Reference>__ReferenceID24</x:Reference>
+                                                <x:Reference>__ReferenceID25</x:Reference>
+                                                <x:Reference>__ReferenceID26</x:Reference>
+                                                <x:Reference>__ReferenceID27</x:Reference>
+                                                <x:Reference>__ReferenceID28</x:Reference>
+                                              </scg:List>
+                                            </uibi:BusinessEntity.AllFields>
+                                            <uibi:BusinessEntity.EntityMetadata>
+                                              <uibi:EntityMetadata DisplayName="Gerar conclusão de chat" EligibleOperations="1" IsCustomEntity="False" Name="generateChatCompletion">
+                                                <uibi:EntityMetadata.Metadata>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID14">
+                                                    <x:String x:Key="Object">generateChatCompletion</x:String>
+                                                    <x:String x:Key="Client">UiPath.OpenAI.IntegrationService.Client.GenerateChatCompletionAPIClient</x:String>
+                                                    <x:String x:Key="Operation">CreateGenerateChatCompletion</x:String>
+                                                    <x:String x:Key="Path">/generateChatCompletion</x:String>
+                                                  </scg:Dictionary>
+                                                </uibi:EntityMetadata.Metadata>
+                                              </uibi:EntityMetadata>
+                                            </uibi:BusinessEntity.EntityMetadata>
+                                            <uibi:BusinessEntity.SelectedFields>
+                                              <scg:List x:TypeArguments="uibi:EntityField" Capacity="16">
+                                                <x:Reference>__ReferenceID16</x:Reference>
+                                                <x:Reference>__ReferenceID17</x:Reference>
+                                                <x:Reference>__ReferenceID18</x:Reference>
+                                                <x:Reference>__ReferenceID19</x:Reference>
+                                                <x:Reference>__ReferenceID20</x:Reference>
+                                                <x:Reference>__ReferenceID21</x:Reference>
+                                                <x:Reference>__ReferenceID22</x:Reference>
+                                                <x:Reference>__ReferenceID23</x:Reference>
+                                                <x:Reference>__ReferenceID24</x:Reference>
+                                                <x:Reference>__ReferenceID25</x:Reference>
+                                                <x:Reference>__ReferenceID26</x:Reference>
+                                                <x:Reference>__ReferenceID27</x:Reference>
+                                                <x:Reference>__ReferenceID28</x:Reference>
+                                                <x:Reference>__ReferenceID15</x:Reference>
+                                              </scg:List>
+                                            </uibi:BusinessEntity.SelectedFields>
+                                            <uibi:BusinessEntity.TelemetryProperties>
+                                              <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                                            </uibi:BusinessEntity.TelemetryProperties>
+                                          </uibi:BusinessEntity>
+                                        </uoia:GenerateChatCompletion.BusinessEntity>
+                                        <uoia:GenerateChatCompletion.CachedLookupValues>
+                                          <scg:Dictionary x:TypeArguments="x:String, scg:List(uiisi:LookupValue)" />
+                                        </uoia:GenerateChatCompletion.CachedLookupValues>
+                                        <uoia:GenerateChatCompletion.DesignConnectionRequest>
+                                          <uiisi:ConnectionParameters AuthType="ElementInstance" ConnectionId="257dde6a-b6a8-495f-b1a2-bd84315bec31" ConnectionName="OpenAI" ConnectorKey="uipath-openai-openai">
+                                            <uiisi:ConnectionParameters.TelemetryInfo>
+                                              <uiisi:TelemetryInfo ActivityPack="UiPath.OpenAI.IntegrationService.Activities" ActivityPackVersion="6.1.0" Source="StudioDesktop" />
+                                            </uiisi:ConnectionParameters.TelemetryInfo>
+                                          </uiisi:ConnectionParameters>
+                                        </uoia:GenerateChatCompletion.DesignConnectionRequest>
+                                        <uoia:GenerateChatCompletion.SelectedFields>
+                                          <scg:List x:TypeArguments="uibi:EntityField" Capacity="14">
+                                            <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID16" ArgumentDirection="In" ArgumentType="x:String" DataType="String" DefaultValue="Write an email to a new sales lead" Description="The prompt to use for the chat completion(s) generation" DisplayName="Solicitação" FormDataType="ExpressionTextBox" InArgumentValue="[&quot;Extraia e organize os dados abaixo no formato:  &#xA;CPF:  &#xA;Nome:  &#xA;Nome da Mãe:  &#xA;Nome do Pai:  &#xA;Naturalidade:  &#xA;Nascimento:  &#xA;Gênero:  &#xA;CEP:  &#xA;Rua:  &#xA;Nº Residência:  &#xA;Bairro:  &#xA;Cidade:  &#xA;Estado:  &#xA;Telefone:  &#xA;&#xA;Se um dado não existir, retorne 'não informado'. Responda **somente** com essas informações. obs: 'Estado por extenso'.  &#xA;&quot; + strTextoReusLimpo]" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="True" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.prompt" Order="1" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="x:String" xml:space="preserve">["Extraia e organize os dados abaixo no formato:  
+CPF:  
+Nome:  
+Nome da Mãe:  
+Nome do Pai:  
+Naturalidade:  
+Nascimento:  
+Gênero:  
+CEP:  
+Rua:  
+Nº Residência:  
+Bairro:  
+Cidade:  
+Estado:  
+Telefone:  
+
+Se um dado não existir, retorne 'não informado'. Responda **somente** com essas informações. obs: 'Estado por extenso'.  
+" + strTextoReusLimpo]</InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                              <uiisi:OperationEntityField.Value>
+                                                <VisualBasicValue x:TypeArguments="x:String" xml:space="preserve">["Extraia e organize os dados abaixo no formato:  
+CPF:  
+Nome:  
+Nome da Mãe:  
+Nome do Pai:  
+Naturalidade:  
+Nascimento:  
+Gênero:  
+CEP:  
+Rua:  
+Nº Residência:  
+Bairro:  
+Cidade:  
+Estado:  
+Telefone:  
+
+Se um dado não existir, retorne 'não informado'. Responda **somente** com essas informações. obs: 'Estado por extenso'.  
+" + strTextoReusLimpo]</VisualBasicValue>
+                                              </uiisi:OperationEntityField.Value>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID17" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="As instruções orientam a IA a responder de uma forma que corresponda à sua intenção. O padrão é nulo." DisplayName="Instrução" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.instruction" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID18" ArgumentDirection="In" ArgumentType="x:String" DataType="String" DefaultValue="gpt-4" Description="O Modelo de Linguagem Abrangente (LLM) a ser utilizado para a conclusão do chat. O padrão é gpt-4" DisplayName="Nome do modelo" FormDataType="ExpressionTextBox" InArgumentValue="gpt-4" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.model" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="x:String">gpt-4</InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.EnumValues>
+                                                <scg:List x:TypeArguments="x:String" Capacity="4">
+                                                  <x:String>gpt-4</x:String>
+                                                  <x:String>gpt-4-turbo</x:String>
+                                                  <x:String>gpt-4o</x:String>
+                                                  <x:String>gpt-3.5-turbo</x:String>
+                                                </scg:List>
+                                              </uiisi:OperationEntityField.EnumValues>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                              <uiisi:OperationEntityField.Value>
+                                                <Literal x:TypeArguments="x:String">gpt-4</Literal>
+                                              </uiisi:OperationEntityField.Value>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Int32)" InArgumentValue="{x:Reference __ReferenceID0}" Value="{x:Reference __ReferenceID1}" x:Name="__ReferenceID19" ArgumentDirection="In" ArgumentType="s:Nullable(x:Int32)" DataType="Int32" DefaultValue="1920" Description="O número máximo de tokens permitidos para o aviso e a resposta gerada. Quanto menos tokens, mais barato fica. O padrão é 3840." DisplayName="Máx. de tokens" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.max_tokens" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Int32)" x:Name="__ReferenceID0">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Int32)" x:Name="__ReferenceID1" Value="1920" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Int32)" InArgumentValue="{x:Reference __ReferenceID2}" Value="{x:Reference __ReferenceID3}" x:Name="__ReferenceID20" ArgumentDirection="In" ArgumentType="s:Nullable(x:Int32)" DataType="Int32" DefaultValue="1" Description="Um número mínimo de 1.  Determina quantas opções de conclusão a IA retornará. O padrão é 1." DisplayName="N" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.n" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Int32)" x:Name="__ReferenceID2">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Int32)" x:Name="__ReferenceID3" Value="1" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Double)" InArgumentValue="{x:Reference __ReferenceID4}" Value="{x:Reference __ReferenceID5}" x:Name="__ReferenceID21" ArgumentDirection="In" ArgumentType="s:Nullable(x:Double)" DataType="Double" DefaultValue="1" Description="⌘ ⌥ K&#xA;Um número entre 0 e 2. Valores mais altos, como 0,8, tornam a saída mais aleatória, enquanto valores mais baixos, como 0,2, a tornam mais concentrada e determinista. O padrão é 1." DisplayName="Temperatura" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.temperature" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID4">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID5" Value="1" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Double)" InArgumentValue="{x:Reference __ReferenceID6}" Value="{x:Reference __ReferenceID7}" x:Name="__ReferenceID22" ArgumentDirection="In" ArgumentType="s:Nullable(x:Double)" DataType="Double" DefaultValue="1" Description="Um número entre 0 e 1.  Quanto menor for o número, menos tokens serão considerados. O padrão é 1." DisplayName="P superior" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.top_p" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID6">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID7" Value="1" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Boolean)" InArgumentValue="{x:Reference __ReferenceID8}" Value="{x:Reference __ReferenceID9}" x:Name="__ReferenceID23" ArgumentDirection="In" ArgumentType="s:Nullable(x:Boolean)" DataType="Boolean" DefaultValue="false" Description="Se o progresso parcial deve ser transmitido de volta. Se definido, os tokens serão enviados como eventos server-sent somente de dados à medida que forem disponibilizados, com a transmissão encerrada por um dado: mensagem de [DONE]. O padrão é false." DisplayName="Stream" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.stream" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Boolean)" x:Name="__ReferenceID8">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Boolean)" x:Name="__ReferenceID9" Value="False" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID24" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Até quatro sequências em que a API deixará de gerar mais tokens. O texto retornado não conterá a sequência de parada. O padrão é nulo." DisplayName="Parar" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.stop" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Double)" InArgumentValue="{x:Reference __ReferenceID10}" Value="{x:Reference __ReferenceID11}" x:Name="__ReferenceID25" ArgumentDirection="In" ArgumentType="s:Nullable(x:Double)" DataType="Double" DefaultValue="0" Description="Número entre -2.0 e 2.0. Os valores positivos penalizam novos tokens com base na possibilidade de eles aparecerem no texto até o momento, aumentando a probabilidade de o modelo falar sobre novos tópicos. O padrão é 0." DisplayName="Penalidade de presença" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.presence_penalty" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID10">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID11" Value="0" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="s:Nullable(x:Double)" InArgumentValue="{x:Reference __ReferenceID12}" Value="{x:Reference __ReferenceID13}" x:Name="__ReferenceID26" ArgumentDirection="In" ArgumentType="s:Nullable(x:Double)" DataType="Double" DefaultValue="0" Description="Número entre -2.0 e 2.0. Valores positivos penalizam novos tokens com base em sua frequência existente no texto até o momento, diminuindo a probabilidade de o modelo repetir a mesma linha textual. O padrão é 0." DisplayName="Penalidade de frequência" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.frequency_penalty" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID12">
+                                                  <Literal x:TypeArguments="s:Nullable(x:Double)" x:Name="__ReferenceID13" Value="0" />
+                                                </InArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID27" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="Um identificador exclusivo que representa seu usuário final e pode ajudar o OpenAI a monitorar e detectar abusos. O padrão é nulo." DisplayName="Usuário" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="body.user" Order="3" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="x:String" x:Name="__ReferenceID28" ArgumentDirection="Out" ArgumentType="x:String" DataType="String" Description="O texto para a opção superior gerada pela IA" DisplayName="Texto gerado superior" FormDataType="ExpressionTextBox" IsChildEntityField="True" IsCustomField="False" IsDefault="False" IsDeletable="False" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="Response.text" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <uiisi:CustomFieldsPriority x:Key="CustomFieldsPriority">Default</uiisi:CustomFieldsPriority>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                            </uiisi:OperationEntityField>
+                                            <uiisi:OperationEntityField x:TypeArguments="uoic:GenerateChatCompletion" x:Name="__ReferenceID15" ArgumentDirection="Out" ArgumentType="uoic:GenerateChatCompletion" DataType="GenerateChatCompletion" Description="O objeto retornado Gerar conclusão de chat." DisplayName="Resposta" FormDataType="ExpressionTextBox" IsChildEntityField="False" IsCustomField="False" IsDefault="False" IsDeletable="True" IsHidden="False" IsIdField="False" IsMandatory="False" IsPriority="False" IsSelected="False" Location="Undefined" Name="Response" OutArgumentValue="[strRepostaIA]" ShouldFilterOnChange="False">
+                                              <uiisi:OperationEntityField.ArgumentValue>
+                                                <OutArgument x:TypeArguments="uoic:GenerateChatCompletion">[strRepostaIA]</OutArgument>
+                                              </uiisi:OperationEntityField.ArgumentValue>
+                                              <uiisi:OperationEntityField.Metadata>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsPermanentlyHidden">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </uiisi:OperationEntityField.Metadata>
+                                              <uiisi:OperationEntityField.Value>
+                                                <VisualBasicReference x:TypeArguments="uoic:GenerateChatCompletion">[strRepostaIA]</VisualBasicReference>
+                                              </uiisi:OperationEntityField.Value>
+                                            </uiisi:OperationEntityField>
+                                          </scg:List>
+                                        </uoia:GenerateChatCompletion.SelectedFields>
+                                        <uoia:GenerateChatCompletion.TelemetryProperties>
+                                          <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                                        </uoia:GenerateChatCompletion.TelemetryProperties>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uoia:GenerateChatCompletion>
+                                      <If Condition="[strCEP = &quot;não informado&quot;]" DisplayName="Tenta pegar o bairro se &quot;não informado&quot;" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="If_2">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1538" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge Maps" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="502,1478" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="2c0466f3-342e-4a12-9075-0ca99ae3dab8" Version="V2" WindowResize="Maximize">
+                                              <uix:NApplicationCard.Body>
+                                                <ActivityAction x:TypeArguments="x:Object">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,1198" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pesquise no Google Maps'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" Text="[&quot;rua &quot; + strRua + &quot;, &quot; + strNumeroResidencia + &quot;, &quot;  + strCidade + &quot;[k(Enter)]&quot;]" Version="V4">
+                                                      <uix:NTypeInto.Target>
+                                                        <uix:TargetAnchorable BrowserURL="google.com.br/maps/@2.8278784,-60.6896128,13z" CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" ContentHash="rU3pyvv310ePu3tE3DP7Bg" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='fontBodyMedium searchboxinput xiQnY ' aaname='Pesquise no Google Maps' /&gt;" Guid="20b92948-55a0-4513-aabb-a8b7ea7b943d" InformativeScreenshot="afb9a4be46eeb94e841229d60315d5c4.png" Reference="NkYqdf221EmIXN1TRDnl6w/9cmbpuYnwkmx5f2FMecbZw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='z1Srse fontBodyMedium' aaname='Pesquise no Google Maps' check:innerText='Pesquise no Google Maps' /&gt;" Guid="04f4cc69-ae1f-4247-b76f-d7af96596e2e" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTypeInto.Target>
+                                                    </uix:NTypeInto>
+                                                    <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                                    <uix:NGetText DisplayName="Get Text 'R. Palmas, 882 - Nova C…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" TextString="[strEnderecoCompleto]" Version="V4">
+                                                      <uix:NGetText.Target>
+                                                        <uix:TargetAnchorable BrowserURL="google.com.br/maps/place/R.+Palmas,+882+-+Nova+Cidade,+Boa+Vista+-+RR,+69316-256/@2.760533,-60.7366789,17z/data=!3m1!4b1!4m6!3m5!1s0x8d93036e11835ba5:0x5c04b510c2529a97!8m2!3d2.760533!4d-60.734104!16s%2Fg%2F11x12dznnp" ContentHash="YBcvA8LgY06NwcLDaFL55A" DesignTimeRectangle="84, 82, 408, 954" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aria-role='main' tag='DIV' type='' class='m6QErb WNBkOb XiKgde ' aaname='' /&gt;" Guid="d32b3d01-4f17-4c52-bbf2-5a632235534b" InformativeScreenshot="6d22f13b4584993149c5e16ab2ae30c7.png" Reference="NkYqdf221EmIXN1TRDnl6w/BayPQ87BdEmtDkZRkqssng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='R. Palmas, 882 - Nova Cidade - Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                              <uix:Target DesignTimeRectangle="12, 948, 72, 72" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='      App móvel Instalar o aplicativo  ' tag='BUTTON' type='' class='wR3cXd Ijds6e fontLabelMedium' check:innerText='&amp;#xA;Instalar o aplicativo' /&gt;" Guid="b67c8538-05c2-4071-888c-8b1a641495fc" SearchSteps="FuzzySelector" />
+                                                              <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="20, 260, 55, 11" CvTextArgument="Recentes" CvType="Text" DesignTimeRectangle="12, 222, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Recentes  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Recentes' /&gt;" Guid="6e601a97-c112-4cbf-b832-29bae2611e13" SearchSteps="FuzzySelector, CV" />
+                                                              <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="28, 187, 39, 12" CvTextArgument="Salvos" CvType="Text" DesignTimeRectangle="12, 150, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Salvos  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Salvos' /&gt;" Guid="b77b5f18-623d-4a64-a12f-3e248bfdf0d5" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NGetText.Target>
+                                                    </uix:NGetText>
+                                                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[strCEP]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[If(System.Text.RegularExpressions.Regex.IsMatch(strEnderecoCompleto, "\b\d{5}-\d{3}\b"), System.Text.RegularExpressions.Regex.Match(strEnderecoCompleto, "\b\d{5}-\d{3}\b").Groups(0).Value.Trim(), "não informado")]</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;tentou pegar o cep em rua&quot;]" />
+                                                    <If Condition="[strCEP = &quot;não informado&quot;]" DisplayName="Tenta r." sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_3">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,1015" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NGoToUrl DisplayName="Go To URL - google.com.br" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.google.com.br/maps/@2.8278784,-60.6896128,13z?entry=ttu&amp;g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" Version="V4" />
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pesquise no Google Maps'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" Text="[&quot;r. &quot; + strRua + &quot;, &quot; + strNumeroResidencia + &quot;, &quot;  + strCidade + &quot;[k(Enter)]&quot;]" Version="V4">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="google.com.br/maps/@2.8278784,-60.6896128,13z" CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" ContentHash="rU3pyvv310ePu3tE3DP7Bg" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='fontBodyMedium searchboxinput xiQnY ' aaname='Pesquise no Google Maps' /&gt;" Guid="20b92948-55a0-4513-aabb-a8b7ea7b943d" InformativeScreenshot="afb9a4be46eeb94e841229d60315d5c4.png" Reference="NkYqdf221EmIXN1TRDnl6w/9cmbpuYnwkmx5f2FMecbZw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='z1Srse fontBodyMedium' aaname='Pesquise no Google Maps' check:innerText='Pesquise no Google Maps' /&gt;" Guid="04f4cc69-ae1f-4247-b76f-d7af96596e2e" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                          <uix:NGetText DisplayName="Get Text 'R. Palmas, 882 - Nova C…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" TextString="[strEnderecoCompleto]" Version="V4">
+                                                            <uix:NGetText.Target>
+                                                              <uix:TargetAnchorable BrowserURL="google.com.br/maps/place/R.+Palmas,+882+-+Nova+Cidade,+Boa+Vista+-+RR,+69316-256/@2.760533,-60.7366789,17z/data=!3m1!4b1!4m6!3m5!1s0x8d93036e11835ba5:0x5c04b510c2529a97!8m2!3d2.760533!4d-60.734104!16s%2Fg%2F11x12dznnp" ContentHash="YBcvA8LgY06NwcLDaFL55A" DesignTimeRectangle="84, 82, 408, 954" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aria-role='main' tag='DIV' type='' class='m6QErb WNBkOb XiKgde ' aaname='' /&gt;" Guid="d32b3d01-4f17-4c52-bbf2-5a632235534b" InformativeScreenshot="6d22f13b4584993149c5e16ab2ae30c7.png" Reference="NkYqdf221EmIXN1TRDnl6w/BayPQ87BdEmtDkZRkqssng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='R. Palmas, 882 - Nova Cidade - Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                                    <uix:Target DesignTimeRectangle="12, 948, 72, 72" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='      App móvel Instalar o aplicativo  ' tag='BUTTON' type='' class='wR3cXd Ijds6e fontLabelMedium' check:innerText='&amp;#xA;Instalar o aplicativo' /&gt;" Guid="b67c8538-05c2-4071-888c-8b1a641495fc" SearchSteps="FuzzySelector" />
+                                                                    <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="20, 260, 55, 11" CvTextArgument="Recentes" CvType="Text" DesignTimeRectangle="12, 222, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Recentes  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Recentes' /&gt;" Guid="6e601a97-c112-4cbf-b832-29bae2611e13" SearchSteps="FuzzySelector, CV" />
+                                                                    <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="28, 187, 39, 12" CvTextArgument="Salvos" CvType="Text" DesignTimeRectangle="12, 150, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Salvos  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Salvos' /&gt;" Guid="b77b5f18-623d-4a64-a12f-3e248bfdf0d5" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NGetText.Target>
+                                                          </uix:NGetText>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[strCEP]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[If(System.Text.RegularExpressions.Regex.IsMatch(strEnderecoCompleto, "\b\d{5}-\d{3}\b"), System.Text.RegularExpressions.Regex.Match(strEnderecoCompleto, "\b\d{5}-\d{3}\b").Groups(0).Value.Trim(), "não informado")]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;tentou pegar o cep em r.&quot;]" />
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                    <If Condition="[strCEP = &quot;não informado&quot;]" DisplayName="Tenta av." sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_4">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,1015" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NGoToUrl DisplayName="Go To URL - google.com.br" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.google.com.br/maps/@2.8278784,-60.6896128,13z?entry=ttu&amp;g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" Version="V4" />
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pesquise no Google Maps'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" Text="[&quot;av. &quot; + strRua + &quot;, &quot; + strNumeroResidencia + &quot;, &quot;  + strCidade + &quot;[k(Enter)]&quot;]" Version="V4">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="google.com.br/maps/@2.8278784,-60.6896128,13z" CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" ContentHash="rU3pyvv310ePu3tE3DP7Bg" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='fontBodyMedium searchboxinput xiQnY ' aaname='Pesquise no Google Maps' /&gt;" Guid="20b92948-55a0-4513-aabb-a8b7ea7b943d" InformativeScreenshot="afb9a4be46eeb94e841229d60315d5c4.png" Reference="NkYqdf221EmIXN1TRDnl6w/9cmbpuYnwkmx5f2FMecbZw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='z1Srse fontBodyMedium' aaname='Pesquise no Google Maps' check:innerText='Pesquise no Google Maps' /&gt;" Guid="04f4cc69-ae1f-4247-b76f-d7af96596e2e" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                                          <uix:NGetText DisplayName="Get Text 'R. Palmas, 882 - Nova C…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" TextString="[strEnderecoCompleto]" Version="V4">
+                                                            <uix:NGetText.Target>
+                                                              <uix:TargetAnchorable BrowserURL="google.com.br/maps/place/R.+Palmas,+882+-+Nova+Cidade,+Boa+Vista+-+RR,+69316-256/@2.760533,-60.7366789,17z/data=!3m1!4b1!4m6!3m5!1s0x8d93036e11835ba5:0x5c04b510c2529a97!8m2!3d2.760533!4d-60.734104!16s%2Fg%2F11x12dznnp" ContentHash="YBcvA8LgY06NwcLDaFL55A" DesignTimeRectangle="84, 82, 408, 954" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aria-role='main' tag='DIV' type='' class='m6QErb WNBkOb XiKgde ' aaname='' /&gt;" Guid="d32b3d01-4f17-4c52-bbf2-5a632235534b" InformativeScreenshot="6d22f13b4584993149c5e16ab2ae30c7.png" Reference="NkYqdf221EmIXN1TRDnl6w/BayPQ87BdEmtDkZRkqssng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='R. Palmas, 882 - Nova Cidade - Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                                    <uix:Target DesignTimeRectangle="12, 948, 72, 72" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='      App móvel Instalar o aplicativo  ' tag='BUTTON' type='' class='wR3cXd Ijds6e fontLabelMedium' check:innerText='&amp;#xA;Instalar o aplicativo' /&gt;" Guid="b67c8538-05c2-4071-888c-8b1a641495fc" SearchSteps="FuzzySelector" />
+                                                                    <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="20, 260, 55, 11" CvTextArgument="Recentes" CvType="Text" DesignTimeRectangle="12, 222, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Recentes  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Recentes' /&gt;" Guid="6e601a97-c112-4cbf-b832-29bae2611e13" SearchSteps="FuzzySelector, CV" />
+                                                                    <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="28, 187, 39, 12" CvTextArgument="Salvos" CvType="Text" DesignTimeRectangle="12, 150, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Salvos  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Salvos' /&gt;" Guid="b77b5f18-623d-4a64-a12f-3e248bfdf0d5" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NGetText.Target>
+                                                          </uix:NGetText>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[strCEP]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[If(System.Text.RegularExpressions.Regex.IsMatch(strEnderecoCompleto, "\b\d{5}-\d{3}\b"), System.Text.RegularExpressions.Regex.Match(strEnderecoCompleto, "\b\d{5}-\d{3}\b").Groups(0).Value.Trim(), "não informado")]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;tentou pegar o cep em av.&quot;]" />
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                    <If Condition="[strCEP = &quot;não informado&quot;]" DisplayName="Tenta travessa" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_5">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,1015" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NGoToUrl DisplayName="Go To URL - google.com.br" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://www.google.com.br/maps/@2.8278784,-60.6896128,13z?entry=ttu&amp;g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" Version="V4" />
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pesquise no Google Maps'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" Text="[&quot;travessa &quot; + strRua + &quot;, &quot; + strNumeroResidencia + &quot;, &quot; +strCidade + &quot;[k(Enter)]&quot;]" Version="V4">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="google.com.br/maps/@2.8278784,-60.6896128,13z" CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" ContentHash="rU3pyvv310ePu3tE3DP7Bg" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='fontBodyMedium searchboxinput xiQnY ' aaname='Pesquise no Google Maps' /&gt;" Guid="20b92948-55a0-4513-aabb-a8b7ea7b943d" InformativeScreenshot="afb9a4be46eeb94e841229d60315d5c4.png" Reference="NkYqdf221EmIXN1TRDnl6w/9cmbpuYnwkmx5f2FMecbZw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='z1Srse fontBodyMedium' aaname='Pesquise no Google Maps' check:innerText='Pesquise no Google Maps' /&gt;" Guid="04f4cc69-ae1f-4247-b76f-d7af96596e2e" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <Delay Duration="00:00:01.5000000" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                                          <uix:NGetText DisplayName="Get Text 'R. Palmas, 882 - Nova C…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="2c0466f3-342e-4a12-9075-0ca99ae3dab8" TextString="[strEnderecoCompleto]" Version="V4">
+                                                            <uix:NGetText.Target>
+                                                              <uix:TargetAnchorable BrowserURL="google.com.br/maps/place/R.+Palmas,+882+-+Nova+Cidade,+Boa+Vista+-+RR,+69316-256/@2.760533,-60.7366789,17z/data=!3m1!4b1!4m6!3m5!1s0x8d93036e11835ba5:0x5c04b510c2529a97!8m2!3d2.760533!4d-60.734104!16s%2Fg%2F11x12dznnp" ContentHash="YBcvA8LgY06NwcLDaFL55A" DesignTimeRectangle="84, 82, 408, 954" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aria-role='main' tag='DIV' type='' class='m6QErb WNBkOb XiKgde ' aaname='' /&gt;" Guid="d32b3d01-4f17-4c52-bbf2-5a632235534b" InformativeScreenshot="6d22f13b4584993149c5e16ab2ae30c7.png" Reference="NkYqdf221EmIXN1TRDnl6w/BayPQ87BdEmtDkZRkqssng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='R. Palmas, 882 - Nova Cidade - Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                                                    <uix:Target DesignTimeRectangle="12, 948, 72, 72" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='      App móvel Instalar o aplicativo  ' tag='BUTTON' type='' class='wR3cXd Ijds6e fontLabelMedium' check:innerText='&amp;#xA;Instalar o aplicativo' /&gt;" Guid="b67c8538-05c2-4071-888c-8b1a641495fc" SearchSteps="FuzzySelector" />
+                                                                    <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="20, 260, 55, 11" CvTextArgument="Recentes" CvType="Text" DesignTimeRectangle="12, 222, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Recentes  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Recentes' /&gt;" Guid="6e601a97-c112-4cbf-b832-29bae2611e13" SearchSteps="FuzzySelector, CV" />
+                                                                    <uix:Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="28, 187, 39, 12" CvTextArgument="Salvos" CvType="Text" DesignTimeRectangle="12, 150, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Salvos  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Salvos' /&gt;" Guid="b77b5f18-623d-4a64-a12f-3e248bfdf0d5" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NGetText.Target>
+                                                          </uix:NGetText>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[strCEP]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[If(System.Text.RegularExpressions.Regex.IsMatch(strEnderecoCompleto, "\b\d{5}-\d{3}\b"), System.Text.RegularExpressions.Regex.Match(strEnderecoCompleto, "\b\d{5}-\d{3}\b").Groups(0).Value.Trim(), "não informado")]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;tentou pegar o cep em travessa&quot;]" />
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </uix:NApplicationCard.Body>
+                                              <uix:NApplicationCard.TargetApp>
+                                                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="lxyRoLaHVkK1Pv5TrkXMsg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOuSURBVFhHvZZrSFNRHMCvaQoVJWGRLjI/9MAepHdbimbNqWEP0D2gB4KRXxKU2LKoFFY5owIjwiLyg2Tp3SqMJPMVQpAf+hBC9KCCIMuuU5hzm+I2PZ0r/7vO7k7M6fIHvw/O/z2/49n1bkz4oCiZgc+QGX6XygzDNTIjb046w1cmGodytplQLAxFno2n7fFJxuFr2MEkI4+kJlfZfqlqnTzWXGByroXLIkOiYViLI7w0KrqhyubJueJEuWaX6GhurVMPly8MHKjAzpBB0vVneJR1aZyM+1WZXedhmfnRd/jIyZ2Vn6ZpYUH8/iOlaYwa91vnPAXLhceISr7Fpla4v+5XuVTl/dQN7Kq206OBTuRfcWyCZeeOTa18jDeABH/kZ88cK3sWEE89P0qLUc26++ghLDs3+AJlCg5PixsQ5NVKdKHkzmx841nhjndfUpudqrzLrh3qWpcBh8alYcHs2+0eOaf1sc2aRFg+NDhYScZJH+vK36RfHmNh1E9u7WSy2uwaIuM59W+RvFU/jTeAWIvGCKOhwaEn0vCsBfIJ1/V1pTAWhLrOXSTG913/hhQtJUiIgw9gLDQ41h8Uz5PPTN5f7UYmZgmMBYNQFI7bVVdtSNlcTsaRgtO+hqnQ4OCAdAOuG+uQpzf6O4z8k9w6x/eMpprZYydlOe0HGAkN/mu7yLjjXAry9sYIelEfEw9jQewz2eMzG+sd0rhguCfQJMbtZVuQt2epuAHk641ugLEgMh5U1dPigmyr1gJjobHlKSuE+Kh+p8/zIs4fB2ewNfgkYmCcQVYmuqF9+y0cCjp6UbyBShgPzUh+WtLIftYx9WSZNE76BZ/GPe+rmKcfO1ePZnCaSVpYVMkVb4bl58ZE86o2SjRIW89yVGg9OEWL+rXoumHZuTPVFbsVB6akQVJ3byw68VRFjxIqrPq9sGx4eHtiTLSwaHWbkhokZTlNeJ8DJKiDicOhz9KwYOPzVGowQIt2kG05mgDLzQ9Pz9I0HJwg490dG4T/a3r0r17Wqs+GZRYGvtuPi/H3nQko01LspQQDVFg0C/s2JAXfDzeHulZ4cyxFY7RggBbdSwYxUXBpZBAePAeshW3UICF+5v9Ms+rXwGWRJe2RJhlHqM960JfeqtsD4/8HeaumhBIWvQhj/xfhySaN46MfiPj7/i8UnEYh3UA6pzsEv14c8HOgk9jAO3h58SDvBXz8Bnh58dj98PhKHBc+gn2ZVr0MXl5cWE6nF04CfpwHDPMH5T/3xQh0hLAAAAAASUVORK5CYII=" InformativeScreenshot="b2cfa6118d29152369785546a51d2f31.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/sS6_HgyMUUal4meaBROArQ" Selector="&lt;html app='msedge.exe' title='Google Maps' /&gt;" Url="https://www.google.com.br/maps/@2.8278784,-60.6896128,13z?entry=ttu&amp;g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" Version="V2" />
+                                              </uix:NApplicationCard.TargetApp>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NApplicationCard>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,89" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                      <ui:MultipleAssign DisplayName="Alimenta o Dicionário" sap:VirtualizedContainerService.HintSize="479,575" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                        <ui:MultipleAssign.AssignOperations>
+                                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("CPF" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strCPF]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Nome" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strNome]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("NMae" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strNomeMae]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("NPai" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strNomePai]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Naturalidade" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strNaturalidade]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Nascimento" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strDataNascimento]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Genero" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strGenero]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("CEP" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strCEP]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Rua" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strRua]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("NumeroResidencia" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strNumeroResidencia]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Bairro" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strBairro]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_26">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Cidade" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strCidade]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_27">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Estado" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strEstado]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_28">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:String">[in_dicReus("Telefone" + intContador.ToString)]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:String">[strTelefone]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
+                                              <ui:AssignOperation.To>
+                                                <OutArgument x:TypeArguments="x:Int32">[intContador]</OutArgument>
+                                              </ui:AssignOperation.To>
+                                              <ui:AssignOperation.Value>
+                                                <InArgument x:TypeArguments="x:Int32">[intContador + 1]</InArgument>
+                                              </ui:AssignOperation.Value>
+                                            </ui:AssignOperation>
+                                          </scg:List>
+                                        </ui:MultipleAssign.AssignOperations>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:MultipleAssign>
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="wLhlWkeBzkWNI9_3VrEvTQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALtSURBVDhPPZPbU9JREMd/f2HvPTTTU700ZZPVlFOa3Wa6aBCTDpkklbfEELylBCkkKHiDkYxM04w0xEi5C3zac5p62HP27H73e3b3nDUolyGbhdIRVCCXKUBVjiU51sSVh5rsyqZFMNp4JHiJNWp5CVYkCiSi/Ml0jqLsqRwIndZ3M2Xt+4erFcV6VMLIVssakKlUECr2Ra5ZrJj63Jy42Mjx8w2cvdtCU9szvmSy/MiX/pNKkhipapXfoiSF9bvIumR2f8BNXFAfBZEUX2S/QHcgwspBnrVcibTYdEy5iKFufBdPcPrmXS6Y2zC7PVzp7OG6fZDzbS85Vn+DM+ZnNNkHuNPj5Gr7c04132Eqsa6JNMHMRpKWbhfOyCqvQ3EeDExSZ7JjGQ/R6YvyaGiaZvsQ9SYbT1xeTjbcIpD4rss1DmR541ugrtHM2OwXvLEdTD1emp44mN0q4vB/xjYSweoM4pj+yOYhnGt6hMu3xI402VANGfbFaLzfRVLYVG3tvVOY7R5S0vaMnKdiKaz9fibnNnWjLzW3MzAW1s00DqVxve4gLVandqYlyGx/qwNUcFrefvbTAa73CfrGF0lLYzt6vVhsbiSBvyW8HAlieTWmm7InhJ3OAB1DMyTlRVJiGw1/1bZ+z5Imtbs/0PrcpbM11uRT2b1zuBYSbMhtnyQv67ifnkCUXQEoCW4f4AjH6Q/F+CoX2CaDmAcn+KEIFMDsHOdyu40r1i6eevw8Hp7kRSBMQjJQpPP7OXpnlzjz0EJDxwu9m96MaXJjW5ah+WUm5C+MLK/g39iS51xkcG6e+d09JmKrBL8lmV7fpPX1IPe6+7nd9Yru6RldnvFLlpFgmLY+hxbPwhKhxBr+6Aq+hWVGP4S0vvpzj/jOT6LbO4KJMhqKsC5f2yjIHBUl1f1fWapSX1VeoaamTvR/omxqr6gBFClJzGG+qofLQAxqTAtqjJVFTYgSRZQTZEEUhVGSr1HJyVnhlL8EfwAueoB2bgMvmAAAAABJRU5ErkJggg==" InformativeScreenshot="3155e717887153a4d6280a6dea6c6e90.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/u3fdzB37I0-c2_Pn6Q9yWg" Selector="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Url="[CurrentRow(&quot;NomeUrl&quot;).ToString]" Version="V2" />
+                              </uix:NApplicationCard.TargetApp>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="615,89" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="wTgRHhUeIEyXgXgreNAhCg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALtSURBVDhPPZPbU9JREMd/f2HvPTTTU700ZZPVlFOa3Wa6aBCTDpkklbfEELylBCkkKHiDkYxM04w0xEi5C3zac5p62HP27H73e3b3nDUolyGbhdIRVCCXKUBVjiU51sSVh5rsyqZFMNp4JHiJNWp5CVYkCiSi/Ml0jqLsqRwIndZ3M2Xt+4erFcV6VMLIVssakKlUECr2Ra5ZrJj63Jy42Mjx8w2cvdtCU9szvmSy/MiX/pNKkhipapXfoiSF9bvIumR2f8BNXFAfBZEUX2S/QHcgwspBnrVcibTYdEy5iKFufBdPcPrmXS6Y2zC7PVzp7OG6fZDzbS85Vn+DM+ZnNNkHuNPj5Gr7c04132Eqsa6JNMHMRpKWbhfOyCqvQ3EeDExSZ7JjGQ/R6YvyaGiaZvsQ9SYbT1xeTjbcIpD4rss1DmR541ugrtHM2OwXvLEdTD1emp44mN0q4vB/xjYSweoM4pj+yOYhnGt6hMu3xI402VANGfbFaLzfRVLYVG3tvVOY7R5S0vaMnKdiKaz9fibnNnWjLzW3MzAW1s00DqVxve4gLVandqYlyGx/qwNUcFrefvbTAa73CfrGF0lLYzt6vVhsbiSBvyW8HAlieTWmm7InhJ3OAB1DMyTlRVJiGw1/1bZ+z5Imtbs/0PrcpbM11uRT2b1zuBYSbMhtnyQv67ifnkCUXQEoCW4f4AjH6Q/F+CoX2CaDmAcn+KEIFMDsHOdyu40r1i6eevw8Hp7kRSBMQjJQpPP7OXpnlzjz0EJDxwu9m96MaXJjW5ah+WUm5C+MLK/g39iS51xkcG6e+d09JmKrBL8lmV7fpPX1IPe6+7nd9Yru6RldnvFLlpFgmLY+hxbPwhKhxBr+6Aq+hWVGP4S0vvpzj/jOT6LbO4KJMhqKsC5f2yjIHBUl1f1fWapSX1VeoaamTvR/omxqr6gBFClJzGG+qofLQAxqTAtqjJVFTYgSRZQTZEEUhVGSr1HJyVnhlL8EfwAueoB2bgMvmAAAAABJRU5ErkJggg==" InformativeScreenshot="f82fd18af533acbf77ddc5bdbf6bc52f.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/d42iPSDaN0qxLTfmVgnRoA" Selector="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

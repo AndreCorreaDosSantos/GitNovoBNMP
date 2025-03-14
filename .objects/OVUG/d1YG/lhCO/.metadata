@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge 0807032-06.2025.8.23.0010",
+  "Type": "Screen",
+  "Id": "lhCOnaGasUC4heQ18qaf5g",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/lhCOnaGasUC4heQ18qaf5g",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/d1YGPKlfWEukW3o1G0Z86Q",
+  "Created": "2025-02-25T18:08:16.3585492Z",
+  "Updated": "2025-02-25T18:08:16.3585492Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

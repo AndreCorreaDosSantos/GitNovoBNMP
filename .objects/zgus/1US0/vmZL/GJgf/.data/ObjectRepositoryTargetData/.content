@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iu8eFQ5vg0K0Obe40H26ZA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="37, 181, 1847, 1119" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='FIELDSET' type='' class='' aaname='     &amp;#x9; &amp;#x9;&amp;#x9;  &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;  &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;       &amp;#x9;      &amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;                                                                                        &amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;' check:innerText='Status:&amp;#x9;ARQUIVADO&amp;#xA;Classe Processual:&amp;#x9;1268 - Medidas Protetivas de urgência (Lei Maria da Penha)' /&gt;" Guid="cff0bee5-a13f-4272-b5e2-e3dc8ea5cf28" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a7e862f615e12a004b0e60c4b42749fe.png" xmlns="">0ljVrxaNYr0yC1NE07aF5sg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

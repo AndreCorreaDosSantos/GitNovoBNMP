@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge 0807032-06.2025.8.23.0010",
+  "Type": "App",
+  "Id": "OVUGQTfSL0KMMGO9kL7uPw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/OVUGQTfSL0KMMGO9kL7uPw",
+  "Created": "2025-02-25T18:08:16.3188016Z",
+  "Updated": "2025-02-25T18:08:16.3188016Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
