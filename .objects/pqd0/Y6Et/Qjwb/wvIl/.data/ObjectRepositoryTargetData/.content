@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gqNI6C8Fl0KUWRtl0t8_sg" Reference="2-DZoQmemkuCTB89xYXpJA/wbVsv6Gp70qOo8Ixiv3BAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="90927354-e00b-4259-8a34-f7ae5435be4f" CvTextArea="690, 490, 66, 14" CvTextArgument="Ver todas" CvType="Text" DesignTimeRectangle="692, 488, 64, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Ver todas ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='Ver todas' /&gt;" Guid="4abd054b-0b9d-415b-a6ce-b4e944bd8236" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="90927354-e00b-4259-8a34-f7ae5435be4f" CvElementArea="770, 479, 153, 39" CvTextArea="53, 489, 838, 20" CvTextArgument="PEÇAS CADASTRADAS Ver todas + Nova Peça" CvType="Button" DesignTimeRectangle="54, 481, 868, 35" FuzzySelectorArgument="&lt;webctrl type='' class='d-flex justify-content-between align-items-center w-100' tag='DIV' aaname='' check:innerText='PEÇAS CADASTRADAS&amp;#xA;Ver todas&amp;#xA;+ Nova Peça' /&gt;" Guid="0c73ed59-5f67-4170-b448-d4aaec6913f5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e9573549e4408e8ccb120e7a5a2d36a1.png" xmlns="">0_NdMjNDRqUCSHZmwSimUqQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

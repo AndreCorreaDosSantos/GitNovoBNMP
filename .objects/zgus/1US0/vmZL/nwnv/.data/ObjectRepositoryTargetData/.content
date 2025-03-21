@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9HrqsOKXfEGOuxNF4KOY9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="383, 539, 93, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data da Prisão Guia de Prisão Motivo da Prisão Local da Prisão Soltura/ Conversão Guia de Soltura Motivo da Soltura Período de Prisão Arquivo Total:  Nome RG CPF/CNPJ Nome RG CPF/CNPJ' tag='TABLE' /&gt;&lt;webctrl aaname='Endereço' type='' tag='A' class='' check:innerText='Endereço' /&gt;" Guid="5ff62124-bb0d-480b-a051-be6e3e170e1e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='0833680-57.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="272, 539, 84, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data da Prisão Guia de Prisão Motivo da Prisão Local da Prisão Soltura/ Conversão Guia de Soltura Motivo da Soltura Período de Prisão Arquivo Total:  Nome RG CPF/CNPJ Nome RG CPF/CNPJ' tag='TABLE' /&gt;&lt;webctrl aaname='Prisões' type='' tag='A' class='' check:innerText='Prisões' /&gt;" Guid="b2e96a3e-e91d-4325-aa28-3621c60aa5c7" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f89b1502d328a7221868b57f76a5068.png" xmlns="">0ml1J2ze3ukmNUUkAOlQO3Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

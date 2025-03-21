@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CEP",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "jfnkSq5zikaFLHZX_vl2pg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/jfnkSq5zikaFLHZX_vl2pg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:20:42.5411949Z",
+  "Updated": "2025-03-19T14:20:42.5411949Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

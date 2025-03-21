@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Separação de corpos",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "u-mxjCGBM0CEAbr2y1nLyA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/u-mxjCGBM0CEAbr2y1nLyA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:57:52.2461063Z",
+  "Updated": "2025-03-19T14:57:52.2461063Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

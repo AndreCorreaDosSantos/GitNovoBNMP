@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Projudi - Processo Eletrônico do Judiciá",
+  "Type": "App",
+  "Id": "rt9HwizhdkyQVQC4zD9ynQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/rt9HwizhdkyQVQC4zD9ynQ",
+  "Created": "2025-02-25T14:12:56.4539688Z",
+  "Updated": "2025-02-25T14:12:56.4539688Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

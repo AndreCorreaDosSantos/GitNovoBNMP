@@ -1,0 +1,13 @@
+﻿{
+  "Name": "close Limpar pesquisa",
+  "Type": "Element",
+  "Id": "6LM9kjpfwUCqZ0cpju2NXQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/6LM9kjpfwUCqZ0cpju2NXQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-19T12:28:08.4166033Z",
+  "Updated": "2025-03-19T12:28:08.4166033Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

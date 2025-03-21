@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mFQ4KJENwUCAxn9FPIKgyg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="2565065f-94c9-473d-934f-f7a0f12ab72b" CvTextArea="77, 935, 62, 13" CvTextArgument="Vítimas" CvType="Text" DesignTimeRectangle="58, 931, 1211, 26" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='H4' aaname='Vítimas' check:innerText='Vítimas' /&gt;" Guid="fc1d25d0-ba8c-4ddd-8b98-f484f1a6b19f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="2565065f-94c9-473d-934f-f7a0f12ab72b" CvTextArea="78, 842, 101, 14" CvTextArgument="Polo Passivo" CvType="Text" DesignTimeRectangle="58, 838, 1211, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='H4' aaname='Polo Passivo' check:innerText='Polo Passivo' /&gt;" Guid="50092bf8-7b82-42d7-a190-5469758e5e8a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4870e3c903eae99bfada30d2aad6c288.png" xmlns="">0jfuKt6nCf0K7Csvj5pcmIg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

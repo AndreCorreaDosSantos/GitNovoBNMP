@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Wr7e0qZj1ka4A0atrpnDUw" Reference="2-DZoQmemkuCTB89xYXpJA/sglPqTgBVEuz08uDsmlyag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="321064f6-24bc-4913-b14e-e3297d17a794" CvElementArea="1570, 206, 336, 30" CvType="InputBox" DesignTimeRectangle="1572, 207, 332, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="32e4bdfe-d883-4624-af12-665a8b4df033" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4d26d7aed2e46589445ff6527adb1a3d.png" xmlns="">0PhODot1YzU2R1N89zIDckA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

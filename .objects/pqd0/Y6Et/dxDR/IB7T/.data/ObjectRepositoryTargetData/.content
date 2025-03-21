@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g41O9jEdLUmAedThg-MpKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="402, 572, 321, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-52' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored' aaname='Limite mínimo, de afastamento em metros*' /&gt;" Guid="3d00f388-31af-400c-9934-6adfbf6b2399" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="402, 554, 202, 11" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-109' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-74 ng-star-inserted' aaname='' check:innerText='Limite mínimo, de afastamento em metros*' /&gt;" Guid="232b6035-f99a-4c0d-b9f7-e30b3c36900e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="49b6cff751c6cd82cc9da1b33e695711.png" xmlns="">0w-9H9etIxUqn5s0fxYrGmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

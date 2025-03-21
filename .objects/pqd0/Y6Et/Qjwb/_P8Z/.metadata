@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Informe o código",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "_P8ZXHIqBkCaMu7XApTR0A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/_P8ZXHIqBkCaMu7XApTR0A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T01:18:29.3077521Z",
+  "Updated": "2025-03-18T01:18:29.3077521Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

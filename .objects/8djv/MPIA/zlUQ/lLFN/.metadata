@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pesquisar",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "lLFNjYZcLkOET1_3KZn2gA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/lLFNjYZcLkOET1_3KZn2gA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/zlUQpUCD2k2Fu1Ir1e3-Bw",
+  "Created": "2025-03-18T01:18:28.1346471Z",
+  "Updated": "2025-03-18T01:18:28.1346471Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

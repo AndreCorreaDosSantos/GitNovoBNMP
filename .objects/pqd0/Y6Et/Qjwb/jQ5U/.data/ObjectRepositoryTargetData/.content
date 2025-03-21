@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iAaT-WVRoE63hRD5fp2tDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="384, 777, 1440, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' type='' parentid='cdk-accordion-child-5' tag='DIV' aaname='' check:innerText='Biometria coletada e não identificada&amp;#x9;&amp;#xA;Houve Coleta Biométrica&amp;#xA;clear' /&gt;" Guid="095bc9fa-0e9a-4e43-8002-c5e50140f86d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="969, 791, 231, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='mat-select-value-11' tag='SPAN' type='' class='mat-select-min-line ng-tns-c36-44 ng-star-inserted' aaname='Biometria coletada e não identificada' check:innerText='Biometria coletada e não identificada' /&gt;" Guid="e8847330-df93-4410-8929-96ea6f2b5797" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e2e0a2954266bfb29d22fa8ae9c0b2cd.png" xmlns="">0dF21XscJw0OCfcFUiwukCg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

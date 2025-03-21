@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PPBySRl2W0aaC0iYWj1p7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 498, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-31' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="6002a14b-7920-436c-8374-7533b33b8d9b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 494, 647, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-31' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Encaminhamento de dependentes a programa oficial ou comunitário de proteção ou de atendimento' /&gt;" Guid="edb68371-333d-42b6-be45-11d9e970016c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="aaf952664fa2b3e974898c25697ec301.png" xmlns="">0Oc2xu8zsvUSg4VN4bxnFbg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

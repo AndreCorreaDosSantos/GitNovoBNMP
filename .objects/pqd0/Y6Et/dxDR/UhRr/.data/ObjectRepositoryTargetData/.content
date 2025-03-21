@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NTXMF16IJ0iHw3RkqCckOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 342, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-152' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="1b4cc51f-c66e-4f64-9eb4-e2828e94a73f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 338, 255, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-152' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Busca e apreensão de armas de fogo' /&gt;" Guid="f7efb4ef-115b-41f6-86ed-0320c2b68741" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f69d2cc4a4da00a2598ea018c1e7f117.png" xmlns="">0BB4tLZfHak2Xqu8KN6apvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

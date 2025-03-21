@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Senha",
+  "Type": "Element",
+  "TaxonomyType": "Password",
+  "Id": "WNWPyUv2-kCGx-rG_elu3A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/WNWPyUv2-kCGx-rG_elu3A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T13:20:13.5227075Z",
+  "Updated": "2025-03-19T13:20:13.5227075Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

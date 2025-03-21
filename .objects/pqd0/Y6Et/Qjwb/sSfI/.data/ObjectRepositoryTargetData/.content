@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bzf7PdEuAESCkOMS7-xbEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" CVScreenId="0d31be69-81d7-4984-93dd-b52ef4d01c5e" CvElementArea="362, 314, 727, 55" CvType="InputBox" DesignTimeRectangle="377, 333, 698, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-9' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger cdk-text-field-autofill-monitored' aaname='Tipo de peça' /&gt;" Guid="2b688d32-6171-449b-a65c-e05250f8eaa3" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0d31be69-81d7-4984-93dd-b52ef4d01c5e" CvElementArea="362, 314, 727, 55" CvType="InputBox" DesignTimeRectangle="377, 332, 698, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-17' tag='LABEL' type='' class='mat-form-field-label ng-tns-c36-19 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='Tipo de peça' /&gt;" Guid="98599034-0ac7-4d50-a77c-226d501447ea" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="89e1aab5dd8403284a95279268a9bd6f.png" xmlns="">0REPrjtu9Z0qTIF7gm7BcJw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

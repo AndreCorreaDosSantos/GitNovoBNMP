@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Selecione o Perfil de U…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "xQWqiDEY2EKngvIgFyD34A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/xQWqiDEY2EKngvIgFyD34A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/6H2tDBngkUe8Dx7wd79hFQ",
+  "Created": "2025-03-18T01:18:26.3929602Z",
+  "Updated": "2025-03-18T01:18:26.3929602Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

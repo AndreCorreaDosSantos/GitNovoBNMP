@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Síntese da Decisão",
+  "Type": "Element",
+  "Id": "yz1Oe0JfLUa9Y5r_jLZt1A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/yz1Oe0JfLUa9Y5r_jLZt1A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-19T12:38:23.6564502Z",
+  "Updated": "2025-03-19T12:38:23.6564502Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

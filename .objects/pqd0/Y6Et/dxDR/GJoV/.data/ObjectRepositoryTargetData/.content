@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fyxFACRXR0uy2uBvoommZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 764, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-434' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="0b5fa812-3797-4f22-a012-b7bd0cb9dc20" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 760, 478, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-434' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Comparecimento do agressor a programas de recuperação e reeducação' /&gt;" Guid="5b5646da-6d21-4203-b3db-44023ab4168f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c0dfec1b123cbc428482055a6a5afc21.png" xmlns="">0LzUgBg0IeEqdTT-WbzPHQQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

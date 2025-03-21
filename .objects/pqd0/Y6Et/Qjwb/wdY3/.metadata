@@ -1,0 +1,14 @@
+﻿{
+  "Name": "EstadoDistrito",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "wdY35EepmEm8vnUS8h0Ktg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/wdY35EepmEm8vnUS8h0Ktg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T16:38:02.4778094Z",
+  "Updated": "2025-03-18T16:38:02.4778094Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

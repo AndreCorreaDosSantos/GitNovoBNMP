@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Vítimas",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "zg_Nv8AiH0-4SD5WaLy7xQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/zg_Nv8AiH0-4SD5WaLy7xQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/d42iPSDaN0qxLTfmVgnRoA",
+  "Created": "2025-02-25T14:22:18.3380572Z",
+  "Updated": "2025-02-25T19:01:12.1178386Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

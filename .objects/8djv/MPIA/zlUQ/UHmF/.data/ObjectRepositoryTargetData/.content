@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qTV__qFltUqMI9THlEXqfA" Reference="2-DZoQmemkuCTB89xYXpJA/drl9tlYlkUeqt7XE0hpiAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="b6554309-0952-48d4-b64a-63da0f7545c2" CvTextArea="913, 932, 115, 14" CvType="AnyWordGroup" DesignTimeRectangle="849, 915, 243, 46" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' /&gt;" Guid="07b63468-cb45-4c96-96ae-7c2d60af74de" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="b6554309-0952-48d4-b64a-63da0f7545c2" CvElementArea="466, 616, 111, 28" CvTextArea="492, 624, 48, 12" CvTextArgument="Partes" CvType="Button" DesignTimeRectangle="479, 619, 84, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl aaname='Partes' type='' tag='A' class='' check:innerText='Partes' /&gt;" Guid="52fbdf1a-2f30-4f15-9dfa-43e22d361a81" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="40f9acf3ba3409884b54eba8e1510815.png" xmlns="">040zX9MZttE2KF9P9Yahshw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

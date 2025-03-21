@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CPFCNPJ",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "IzZRIJkJq0m43la9vk93Sg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/IzZRIJkJq0m43la9vk93Sg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T01:18:28.9018611Z",
+  "Updated": "2025-03-18T01:18:28.9018611Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

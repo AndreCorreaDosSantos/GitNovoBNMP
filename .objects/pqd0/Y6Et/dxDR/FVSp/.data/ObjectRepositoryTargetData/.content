@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zVvDF6IVqUWUqO7wQ3l2BQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="417, 383, 672, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-20' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored' aaname='Nome da Vítima*' /&gt;" Guid="096a5bf0-65bc-44ac-919c-2912ab543fdd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="417, 382, 672, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-43' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-40 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='Nome da Vítima*' /&gt;" Guid="d971e7d2-8995-41e1-a878-aff963c942b1" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5bde41af3c8b52fd058b8e68c6d60aa0.png" xmlns="">0Q2CB5rlHiEGuS142PqYvQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

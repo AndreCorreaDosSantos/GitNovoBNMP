@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9pBpQBrTi02qzIR6R1HFsA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 732, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-416' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="7778eb30-90cc-4554-a1ce-f8e5a6abd4d8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 728, 341, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-416' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Prestação de alimentos provisionais ou provisórios' /&gt;" Guid="aefa90aa-0e85-40aa-b204-081291ff7251" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1e9308a88dd265ae5f2ffe245cee17e9.png" xmlns="">0Ia4G3rg88UqfBh0HNm2_0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

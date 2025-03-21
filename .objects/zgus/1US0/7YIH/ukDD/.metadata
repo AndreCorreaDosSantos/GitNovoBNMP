@@ -1,0 +1,14 @@
+﻿{
+  "Name": "2º Juizado de Violência…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ukDDibun-0mUE1Lgkc8MAg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/ukDDibun-0mUE1Lgkc8MAg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/7YIHdVP_O0Os4chMcihEPA",
+  "Created": "2025-03-18T01:18:32.2530591Z",
+  "Updated": "2025-03-18T01:18:32.2530591Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

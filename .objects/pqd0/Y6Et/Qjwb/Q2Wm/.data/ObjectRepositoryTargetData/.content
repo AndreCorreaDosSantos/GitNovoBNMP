@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4Fz8X27DU0KML32uml1frQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" CVScreenId="87a38e12-218f-4c54-8115-f797ce959a50" CvTextArea="395, 431, 534, 18" CvTextArgument="Mandado de Medida Cautelar Diversa da Prisão ou Protetiva de Urgência" CvType="Text" DesignTimeRectangle="396, 416, 676, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-option-267' tag='SPAN' type='' class='mat-option-text' aaname=' Mandado de Medida Cautelar Diversa da Prisão ou Protetiva de Urgência ' check:innerText='Mandado de Medida Cautelar Diversa da Prisão ou Protetiva de Urgência' /&gt;" Guid="0e0f3e1c-91b6-4396-9a9a-06ecdaef8841" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="87a38e12-218f-4c54-8115-f797ce959a50" CvTextArea="379, 383, 68, 14" CvTextArgument="Mandados" CvType="Text" DesignTimeRectangle="364, 368, 724, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-optgroup-label-90' tag='SPAN' type='' class='mat-optgroup-label' aaname='Mandados ' check:innerText='Mandados' /&gt;" Guid="7ae520b0-f84f-427c-8be2-65ac398e7092" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="660780435bf02a874384bf22e170cc40.png" xmlns="">0uxDHbPJbdU6QH37CZZkr4g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

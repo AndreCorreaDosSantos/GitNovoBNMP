@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WPFD6LQPXkav8MTSJWrLEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="ed9171d3-2869-4757-bcf2-354cd7516362" CvElementArea="397, 434, 893, 50" CvType="InputBox" DesignTimeRectangle="410, 451, 868, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-9' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched' aaname='CPF' /&gt;" Guid="f18630b2-8415-4416-894d-479c90a73609" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ed9171d3-2869-4757-bcf2-354cd7516362" CvElementArea="397, 434, 893, 50" CvType="InputBox" DesignTimeRectangle="410, 432, 32, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-27' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-47 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='CPF' /&gt;" Guid="d1bdac1c-3baf-47b4-969a-fcce9f39f802" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d0ca732ae589c36bee03326be594362d.png" xmlns="">09BewlUi530qYPsCFkd_oLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

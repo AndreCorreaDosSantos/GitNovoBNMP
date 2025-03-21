@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Destino aparece - Informa o código de email",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "BZhwUideA0uwhCpzF75gmw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/BZhwUideA0uwhCpzF75gmw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T01:18:28.7741161Z",
+  "Updated": "2025-03-18T01:18:28.7741161Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Nome da Vítima",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "FVSpT5ASs0WKmF9NE6Ac-g",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/FVSpT5ASs0WKmF9NE6Ac-g",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:14:58.9015405Z",
+  "Updated": "2025-03-19T14:14:58.9015405Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

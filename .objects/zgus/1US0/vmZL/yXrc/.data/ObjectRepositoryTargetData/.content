@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="L8Ar4wETpkmCS9m3qUgIbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="5c0f8fc2-70ce-4550-8996-856c1ed92302" CvElementArea="370, 478, 120, 27" CvTextArea="391, 484, 67, 16" CvTextArgument="Endereço" CvType="Button" DesignTimeRectangle="383, 480, 93, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data da Prisão Guia de Prisão Motivo da Prisão Local da Prisão Soltura/ Conversão Guia de Soltura Motivo da Soltura Período de Prisão Arquivo Total:  Nome RG CPF/CNPJ Nome RG CPF/CNPJ' tag='TABLE' /&gt;&lt;webctrl aaname='Endereço' type='' tag='A' class='' check:innerText='Endereço' /&gt;" Guid="a99cb82d-2214-45d2-8bf2-1aea65509779" ScopeSelectorArgument="&lt;html app='msedge.exe' title='0807032-06.2025.8.23.0010' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5c0f8fc2-70ce-4550-8996-856c1ed92302" CvElementArea="258, 478, 111, 27" CvTextArea="281, 484, 54, 13" CvTextArgument="Prisões" CvType="Button" DesignTimeRectangle="272, 480, 84, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data da Prisão Guia de Prisão Motivo da Prisão Local da Prisão Soltura/ Conversão Guia de Soltura Motivo da Soltura Período de Prisão Arquivo Total:  Nome RG CPF/CNPJ Nome RG CPF/CNPJ' tag='TABLE' /&gt;&lt;webctrl aaname='Prisões' type='' tag='A' class='' check:innerText='Prisões' /&gt;" Guid="56d7cd84-7e42-4e00-8da5-d50b05a91886" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3a62083a6e985d9bdb899295b8cce789.png" xmlns="">0RkNkuPPe_E68g9B80KEsJg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

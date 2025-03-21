@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Voltar",
+  "Type": "Element",
+  "Id": "-VHvGl_QLkmFhdmblK8gPQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/-VHvGl_QLkmFhdmblK8gPQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/d42iPSDaN0qxLTfmVgnRoA",
+  "Created": "2025-03-11T17:35:59.1035981Z",
+  "Updated": "2025-03-11T17:35:59.1035981Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

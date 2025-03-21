@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TQ7EM6E030y6k6xmE5FJ6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" DesignTimeRectangle="391, 519, 281, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-29' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched' aaname='CEP' /&gt;" Guid="5b1bb887-d757-4893-af5d-32dfd8192b10" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="391, 518, 281, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-63' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-50 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='CEP' /&gt;" Guid="bd2a4fc5-d2f5-4584-b952-de4b785e3c8b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dbcd302556a3d93dc417c2da2cd81d46.png" xmlns="">0VRKTlQVf90GODfLPdpIPyw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

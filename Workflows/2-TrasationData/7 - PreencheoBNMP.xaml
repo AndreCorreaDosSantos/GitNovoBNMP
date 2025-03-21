@@ -1,0 +1,1219 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PreencheoBNMP" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugagf="clr-namespace:UiPath.GSuite.Activities.Gmail.Filters;assembly=UiPath.GSuite.Activities" xmlns:ugagm="clr-namespace:UiPath.GSuite.Activities.Gmail.Models;assembly=UiPath.GSuite.Activities" xmlns:ugm="clr-namespace:UiPath.GSuite.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="intContadorReus" Type="InArgument(x:Int32)" />
+    <x:Property Name="intContadorVitimas" Type="InArgument(x:Int32)" />
+    <x:Property Name="dicReus" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="dicVitimas" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+  </x:Members>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Descriptor</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
+      <x:String>UiPath.BAF.Infrastructure</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
+      <x:String>UiPath.OpenAI.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+      <x:String>UiPath.OpenAI.IntegrationService.Client</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>C2CFDCDB09B_geocode_.j6Wov1GXVyM1z2OH73AlPPZ3</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.OpenAI.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OpenAI.IntegrationService</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1346,2183" sap2010:WorkflowViewState.IdRef="Sequence_35">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Preenche o BNMP" sap:VirtualizedContainerService.HintSize="1346,2160" sap2010:WorkflowViewState.IdRef="Sequence_33">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="Iterna no dicionário de Réus" sap:VirtualizedContainerService.HintSize="1312,2077" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[New Integer() { intContadorReus }]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:Int32">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1310,1956" sap2010:WorkflowViewState.IdRef="Sequence_36">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Edge PDPJ - Plataforma Digital do Poder Judic" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1276,1896" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="55ac78c2-a17d-4904-b464-2e483696068e" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1242,1616" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NCheckState DisplayName="Destino aparece - Informa o código de email" sap:VirtualizedContainerService.HintSize="1208,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" Timeout="1" Version="V4">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Destino aparece - Informa o código de email" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="ugm:GmailMessage" Name="emailRecebido" />
+                              <Variable x:TypeArguments="x:String" Name="codigoVerificacao" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" Length="{x:Null}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfMSIsIk5hbWUiOiJfU2VudCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEwIiwiTmFtZSI6Il9JTkJPWFwvRHJhZnRzIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTEiLCJOYW1lIjoiX0lOQk9YXC9UcmFzaCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEyIiwiTmFtZSI6IkVtZXhpcyIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEzIiwiTmFtZSI6IkVtZXhpc1wvUXVhcmFudGluZSIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzE0IiwiTmFtZSI6IkVtZXhpc1wvV2hpdGVsaXN0IiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTUiLCJOYW1lIjoiRW1leGlzXC9CbGFja2xpc3QiLCJUeXBlIjoidXNlciJ9LHsiSWQiOiJMYWJlbF84IiwiTmFtZSI6Il9JTkJPWCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzkiLCJOYW1lIjoiX0lOQk9YXC9TZW50IiwiVHlwZSI6InVzZXIifV0=" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="434,571" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_1" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+                              <uga:ForEachEmailConnections.Body>
+                                <ActivityAction x:TypeArguments="ugm:GmailMessage, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ugm:GmailMessage" Name="CurrentEmail" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentEmailIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence sap2010:Annotation.AnnotationText="Deletar email no Gmail&#xA;" DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,328" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uga:DeleteEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" AuthScopesInvalid="False" ConnectionId="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" DisplayName="Excluir e-mail no Gmail" Email="[CurrentEmail]" sap:VirtualizedContainerService.HintSize="382,226" sap2010:WorkflowViewState.IdRef="DeleteEmailConnections_1" PermanentlyDelete="True" UseConnectionService="True" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </uga:ForEachEmailConnections.Body>
+                              <uga:ForEachEmailConnections.Filter>
+                                <ugagf:MailFilterCollection LogicalOperator="And">
+                                  <ugagf:MailFilterCollection.Filters>
+                                    <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="Subject" DateOperator="NewerThan" StringOperator="Contains" Value="código de verificação" />
+                                    <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="From" DateOperator="NewerThan" StringOperator="Contains" Value="naoresponda@cnj.jus.br" />
+                                  </ugagf:MailFilterCollection.Filters>
+                                </ugagf:MailFilterCollection>
+                              </uga:ForEachEmailConnections.Filter>
+                              <uga:ForEachEmailConnections.Folder>
+                                <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="INBOX" BrowserFolderName="Inbox" InputMode="Browse">
+                                  <ugagm:FolderArgument.Backup>
+                                    <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" StoredValue="{x:Null}" x:Name="__ReferenceID0">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ugagm:FolderArgument.Backup>
+                                </ugagm:FolderArgument>
+                              </uga:ForEachEmailConnections.Folder>
+                            </uga:ForEachEmailConnections>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CPF/CNPJ'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="93559453291" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" ContentHash="LKzCXH8U9UyuMVkX1n7M4A" CvElementArea="1107, 220, 477, 38" CvType="InputBox" DesignTimeRectangle="1109, 222, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control' placeholder='000.000.000-00' aaname='                                           CPF/CNPJ                                           ' /&gt;" Guid="adf25168-dc4b-4ca0-a44f-86a3ce74b616" InformativeScreenshot="0ecc5bf3d604a0c596450810393713ba.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/IzZRIJkJq0m43la9vk93Sg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" CvTextArea="1107, 203, 73, 13" CvTextArgument="CPF/CNPJ" CvType="Text" DesignTimeRectangle="1109, 198, 72, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='username-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                           CPF/CNPJ                                           ' check:innerText='CPF/CNPJ' /&gt;" Guid="9e052d36-4e81-42ae-9ec6-4f4480099eb9" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="93559453291" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" ContentHash="eRh7wNW2uUulRwmmugNY-Q" CvElementArea="1106, 295, 478, 39" CvType="InputBox" DesignTimeRectangle="1109, 296, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' placeholder='Digite sua senha' aaname='                                     Senha                                     ' /&gt;" Guid="a4f00c67-f705-40a5-aa2e-a8df2983cccd" InformativeScreenshot="5045b1bec53f34eeddb8cc6855fb6181.png" Reference="NkYqdf221EmIXN1TRDnl6w/MpPbLf-0Ik6eRlGksGEuuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" CvTextArea="1108, 277, 44, 13" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1109, 272, 43, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='password-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                     Senha                                     ' check:innerText='Senha' /&gt;" Guid="9dcbbddb-eb83-46cc-8017-781e1e3d382c" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="23e25a6e-47fb-45f2-9520-31b68621a3ef" ContentHash="8PO_Y94qZkaCsIW23g7NJA" CvElementArea="1472, 344, 112, 44" CvTextArea="1505, 357, 47, 15" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="1474, 346, 108, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='kc-login' tag='INPUT' type='submit' class='btn btn-primary btn-block ' aaname='Entrar' check:text='Entrar' /&gt;" Guid="925e329e-5a5b-48fd-bdbc-4a3c0443a7d7" InformativeScreenshot="e3805ded3202548c30b4a5e06426ab11.png" Reference="NkYqdf221EmIXN1TRDnl6w/5bUSj_zsWE69ox9HNEKv7Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="23e25a6e-47fb-45f2-9520-31b68621a3ef" CvElementArea="1109, 386, 480, 26" CvType="InputBox" DesignTimeRectangle="1109, 386, 473, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='outrasopcoes' tag='DIV' type='' class='' aaname='                                     Outras opções de acesso                                  ' check:innerText='Outras opções de acesso' /&gt;" Guid="a1ccf293-31c4-4095-bf79-dc3588ce6453" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                            <uga:GetNewestEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID1}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfMSIsIk5hbWUiOiJfU2VudCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEwIiwiTmFtZSI6Il9JTkJPWFwvRHJhZnRzIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTEiLCJOYW1lIjoiX0lOQk9YXC9UcmFzaCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEyIiwiTmFtZSI6IkVtZXhpcyIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEzIiwiTmFtZSI6IkVtZXhpc1wvUXVhcmFudGluZSIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzE0IiwiTmFtZSI6IkVtZXhpc1wvV2hpdGVsaXN0IiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTUiLCJOYW1lIjoiRW1leGlzXC9CbGFja2xpc3QiLCJUeXBlIjoidXNlciJ9LHsiSWQiOiJMYWJlbF84IiwiTmFtZSI6Il9JTkJPWCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzkiLCJOYW1lIjoiX0lOQk9YXC9TZW50IiwiVHlwZSI6InVzZXIifV0=" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" DisplayName="Get Newest Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="434,235" sap2010:WorkflowViewState.IdRef="GetNewestEmailConnections_1" ImportantOnly="False" MarkAsRead="True" Result="[emailRecebido]" StarredOnly="False" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="False">
+                              <uga:GetNewestEmailConnections.Filter>
+                                <ugagf:MailFilterCollection LogicalOperator="And">
+                                  <ugagf:MailFilterCollection.Filters>
+                                    <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="Subject" DateOperator="NewerThan" StringOperator="Contains" Value="código de verificação" />
+                                  </ugagf:MailFilterCollection.Filters>
+                                </ugagf:MailFilterCollection>
+                              </uga:GetNewestEmailConnections.Filter>
+                              <uga:GetNewestEmailConnections.Folder>
+                                <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="INBOX" BrowserFolderName="Inbox" ConnectionKey="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" InputMode="Browse">
+                                  <ugagm:FolderArgument.Backup>
+                                    <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" StoredValue="{x:Null}" x:Name="__ReferenceID1">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ugagm:FolderArgument.Backup>
+                                </ugagm:FolderArgument>
+                              </uga:GetNewestEmailConnections.Folder>
+                            </uga:GetNewestEmailConnections>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[emailRecebido.BodyAsHtml]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_17">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[codigoVerificacao]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(emailRecebido.BodyAsHtml, "(?&lt;=&lt;h1&gt;)(\d+)(?=&lt;/h1&gt;)").Value]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Fatal" Message="[codigoVerificacao]" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Informe o código'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[codigoVerificacao]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="fa21862d-23d0-460c-88c5-b66de18476b0" ContentHash="YdhXQNqYtkCD74Fbr_Kv0Q" CvElementArea="1121, 319, 447, 38" CvType="InputBox" DesignTimeRectangle="1124, 321, 443, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='code' tag='INPUT' type='text' class='form-control' aaname='Informe o código' /&gt;" Guid="984266ea-44e8-4566-8d09-a24f01ef7694" InformativeScreenshot="52f40a357cd6f9a9ea915cb684c9aa67.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/_P8ZXHIqBkCaMu7XApTR0A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="fa21862d-23d0-460c-88c5-b66de18476b0" CvTextArea="1123, 292, 124, 18" CvTextArgument="Informe o código" CvType="Text" DesignTimeRectangle="1124, 289, 123, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Informe o código' check:innerText='Informe o código' /&gt;" Guid="dbb83203-bb68-471b-af45-14ad4e4b9241" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ok'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="32267071-8315-4145-a996-e4bcd3230f45" ContentHash="bWUMakpJ30GMkrMubknMuw" CvElementArea="1123, 370, 445, 39" CvTextArea="1333, 380, 25, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1124, 371, 443, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary w-100' aaname='Ok' check:text='Ok' /&gt;" Guid="69d5eabe-78ea-48ce-a9c7-63c7fce8b835" InformativeScreenshot="e42e0dd8bd303cda18f3aa8c2e91eeef.png" Reference="NkYqdf221EmIXN1TRDnl6w/-nyKxfpRCUGSD-sOS8DsIQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="32267071-8315-4145-a996-e4bcd3230f45" CvTextArea="1123, 292, 124, 18" CvTextArgument="Informe o código" CvType="Text" DesignTimeRectangle="1124, 289, 123, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Informe o código' check:innerText='Informe o código' /&gt;" Guid="472d5d45-b696-4ad8-a83d-73f14ad23ae8" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6dbb1e5a-955b-4499-b669-eef8aea700ed" ContentHash="CWC_G59h-ESuEoyxMwRgrA" CvTextArea="1184, 159, 321, 17" CvTextArgument="Você está se autenticando em PDPJ" CvType="Text" DesignTimeRectangle="1094, 157, 503, 23" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Você está se autenticando em  PDPJ' check:innerText='Você está se autenticando em PDPJ' /&gt;" Guid="ad225975-76aa-4a77-a074-225332fe2a28" InformativeScreenshot="0a2036da21be4d1a6e907d9499c10415.png" Reference="NkYqdf221EmIXN1TRDnl6w/BZhwUideA0uwhCpzF75gmw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="27, 152, 1037, 693" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='' aaname='' /&gt;" Guid="d21151a4-76bd-4695-8abb-d4e3dad448f2" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
+                      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1208,1499" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="4" RetryInterval="00:00:02">
+                        <ui:RetryScope.ActivityBody>
+                          <ActivityAction>
+                            <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="1166,1299" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence DisplayName="Consulta BNMP" sap:VirtualizedContainerService.HintSize="1132,1239" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="nPeca" />
+                                  <Variable x:TypeArguments="x:Boolean" Name="EleExiste" />
+                                  <Variable x:TypeArguments="x:Boolean" Name="existe" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="1098,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                <uix:NSelectItem DelayBefore="1" DisplayName="Select Item '2º JUIZADO DE VIOLÊNCIA…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1098,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="2º JUIZADO DE VIOLÊNCIA DOMÉSTICA" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="2">
+                                      <x:String>1º JUIZADO DE VIOLÊNCIA DOMÉSTICA</x:String>
+                                      <x:String>2º JUIZADO DE VIOLÊNCIA DOMÉSTICA</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="321064f6-24bc-4913-b14e-e3297d17a794" ContentHash="Wr7e0qZj1ka4A0atrpnDUw" CvElementArea="1570, 206, 336, 30" CvType="InputBox" DesignTimeRectangle="1572, 207, 332, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="32e4bdfe-d883-4624-af12-665a8b4df033" InformativeScreenshot="4d26d7aed2e46589445ff6527adb1a3d.png" Reference="NkYqdf221EmIXN1TRDnl6w/z7l4Cj4cuU2nWjVBkzCYig" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1098,845" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:01">
+                                  <ui:RetryScope.ActivityBody>
+                                    <ActivityAction>
+                                      <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="1056,647" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence DisplayName="Navegação inicío do cadastro" sap:VirtualizedContainerService.HintSize="1022,57" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Ver todas'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="632b1b9b-c58d-43d0-ade7-aaa045f55cb6" ContentHash="hdYtTqKr10SzxQ7hf9EknQ" CvElementArea="769, 479, 155, 39" CvTextArea="803, 491, 88, 17" CvTextArgument="+ Nova Peça" CvType="Button" DesignTimeRectangle="805, 489, 85, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' + Nova Peça ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='+ Nova Peça' /&gt;" Guid="5646d0ae-9c18-4bab-8a90-686ec0a72277" InformativeScreenshot="37f111bfad06f60c7982fe511b5b8d59.png" Reference="NkYqdf221EmIXN1TRDnl6w/OYEwed_ZREKr_viv03QSWQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="632b1b9b-c58d-43d0-ade7-aaa045f55cb6" CvElementArea="769, 479, 155, 39" CvTextArea="803, 491, 88, 17" CvTextArgument="+ Nova Peça" CvType="Button" DesignTimeRectangle="772, 481, 150, 35" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' + Nova Peça ' tag='BUTTON' type='button' class='mat-focus-indicator mat-raised-button mat-button-base mat-primary cdk-focused cdk-mouse-focused' check:innerText='+ Nova Peça' /&gt;" Guid="f81cb406-38e0-4fbc-b723-b996198dc0e6" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="46ba6ac9-afa1-4e69-9b51-32d64dae454a" ContentHash="8xU-tjiuXUGE9kBiAVBFKg" CvTextArea="1100, 673, 21, 13" CvTextArgument="OK" CvType="Text" DesignTimeRectangle="1102, 672, 18, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' OK ' class='mat-button-wrapper' parentid='mat-dialog-2' tag='SPAN' type='' check:innerText='OK' /&gt;" Guid="ea041acb-da50-4ec4-a167-4e4852b87b2a" InformativeScreenshot="6f629b4ad8d8e4d65e17ff79670f6f31.png" Reference="NkYqdf221EmIXN1TRDnl6w/zpo4QP0wcEONeny9h7gtTw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="46ba6ac9-afa1-4e69-9b51-32d64dae454a" CvTextArea="991, 672, 57, 14" CvTextArgument="Cancelar" CvType="Text" DesignTimeRectangle="992, 672, 55, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='mat-button-wrapper' parentid='mat-dialog-2' tag='SPAN' type='' aaname=' Cancelar ' check:innerText='Cancelar' /&gt;" Guid="beec8e9f-f763-4769-8aa0-259935b5acf9" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CPF'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,241" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[dicReus(&quot;CPF&quot;+intContadorReus.ToString) + &quot;[k(Enter)]&quot;]" Version="V4">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/buscar-pessoa" CVScreenId="fb655cb7-0750-4496-b94f-50098d1d164e" ContentHash="c05ONevza0WZDq2hlZSuKg" CvElementArea="361, 448, 738, 55" CvType="InputBox" DesignTimeRectangle="377, 451, 713, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-infix' parentid='cdk-step-content-0-0' tag='DIV' type='' aaname='' /&gt;" Guid="07cca5b5-72ce-4ae2-9e00-9bcfad13d650" InformativeScreenshot="670feedd83e3b70a9e5a4d58a90f5bcc.png" Reference="NkYqdf221EmIXN1TRDnl6w/vvelUpCim0mxucPKEC1C7w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="fb655cb7-0750-4496-b94f-50098d1d164e" CvElementArea="361, 448, 738, 55" CvType="InputBox" DesignTimeRectangle="377, 465, 30, 19" FuzzySelectorArgument="&lt;webctrl tag='MAT-LABEL' type='' class='ng-star-inserted' aaname='CPF' check:innerText='CPF' /&gt;" Guid="68240846-6c38-47ce-a9a2-bc9bd851f58b" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                        <Sequence DisplayName="Cadastra o réu caso não haja cadastro prévio" sap:VirtualizedContainerService.HintSize="1022,530" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NCheckState DisplayName="Check App State 'Não foi localizada nenh…'" sap:VirtualizedContainerService.HintSize="988,447" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                            <uix:NCheckState.IfExists>
+                                              <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="484,167" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Sequence DisplayName="1 - Dados pessoais" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cadastrar nova pessoa'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/buscar-pessoa" CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" ContentHash="5uVJyaomrUaI5Bm6cVY6KA" CvElementArea="1100, 589, 180, 41" CvTextArea="1118, 601, 144, 17" CvTextArgument="Cadastrar nova pessoa" CvType="Button" DesignTimeRectangle="1119, 601, 143, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Cadastrar nova pessoa' class='mat-button-wrapper' parentid='mat-dialog-4' tag='SPAN' type='' check:innerText='Cadastrar nova pessoa' /&gt;" Guid="8fe27070-7855-412b-baf2-a1a8d3ac295c" InformativeScreenshot="a9940700bdecbcdf5e7d24e309095ea2.png" Reference="NkYqdf221EmIXN1TRDnl6w/2hKwi-QT902sP4fyCscoaQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" CvElementArea="1100, 589, 180, 41" CvTextArea="1118, 601, 144, 17" CvTextArgument="Cadastrar nova pessoa" CvType="Button" DesignTimeRectangle="1103, 592, 175, 35" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Cadastrar nova pessoa' parentid='mat-dialog-4' tag='BUTTON' type='button' class='btn-confirmar mat-focus-indicator mat-raised-button mat-button-base' check:innerText='Cadastrar nova pessoa' /&gt;" Guid="6014207e-c521-45c4-af7e-cdda42964edb" SearchSteps="FuzzySelector, CV" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                    <uix:NClick.VerifyOptions>
+                                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                        <uix:VerifyExecutionOptions.Retry>
+                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                        </uix:VerifyExecutionOptions.Retry>
+                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                          <InArgument x:TypeArguments="x:Double" />
+                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                      </uix:VerifyExecutionOptions>
+                                                    </uix:NClick.VerifyOptions>
+                                                  </uix:NClick>
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CPF'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[dicReus(&quot;CPF&quot;+intContadorReus.ToString)]" Version="V4">
+                                                    <uix:NTypeInto.Target>
+                                                      <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="ed9171d3-2869-4757-bcf2-354cd7516362" ContentHash="WPFD6LQPXkav8MTSJWrLEg" CvElementArea="397, 434, 893, 50" CvType="InputBox" DesignTimeRectangle="410, 451, 868, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-9' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched' aaname='CPF' /&gt;" Guid="f18630b2-8415-4416-894d-479c90a73609" InformativeScreenshot="d0ca732ae589c36bee03326be594362d.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/pun9dpg4gk-x3fG4_IhRNA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target CVScreenId="ed9171d3-2869-4757-bcf2-354cd7516362" CvElementArea="397, 434, 893, 50" CvType="InputBox" DesignTimeRectangle="410, 432, 32, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-27' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-47 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='CPF' /&gt;" Guid="d1bdac1c-3baf-47b4-969a-fcce9f39f802" SearchSteps="FuzzySelector, CV" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NTypeInto.Target>
+                                                  </uix:NTypeInto>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Buscar CPF na base da R…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="ed9171d3-2869-4757-bcf2-354cd7516362" ContentHash="CBM3qxmIO0Kq7CtvRV-NiQ" CvElementArea="1306, 439, 254, 39" CvTextArea="1366, 450, 174, 13" CvTextArgument="Buscar CPF na base da RFB" CvType="Button" DesignTimeRectangle="1308, 441, 250, 35" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname='Buscar CPF na base da RFB' parentid='cdk-accordion-child-0' tag='SPAN' type='' class='btn-buscar-rfb ng-star-inserted' check:innerText='Buscar CPF na base da RFB' /&gt;" Guid="aec2b5f3-6eda-4810-8056-ba1ad9477206" InformativeScreenshot="431011f760aa174bcb21cb8abca27ebf.png" Reference="NkYqdf221EmIXN1TRDnl6w/qbD0N91r10aDA2ykbVEx3w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                                                    </uix:NClick.Target>
+                                                    <uix:NClick.VerifyOptions>
+                                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                        <uix:VerifyExecutionOptions.Retry>
+                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                        </uix:VerifyExecutionOptions.Retry>
+                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                          <InArgument x:TypeArguments="x:Double" />
+                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                      </uix:VerifyExecutionOptions>
+                                                    </uix:NClick.VerifyOptions>
+                                                  </uix:NClick>
+                                                  <Sequence DisplayName="Inclui o nome do pai se não houver" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NCheckState DisplayName="Check App State 'Pai'" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                      <uix:NCheckState.IfExists>
+                                                        <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </uix:NCheckState.IfExists>
+                                                      <uix:NCheckState.IfNotExists>
+                                                        <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="452,1033" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <If Condition="[dicReus(&quot;NPai&quot; &amp; intContadorReus.ToString) &lt;&gt; &quot;não informado&quot;]" DisplayName="Inclui o nome do pia" sap:VirtualizedContainerService.HintSize="418,971" sap2010:WorkflowViewState.IdRef="If_9">
+                                                            <If.Then>
+                                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,751" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <uix:NSelectItem DisplayName="Select Item '2 - Filiação'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Pai" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                                  <uix:NSelectItem.Items>
+                                                                    <scg:List x:TypeArguments="x:String" Capacity="2">
+                                                                      <x:String>Pai</x:String>
+                                                                      <x:String>Mãe</x:String>
+                                                                    </scg:List>
+                                                                  </uix:NSelectItem.Items>
+                                                                  <uix:NSelectItem.Target>
+                                                                    <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="YAXt7ZThbUm31P-71i1z1g" DesignTimeRectangle="386, 438, 203, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' parentid='cdk-accordion-child-1' tag='DIV' type='' aaname='' check:innerText='Pai&amp;#x9;&amp;#xA;Filiação' /&gt;" Guid="4397948d-e7f6-4682-8328-d777c9341d8f" InformativeScreenshot="76aa940eabe51d85167975c75d4c55a4.png" Reference="NkYqdf221EmIXN1TRDnl6w/haGN5gYh60-D8Q9Tb5GyyQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                      <uix:TargetAnchorable.Anchors>
+                                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                          <uix:Target DesignTimeRectangle="379, 264, 1406, 28" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-1' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='2 - Filiação' check:innerText='2 - Filiação' /&gt;" Guid="2ebc9a38-0d89-4eba-9ce3-29637a611590" SearchSteps="FuzzySelector" />
+                                                                        </scg:List>
+                                                                      </uix:TargetAnchorable.Anchors>
+                                                                    </uix:TargetAnchorable>
+                                                                  </uix:NSelectItem.Target>
+                                                                </uix:NSelectItem>
+                                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[dicReus(&quot;NPai&quot;+intContadorReus.ToString)]" Version="V4">
+                                                                  <uix:NTypeInto.Target>
+                                                                    <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="86QBXwdsD0CxyF4hpLbLfA" DesignTimeRectangle="645, 453, 883, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-10' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-valid cdk-text-field-autofill-monitored ng-dirty ng-touched' aaname='Nome' /&gt;" Guid="1b567f0e-274f-4198-9cee-8283a7ac7c60" InformativeScreenshot="1871c91bc15ecc5c4cab4e245e46b626.png" Reference="NkYqdf221EmIXN1TRDnl6w/90qgTR2tdUiEViQvAE6SXw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                      <uix:TargetAnchorable.Anchors>
+                                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                          <uix:Target DesignTimeRectangle="645, 456, 883, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-31' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-50 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='Nome' /&gt;" Guid="e0019a93-063a-4e8e-b68b-0ceec9d2532d" SearchSteps="FuzzySelector" />
+                                                                        </scg:List>
+                                                                      </uix:TargetAnchorable.Anchors>
+                                                                    </uix:TargetAnchorable>
+                                                                  </uix:NTypeInto.Target>
+                                                                  <uix:NTypeInto.VerifyOptions>
+                                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                        <InArgument x:TypeArguments="x:Double" />
+                                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                                  </uix:NTypeInto.VerifyOptions>
+                                                                </uix:NTypeInto>
+                                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Filiação não informada'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                                  <uix:NClick.Target>
+                                                                    <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="Ra74kCL3l0KLe43vG7Efng" DesignTimeRectangle="1557, 440, 38, 40" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-1' tag='I' type='' class='fa fa-plus' aaname='' /&gt;" Guid="d87ecb99-fabf-4a7d-95e1-d552bf5f3c47" InformativeScreenshot="fd32d5bc93ccd08b6de94982e92ebb63.png" Reference="NkYqdf221EmIXN1TRDnl6w/2zUmx4cNW0ylqVDSXmDzaw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                      <uix:TargetAnchorable.Anchors>
+                                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                          <uix:Target DesignTimeRectangle="1661, 445, 143, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-3' tag='SPAN' type='' aaname='Filiação não informada' check:innerText='Filiação não informada' /&gt;" Guid="c4636946-45aa-4b62-b490-94c16b558a9e" SearchSteps="FuzzySelector" />
+                                                                        </scg:List>
+                                                                      </uix:TargetAnchorable.Anchors>
+                                                                    </uix:TargetAnchorable>
+                                                                  </uix:NClick.Target>
+                                                                  <uix:NClick.VerifyOptions>
+                                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                      <uix:VerifyExecutionOptions.Retry>
+                                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                                      </uix:VerifyExecutionOptions.Retry>
+                                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                                        <InArgument x:TypeArguments="x:Double" />
+                                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                                    </uix:VerifyExecutionOptions>
+                                                                  </uix:NClick.VerifyOptions>
+                                                                </uix:NClick>
+                                                              </Sequence>
+                                                            </If.Then>
+                                                            <If.Else>
+                                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </Sequence>
+                                                            </If.Else>
+                                                          </If>
+                                                        </Sequence>
+                                                      </uix:NCheckState.IfNotExists>
+                                                      <uix:NCheckState.Target>
+                                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="bca1299a-7cf6-4beb-8d4d-6e3661f75914" ContentHash="teWT35x-iE-YyUMERoo3QQ" CvTextArea="403, 621, 19, 12" CvTextArgument="Pai" CvType="Text" DesignTimeRectangle="380, 604, 250, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='mat-cell cdk-column-filiacao mat-column-filiacao ng-star-inserted' aaname=' Pai ' check:innerText='Pai' /&gt;" Guid="88268696-43d1-415d-9af6-0e26c8120204" InformativeScreenshot="476844631184886ff0618f54bc23d3e8.png" Reference="NkYqdf221EmIXN1TRDnl6w/zTWirXAZpEmum2uinu0PYw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target CVScreenId="bca1299a-7cf6-4beb-8d4d-6e3661f75914" CvTextArea="402, 519, 82, 17" CvTextArgument="Tipo Filiação" CvType="Text" DesignTimeRectangle="380, 500, 250, 56" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='mat-header-cell cdk-column-filiacao mat-column-filiacao ng-star-inserted' aaname=' Tipo Filiação ' check:innerText='Tipo Filiação' /&gt;" Guid="c95cc647-0ee0-405b-858b-a8518c71c717" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NCheckState.Target>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </uix:NCheckState>
+                                                  </Sequence>
+                                                  <Sequence DisplayName="Naturalidade" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <If Condition="[dicReus(&quot;Naturalidade&quot; &amp; intContadorReus.ToString) &lt;&gt; &quot;não informado&quot;]" sap:VirtualizedContainerService.HintSize="470,1338" sap2010:WorkflowViewState.IdRef="If_10">
+                                                      <If.Then>
+                                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,1118" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                                          <Sequence.Variables>
+                                                            <Variable x:TypeArguments="x:String" Name="strCidade" />
+                                                            <Variable x:TypeArguments="x:String" Name="strEstado" />
+                                                          </Sequence.Variables>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[strCidade]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[dicReus("Naturalidade" &amp; intContadorReus.ToString).Split("/"c)(0).Trim()]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[strEstado]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[dicReus("Naturalidade" &amp; intContadorReus.ToString).Split("/"c)(1).Trim()]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                            <Assign.To>
+                                                              <OutArgument x:TypeArguments="x:String">[strEstado]</OutArgument>
+                                                            </Assign.To>
+                                                            <Assign.Value>
+                                                              <InArgument x:TypeArguments="x:String">[strEstado.Replace("RR", "RORAIMA")]</InArgument>
+                                                            </Assign.Value>
+                                                          </Assign>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '4 - Dados de Nascimento'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="k4BRPcWjvEeGKSUsfVVBSQ" DesignTimeRectangle="379, 638, 1406, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-3' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='4 - Dados de Nascimento' check:innerText='4 - Dados de Nascimento' /&gt;" Guid="e3fef95f-d57e-4907-9427-6a11eb228e02" InformativeScreenshot="fd1d53b9c04b30ad57cd2af17bccbe59.png" Reference="NkYqdf221EmIXN1TRDnl6w/fPfJ8UNjpUmVQ4Fqroah_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                    <uix:Target DesignTimeRectangle="355, 620, 1498, 64" FuzzySelectorArgument="&lt;webctrl id='mat-expansion-panel-header-3' tag='MAT-EXPANSION-PANEL-HEADER' type='' class='mat-expansion-panel-header mat-focus-indicator ng-tns-c52-30 ng-star-inserted mat-expanded' aaname='' check:innerText='4 - Dados de Nascimento' /&gt;" Guid="1c007689-7a18-4631-a1b0-b99e14fef436" SearchSteps="FuzzySelector" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Estado/Distrito'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="Simulate" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[strEstado]" Version="V4">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="PPQNGoycEEuIdAF_fftikQ" DesignTimeRectangle="1134, 634, 309, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-11' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger cdk-text-field-autofill-monitored' aaname='Estado/Distrito' /&gt;" Guid="c3a4de15-efc5-43bc-8c77-f659fe507ceb" InformativeScreenshot="37074f0b3a9a2989e64edfdc766a4fa5.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/wdY35EepmEm8vnUS8h0Ktg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="1134, 615, 85, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-33' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-51 ng-star-inserted' aaname='' check:innerText='Estado/Distrito' /&gt;" Guid="bbbfa428-f24a-49e6-9202-f37ae0a44212" SearchSteps="FuzzySelector" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Naturalidade'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,241" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[strCidade]" Version="V4">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="OUbwJuKEU0C_SyKL7zwDdw" DesignTimeRectangle="1504, 641, 309, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-12' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger cdk-text-field-autofill-monitored' aaname='Naturalidade' /&gt;" Guid="599a1fe1-6045-4459-af53-0651cb3bbbdd" InformativeScreenshot="3726e205b849d77d5c8b2f5861082f83.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/rpM-FtVle0ijab-itYEd8w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                    <uix:Target DesignTimeRectangle="1504, 622, 71, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-35' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-52 ng-star-inserted' aaname='' check:innerText='Naturalidade' /&gt;" Guid="2b0d15f1-e5eb-4bdd-a8a4-ccd463059738" SearchSteps="FuzzySelector" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                  </Sequence>
+                                                  <Sequence DisplayName="Coleta biométrica" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '6 - Dados Adicionais'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="RqZHXapF0E298bgsBsDy3g" DesignTimeRectangle="379, 811, 1406, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-5' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='6 - Dados Adicionais' check:innerText='6 - Dados Adicionais' /&gt;" Guid="080dbed8-6e43-42cc-ad46-dec86536f76e" InformativeScreenshot="ce068147b114b93ca8e383fc4262e7ed.png" Reference="NkYqdf221EmIXN1TRDnl6w/TK_w-lK-zUSdYLFQrS4OsQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target DesignTimeRectangle="355, 801, 1498, 48" FuzzySelectorArgument="&lt;webctrl id='mat-expansion-panel-header-5' tag='MAT-EXPANSION-PANEL-HEADER' type='' class='mat-expansion-panel-header mat-focus-indicator ng-tns-c52-40 ng-star-inserted' aaname='' check:innerText='6 - Dados Adicionais' /&gt;" Guid="257516de-fb24-4f6d-9517-0f1f2b943f59" SearchSteps="FuzzySelector" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                      <uix:NClick.VerifyOptions>
+                                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                          <uix:VerifyExecutionOptions.Retry>
+                                                            <InArgument x:TypeArguments="x:Boolean" />
+                                                          </uix:VerifyExecutionOptions.Retry>
+                                                          <uix:VerifyExecutionOptions.Timeout>
+                                                            <InArgument x:TypeArguments="x:Double" />
+                                                          </uix:VerifyExecutionOptions.Timeout>
+                                                        </uix:VerifyExecutionOptions>
+                                                      </uix:NClick.VerifyOptions>
+                                                    </uix:NClick>
+                                                    <uix:NSelectItem DisplayName="Select Item 'Biometria coletada e nã…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Biometria não coletada" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                      <uix:NSelectItem.Items>
+                                                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                                                          <x:String>Biometria coletada e não identificada</x:String>
+                                                          <x:String>Biometria não coletada</x:String>
+                                                          <x:String>Biometria identificada</x:String>
+                                                        </scg:List>
+                                                      </uix:NSelectItem.Items>
+                                                      <uix:NSelectItem.Target>
+                                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="iAaT-WVRoE63hRD5fp2tDA" DesignTimeRectangle="384, 777, 1440, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' type='' parentid='cdk-accordion-child-5' tag='DIV' aaname='' check:innerText='Biometria coletada e não identificada&amp;#x9;&amp;#xA;Houve Coleta Biométrica&amp;#xA;clear' /&gt;" Guid="095bc9fa-0e9a-4e43-8002-c5e50140f86d" InformativeScreenshot="e2e0a2954266bfb29d22fa8ae9c0b2cd.png" Reference="NkYqdf221EmIXN1TRDnl6w/jQ5UzGZajEmvWTUdP-eX2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target DesignTimeRectangle="969, 791, 231, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='mat-select-value-11' tag='SPAN' type='' class='mat-select-min-line ng-tns-c36-44 ng-star-inserted' aaname='Biometria coletada e não identificada' check:innerText='Biometria coletada e não identificada' /&gt;" Guid="e8847330-df93-4410-8929-96ea6f2b5797" SearchSteps="FuzzySelector" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NSelectItem.Target>
+                                                    </uix:NSelectItem>
+                                                  </Sequence>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Anterior'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="FzS4fQDzlkeHyClnKMzQIQ" DesignTimeRectangle="979, 942, 75, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Próximo' class='mat-button-wrapper' parentid='cdk-step-content-1-0' tag='SPAN' type='' check:innerText='Próximo' /&gt;" Guid="69d7df45-e83d-4b7d-a88f-35ce19ccc64d" InformativeScreenshot="4a071f75597fde8ab3792e0d18b505f4.png" Reference="NkYqdf221EmIXN1TRDnl6w/DAZVvPKME0uuZts_tXRX4g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="844, 942, 73, 17" FuzzySelectorArgument="&lt;webctrl aaname='Anterior ' class='mat-button-wrapper' parentid='cdk-step-content-1-0' tag='SPAN' type='' check:innerText='Anterior' /&gt;" Guid="85ca62e5-2b4d-48fe-b419-9864a311d56f" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                    <uix:NClick.VerifyOptions>
+                                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                        <uix:VerifyExecutionOptions.Retry>
+                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                        </uix:VerifyExecutionOptions.Retry>
+                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                          <InArgument x:TypeArguments="x:Double" />
+                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                      </uix:VerifyExecutionOptions>
+                                                    </uix:NClick.VerifyOptions>
+                                                  </uix:NClick>
+                                                </Sequence>
+                                                <Sequence DisplayName="2 - Endereço" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <If Condition="[dicReus(&quot;CEP&quot; &amp; intContadorReus.ToString) &lt;&gt; &quot;não informado&quot;]" DisplayName="Tenta o Por o CEP encontrado" sap:VirtualizedContainerService.HintSize="450,2262" sap2010:WorkflowViewState.IdRef="If_11">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <If.Then>
+                                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,551" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CEP'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[dicReus(&quot;CEP&quot; &amp; intContadorReus.ToString)]" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="wnlzH6tbZEypB1RR5PyHpg" DesignTimeRectangle="410, 533, 679, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-18' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched' aaname='CEP' /&gt;" Guid="d88b9523-abca-4e4a-911e-e82d6a99a602" InformativeScreenshot="f2a445b6a36b5623abc57c7d05b8e92b.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/3uL_GmEhzEaRUauTMOe4bg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target DesignTimeRectangle="410, 514, 24, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-67' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-96 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='CEP' /&gt;" Guid="2c5118f4-ed4f-4911-b06a-173c4aaa1682" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                        </uix:NTypeInto>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Número'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,241" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[dicReus(&quot;NumeroResidencia&quot; &amp; intContadorReus.ToString)]" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="ZVnpjVmV_E2eojkFPztevQ" DesignTimeRectangle="410, 647, 679, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-20' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='Número' /&gt;" Guid="e9a8bcf8-bc20-4057-b050-9efe5873ee0e" InformativeScreenshot="4f594dcf0ff5ac2b69ac575c81f386fe.png" Reference="NkYqdf221EmIXN1TRDnl6w/wBmrEPacn0anVrv9akV2bQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target DesignTimeRectangle="410, 649, 679, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-71' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-98 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:text='Número' /&gt;" Guid="9e81b84f-800e-495d-a494-115d0277dc70" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                        </uix:NTypeInto>
+                                                      </Sequence>
+                                                    </If.Then>
+                                                    <If.Else>
+                                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,1573" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CEP'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="FejE_gSCF06yaTKq7fBi-Q" DesignTimeRectangle="380, 533, 679, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-18' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-valid cdk-text-field-autofill-monitored ng-touched ng-dirty' aaname='CEP' /&gt;" Guid="04dcce7c-bd5a-4fc9-8efd-2e0e35013cd3" InformativeScreenshot="7e9a3f0b2df5b4acb6b5a0450dad4190.png" Reference="NkYqdf221EmIXN1TRDnl6w/zvekE5_-cUO7Is4LR2GsZA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target DesignTimeRectangle="380, 536, 679, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-67' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-96 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='CEP' /&gt;" Guid="52ad02f0-8c6c-4170-bd34-12d8d0a1831c" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                          <uix:NTypeInto.VerifyOptions>
+                                                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                <InArgument x:TypeArguments="x:Boolean" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                <InArgument x:TypeArguments="x:Double" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                            </uix:VerifyExecutionTypeIntoOptions>
+                                                          </uix:NTypeInto.VerifyOptions>
+                                                        </uix:NTypeInto>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Logradouro'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="YUGCyzxR8EGycbsVynuHmQ" DesignTimeRectangle="1119, 533, 679, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-19' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-valid cdk-text-field-autofill-monitored ng-dirty ng-touched' aaname='Logradouro' /&gt;" Guid="adb2b9cf-2e0f-4c8a-bfbf-9cb1c81e2e70" InformativeScreenshot="344090fa7e37ddc40dc5e93e1241d2f6.png" Reference="NkYqdf221EmIXN1TRDnl6w/gFGFWGZmjUWtvEvE6e4TFw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target DesignTimeRectangle="1119, 536, 679, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-69' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-97 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='Logradouro' /&gt;" Guid="d08c3a70-5d31-4427-bf88-499a9e0695cf" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                          <uix:NTypeInto.VerifyOptions>
+                                                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                <InArgument x:TypeArguments="x:Boolean" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                <InArgument x:TypeArguments="x:Double" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                            </uix:VerifyExecutionTypeIntoOptions>
+                                                          </uix:NTypeInto.VerifyOptions>
+                                                        </uix:NTypeInto>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Número'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="S4c0CzM3zUeRwGHh0IXaew" DesignTimeRectangle="380, 647, 679, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-20' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-valid cdk-text-field-autofill-monitored ng-dirty ng-touched' aaname='' /&gt;" Guid="5ee93891-d8ee-4ec6-ba44-c6afc431c02d" InformativeScreenshot="d12b1b326a4d434e403deb1cd9c7678c.png" Reference="NkYqdf221EmIXN1TRDnl6w/CM3XYasPPEKSO0_Z1oVd_w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target DesignTimeRectangle="380, 649, 679, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-71' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-98 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='Número' /&gt;" Guid="16a75fda-fcbc-4e56-ac9a-07ee5d84ea92" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                          <uix:NTypeInto.VerifyOptions>
+                                                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                <InArgument x:TypeArguments="x:Boolean" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                <InArgument x:TypeArguments="x:Double" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                            </uix:VerifyExecutionTypeIntoOptions>
+                                                          </uix:NTypeInto.VerifyOptions>
+                                                        </uix:NTypeInto>
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bairro'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                          <uix:NTypeInto.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="S27Pu2tNMEuYLAXbUt_WqQ" DesignTimeRectangle="380, 760, 528, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-22' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-valid cdk-text-field-autofill-monitored ng-touched ng-dirty' aaname='Bairro' /&gt;" Guid="9c80700a-aebf-4c43-83a5-39f2f45c8424" InformativeScreenshot="84b122aeea4acb6d620c220ec790c067.png" Reference="NkYqdf221EmIXN1TRDnl6w/bI4j82vhvkC1yQIoFf9ZgQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target DesignTimeRectangle="380, 763, 528, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-75' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-100 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='Bairro' /&gt;" Guid="a5ad9080-61ce-4ef6-9bc9-c4519460abcf" SearchSteps="FuzzySelector" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NTypeInto.Target>
+                                                          <uix:NTypeInto.VerifyOptions>
+                                                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                <InArgument x:TypeArguments="x:Boolean" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                <InArgument x:TypeArguments="x:Double" />
+                                                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                            </uix:VerifyExecutionTypeIntoOptions>
+                                                          </uix:NTypeInto.VerifyOptions>
+                                                        </uix:NTypeInto>
+                                                        <uix:NSelectItem DisplayName="Select Item 'AcreEstadoclear'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="Roraima" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                          <uix:NSelectItem.Items>
+                                                            <scg:List x:TypeArguments="x:String" Capacity="27">
+                                                              <x:String>Acre</x:String>
+                                                              <x:String>Alagoas</x:String>
+                                                              <x:String>Amazonas</x:String>
+                                                              <x:String>Amapá</x:String>
+                                                              <x:String>Bahia</x:String>
+                                                              <x:String>Ceará</x:String>
+                                                              <x:String>Distrito Federal</x:String>
+                                                              <x:String>Espírito Santo</x:String>
+                                                              <x:String>Goiás</x:String>
+                                                              <x:String>Maranhão</x:String>
+                                                              <x:String>Minas Gerais</x:String>
+                                                              <x:String>Mato Grosso do Sul</x:String>
+                                                              <x:String>Mato Grosso</x:String>
+                                                              <x:String>Pará</x:String>
+                                                              <x:String>Paraíba</x:String>
+                                                              <x:String>Pernambuco</x:String>
+                                                              <x:String>Piauí</x:String>
+                                                              <x:String>Paraná</x:String>
+                                                              <x:String>Rio de Janeiro</x:String>
+                                                              <x:String>Rio Grande do Norte</x:String>
+                                                              <x:String>Rondônia</x:String>
+                                                              <x:String>Roraima</x:String>
+                                                              <x:String>Rio Grande do Sul</x:String>
+                                                              <x:String>Santa Catarina</x:String>
+                                                              <x:String>Sergipe</x:String>
+                                                              <x:String>São Paulo</x:String>
+                                                              <x:String>Tocantins</x:String>
+                                                            </scg:List>
+                                                          </uix:NSelectItem.Items>
+                                                          <uix:NSelectItem.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="x-T9peueO0KcrJ0M6LerRw" DesignTimeRectangle="968, 545, 561, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' type='' parentid='cdk-accordion-child-6' tag='DIV' aaname='' check:innerText='Acre&amp;#x9;&amp;#xA;Estado&amp;#xA;clear' /&gt;" Guid="012dc69d-df17-4fc6-b66a-b001071c53d0" InformativeScreenshot="265055618f4ae8d40ee88f18bfa4ccc2.png" Reference="NkYqdf221EmIXN1TRDnl6w/otpIvS_CPUmXw5-cMcfyPA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                                                          </uix:NSelectItem.Target>
+                                                        </uix:NSelectItem>
+                                                        <uix:NSelectItem DisplayName="Select Item 'AcrelandiaCidadeclear'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="AcrelandiaCidadeclear" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                          <uix:NSelectItem.Items>
+                                                            <scg:List x:TypeArguments="x:String" Capacity="22">
+                                                              <x:String>Acrelandia</x:String>
+                                                              <x:String>Assis Brasil</x:String>
+                                                              <x:String>Brasiléia</x:String>
+                                                              <x:String>Bujari</x:String>
+                                                              <x:String>Capixaba</x:String>
+                                                              <x:String>Cruzeiro do Sul</x:String>
+                                                              <x:String>Epitaciolândia</x:String>
+                                                              <x:String>Feijó</x:String>
+                                                              <x:String>Jordão</x:String>
+                                                              <x:String>Mancio Lima</x:String>
+                                                              <x:String>Manoel Urbano</x:String>
+                                                              <x:String>Marechal Thaumaturgo</x:String>
+                                                              <x:String>Plácido de Castro</x:String>
+                                                              <x:String>Porto Acre</x:String>
+                                                              <x:String>Porto Walter</x:String>
+                                                              <x:String>Rio Branco</x:String>
+                                                              <x:String>Rodrigues Alves</x:String>
+                                                              <x:String>Santa Rosa do Purus</x:String>
+                                                              <x:String>Sena Madureira</x:String>
+                                                              <x:String>Senador Guiomard</x:String>
+                                                              <x:String>Tarauaca</x:String>
+                                                              <x:String>Xapuri</x:String>
+                                                            </scg:List>
+                                                          </uix:NSelectItem.Items>
+                                                          <uix:NSelectItem.Target>
+                                                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="3zz9YZNjukeCmURNJCgL2Q" DesignTimeRectangle="1545, 545, 224, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' type='' parentid='cdk-accordion-child-6' tag='DIV' aaname='' check:innerText='Acrelandia&amp;#x9;&amp;#xA;Cidade&amp;#xA;clear' /&gt;" Guid="06146990-4b76-478b-b4ec-d2269a9103ab" InformativeScreenshot="c53f7a571575a0b311ce3902b6b24886.png" Reference="NkYqdf221EmIXN1TRDnl6w/Rn6QTki8T0ie8r81UxVJ2Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                                                          </uix:NSelectItem.Target>
+                                                        </uix:NSelectItem>
+                                                      </Sequence>
+                                                    </If.Else>
+                                                  </If>
+                                                  <Sequence DisplayName="Coleta o endereço existente e escreve o telefone" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ações'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="XltVKR3-lUqULQP7MT8_5w" DesignTimeRectangle="1802, 506, 14, 12" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-6' tag='TABLE' /&gt;&lt;webctrl class='fas fa-star ng-star-inserted' type='' tag='I' aaname='' /&gt;" Guid="b36b1f8e-3966-4822-8381-0430514f7a07" InformativeScreenshot="7e1bd356785764fe584ca850a15dcc07.png" Reference="NkYqdf221EmIXN1TRDnl6w/lW3btNd740-aoTlpbDeqNg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target DesignTimeRectangle="1758, 432, 100, 56" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-6' tag='TABLE' /&gt;&lt;webctrl aaname='Ações' type='' tag='TH' class='mat-header-cell cdk-column-acoes mat-column-acoes ng-star-inserted' check:innerText='Ações' /&gt;" Guid="e8a88066-62dc-42c0-a21a-03490be26262" SearchSteps="FuzzySelector" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                      <uix:NClick.VerifyOptions>
+                                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                          <uix:VerifyExecutionOptions.Retry>
+                                                            <InArgument x:TypeArguments="x:Boolean" />
+                                                          </uix:VerifyExecutionOptions.Retry>
+                                                          <uix:VerifyExecutionOptions.Timeout>
+                                                            <InArgument x:TypeArguments="x:Double" />
+                                                          </uix:VerifyExecutionOptions.Timeout>
+                                                        </uix:VerifyExecutionOptions>
+                                                      </uix:NClick.VerifyOptions>
+                                                    </uix:NClick>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Abrir Telefone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="zstc0D11ZE2k0DWG0AHVdA" DesignTimeRectangle="394, 819, 1406, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-7' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='2 - Telefone e E-mail' check:innerText='2 - Telefone e E-mail' /&gt;" Guid="f31a54d9-60e8-4f8b-8835-8693bde945fc" InformativeScreenshot="3811b6a98d395f4f46f8988e57edae12.png" Reference="NkYqdf221EmIXN1TRDnl6w/sOLygTWisUGGySrcSQ5EcA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target DesignTimeRectangle="994, 942, 75, 17" FuzzySelectorArgument="&lt;webctrl aaname=' Próximo' class='mat-button-wrapper' parentid='cdk-step-content-1-1' tag='SPAN' type='' check:innerText='Próximo' /&gt;" Guid="80638aa8-e6e9-47e8-8d95-810fb1e9e9aa" SearchSteps="FuzzySelector" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                      <uix:NClick.VerifyOptions>
+                                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                          <uix:VerifyExecutionOptions.Retry>
+                                                            <InArgument x:TypeArguments="x:Boolean" />
+                                                          </uix:VerifyExecutionOptions.Retry>
+                                                          <uix:VerifyExecutionOptions.Timeout>
+                                                            <InArgument x:TypeArguments="x:Double" />
+                                                          </uix:VerifyExecutionOptions.Timeout>
+                                                        </uix:VerifyExecutionOptions>
+                                                      </uix:NClick.VerifyOptions>
+                                                    </uix:NClick>
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Número'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,243" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[dicReus(&quot;Telefone&quot;+intContadorReus.ToString)]" Version="V4">
+                                                      <uix:NTypeInto.Target>
+                                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="QxDuFF5rukaYpHRxIjvWcg" DesignTimeRectangle="923, 729, 870, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-13' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='Número' /&gt;" Guid="68781247-ab83-4155-806f-1bc5fa31005b" InformativeScreenshot="5e7cc61a06ea011ddaba4533139de58c.png" Reference="NkYqdf221EmIXN1TRDnl6w/0yLn9Pl86U2dCb4NDUfTOg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target DesignTimeRectangle="923, 732, 870, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-47' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-65 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='Número' /&gt;" Guid="9c69d035-126c-4306-9eaf-dd7a9fb7eeed" SearchSteps="FuzzySelector" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTypeInto.Target>
+                                                    </uix:NTypeInto>
+                                                  </Sequence>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Próximo(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" ContentHash="jvlJChepU0amhCxtZKKrJw" DesignTimeRectangle="994, 984, 75, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Próximo' class='mat-button-wrapper' parentid='cdk-step-content-1-1' tag='SPAN' type='' check:innerText='Próximo' /&gt;" Guid="6e2edbe3-6f8e-49d1-a500-5c2d55ae69f1" InformativeScreenshot="e385a6d6b5ec7605e325942e2e98288e.png" Reference="NkYqdf221EmIXN1TRDnl6w/0BZU3PnYr0CZWxlrIQ_esQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                                                    </uix:NClick.Target>
+                                                    <uix:NClick.VerifyOptions>
+                                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                        <uix:VerifyExecutionOptions.Retry>
+                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                        </uix:VerifyExecutionOptions.Retry>
+                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                          <InArgument x:TypeArguments="x:Double" />
+                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                      </uix:VerifyExecutionOptions>
+                                                    </uix:NClick.VerifyOptions>
+                                                  </uix:NClick>
+                                                </Sequence>
+                                              </Sequence>
+                                            </uix:NCheckState.IfExists>
+                                            <uix:NCheckState.IfNotExists>
+                                              <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </uix:NCheckState.IfNotExists>
+                                            <uix:NCheckState.Target>
+                                              <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/buscar-pessoa" CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" ContentHash="Q76mhvidmEmkmGUPeuhEGA" CvTextArea="656, 505, 212, 19" CvTextArgument="Pessoa não encontrada" CvType="Text" DesignTimeRectangle="658, 503, 209, 24" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-dialog-title-4' tag='B' type='' class='' aaname='Pessoa não encontrada' check:innerText='Pessoa não encontrada' /&gt;" Guid="97e61eb0-d8a6-48c6-9461-b8de10553f15" InformativeScreenshot="b7e9832292a625f7dc3bf2080068015e.png" Reference="NkYqdf221EmIXN1TRDnl6w/yzBoLg8nUk2cmQdMl4HUSg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" CvTextArea="657, 554, 621, 15" CvTextArgument="Não foi localizada nenhuma pessoa com OS dados informados cadastrada no BNMP." CvType="Text" DesignTimeRectangle="634, 551, 668, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-dialog-4' tag='DIV' type='' class='mat-dialog-content' aaname=' Não foi localizada nenhuma pessoa com os dados informados cadastrada no BNMP. ' check:innerText='Não foi localizada nenhuma pessoa com os dados informados cadastrada no BNMP.' /&gt;" Guid="4555abbe-687b-4d5c-b5bd-985ea466b275" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NCheckState.Target>
+                                          </uix:NCheckState>
+                                        </Sequence>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:RetryScope.ActivityBody>
+                                  <ui:RetryScope.Condition>
+                                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                                  </ui:RetryScope.Condition>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:RetryScope>
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:RetryScope.ActivityBody>
+                        <ui:RetryScope.Condition>
+                          <ActivityFunc x:TypeArguments="x:Boolean" />
+                        </ui:RetryScope.Condition>
+                      </ui:RetryScope>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Edge" ContentHash="Zflb8Mx2TEqxXNIIKNPEAg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAoNSURBVGhD5ZnbbxTXHcchSSuUQApJLCiXnTMzu67EQ6KqSqWSlzRKVBXUFjVczMUO2ICxsQHfYowNHuO7jVm89sw5s/baXisSEv+AI6SkylMkaCxVitSHouahGxykEImHRWZsvP2emTO7Y7z2Dr48VD3SRyAYe85nfr8z5/c7s+7/Z6RS64mmbSBaeHOwI5JHNH3botQtQvlCdpbceAO/fL24y/yhaS+R/eHN5CCu9bD7oL4R/5v9ZxYMTHyLaf5C6qO/lnpZCekxDdLJJkgH+wZMyq3gGtDAVdAEGkEDm1Tr6aT6KagB1eACqAQVoBycpfeUUl3fWtj7mrjbvBE8Fnk9VDDYGjqs3w0dNCZDHxuT+fv1e6G/6KXb/2S+Ki5bZPAnHg5vlsL0A3KThUkfuy9fp9Okh83K3eyZ3MFScjtoZSmlBWjgKmgCl0EDS0EgpdaBWlAFLoLzoIKmgudAGbXUUmOCT1Tcdd4IHDW2qEf0eOiwYUEgBYFU/seGFfyz3pz3vh2FRQZCJw0MydIAbSQR9i0ELBJmc3IfJtwLukGnEGjDZK8BLtAMuEAjgIDCBT4FXKAacIELoFIIlPsUKIDAIQgcEAL7lxLA5JVoNF8yosNk0HxEBtgc6WcpCKRsgeuAC3QBHgVXgEeBC1wBXIILXMJkuQQXqAFcQgjYUeACZRCo9CFwWAgcWEoAaSMN4ckzTN4wLQikEIFUWuAGuI706WXTEEgiCklEIYk0SkIgiSgkkUZJCCQRhSQkkhBIIo2SkEiq1eypeoHNedIot8BRCBwRAkijJQXsnDeRNiaePMXkdTCAyXOJm2yWhOn3iMIduYcNyt20TeowWuU2wTWggWZwBTQK6kGd0QqBNqWa3sFaeJKOAhco9ylQAAGkUf5BCPw1mwB/+iNDH0hD5rcQmEsLOFGwIPCVFI4Wb+8yA8FI5PWtveOvLaB2cX5V3L1JqTbqIfCTLeBEwZ/A0YwAopBdgL8qAzEzDAELAinCgGELWGSA3pIjw79dZ5o/E5cvY2BtVRsXlSr6yPM2stRzOQSOG/HQMQgcweR5Gh3KJoCnvz2O9/yIeV8axtOPCgFqziIKX9mTv337ZXH1MocQqBYCThotT+AABJzNzBlkVNsgxVgJmIZAyhbgUaDm9xKNFq/sybsDArVCgO8JLypwFJPnaYQ9IYvA6GZpbMgIjJizUsxMIY24wDPCone2m2ZAXLbCIQRqhICTRrkFCiFwHALHMHkeBbxSFwhsG4nkSWNsQho1n9kCThSmJdMcDH72WdZfbg/sGb55X3slWEerlFoIuJvaeWNGrjA+JxfDmxdcD+EdRYNvBovoeKgwhwAZ1bdJY+Y3IOUKIApJ0LZ1fDxrnfJWd2zTrk79XalL3yO1edA8NGYINND38DqN4HX62BZAFJQLdBZR+Fo+N/iRVN6/x+Z0BnJy4A/BT9hEqJDOIAqOAF6pwUPZBOJs0hYY8QhEWWtWATyhXdf1d0kv/YfcQ6fkLtAJ2kArnVJagAaugibQCBrYFDa1x9jUnqV3ZSeNptVK9gP2hCkUd1NqKTgDSsBJ+jB4gj6BQMoW4OuACxQsJTAKnCgsKSD16XtQ3E0tqI14cefWRs8Vd3Zt5BZ3GYFMbVQGSsFpcAoUgxOYfBEoxOR5GmFPWFwgLgScKOQW6PMIeGsjLuEWd7w2cou7S6hQ3eKORyHzNuK7siNwFpwBXKAEnMTkP+ECwJeAm0YxCAz7EMhS3C1VYqej4BVwa6NywAXcKHABRCHkRoGnEV6puQWcNMotcEMI9ABIoNGZRZPzIyKQUK7RBNZCAusggXWQwDpIKA3gEk1AIIEoJJBGCaRRAgIJCCQgkEAUEhBIIAoJ9RR9oBbTZPAEm/OkkU+BkRcQEGlEutiPpJ1qUou5T9LY3nk0OSAKe5U6D9Xg3HOUOsjF9BAEvsBinrWjwAWwJywtkEmjpDSSQ+AmBNwmB1GAQGJHl7mP/z+u4j3rigiUYSMrpuNYB1Z6MXOBo34ERnMLEC7g9AhCgCZ2drC9uIJPYMXD3omLjTjWQUYAm1puAU4ugX4I9HsEEAXSs8oCPAKnhID7NirC330JjEFgLLdAutVcS4ESTDqzJ6yiQAQCNzF5EQXszImdPasscBoCp54TOO5HIM4FzLa3YrFN9qKczyuBAfoeOrWMAKKwpgKZTc2vQPRpYIzdCYyyehIzL5IhYAqoWSUNsgj65ce84ZdFGpHrayBQCoHTHoET/gXm8OcTLOaf0Go+QnH3SIoCNPwSRdOvm4/JAHoGfmIhorCmApnayAoW+Ush76bm9ghup+Zt+B0BRIH0QaBvDQTOeAT4nuBbgOMREJ2at+F3jl0gwN9G5MYaCJQJgUxthD3Bv8CzQNycgYSF2siChIUoWBJjM0ij2bSAOPhaM4HS5QnMBuLsPl/IaPYnbIbBEJsIMPo5odGvkUbTnoOvtRXIlNiW4k+APcHT78Gi/SU/yPLCT/ACg+wjCPxABoUAoiCFIdC/egL824FaRm+hQp3xlNh+BXxsZAb2Aff4cQ0E1HJ9l1pufIkeYS4tYG9qxuWthZ55LUtAhwD1CCAK0s1VFqiI/hGd2r+8nRp6hGm1ZLBg98HbPxeXrVDAfhutusD6YGUkTznPhoMVeOK8U+MSZ+hc6Az9Ti6OvMOvcS7FWJZAFALMFXCiIPWvioDTB1w0KtULxkNxDO/2yzNIo9iOovib4lpnrEjA3dRWSYA/ebXGqFSqjH+7Db8tgCiEztIH8in9AL+/uNwZyxYwPQKIghRhDwL90UOBTmPLklyaz05t+A2pdkBW6s19Si0bhsDDeScWPApl9CneSGP5Z+kOMYvMWJHA/F05CYkv8DYaJ2EjTvpAD+gStINWIy5fAxpoBleMOJr+W3ID+5taT++j4bfSJxbuuREEsJjvKmXGh/yIUswiM5YtMAQBXlpwAScKc1I/m8WmZqG4s9AjWGh0LLSbltwFOkAbs5RW0AI0cAU0shnlEpuzv6d5PwpyCQgEK+k/1XJ2+O3aLHPhY8UC6TQSm5q9Kzslttvwp8+N2lnmoyA/N3I/CvJzI/5RcL7AU6TRXbWCHSYnRjeIuy8cyxVAWTGV/hjiLe5EbWQLuOdGXMDX8SMiUUdnIPFArqJjSqXx4aJP3h1cADXPPUzayoBmZYy1LCoQY7+DwH94cYcoWIiChSjwL5sWBPg3NQsltgWJhWnU/lwaNYHL+PcGOo1U+k6pozG5Rj+QX4UFi+5P3HXxkXdb30jiZilqn2YXSFwGv//N37N+nVm/fUTfhQq1JjCE601AgQ4GQD+1IWHQB3pBN+gUtINW0AKugibaLDcal7EGCuRq9s6OBrzn8ZDEvXwM/o3MNF/N0/WNXtbd1vh2nf2dnkq9xKPz/M/YaC8O/5K5W7PLg5Xu4v9LY926/wL8nfWIN+vsHwAAAABJRU5ErkJggg==" InformativeScreenshot="22ababf5f5fe272bb74e8960dfdb48f6.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw" Selector="&lt;html app='msedge.exe' url='http://bnmp.cnj.jus.br/' /&gt;" Url="http://bnmp.cnj.jus.br/" Version="V1" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Data Inicial de Distrib…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "1Wt-fDcu_kWOtdB4zsbxQw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/1Wt-fDcu_kWOtdB4zsbxQw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/7YIHdVP_O0Os4chMcihEPA",
+  "Created": "2025-03-18T01:18:32.9521145Z",
+  "Updated": "2025-03-18T01:18:32.9521145Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

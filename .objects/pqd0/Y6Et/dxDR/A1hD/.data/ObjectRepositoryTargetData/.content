@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dI3669XJJUil3HfBRbEg5g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="1192, 949, 104, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Finalizar Peça' class='texto-btn' parentid='cdk-step-content-2-3' tag='SPAN' type='' check:innerText='Finalizar Peça' /&gt;" Guid="d45474d6-16a5-4380-9665-f5e0571858e1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1176, 935, 166, 46" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='cdk-step-content-2-3' tag='BUTTON' type='submit' class='full-width btn-success mat-focus-indicator mat-stepper-next mat-raised-button mat-button-base' aaname='Finalizar Peça' check:innerText='Finalizar Peça' /&gt;" Guid="21e6d3db-2c1a-41f7-b9a1-26f6e977bdf5" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c9ab4f0ce18e72b1808ee834481348ff.png" xmlns="">0kCgo5c7C5UmTPUIhALTd6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

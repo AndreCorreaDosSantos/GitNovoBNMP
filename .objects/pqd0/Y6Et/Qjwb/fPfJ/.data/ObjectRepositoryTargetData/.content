@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="k4BRPcWjvEeGKSUsfVVBSQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="379, 638, 1406, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-3' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='4 - Dados de Nascimento' check:innerText='4 - Dados de Nascimento' /&gt;" Guid="e3fef95f-d57e-4907-9427-6a11eb228e02" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="355, 620, 1498, 64" FuzzySelectorArgument="&lt;webctrl id='mat-expansion-panel-header-3' tag='MAT-EXPANSION-PANEL-HEADER' type='' class='mat-expansion-panel-header mat-focus-indicator ng-tns-c52-30 ng-star-inserted mat-expanded' aaname='' check:innerText='4 - Dados de Nascimento' /&gt;" Guid="1c007689-7a18-4631-a1b0-b99e14fef436" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fd1d53b9c04b30ad57cd2af17bccbe59.png" xmlns="">0Xehq_xKIZ0moALlK3TR9hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

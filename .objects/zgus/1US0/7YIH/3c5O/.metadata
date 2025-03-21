@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Status Processual",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "3c5O_m-x7kOXxavGwa347Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/3c5O_m-x7kOXxavGwa347Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/7YIHdVP_O0Os4chMcihEPA",
+  "Created": "2025-03-11T15:50:04.2939984Z",
+  "Updated": "2025-03-11T15:50:04.2939984Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

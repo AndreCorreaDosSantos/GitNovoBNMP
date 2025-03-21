@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Telefone de Contato",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "9GSW7P3l-UiLaHS9rNwHOg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/9GSW7P3l-UiLaHS9rNwHOg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:22:41.1161248Z",
+  "Updated": "2025-03-19T14:22:41.1161248Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

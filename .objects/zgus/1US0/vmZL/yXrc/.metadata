@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Endereço",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "yXrc1ZQLV02i0SzkRW0lpQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/yXrc1ZQLV02i0SzkRW0lpQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/vmZLoPgAxUSLbarOBVu2ZQ",
+  "Created": "2025-02-25T14:26:49.5083269Z",
+  "Updated": "2025-02-25T14:26:49.5083269Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

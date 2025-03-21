@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1DcIUgwphki1zHdI_t8a7g" Reference="2-DZoQmemkuCTB89xYXpJA/6W3-y3H6rUaJzHJuMuJVSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" CvTextArea="1441, 214, 64, 16" CvTextArgument="Pesquisar" CvType="Text" DesignTimeRectangle="1432, 209, 170, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-5' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-star-inserted' aaname='Pesquisar' /&gt;" Guid="1640430a-68a8-4dff-9f78-1516a7bd2e28" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" CvTextArea="1441, 214, 64, 16" CvTextArgument="Pesquisar" CvType="Text" DesignTimeRectangle="1442, 206, 180, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-7' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-68 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='Pesquisar' /&gt;" Guid="14d0974e-c365-4667-9722-5036a6ca21da" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b04737994c3adff74374bdf1de1d0ffc.png" xmlns="">0zOAp2qfUuUaub69Q_66XQQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Projudi - Processo Eletrônico do Judiciá(3)",
+  "Type": "Screen",
+  "Id": "sS6_HgyMUUal4meaBROArQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/sS6_HgyMUUal4meaBROArQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/64IQDHLfVkOHdHn2Y9GyHQ",
+  "Created": "2025-03-10T16:58:33.3184562Z",
+  "Updated": "2025-03-10T16:58:33.3184562Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

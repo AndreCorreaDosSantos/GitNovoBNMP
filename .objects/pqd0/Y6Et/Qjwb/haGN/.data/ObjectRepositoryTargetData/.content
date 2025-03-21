@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YAXt7ZThbUm31P-71i1z1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="386, 438, 203, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' parentid='cdk-accordion-child-1' tag='DIV' type='' aaname='' check:innerText='Pai&amp;#x9;&amp;#xA;Filiação' /&gt;" Guid="4397948d-e7f6-4682-8328-d777c9341d8f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="379, 264, 1406, 28" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-1' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='2 - Filiação' check:innerText='2 - Filiação' /&gt;" Guid="2ebc9a38-0d89-4eba-9ce3-29637a611590" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="76aa940eabe51d85167975c75d4c55a4.png" xmlns="">0f82G6BHYg0KRkyZM3rGSjw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

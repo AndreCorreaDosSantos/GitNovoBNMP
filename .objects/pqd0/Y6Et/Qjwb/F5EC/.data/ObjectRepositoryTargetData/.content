@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3AcN_GAP-0qjTRgHJJj5gg" Reference="2-DZoQmemkuCTB89xYXpJA/yo5vGbAiQkSeKkcdSPkrMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" CvElementArea="1034, 210, 20, 19" CvType="CheckBox" DesignTimeRectangle="1036, 212, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-46' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="f7e5d5b7-4a0b-45be-95b9-fc85df5d4bed" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" CvTextArea="1059, 211, 31, 15" CvTextArgument="CPF" CvType="Text" DesignTimeRectangle="1060, 208, 30, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-46' tag='SPAN' type='' aaname='CPF' check:innerText='CPF' /&gt;" Guid="f8c6c501-aa6e-49a5-a61c-d9a8a9289cb7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="01e92037802c630c91c759f1c34bdadb.png" xmlns="">0xkigYn_bo0uA8UZC3OckTA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

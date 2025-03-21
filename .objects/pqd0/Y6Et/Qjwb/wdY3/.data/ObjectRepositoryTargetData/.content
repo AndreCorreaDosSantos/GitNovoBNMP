@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PPQNGoycEEuIdAF_fftikQ" Reference="NkYqdf221EmIXN1TRDnl6w/wdY35EepmEm8vnUS8h0Ktg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="1134, 634, 309, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-11' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger cdk-text-field-autofill-monitored' aaname='Estado/Distrito' /&gt;" Guid="c3a4de15-efc5-43bc-8c77-f659fe507ceb" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1134, 615, 85, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-33' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-51 ng-star-inserted' aaname='' check:innerText='Estado/Distrito' /&gt;" Guid="bbbfa428-f24a-49e6-9202-f37ae0a44212" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="37074f0b3a9a2989e64edfdc766a4fa5.png" xmlns="">0tcZ1x-G5ykyduQHZD1hiWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
