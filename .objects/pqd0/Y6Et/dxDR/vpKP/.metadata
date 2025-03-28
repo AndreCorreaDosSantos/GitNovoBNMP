@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Endereço no Brasil",
+  "Type": "Element",
+  "Id": "vpKPiPuwtkqBZR6f__0ZVw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/vpKPiPuwtkqBZR6f__0ZVw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-28T03:57:48.774568Z",
+  "Updated": "2025-03-28T03:57:48.774568Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

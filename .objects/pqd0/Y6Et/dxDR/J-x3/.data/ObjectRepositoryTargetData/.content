@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PE6uojDfcEqZNVEt9OKzDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 796, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-452' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="eff94441-8532-4da4-b7eb-4c71a1defdbe" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 792, 674, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-452' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio' /&gt;" Guid="d594a3ca-5589-41a2-a516-b80d138916e6" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="979a70e6c9cc2067a728d09c6299d2c1.png" xmlns="">0S2RlbREJC0K_3KRTkNCNcw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

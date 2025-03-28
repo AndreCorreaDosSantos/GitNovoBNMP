@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Limite mínimo, de afast…(5)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "nbO5256O50eSvuhfDvZHYQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/nbO5256O50eSvuhfDvZHYQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T15:24:46.1337409Z",
+  "Updated": "2025-03-19T15:24:46.1337409Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

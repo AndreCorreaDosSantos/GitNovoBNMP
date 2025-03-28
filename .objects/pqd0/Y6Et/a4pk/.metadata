@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge BNMP - Banco Nacional de Monitoramento d(1)",
+  "Type": "Screen",
+  "Id": "a4pkZxliW0m7EK2DJ7kshQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/a4pkZxliW0m7EK2DJ7kshQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Y6EtNXHMHUCKPtYRJdPhKw",
+  "Created": "2025-03-18T15:46:44.5336605Z",
+  "Updated": "2025-03-18T15:46:44.5336605Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

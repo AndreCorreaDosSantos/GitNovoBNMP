@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Ver todas",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "wvIlROndLEqJ0i3ayrA6VQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/wvIlROndLEqJ0i3ayrA6VQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T01:18:29.9737557Z",
+  "Updated": "2025-03-18T01:18:29.9737557Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

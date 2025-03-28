@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Rotas",
+  "Type": "Element",
+  "Id": "Hk8oYJ0GH0-a3S4tt9lEfg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Hk8oYJ0GH0-a3S4tt9lEfg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/sS6_HgyMUUal4meaBROArQ",
+  "Created": "2025-03-10T17:10:01.7840567Z",
+  "Updated": "2025-03-10T17:10:01.7840567Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

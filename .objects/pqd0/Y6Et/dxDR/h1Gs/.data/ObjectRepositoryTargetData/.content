@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4_p9u9j3W0eE7RsTyo62Ug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="395, 812, 1405, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-1' tag='MAT-PANEL-TITLE' type='' class='titulo mat-expansion-panel-header-title' aaname=' Medidas Aplicadas ao Agressor* ' check:innerText='Medidas Aplicadas ao Agressor*' /&gt;" Guid="b7e2beff-356e-45c6-a90e-48d59873e0c8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1825, 819, 10, 15" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-1' tag='I' type='' class='fas fa-angle-up' aaname='' /&gt;" Guid="65c006da-6b92-4d94-9194-c17d99e686b2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2f37b0b0004a48bd79c4fc1c4ecd76b7.png" xmlns="">0-xFjOrHrXkutyr1LmdCNWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="q13uC6TP00KkPlcAqHKreA" Reference="NkYqdf221EmIXN1TRDnl6w/A1hDB_q1K0CBkXIMimHWYQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" CVScreenId="4c725a5c-5de1-43d4-93b7-65ab4583294a" CvElementArea="769, 479, 155, 39" CvTextArea="803, 491, 88, 17" CvTextArgument="+ Nova Peça" CvType="Button" DesignTimeRectangle="805, 489, 85, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='mat-button-wrapper' tag='SPAN' type='' /&gt;" Guid="534dd2f8-446e-4aa7-af00-64756fbf00c2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4c725a5c-5de1-43d4-93b7-65ab4583294a" CvElementArea="769, 479, 155, 39" CvTextArea="803, 491, 88, 17" CvTextArgument="+ Nova Peça" CvType="Button" DesignTimeRectangle="772, 481, 150, 35" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' + Nova Peça ' tag='BUTTON' type='button' class='mat-focus-indicator mat-raised-button mat-button-base mat-primary' check:innerText='+ Nova Peça' /&gt;" Guid="9da74272-7908-4d54-94b4-dc5256874e94" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="db520d86249f98baa2aeea5ac7f9cc75.png" xmlns="">00sFkilaNNUuBgTm0BwN2Ig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

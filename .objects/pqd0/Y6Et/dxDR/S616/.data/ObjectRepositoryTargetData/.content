@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="STr5LG8JjEWr2uLfsYExgg" Reference="NkYqdf221EmIXN1TRDnl6w/S616Vpa5HEWmqOHnmanq9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" CVScreenId="2e4171ac-1851-4504-a2b8-37156ec4c0cf" CvElementArea="369, 686, 19, 19" CvType="CheckBox" DesignTimeRectangle="371, 688, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='mat-checkbox-245' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-245' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="d73cb87c-099e-441a-b606-a607753fd475" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2e4171ac-1851-4504-a2b8-37156ec4c0cf" CvTextArea="395, 687, 1017, 17" CvTextArgument="Prestação de caução provisória, mediante depósito judicial, por perdas e danos materiais decorrentes da prática de violência doméstica e familiar contra a ofendida" CvType="Text" DesignTimeRectangle="394, 687, 1018, 17" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-245' tag='SPAN' type='' aaname='Prestação de caução provisória, mediante depósito judicial, por perdas e danos materiais decorrentes da prática de violência doméstica e familiar contra a ofendida' check:innerText='Prestação de caução provisória, mediante depósito judicial, por perdas e danos materiais' /&gt;" Guid="33e409b2-e41f-4f1f-9317-01a172965111" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f3a06b2761ffc86dd485c6e2a3c4ca3e.png" xmlns="">0Z4flMBwR0EOQhxTBjma_Xg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

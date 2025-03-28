@@ -1,0 +1,13 @@
+﻿{
+  "Name": "2 - Telefone e E-mail",
+  "Type": "Element",
+  "Id": "6emPjEwXvEml-gO22x81_Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/6emPjEwXvEml-gO22x81_Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-28T14:37:39.8091471Z",
+  "Updated": "2025-03-28T14:37:39.8091471Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

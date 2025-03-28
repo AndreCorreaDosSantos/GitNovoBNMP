@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GyHQQdR2ykm3KVTUnCCeSQ" Reference="NkYqdf221EmIXN1TRDnl6w/pun9dpg4gk-x3fG4_IhRNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="5524ee92-5a77-4edd-8823-8519cffc6aaa" CvElementArea="396, 302, 895, 48" CvType="InputBox" DesignTimeRectangle="410, 318, 868, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mat-input-9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mat-input-9' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='CPF' /&gt;" Guid="c68af9ea-15f4-4d34-9527-9b24365a69eb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5524ee92-5a77-4edd-8823-8519cffc6aaa" CvElementArea="396, 302, 895, 48" CvType="InputBox" DesignTimeRectangle="410, 321, 868, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-27' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-42 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='CPF' /&gt;" Guid="b15d96c5-8336-408a-b2f7-0a5f28afb745" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="78b03158cb6424ef041327c40ad7cbd9.png" xmlns="">08ImQqFdyK0uSSbBfln7p0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

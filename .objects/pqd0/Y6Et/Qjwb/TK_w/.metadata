@@ -1,0 +1,13 @@
+﻿{
+  "Name": "6 - Dados Adicionais",
+  "Type": "Element",
+  "Id": "TK_w-lK-zUSdYLFQrS4OsQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/TK_w-lK-zUSdYLFQrS4OsQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T16:45:44.0960888Z",
+  "Updated": "2025-03-18T16:45:44.0960888Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

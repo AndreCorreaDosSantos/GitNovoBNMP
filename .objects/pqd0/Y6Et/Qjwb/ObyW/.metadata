@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Telefone de ContatoC",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "ObyWQXIF60GVBKJ89bDxFA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/ObyWQXIF60GVBKJ89bDxFA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-19T16:14:45.2497169Z",
+  "Updated": "2025-03-19T16:14:45.2497169Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

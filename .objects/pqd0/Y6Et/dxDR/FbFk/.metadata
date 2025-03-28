@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CONCLUIR",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FbFkZysuaE-61-Y_yuc3GA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/FbFkZysuaE-61-Y_yuc3GA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T15:35:13.9127692Z",
+  "Updated": "2025-03-19T15:35:13.9127692Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

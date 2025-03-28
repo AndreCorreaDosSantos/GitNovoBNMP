@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Wqdq-FmVnE2WbGkRlQtB-A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="de8dda24-fbf1-426d-9ec7-bc0cabfe0a45" CvElementArea="769, 479, 155, 39" CvTextArea="803, 491, 88, 17" CvTextArgument="+ Nova Peça" CvType="Button" DesignTimeRectangle="805, 489, 85, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' + Nova Peça ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='+ Nova Peça' /&gt;" Guid="fc82f720-687f-40a7-8b05-6fbc11859557" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="de8dda24-fbf1-426d-9ec7-bc0cabfe0a45" CvElementArea="769, 479, 155, 39" CvTextArea="803, 491, 88, 17" CvTextArgument="+ Nova Peça" CvType="Button" DesignTimeRectangle="772, 481, 150, 35" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' + Nova Peça ' tag='BUTTON' type='button' class='mat-focus-indicator mat-raised-button mat-button-base mat-primary cdk-focused cdk-keyboard-focused' check:innerText='+ Nova Peça' /&gt;" Guid="7b2f5848-2282-4eb4-8d3c-233921105e14" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="88c9ef86cbc65b1b100b549388f374a7.png" xmlns="">0pjeIrlnf1EeqGiFKT9MMMg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

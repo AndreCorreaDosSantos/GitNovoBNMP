@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="ReKQrpcz1EGi0LrHG_7RhA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" Selector="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" Url="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" />
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

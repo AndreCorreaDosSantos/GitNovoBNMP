@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="URA7HAHli0S26KO4NA5lMQ" Reference="NkYqdf221EmIXN1TRDnl6w/dOuwMT_DmkiHkK0OaMS_YA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" CVScreenId="f2b56ad7-2de1-413f-8ce4-33927ac4818c" CvElementArea="370, 783, 19, 18" CvType="CheckBox" DesignTimeRectangle="371, 784, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='mat-checkbox-299' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-299' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="fab42aef-8f17-4bc9-aa5d-a2aabe225ada" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f2b56ad7-2de1-413f-8ce4-33927ac4818c" CvElementArea="606, 899, 124, 42" CvTextArea="649, 912, 62, 13" CvTextArgument="Anterior" CvType="Button" DesignTimeRectangle="651, 911, 60, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='texto-btn-anterior' parentid='cdk-step-content-2-2' tag='SPAN' type='' aaname='Anterior' check:innerText='Anterior' /&gt;" Guid="9e082593-48b2-4b4c-afbf-4e90cf4b0bd9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e6f6748f8d5058375ff1e12e40841488.png" xmlns="">0TUPC7StCvkGyqJa-JktIKw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

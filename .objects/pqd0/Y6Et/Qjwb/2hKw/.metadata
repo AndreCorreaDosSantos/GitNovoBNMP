@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cadastrar nova pessoa",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "2hKwi-QT902sP4fyCscoaQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/2hKwi-QT902sP4fyCscoaQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T15:57:11.1702982Z",
+  "Updated": "2025-03-18T15:57:11.1702982Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

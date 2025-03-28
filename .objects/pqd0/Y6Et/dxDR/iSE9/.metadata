@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Logradouro",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "iSE92loKk0u7WQbM2ame-Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/iSE92loKk0u7WQbM2ame-Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:25:34.1939348Z",
+  "Updated": "2025-03-19T14:25:34.1939348Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

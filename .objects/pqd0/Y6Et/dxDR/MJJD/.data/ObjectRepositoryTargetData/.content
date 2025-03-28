@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ak6I4eT4PESJykBuzVFB0A" Reference="NkYqdf221EmIXN1TRDnl6w/MJJD-J_xWkCszheWVm78RQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" CVScreenId="16dd05bc-c828-4a0c-928d-5b4b104158b6" CvElementArea="389, 882, 345, 47" CvType="InputBox" DesignTimeRectangle="402, 898, 321, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mat-input-45' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mat-input-45' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored' aaname='Limite mínimo, de afastamento em metros*' /&gt;" Guid="342288ba-8684-46cc-b3ab-13e3c545fe7f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="16dd05bc-c828-4a0c-928d-5b4b104158b6" CvElementArea="389, 882, 345, 47" CvType="InputBox" DesignTimeRectangle="402, 879, 202, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-95' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-67 ng-star-inserted' aaname='' check:innerText='Limite mínimo, de afastamento em metros*' /&gt;" Guid="9f2803d5-9e51-4595-a308-7261c0b61117" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ae90852542458c84840ea257bf7d9a9c.png" xmlns="">0FEElWO8HkkKVr0Uvm5xH-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

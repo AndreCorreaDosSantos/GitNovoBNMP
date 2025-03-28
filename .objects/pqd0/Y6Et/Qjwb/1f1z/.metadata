@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Número da peça",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "1f1zTAJZFU2_gtjXDUfEqg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/1f1zTAJZFU2_gtjXDUfEqg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T01:18:30.5012596Z",
+  "Updated": "2025-03-18T01:18:30.5012596Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

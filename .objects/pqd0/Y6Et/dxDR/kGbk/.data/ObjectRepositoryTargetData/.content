@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FtZFE-kFd0KDZpU6D2JD7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" CVScreenId="b2652bd7-0cdd-493c-ab2f-89ac8017729b" CvElementArea="369, 828, 19, 19" CvType="CheckBox" DesignTimeRectangle="371, 829, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-38' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="5823cb4a-428a-40d9-87b9-013e616bbc60" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b2652bd7-0cdd-493c-ab2f-89ac8017729b" CvTextArea="395, 828, 940, 17" CvTextArgument="Proibição temporária para a celebração de atos e contratos de compra, venda e locação de propriedade em comum, salvo expressa autorização judicial" CvType="Text" DesignTimeRectangle="394, 828, 940, 17" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-38' tag='SPAN' type='' aaname='Proibição temporária para a celebração de atos e contratos de compra, venda e locação de propriedade em comum, salvo expressa autorização judicial' check:innerText='Proibição temporária para a celebração de atos e contratos de compra, venda e locação de' /&gt;" Guid="9fcb0d1b-f704-402b-a002-702b91985f33" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9fd4faf1b113648304ae41643fe351d7.png" xmlns="">0t_Qcs_MrikSt3jw3Qx1tgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

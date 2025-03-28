@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Filtro dec/sent",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "KbO8C8Zjk0unB9Azgi7__A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/KbO8C8Zjk0unB9Azgi7__A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/d42iPSDaN0qxLTfmVgnRoA",
+  "Created": "2025-03-18T01:03:32.024778Z",
+  "Updated": "2025-03-18T01:19:33.621646Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

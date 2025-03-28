@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Orgão logado",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "ad47Q4NGaEiy1-zjD3zt1Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/ad47Q4NGaEiy1-zjD3zt1Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-28T00:31:03.2078479Z",
+  "Updated": "2025-03-28T00:31:03.2078479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

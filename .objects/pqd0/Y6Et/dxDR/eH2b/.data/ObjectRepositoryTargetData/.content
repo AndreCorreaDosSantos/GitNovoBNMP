@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sH95Jt4X1USBvJrrXJ48oA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="394, 488, 676, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-option-813' tag='SPAN' type='' class='mat-option-text' aaname=' 1268 - Medidas Protetivas de Urgência (Lei Maria da Penha)  - Criminal ' check:innerText='1268 - Medidas Protetivas de Urgência (Lei Maria da Penha) - Criminal' /&gt;" Guid="e65fa2a3-cbba-4ff9-a2d3-8e2e3ef3462d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="391, 437, 682, 50" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-infix' type='' aaname='' parentid='cdk-step-content-2-0' tag='DIV' /&gt;" Guid="a9de9a25-7998-46a8-9fc7-4bca5577d2c3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="511640bc791f65ec649fd0eeab6fdee4.png" xmlns="">0nBnSIjJ4pUWR7ZfOSfU7MA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

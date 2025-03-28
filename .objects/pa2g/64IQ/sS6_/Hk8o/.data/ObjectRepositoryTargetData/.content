@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-p9WHPnaCEGUjZ6A0D1S_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="google.com.br/maps/place/Pra%C3%A7a+Conjunto+Cidad%C3%A3o/@2.7971749,-60.7770444,17z/data=!3m1!4b1!4m6!3m5!1s0x8d931b947a4bdf53:0xe52e876a3ee8f2e!8m2!3d2.7971749!4d-60.7744695!16s%2Fg%2F11sx0mqn2t" DesignTimeRectangle="84, 600, 408, 56" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='AeaXub' tag='DIV' type='' aaname='' check:innerText='&amp;#xA;R. CC 20, 192 - Jardim Equatorial, Boa Vista - RR, 69318-095' /&gt;" Guid="3213b231-e224-4475-b872-4fb48477045d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Praça Conjunto Cidadão - Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="dfe1e938-91eb-4986-8f7b-bc7df4d631a0" CvTextArea="125, 527, 34, 11" CvTextArgument="Rotas" CvType="Text" DesignTimeRectangle="106, 525, 73, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Rotas' tag='DIV' type='' class='R8c4Qb fontLabelMedium' check:innerText='Rotas' /&gt;" Guid="00c474ed-7bb6-4af5-8e4f-992a61a33b9c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="020bcdf8c05dc3d92205a5716839dccf.png" xmlns="">01sioQDC5NEmGXf-ntsAzeQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

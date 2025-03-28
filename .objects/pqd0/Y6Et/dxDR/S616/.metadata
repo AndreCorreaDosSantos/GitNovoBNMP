@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Acompanhamento psicosso…",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "S616Vpa5HEWmqOHnmanq9Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/S616Vpa5HEWmqOHnmanq9Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T15:30:14.4888197Z",
+  "Updated": "2025-03-19T15:30:14.4888197Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

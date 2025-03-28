@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CPF da Vítima(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "1ijCxjvb1kCDl8JyRJxDQg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/1ijCxjvb1kCDl8JyRJxDQg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-27T23:19:18.0211661Z",
+  "Updated": "2025-03-27T23:19:18.0211661Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

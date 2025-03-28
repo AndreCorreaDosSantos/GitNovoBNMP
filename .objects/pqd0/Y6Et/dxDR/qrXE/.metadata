@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Nº do Processo ",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "qrXEanbmSke-R1tcx9WfIw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/qrXEanbmSke-R1tcx9WfIw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-28T16:02:47.1152198Z",
+  "Updated": "2025-03-28T16:02:47.1152198Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

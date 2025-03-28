@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Inicio do período de cu…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "oJ-PUEORUUev0OGJc6Zm8Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/oJ-PUEORUUev0OGJc6Zm8Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-19T12:37:35.941778Z",
+  "Updated": "2025-03-19T12:37:35.941778Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

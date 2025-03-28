@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Buscar CPF na base da R…",
+  "Type": "Element",
+  "Id": "qbD0N91r10aDA2ykbVEx3w",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/qbD0N91r10aDA2ykbVEx3w",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-18T16:05:21.0498668Z",
+  "Updated": "2025-03-18T16:05:21.0498668Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

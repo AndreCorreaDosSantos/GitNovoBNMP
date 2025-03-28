@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Caixa de seleção 'PeçasIncluir Peça'",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "Nb-EmITw-kaa_BIOD7I9Gw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Nb-EmITw-kaa_BIOD7I9Gw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/nt3nqXrayECDZthBL9RJnQ",
+  "Created": "2025-03-28T00:27:44.5785857Z",
+  "Updated": "2025-03-28T00:27:44.5785857Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

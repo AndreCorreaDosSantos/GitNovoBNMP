@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Janeja que abre BNMP",
+  "Type": "Screen",
+  "Id": "QjwbtuBoekqTj7D3YXg3xw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Y6EtNXHMHUCKPtYRJdPhKw",
+  "Created": "2025-03-18T01:18:27.8715913Z",
+  "Updated": "2025-03-19T11:49:36.6580574Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

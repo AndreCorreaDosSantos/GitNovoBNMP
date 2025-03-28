@@ -1,0 +1,14 @@
+﻿{
+  "Name": "unchecked(5)",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "4q2NK8tHQEyqMY92gO22Cg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/4q2NK8tHQEyqMY92gO22Cg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:58:29.1873379Z",
+  "Updated": "2025-03-19T14:58:29.1873379Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

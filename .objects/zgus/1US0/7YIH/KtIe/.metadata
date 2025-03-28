@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Processos(1)",
+  "Type": "Element",
+  "Id": "KtIeVpxtHEaIBTdgxSDoqQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/KtIeVpxtHEaIBTdgxSDoqQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/7YIHdVP_O0Os4chMcihEPA",
+  "Created": "2025-03-18T01:18:32.5439889Z",
+  "Updated": "2025-03-18T01:18:32.5439889Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

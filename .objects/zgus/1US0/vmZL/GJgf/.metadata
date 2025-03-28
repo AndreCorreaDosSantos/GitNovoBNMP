@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Status ARQUIVADO Class…",
+  "Type": "Element",
+  "Id": "GJgfazT5kkCNRY5343jgPw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/GJgfazT5kkCNRY5343jgPw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/vmZLoPgAxUSLbarOBVu2ZQ",
+  "Created": "2025-02-25T15:12:43.9335357Z",
+  "Updated": "2025-02-25T15:12:43.9335357Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

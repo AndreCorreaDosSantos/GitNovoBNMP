@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2OGoofQ8vEipAa4NDv8zag" Reference="2-DZoQmemkuCTB89xYXpJA/-c7V5cZ-xEeTh1KR3hcUdQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="104, 635, 98, 33" DesignTimeScaleFactor="1" Guid="26bbc2aa-db15-4cb4-91ae-0c3e0113be08" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAhCAYAAAAiaX7MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVGhD7ZbPSwJREMf7Tzt06GBI1CWKIoIIo1OHCKJThBhRGhVReNB+UBIEBRp41vAm5mrYYXKe+9tpXTfXHWi+8Lk8Z5/yPjtvnAAJi4gIJlEipuYnhQgREUwQEUwQEUwQEUwQEUwQEUwQEUwQEUwQEUwQEUzwL6JQUcXuaOUkXS8MBWaAiCSUWqqumwrk+9bta9GzubOhfumwofYaJxhvEZkiaKqMfvvzNaeIVNmoNqJBKeN+Rv/InVrOUReEudU4HJ4eQPurrW/qnY9aFfaTe+Re4wTjWwS0ipCiahRW51QL+pp5nVkyTAnmXraOG4EIJLY4DdnbG6g36vrGdFDC8cURuce4wQycEb7eYPPQ7R2Sg6q+qrrJJtWUFYIIg6eXx187o6l9wtl1mnwuCjB/GtbGwfdfSc4oEUSHhCkCr6mH5zt9c2fSVycQX46Rz0UBxp8IF/YuwbfbEuExvMcsAlnfXuvKuNe/oJfL7DksJRbI+qjAeIvoHh75F9XWIeqaIQ/Zhd+ryb23fY8AbO0m4O39FTrfHXVdcZOAYAaKUHENas+h66jtrfcOlHr7wxeB4N/aRrMBsysz5OdRgwk8rKlOoWeFvUusAd6XEEVwBxNoRowOqkv+HxgRwQCMiGAAJmIRAiIimCAimCAimCAimCAimCAimAAA8AMFhSJSImxwXgAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="d537d390-ac99-497d-806d-3f6e9a91319d" CvTextArea="266, 646, 38, 13" CvTextArgument="Data" CvType="Text" DesignTimeRectangle="203, 635, 164, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl aaname='Data' type='' tag='TH' class='' check:innerText='Data' /&gt;" Guid="f77320fd-469f-4658-aaf7-011d13df46e0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5faa45e6fe86c9a8e5887fba0fa4ad58.png" xmlns="">0E9mrgg4sYkW-tcHx-8djdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ANDRE CORREA DOS SANTOS(2)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "5sGsZHhWSkG2sdz50cHyXg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/5sGsZHhWSkG2sdz50cHyXg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw",
+  "Created": "2025-03-28T13:16:49.1599095Z",
+  "Updated": "2025-03-28T13:16:49.1599095Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

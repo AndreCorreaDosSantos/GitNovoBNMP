@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v36dBKuPv0qVzcqi0qBXDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 829, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-38' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="eaec6373-5612-4258-bcba-2e5a6688ae43" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ff00c782-96eb-4116-9ff8-cbfa2eebeba6" CvElementArea="190, 213, 18, 20" CvTextArea="132, 214, 174, 18" CvTextArgument="Peças Incluir Peça" CvType="ArrowButton" DesignTimeRectangle="107, 211, 215, 24" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='' aaname='' check:innerText='Peças&amp;#xA;Incluir Peça' /&gt;" Guid="4ed93cb9-3a33-446c-97ab-00c261e4eb0d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ecbd35b994534e218f74e4afb565a93e.png" xmlns="">0Cg0SH9XQrkW3Jkblngfe4w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

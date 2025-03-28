@@ -1,0 +1,14 @@
+﻿{
+  "Name": "+ Nova Peça",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "926qODY8XUqT1s9XK_ztWw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/926qODY8XUqT1s9XK_ztWw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/a4pkZxliW0m7EK2DJ7kshQ",
+  "Created": "2025-03-18T15:47:44.6516318Z",
+  "Updated": "2025-03-18T15:47:44.6516318Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

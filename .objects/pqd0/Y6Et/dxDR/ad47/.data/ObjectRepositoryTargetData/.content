@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YslpLXcqvEmVNtsl0yIR_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" CVScreenId="af355c4b-cb1b-4cc2-976d-637cb47d133b" CvElementArea="369, 827, 21, 20" CvType="CheckBox" DesignTimeRectangle="371, 829, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-49' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="8ed24a49-5744-41f6-a6f2-869d2b9909c3" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="af355c4b-cb1b-4cc2-976d-637cb47d133b" CvTextArea="1463, 211, 104, 18" CvTextArgument="Orgão logado:" CvType="Text" DesignTimeRectangle="1464, 208, 103, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Orgão logado:' check:innerText='Orgão logado:' /&gt;" Guid="565bf386-a90b-4aee-89f3-78e178e9d519" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3769f27115e36599ebe116e9560ad6c5.png" xmlns="">06z3kV3qXH0iorvc71llv6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

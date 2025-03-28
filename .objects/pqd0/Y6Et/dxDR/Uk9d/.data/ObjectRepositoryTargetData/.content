@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5gY-vc5TLkah3DpE6jVtDg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 668, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-363' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="8e49af8e-79a7-4215-aec8-ba2c6ffb92f5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 664, 568, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-363' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Proibição de contato com os familiares da ofendida por qualquer meio de comunicação' /&gt;" Guid="57202a8e-b685-4b7d-bdfe-562506d5aabe" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="47fe9d96c17df8b81a0557b064a7186c.png" xmlns="">0M_2w-mp-eEyZsYEffOVJvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

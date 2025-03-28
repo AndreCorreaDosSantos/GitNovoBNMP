@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MdyYWR-H2E-QzfbtnprwIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/18191597570" CVScreenId="37104002-30c9-4f0f-9dbc-0c66a84665d7" CvElementArea="1139, 582, 709, 69" CvType="InputBox" DesignTimeRectangle="1154, 600, 682, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-5' tag='INPUT' type='date' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored' aaname='Data de Decisão*' /&gt;" Guid="b08dd064-b6d4-4628-bb17-22cef461a787" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="37104002-30c9-4f0f-9dbc-0c66a84665d7" CvElementArea="1139, 582, 709, 69" CvType="InputBox" DesignTimeRectangle="1154, 579, 92, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-9' tag='LABEL' type='' class='mat-form-field-label ng-tns-c59-12 ng-star-inserted' aaname='' check:innerText='Data de Decisão*' /&gt;" Guid="2b6cd7f1-90fe-4f28-aa16-428560eaab68" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="83a15869280e3bd5b508696452bb8b4d.png" xmlns="">0JXhQ8Bj92EmR2NZ5AXxfXA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

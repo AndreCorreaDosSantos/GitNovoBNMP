@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sim(2)",
+  "Type": "Element",
+  "Id": "9f6H8lltJESpbWvEQdeVuQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/9f6H8lltJESpbWvEQdeVuQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/dxDRh6wOkEOHcD38QtCqXA",
+  "Created": "2025-03-19T14:37:15.481663Z",
+  "Updated": "2025-03-19T14:37:15.481663Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

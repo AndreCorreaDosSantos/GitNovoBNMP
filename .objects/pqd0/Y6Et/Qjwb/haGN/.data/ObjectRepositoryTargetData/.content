@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d4424gWp7k23H_zmTZdpBA" Reference="NkYqdf221EmIXN1TRDnl6w/haGN5gYh60-D8Q9Tb5GyyQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="456198ac-0b83-4972-b539-af3909666825" CvElementArea="399, 837, 206, 49" CvType="InputBox" DesignTimeRectangle="412, 853, 162, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='mat-select-value-13' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mat-select-value-13' tag='SPAN' type='' class='mat-select-placeholder mat-select-min-line ng-tns-c34-44 ng-star-inserted' aaname='' /&gt;" Guid="93913668-9b83-4520-95f7-e0ffbeb5e7d9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="456198ac-0b83-4972-b539-af3909666825" CvTextArea="433, 753, 684, 14" CvTextArgument="Preenchimento do campo 'Mãe' é obrigatório quando a opção 'Filiação não informada' não estiver selecionada" CvType="Text" DesignTimeRectangle="433, 753, 684, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-1' tag='SPAN' type='' class='notification-text' aaname='Preenchimento do campo &amp;apos;Mãe&amp;apos; é obrigatório quando a opção &amp;apos;Filiação não informada&amp;apos; não estiver selecionada' check:innerText='Preenchimento do campo &amp;apos;Mãe&amp;apos; é obrigatório quando a opção &amp;apos;Filiação não informada&amp;apos; não estiver' /&gt;" Guid="9089ce64-cb22-4dac-8b18-caeec6392be6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f2e4838ad4964128da2af68ac82285e7.png" xmlns="">041lQ2DsU_0WyRSKyQhdTfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

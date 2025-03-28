@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Data de Decisão",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "HRKrWT3k_UaDRng2YSE3CA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/HRKrWT3k_UaDRng2YSE3CA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/quXFJKAG60-sIuhdAkr-uA",
+  "Created": "2025-03-17T23:02:57.7589185Z",
+  "Updated": "2025-03-17T23:02:57.7589185Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

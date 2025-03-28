@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Partes",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "IJ4QFFDLFUycM6wFs9996A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/IJ4QFFDLFUycM6wFs9996A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/d42iPSDaN0qxLTfmVgnRoA",
+  "Created": "2025-02-25T14:15:11.3466205Z",
+  "Updated": "2025-02-25T14:15:11.3466205Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

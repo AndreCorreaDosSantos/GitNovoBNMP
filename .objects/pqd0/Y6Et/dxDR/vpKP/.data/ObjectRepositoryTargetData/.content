@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sU2SkEG_JU6Y7BtoM6J0Tw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="ce8192d1-8162-4ab5-8730-3cf140bd684b" CvElementArea="369, 372, 25, 25" CvType="RadioButton" DesignTimeRectangle="372, 374, 20, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-2' tag='SPAN' type='' aaname='' /&gt;" Guid="87ae399e-0829-4118-8cac-13fdaea473ac" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ce8192d1-8162-4ab5-8730-3cf140bd684b" CvTextArea="399, 375, 117, 17" CvTextArgument="Endereço no Brasil" CvType="Text" DesignTimeRectangle="392, 374, 124, 20" FuzzySelectorArgument="&lt;webctrl class='mat-radio-label-content' parentid='mat-radio-2' tag='SPAN' type='' aaname='Endereço no Brasil' check:innerText='Endereço no Brasil' /&gt;" Guid="ef761d33-2be8-477d-b55d-5efa598802d7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f31dd9ca452c27514d6452fe259d6a3a.png" xmlns="">0-1gu1PgMDUeCl4RQQ7E0NA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

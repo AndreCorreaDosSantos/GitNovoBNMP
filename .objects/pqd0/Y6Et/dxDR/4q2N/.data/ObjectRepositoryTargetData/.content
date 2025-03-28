@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AiEMdcQV4UiT8O7Hze2LPQ" Reference="NkYqdf221EmIXN1TRDnl6w/4q2NK8tHQEyqMY92gO22Cg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 797, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-37' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="e8afbf73-fae5-4f39-a41a-b6796ad9f2a7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="371, 793, 468, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-37' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Restituição de bens indevidamente subtraídos pelo agressor à ofendida' /&gt;" Guid="68f23192-8d2a-4c07-a76e-89f57cad4a3a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1a413ecb18f7da26d7ec4d7c3d117ca9.png" xmlns="">0xHYcnrqgTUu852u2VWI_vA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
