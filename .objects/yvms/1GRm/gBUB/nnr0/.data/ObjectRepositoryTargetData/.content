@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gp6x2hmvCE2TO0YM1YMSJA" Reference="NkYqdf221EmIXN1TRDnl6w/nnr0Rf3uXkqzh9xS3xyb_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="371, 858, 435, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-333' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="f03908d0-0aeb-48d1-8c6c-7a937ffdfa39" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="395, 794, 381, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-297' tag='SPAN' type='' aaname='Restrição ou suspensão de visitas aos dependentes menores' check:innerText='Restrição ou suspensão de visitas aos dependentes menores' /&gt;" Guid="77a4f09d-43ce-41c7-be72-01e1cf981f86" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00a51d2892a5dc76a1f3c79e377ebf1d.png" xmlns="">0A2fgbzBfYkmbwBJribg5iQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="skszEC8TzUerMKywsCmP2g" Reference="NkYqdf221EmIXN1TRDnl6w/wdY35EepmEm8vnUS8h0Ktg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="9e571edb-ece0-435c-8f2d-be93ac9da60a" CvElementArea="1136, 760, 335, 49" CvType="InputBox" DesignTimeRectangle="1149, 777, 309, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-11' tag='INPUT' type='text' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger cdk-text-field-autofill-monitored' aaname='Estado/Distrito' /&gt;" Guid="47a86d9e-e0e2-49af-a80e-86f1dea778fc" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9e571edb-ece0-435c-8f2d-be93ac9da60a" CvElementArea="1136, 760, 335, 49" CvType="InputBox" DesignTimeRectangle="1149, 780, 309, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-33' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-46 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='Estado/Distrito' /&gt;" Guid="7c05cc0c-272b-418f-80a2-9a1c8daf894a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="87d5f528f56239ac655d016a9652c673.png" xmlns="">0KyCDc2sKJUSb6Xhp1pucaw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

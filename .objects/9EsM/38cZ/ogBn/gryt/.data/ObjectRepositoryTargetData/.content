@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Srl2OLJdO06iwveanpff5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="c67ae13a-70f1-4e24-ae3e-d5542c71113a" CvElementArea="757, 584, 422, 33" CvTextArea="947, 594, 43, 13" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="758, 586, 420, 31" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='kc-login' tag='INPUT' type='submit' class='pf-c-button pf-m-primary pf-m-block btn-lg' aaname='Entrar' check:text='Entrar' /&gt;" Guid="c2a67e2a-b99c-4b4a-bddf-9d9c01fea05c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4921196f12fbddd81f3dc4e0df522006.png" xmlns="">0-H7Q48GQGU-HkuDDe-UWQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

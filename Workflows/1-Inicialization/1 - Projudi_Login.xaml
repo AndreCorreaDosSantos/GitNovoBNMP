@@ -1,0 +1,275 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Projudi_Login" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:ut="clr-namespace:UiPathTeam.TwoStepAuthentication;assembly=UiPathTeam.TwoStepAuthentication" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_secstrProjudiURL" Type="InArgument(x:String)" />
+    <x:Property Name="in_strProjudiCredenciais" Type="InArgument(x:String)" />
+    <x:Property Name="in_strGAutenticatorKey" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Projudi_Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPathTeam.TwoStepAuthentication</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPathTeam.TwoStepAuthentication</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Projudi_Login" sap:VirtualizedContainerService.HintSize="1224,2744" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="1056,2721" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Iniciando o Login no Projudi&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Projudi - Processo Eletrônico do Judiciá" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,2301" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="981ccc20-b760-4017-b37c-9312a360e6ce" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="988,2052" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="strCPF" />
+                <Variable x:TypeArguments="ss:SecureString" Name="strsecSenha" />
+                <Variable x:TypeArguments="x:String" Name="strGtoken" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="CredencialProjudiAndre" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strsecSenha]" Username="[strCPF]" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Acesso via SSO'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" Timeout="60" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="6cd3fe18-004e-4010-9c05-da55daac6c16" ContentHash="cR6Iu7hcDkaBEbtRIN5GOw" CvTextArea="311, 254, 129, 15" CvType="AnyWordGroup" DesignTimeRectangle="279, 253, 360, 25" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl class='tipoAcesso' tag='SPAN' type='' /&gt;" Guid="aff22771-e25e-4abc-a671-cff4a71b49c2" InformativeScreenshot="4f663017d5dd4c5ecdabd17c16e942da.png" Reference="NkYqdf221EmIXN1TRDnl6w/QfX8DIUS6keeKNmBFtuNqA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6cd3fe18-004e-4010-9c05-da55daac6c16" CvElementArea="272, 154, 259, 29" CvType="InputBox" DesignTimeRectangle="269, 154, 261, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='H3' type='' class='' aaname='Acesso ao Sistema' check:innerText='Acesso ao Sistema' /&gt;" Guid="def54819-3190-4f5b-b92b-f4e37cd1c442" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Selecione o Perfil de U…'" sap:VirtualizedContainerService.HintSize="954,1626" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" Timeout="5" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Já estou logado - Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Tela de pós-login identificada. O sistema já está credenciado, portanto não há a necessidade de logar novamente.&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,1384" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CPF (Apenas números)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" Text="[strCPF]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="lIi8IxlIokSWteWmOFJzFw" DesignTimeRectangle="631, 676, 657, 56" DesignTimeScaleFactor="1.5625" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='username' tag='INPUT' /&gt;" Guid="593c797a-8a60-485f-81f5-734e632e9da7" ImageBase64="" InformativeScreenshot="787bcc4acd8a2d2898535b2f3cdc681b.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/gJOTsfbuf0C3NKpQGY-kvQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="631, 644, 198, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='pf-c-form__label pf-c-form__label-text' aaname='CPF (Apenas números)' check:innerText='CPF (Apenas números)' /&gt;" Guid="9a3a45da-9174-444b-800a-dbfecdc44903" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" SecureText="[strsecSenha]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="2Nu9rDRdc0m3RbmUXOagjA" DesignTimeRectangle="631, 786, 657, 57" DesignTimeScaleFactor="1.5625" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="4bcf5d45-607c-4e0d-94c4-fda6b530e9cf" ImageBase64="" InformativeScreenshot="baf91ca0eddecd21f12395318fbd2dfe.png" Reference="NkYqdf221EmIXN1TRDnl6w/dDPpkGPbb0CzHNChT1iq4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="631, 755, 55, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Senha' tag='LABEL' type='' class='pf-c-form__label pf-c-form__label-text' check:innerText='Senha' /&gt;" Guid="8154c802-d0dc-4eaf-930a-ea6252d844ca" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="G4AHgK4Fu0unxSZjEJtosg" DesignTimeRectangle="631, 944, 657, 48" DesignTimeScaleFactor="1.5625" ElementType="Button" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='kc-login' tag='INPUT' /&gt;" Guid="977f878b-a49d-4311-a45b-ad83a44c3869" ImageBase64="" InformativeScreenshot="9c74b63b937dedb6b4aa0070591d4f1f.png" Reference="NkYqdf221EmIXN1TRDnl6w/DqK5Mo1YIk-x2oHbMtCYXg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Botão 'Botão 'Entrar''" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="c67ae13a-70f1-4e24-ae3e-d5542c71113a" CvElementArea="757, 584, 422, 33" CvTextArea="947, 594, 43, 13" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="758, 586, 420, 31" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='kc-login' tag='INPUT' type='submit' class='pf-c-button pf-m-primary pf-m-block btn-lg' aaname='Entrar' check:text='Entrar' /&gt;" Guid="c2a67e2a-b99c-4b4a-bddf-9d9c01fea05c" InformativeScreenshot="4921196f12fbddd81f3dc4e0df522006.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <ut:GetGoogleToken DisplayName="Get Google Token" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GetGoogleToken_1" SecretKey="[in_strGAutenticatorKey]" Token="[strGtoken]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Código autenticador'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" Text="[strGtoken]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="F2Gw6naQ10SpfUZ8u-HY0w" DesignTimeRectangle="641, 589, 656, 57" DesignTimeScaleFactor="1.5625" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='otp' tag='INPUT' /&gt;" Guid="4063738b-c835-40e0-bb87-efc32420adeb" ImageBase64="" InformativeScreenshot="4eae544c867099d750c59dda3a19c2ec.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/iIqFaxKcsUSjJgtpkIPEyQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="641, 558, 177, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl parentid='kc-otp-login-form' tag='LABEL' type='' class='pf-c-form__label pf-c-form__label-text' aaname='Código de uso único' check:innerText='Código de uso único' /&gt;" Guid="dec67ea5-c287-4d7e-9f97-43a6bae07d5a" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ok'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="981ccc20-b760-4017-b37c-9312a360e6ce" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="F-B2Tbbu7UKptCIzn4fvKg" DesignTimeRectangle="631, 944, 657, 48" DesignTimeScaleFactor="1.5625" ElementType="Button" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='kc-login' tag='INPUT' /&gt;" Guid="977f878b-a49d-4311-a45b-ad83a44c3869" ImageBase64="" InformativeScreenshot="9c74b63b937dedb6b4aa0070591d4f1f.png" Reference="NkYqdf221EmIXN1TRDnl6w/F_DpmnjXM0epwsyVaybKNw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="e7ff6459-cfc9-418c-9c81-783562c50996" ContentHash="eZk1cy0UkkWjQQqiR0RtcA" DesignTimeRectangle="409, 211, 1118, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Selecione o Perfil de Usuário do Projudi:' /&gt;" Guid="5d0517f4-d9cb-4192-aef1-220253463a34" ImageBase64="" InformativeScreenshot="9527c110f5ba7b62a621077b34ec41c1.png" Reference="NkYqdf221EmIXN1TRDnl6w/2PgU5jWPRUKCxsqTD9mfzA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="Q06Hqq5NW0eM4GzegLA2PA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALWSURBVDhPPZPbU1JRFMbPX9h7D830VC9Nl+k25ZRmt5kuFsSkQyZJ5S0xhLykBCkkKEgKIxmZZhlpiBGeAxzO5dfsTfWwZq/51re+vdea/Sk0GqCqoBtgglaugQW6DqYNahVsG4nJMGmChoHoVeyqKhMEyW7WCyWNOlDUoAYy3yk3ZO0fz67XwdBRVKshCWXTRAX2gEsuN47BIIfOtnLwVAvHb3bQ1vmYz2WVH1X9v6gOKEXL4re41YbvNqwbcHs4SK4GH3QoAKm9Gn2xFCuVKmuaTgmaPY06irjxTS7P0as3Oe3sxBkMcaGnn8veEU51PuPAmSsccz6mzTvMjX4/F7uecKT9BjP5dSkkBeY2CnT0BfCnVnmRyHFneJqTDi+uyQQ9kQz3R2dp945yxuHhYSDM4ZZrxPLf5bhKBXgZSXOy1cnE/GfC2W0c/WHaHvqY/1rHF/2EZyyF2x/HN/uBzX040XafQGSJbQ0UsZBXkSytt3spVJqzdQ3M4PSGKJpQBmayRdxDUaYXNuWiz7V3MTyRlMtU9m0YCMbpcPtlsWSC0/taNojmkgXzHysE3uYZnHxPSYfugTAuTxDt3wjPxuK4nk/Ipeza0OOP0T06R8GAIjCe/CKxodCSFPUG33HvSUC+Vlmrgje8QCCdZ8OCjzVwT0bpj2XYER8IiG9V8CVzDCWyfLHBMx3HOTLFDyEgCE7/JOe7PFxw9/IoFOXBq2mexpLkDaTo4p7GwPwSx+66aOl+Kk/HywkprmwBo4vLTOXyjC2vEN34ij/1npGFRRZ3dpnKrhL/VmB2fZN7L0a41TfE9d7n9M3OyfGUX8BYPEnnoE9GKL1EIr9GNLNCJL3M+LuEzFd/7pLb/klma5tQOsN4IsV6WUWpNaBuwN4vFcsGywRbuO6vaUQITBpNGNAAvQH7VUuaS8Fo2rQmbCwQ4RARQkhrQM1EckRUbUzNbPJEXYc/LnqAdgCM0nwAAAAASUVORK5CYII=" InformativeScreenshot="2751afcc5adf5ba5ded1e865dfb0cb0f.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/ogBnN5eQVEKvkp_4CeIXXw" Selector="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Url="https://projudi.tjrr.jus.br/projudi/" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Login no Projudi Finalizado&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

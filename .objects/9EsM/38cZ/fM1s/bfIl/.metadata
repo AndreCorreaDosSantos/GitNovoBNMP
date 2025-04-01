@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Juízo",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "bfIldKiHoUacYgC38j3RDQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/bfIldKiHoUacYgC38j3RDQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg",
+  "Created": "2025-03-30T18:51:46.3441606Z",
+  "Updated": "2025-03-30T18:51:46.3441606Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

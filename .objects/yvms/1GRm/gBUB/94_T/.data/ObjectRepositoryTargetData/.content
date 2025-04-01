@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x7ntI1eOuE25gU7AxOmq1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="4f6a9dc9-9580-4027-bc61-1c17fd99cc2e" CvElementArea="389, 753, 345, 46" CvType="InputBox" DesignTimeRectangle="402, 769, 284, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-89' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored' aaname='Limite mínimo, de afastamento em metros*' /&gt;" Guid="23bd6738-8b83-4a09-a088-09c526f4cae8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4f6a9dc9-9580-4027-bc61-1c17fd99cc2e" CvTextArea="394, 693, 515, 16" CvTextArgument="Afastamento, pelo policial, do lar, domicílio ou local de convivência com a ofendida" CvType="Text" DesignTimeRectangle="395, 690, 514, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-303' tag='SPAN' type='' aaname='Afastamento, pelo policial, do lar, domicílio ou local de convivência com a ofendida' check:innerText='Afastamento, pelo policial, do lar, domicílio ou local de convivência com a ofendida' /&gt;" Guid="d4ef9136-fbe6-46cd-8a78-f88b41c7a308" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="138af1b8c91f3d15a0ccf5cc28552d58.png" xmlns="">09HvaxRb_B0uqyTNOXSv4Xg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

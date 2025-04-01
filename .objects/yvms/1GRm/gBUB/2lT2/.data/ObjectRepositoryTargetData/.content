@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f6DN4sM4OU6fvtI8y0oqVg" Reference="NkYqdf221EmIXN1TRDnl6w/z7l4Cj4cuU2nWjVBkzCYig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" CVScreenId="4c725a5c-5de1-43d4-93b7-65ab4583294a" CvElementArea="1569, 161, 336, 31" CvType="InputBox" DesignTimeRectangle="1573, 163, 330, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='textbox' tag='SPAN' type='' class='select2-selection__rendered' /&gt;" Guid="e169846d-f6b7-4ef8-9cef-060357207c1a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="4c725a5c-5de1-43d4-93b7-65ab4583294a" CvTextArea="1463, 166, 104, 18" CvTextArgument="Orgão logado:" CvType="Text" DesignTimeRectangle="1464, 163, 103, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Orgão logado:' check:innerText='Orgão logado:' /&gt;" Guid="5a5b5053-b938-491b-83a0-18d174e2a4ed" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f4da218cbd345dfefde2610668293fe6.png" xmlns="">0vmfovkgw00Or0Qf04TjxmQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

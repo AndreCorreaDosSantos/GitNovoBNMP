@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fLhObjWbaU-XXfDpPwIz2w" Reference="NkYqdf221EmIXN1TRDnl6w/lh7NhvWewUKVvHw7NB37kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" CVScreenId="10ad2c55-bf69-4fb6-8f31-9b2aa02a3f26" CvElementArea="350, 492, 19, 18" CvType="CheckBox" DesignTimeRectangle="352, 493, 16, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='mat-option-63' tag='MAT-PSEUDO-CHECKBOX' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mat-option-63' tag='MAT-PSEUDO-CHECKBOX' type='' class='mat-option-pseudo-checkbox mat-pseudo-checkbox ng-star-inserted' aaname='' /&gt;" Guid="c33087a1-636e-4635-8aa0-3aba9c8505d9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="10ad2c55-bf69-4fb6-8f31-9b2aa02a3f26" CvTextArea="375, 492, 233, 18" CvTextArgument="Medidas Protetivas de Urgência" CvType="Text" DesignTimeRectangle="376, 477, 581, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-option-63' tag='SPAN' type='' class='mat-option-text' aaname=' Medidas Protetivas de Urgência ' check:innerText='Medidas Protetivas de Urgência' /&gt;" Guid="891006dc-63da-4c24-b0e3-467e5c7bb410" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3f70a535ec31610915771b9469a28282.png" xmlns="">0PHTZ4mqK_kWPU0V5jZZzEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

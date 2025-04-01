@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Aguardando Assinatura",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "riVsNoRoBkGaTllnYD3BoA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/riVsNoRoBkGaTllnYD3BoA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T22:59:50.417356Z",
+  "Updated": "2025-03-31T22:59:50.417356Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

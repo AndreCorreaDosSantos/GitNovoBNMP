@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Cl8HHa4LZkO6o-INzoSr2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" DesignTimeRectangle="168, 660, 1024, 24" DesignTimeScaleFactor="1" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LI' class='selected' /&gt;" Guid="b0a82406-ad54-43ff-8bb1-8b907d421efa" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='INFORMAÇÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="34, 642, 124, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Tipo de Documento:' check:innerText='Tipo de Documento:' /&gt;" Guid="89a94b26-a057-402a-aaf3-338894d2f2dc" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bedec7be44c68536fadd101cd0df50b5.png" xmlns="">0VbSf0-kUAECrlfOcGG6kgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

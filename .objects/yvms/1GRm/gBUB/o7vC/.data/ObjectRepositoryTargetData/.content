@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="18zsmSCinUS3qyekENx0Mw" Reference="NkYqdf221EmIXN1TRDnl6w/J51J7p0Va0238lGg4xMv9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="371, 700, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-398' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="db30bcfb-01ea-4cb3-95ed-57288d645709" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="371, 696, 511, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-398' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='Proibição de contato com as testemunhas por qualquer meio de comunicação' /&gt;" Guid="502cae08-9171-473f-b339-9aa8e7f7b0f4" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b1ddccd10a877a34f5abcdf7a78dd797.png" xmlns="">057HLfTh10kmzR3WGhw-oMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

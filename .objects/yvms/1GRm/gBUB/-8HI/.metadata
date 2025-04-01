@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Próximo(2)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "-8HI1AZvUEGMLE59MtkVWQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/-8HI1AZvUEGMLE59MtkVWQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T22:54:57.7212838Z",
+  "Updated": "2025-03-31T22:54:57.7212838Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

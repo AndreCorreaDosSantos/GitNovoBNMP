@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SVNKlUSH7Eep9ONsbbQyxQ" Reference="NkYqdf221EmIXN1TRDnl6w/3c5O_m-x7kOXxavGwa347Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="57a48df4-f550-4327-ab71-2a935f42ebb0" CvElementArea="287, 749, 694, 23" CvType="InputBox" DesignTimeRectangle="287, 750, 695, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='Status Processual:' /&gt;" Guid="08dcfddd-7f6f-478b-9443-6ed66a438646" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="57a48df4-f550-4327-ab71-2a935f42ebb0" CvTextArea="132, 752, 144, 14" CvTextArgument="Status Processual:" CvType="Text" DesignTimeRectangle="133, 751, 143, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Status Processual:' check:innerText='Status Processual:' /&gt;" Guid="29b4eefa-3634-49de-aa9a-dc4c699b8d50" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="34962d4612c7873dee1a12a533e79b4c.png" xmlns="">0uy3zD8IB-EyFFaCM8oUYNg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

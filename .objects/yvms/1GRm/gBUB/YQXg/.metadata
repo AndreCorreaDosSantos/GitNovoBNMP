@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Checa se: Não foi localizada nenh…",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "YQXgxnQEVkSx7gCSOxULAg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/YQXgxnQEVkSx7gCSOxULAg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:31:09.5816524Z",
+  "Updated": "2025-03-30T23:31:27.5453976Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

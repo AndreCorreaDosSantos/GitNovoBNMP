@@ -1,0 +1,16 @@
+﻿{
+  "Name": "1 - login",
+  "Type": "Screen",
+  "Id": "Vo5YtFPsQ0aecZlQ3nq1Eg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Vo5YtFPsQ0aecZlQ3nq1Eg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/1GRmZZzA60OIlGoICBujCw",
+  "Created": "2025-03-30T18:18:04.9833113Z",
+  "Updated": "2025-03-30T23:27:52.7349352Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

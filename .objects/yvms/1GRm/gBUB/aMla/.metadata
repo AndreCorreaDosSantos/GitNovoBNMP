@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Não",
+  "Type": "Element",
+  "Id": "aMlavjpFB0WyKKTaPgV6vw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/aMlavjpFB0WyKKTaPgV6vw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:44:42.7569118Z",
+  "Updated": "2025-03-30T23:44:42.7569118Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

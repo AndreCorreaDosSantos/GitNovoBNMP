@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Ativos",
+  "Type": "Element",
+  "Id": "-__TNpbE40-TmpJ5EaowQg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/-__TNpbE40-TmpJ5EaowQg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg",
+  "Created": "2025-03-30T18:51:43.7158705Z",
+  "Updated": "2025-03-30T18:51:43.7158705Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

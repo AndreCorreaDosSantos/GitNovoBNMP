@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ULBEQp9itUC8AMxrW3t9lw" Reference="NkYqdf221EmIXN1TRDnl6w/9VSyX5pIckaATtbyMbpHjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="f89c5edc-27dc-4331-8350-143775e54617" CvElementArea="369, 724, 19, 19" CvTextArea="394, 725, 1018, 17" CvTextArgument="Prestação de caução provisória, mediante depósito judicial, por perdas e danos materiais decorrentes da prática de violência doméstica e familiar contra a ofendida" CvType="CheckBox" DesignTimeRectangle="371, 722, 1041, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-347' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="000d9c48-bf5f-4cd2-90f5-077f4b4ed6a2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f89c5edc-27dc-4331-8350-143775e54617" CvTextArea="394, 693, 652, 17" CvTextArgument="Acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio" CvType="Text" DesignTimeRectangle="395, 690, 650, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-346' tag='SPAN' type='' aaname='Acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio' check:innerText='Acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio' /&gt;" Guid="8cf4ff43-52ee-4218-a256-73df3b24cb87" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bd829ffc639c38cb3d97c82338b550a7.png" xmlns="">0QzgPNj6zJEubM3r4tiELVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

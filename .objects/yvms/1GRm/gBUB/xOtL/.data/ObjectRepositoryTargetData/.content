@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sjIPweVDM0CgsW-hgY276A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="1117, 954, 60, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Próximo' class='texto-btn' parentid='cdk-step-content-2-1' tag='SPAN' /&gt;" Guid="2645eb31-66be-4051-94a4-37913109c65b" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1101, 945, 117, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='cdk-step-content-2-1' tag='BUTTON' type='submit' class='full-width btn-success mat-focus-indicator mat-stepper-next mat-raised-button mat-button-base' aaname='Próximo' check:innerText='Próximo' /&gt;" Guid="9b36ff50-3b66-4dda-99cd-a2cdb477b4cb" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f93f7c4fe3c4d26d673821d0f7f61aab.png" xmlns="">03Xugskiv4kmYYQJXWnBlqQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

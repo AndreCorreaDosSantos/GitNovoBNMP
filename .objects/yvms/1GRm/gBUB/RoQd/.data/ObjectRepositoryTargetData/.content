@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CwYHyEIB2k6FqKhocQuXxw" Reference="NkYqdf221EmIXN1TRDnl6w/IEL6533k5EWY1ECaPN-18Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="406, 579, 20, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-2' tag='SPAN' type='' aaname='' /&gt;" Guid="c8867329-86d6-40f5-a5c9-3563eadb2a17" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="426, 577, 36, 24" FuzzySelectorArgument="&lt;webctrl class='mat-radio-label-content' parentid='mat-radio-2' tag='SPAN' type='' aaname='Sim' check:innerText='Sim' /&gt;" Guid="596c28b5-16d1-4077-bf84-9965e63555c7" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="af84b4287e0396c96b513efcab265362.png" xmlns="">0ABr9lDiQeUWZRaqkgrytvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

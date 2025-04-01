@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9ZxR_VB3s0mXdvak-7DzLA" Reference="NkYqdf221EmIXN1TRDnl6w/3uL_GmEhzEaRUauTMOe4bg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="9d7ac94a-da18-4123-a904-f1b9322cd4b9" CvElementArea="382, 516, 704, 49" CvType="InputBox" DesignTimeRectangle="395, 533, 679, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-18' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='CEP' /&gt;" Guid="9d27c4f9-d631-474d-9d24-31628a32f79c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9d7ac94a-da18-4123-a904-f1b9322cd4b9" CvElementArea="382, 516, 704, 49" CvType="InputBox" DesignTimeRectangle="395, 536, 679, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-67' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-81 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='CEP' /&gt;" Guid="c73c44ed-e2ad-4352-b5eb-d421179bc80a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b5e7292b25136541ae70de5bd5177f5c.png" xmlns="">0gSnmEB37fUiwzQaFn2NL0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

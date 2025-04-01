@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Projudi",
+  "Type": "App",
+  "Id": "9EsMvMcLGUO8Yj6JhpsqnQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/9EsMvMcLGUO8Yj6JhpsqnQ",
+  "Created": "2025-03-30T17:56:42.1517855Z",
+  "Updated": "2025-03-30T18:18:47.345337Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

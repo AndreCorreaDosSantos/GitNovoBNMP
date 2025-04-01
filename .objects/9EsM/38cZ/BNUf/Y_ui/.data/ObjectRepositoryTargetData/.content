@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GzFFYXah3EC09LxbazFE3A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" DesignTimeRectangle="1116, 521, 140, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Desarquivar' type='button' tag='INPUT' class='button' check:text='Desarquivar' /&gt;" Guid="3ba25b98-25e5-469c-92be-695402d68b25" ScopeSelectorArgument="&lt;html app='msedge.exe' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1261, 521, 160, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Peticionar' type='button' tag='INPUT' class='button' check:text='Peticionar' /&gt;" Guid="2aa63616-5de7-4bc8-8d6b-f4893a7a0f3a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0b5c47f51b548518b2dd3b01a3a54632.png" xmlns="">0nKLqfu-e80i2vO1omHe6eQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

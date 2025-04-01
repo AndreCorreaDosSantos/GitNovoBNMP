@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Botão 'Entrar' - login",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "grytnNFnV0-f5Z90yXNnxQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/grytnNFnV0-f5Z90yXNnxQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/ogBnN5eQVEKvkp_4CeIXXw",
+  "Created": "2025-03-30T18:30:58.9460195Z",
+  "Updated": "2025-03-30T18:35:00.0823048Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

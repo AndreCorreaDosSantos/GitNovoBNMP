@@ -1,0 +1,17 @@
+﻿{
+  "Name": "AcrelandiaCidadeclear - Se não houver CEP",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "4QSPjPqz7ES3FiiUY2aM8A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/4QSPjPqz7ES3FiiUY2aM8A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:37:01.5007349Z",
+  "Updated": "2025-03-30T23:37:18.732541Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

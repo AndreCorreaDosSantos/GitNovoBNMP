@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3YfaFZ5KXkW_CtZ1p_jbSw" Reference="NkYqdf221EmIXN1TRDnl6w/xLTv4Agt5Uab3mxtg1Xrhw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="d2fdd6de-d774-4533-8ece-5e9cf7f4de4b" CvElementArea="365, 605, 1505, 52" CvType="InputBox" DesignTimeRectangle="394, 618, 1406, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-1' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='2 - Filiação' check:innerText='2 - Filiação' /&gt;" Guid="62b35ec3-16e1-4fea-b089-7165af70b82b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b8e1a7d01025f4fba242349908d75207.png" xmlns="">0NuQ3S5G63kmsgwYdUdltcA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

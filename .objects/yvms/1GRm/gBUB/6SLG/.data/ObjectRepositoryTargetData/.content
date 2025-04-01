@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eUcfZkqQcEehJaLHPJPzdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" CVScreenId="5d61f416-388e-4073-9937-5bd5f3d16e8a" CvElementArea="368, 764, 21, 21" CvType="CheckBox" DesignTimeRectangle="371, 766, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-111' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="3a6458da-1931-4342-85d6-9f00c10898d5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5d61f416-388e-4073-9937-5bd5f3d16e8a" CvTextArea="394, 765, 625, 14" CvTextArgument="Encaminhamento de dependentes a programa oficial ou comunitário de proteção ou de atendimento" CvType="Text" DesignTimeRectangle="395, 762, 623, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-111' tag='SPAN' type='' aaname='Encaminhamento de dependentes a programa oficial ou comunitário de proteção ou de atendimento' check:innerText='Encaminhamento de dependentes a programa oficial ou comunitário de proteção ou de atendimento' /&gt;" Guid="173e5ec1-c0b7-42d9-bf4e-b0d03af280c4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="59865d9e8a278567996317d20333bec7.png" xmlns="">0FC6mXVztwkWfdLpx247u2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

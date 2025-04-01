@@ -1,0 +1,17 @@
+﻿{
+  "Name": "unchecked 4 - réu",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "RGc6tIleo0atne5jdQL49A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/RGc6tIleo0atne5jdQL49A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:50:04.3821526Z",
+  "Updated": "2025-03-30T23:50:14.7646635Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

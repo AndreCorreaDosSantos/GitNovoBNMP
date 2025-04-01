@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Medidas Aplicadas ao Ag…",
+  "Type": "Element",
+  "Id": "J9iL1-Bc-USatSA0pmW6Hw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/J9iL1-Bc-USatSA0pmW6Hw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T17:24:24.4479362Z",
+  "Updated": "2025-03-31T17:24:24.4479362Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

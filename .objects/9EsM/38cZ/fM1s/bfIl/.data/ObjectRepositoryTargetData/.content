@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O1Rj2-3dQEOojuBklwPGQQ" Reference="NkYqdf221EmIXN1TRDnl6w/L4ob8mB3N0agruNOvUwHiA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="417c75ab-5533-4e85-b5ce-ad4512649c2b" CvElementArea="232, 452, 329, 19" CvType="InputBox" DesignTimeRectangle="233, 453, 327, 17" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='Juízo:' /&gt;" Guid="ae649a45-c7f9-46f7-8151-280f88bd1e0b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="417c75ab-5533-4e85-b5ce-ad4512649c2b" CvTextArea="187, 454, 37, 12" CvTextArgument="Juízo:" CvType="Text" DesignTimeRectangle="188, 454, 36, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Juízo:' check:innerText='Juízo:' /&gt;" Guid="4a915585-89ae-49e0-8a1c-238461f63847" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cbfa954c53426c91646377748ff3550f.png" xmlns="">0TR7BJ8WcB0y4pJGEDI5Iqg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

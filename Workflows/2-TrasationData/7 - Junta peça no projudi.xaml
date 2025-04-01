@@ -1,0 +1,531 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_7___Junta_peça_no_projudi" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="strCaminhoPastaDownRobo" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>_7___Junta_peça_no_projudi_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_7___Junta_peça_no_projudi" sap:VirtualizedContainerService.HintSize="1110,4491" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard CloseMode="Never" DisplayName="8 - Junta a peça no projudi" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="570,4468" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c31347e4-6557-46a0-b569-ef8ac2e4f70c" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="536,4228" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strCaminhoPastaRobo">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">C:\Users\Tabajara\Documents\DownloadGeralRobo</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="1 - navegação" sap:VirtualizedContainerService.HintSize="502,1687" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Desarquivar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" ContentHash="GzFFYXah3EC09LxbazFE3A" DesignTimeRectangle="1116, 521, 140, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Desarquivar' type='button' tag='INPUT' class='button' check:text='Desarquivar' /&gt;" Guid="3ba25b98-25e5-469c-92be-695402d68b25" InformativeScreenshot="0b5c47f51b548518b2dd3b01a3a54632.png" Reference="NkYqdf221EmIXN1TRDnl6w/Y_uixuIlGUeqHsoU0xMh7A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1261, 521, 160, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Peticionar' type='button' tag='INPUT' class='button' check:text='Peticionar' /&gt;" Guid="2aa63616-5de7-4bc8-8d6b-f4893a7a0f3a" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" ContentHash="GDN31l1gz063WcGtufBKuA" DesignTimeRectangle="1010, 156, 79, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="38393bf5-98b2-452d-a0cf-abb3bc9598fb" InformativeScreenshot="6dfb2cd390f7cae568d86b558e0b9cd3.png" Reference="NkYqdf221EmIXN1TRDnl6w/D2bfyXBBBU-prkoRvCYoag" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='0836052-76.2024.8.23.0010 - Pessoal — Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1097, 156, 79, 32" ElementType="Button" FullSelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' automationid='' check:fulltext='Cancelar' /&gt;" Guid="b5c25a12-19d3-4993-a3ae-454be1fd253f" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Juntar Documento'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" ContentHash="o03cD3d9nEiycw0PyTPF2g" DesignTimeRectangle="1096, 565, 160, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Juntar Documento' type='button' tag='INPUT' class='button' check:text='Juntar Documento' /&gt;" Guid="dbb3ef80-7e6c-4faf-9567-c6e27efeb70e" InformativeScreenshot="09366d391ff172d240ade36aa8bc007f.png" Reference="NkYqdf221EmIXN1TRDnl6w/sAxPvXazYkmULFrNYeBHuA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="930, 565, 160, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Pedido Incidental' type='button' tag='INPUT' class='button' check:text='Pedido Incidental' /&gt;" Guid="d9a7366e-dfdc-4fd5-8cbf-a8b76b2b433b" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Tipo de Documento'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Text="INFORMAÇÃO" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" ContentHash="-fLlZrB_m0eX1tmWjjqoVg" DesignTimeRectangle="167, 642, 671, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='text' aaname='Ao digitar, escolha uma das opções sugeridas ou selecione através da pesquisa ao lado' /&gt;" Guid="fe43f4b6-0b94-4fc3-9512-aa396c7caeb3" InformativeScreenshot="98d135ae9642e64577968910ea3de2c0.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/5S5_jGmLeUeXHAbnjtj5Qg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="34, 642, 124, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Tipo de Documento:' check:innerText='Tipo de Documento:' /&gt;" Guid="97fa37a7-422d-4b9f-84fc-20b17e8cc704" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Tipo de Documento'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" ContentHash="Cl8HHa4LZkO6o-INzoSr2A" DesignTimeRectangle="168, 660, 1024, 24" DesignTimeScaleFactor="1" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LI' class='selected' /&gt;" Guid="b0a82406-ad54-43ff-8bb1-8b907d421efa" InformativeScreenshot="bedec7be44c68536fadd101cd0df50b5.png" Reference="NkYqdf221EmIXN1TRDnl6w/Y9mV1Jo3vUaf8jfcxxDuwg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='INFORMAÇÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="34, 642, 124, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Tipo de Documento:' check:innerText='Tipo de Documento:' /&gt;" Guid="89a94b26-a057-402a-aaf3-338894d2f2dc" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Adicionar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" ContentHash="7IxtMHVB_k6vOGL8nvAoAA" DesignTimeRectangle="1395, 792, 120, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Adicionar' check:text='Adicionar' /&gt;" Guid="8bf939dc-aa33-4482-bb0a-4305aa6641a4" InformativeScreenshot="f7775609d24df0e85813c0fe7ad652a1.png" Reference="NkYqdf221EmIXN1TRDnl6w/IaGYIqyiQ0mtBg-Sxc9lIg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1521, 792, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Remover' type='button' tag='INPUT' class='button' check:text='Remover' /&gt;" Guid="e9a62605-53b0-4202-9eba-cf268b165f9b" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Selecionar Arquivos new…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" ContentHash="5Oc1fxlqKUqvrFzFEH1f8Q" DesignTimeRectangle="991, 447, 255, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='file' tag='INPUT' class='' aaname='' /&gt;" Guid="4cced329-e7db-41af-93bd-7a551b180472" InformativeScreenshot="e6f5cbb60bdefddb739b2bba60b35171.png" Reference="NkYqdf221EmIXN1TRDnl6w/KFzZBxubskO94T92CA8jAw" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="987, 350, 216, 20" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='LEGEND' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Selecionar Arquivos &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;     &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;     &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Selecionar Arquivos' /&gt;" Guid="f3e42cf3-5db7-4b45-b84d-a45b7cbcfad7" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+            <ui:ForEachFileX DisplayName="Encontra o arquivo da peça" Folder="[strCaminhoPastaRobo]" sap:VirtualizedContainerService.HintSize="502,463" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+              <ui:ForEachFileX.Body>
+                <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentArquivo" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,169" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strCaminhoPastaDownRobo]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentArquivo.FullName]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachFileX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachFileX>
+            <Sequence DisplayName="2 - navegação" sap:VirtualizedContainerService.HintSize="502,2016" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '&amp;Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Text="[strCaminhoPastaDownRobo + &quot;[k(Enter)]&quot;]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" ContentHash="_IfXLYbJ-ka_gXBk8McR8Q" DesignTimeRectangle="183, 465, 532, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="9ae11b8e-4189-4c36-91ee-04a29a4ddbce" InformativeScreenshot="2c9a5a0b411751f7c0b99cc4b1869a3a.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/zTREq067_06wgG48vWofOA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="138, 464, 36, 15" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nome:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nome:' check:text='&amp;amp;Nome:' /&gt;" Guid="b20f348e-1cd5-4ad8-9b53-26015b988ba8" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NSelectItem DisplayName="Select Item 'Tipo do Arquivo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Informações" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="50">
+                    <x:String>Declaratória de União Estável</x:String>
+                    <x:String>Declinação de Atribuição</x:String>
+                    <x:String>Depósito Fiança</x:String>
+                    <x:String>Despacho</x:String>
+                    <x:String>Despacho Inicial Acao Extrajudicial ou Monitria</x:String>
+                    <x:String>Documentos Apreendidos</x:String>
+                    <x:String>Documentos de Registro Funcional de Agentes Públicos</x:String>
+                    <x:String>Documentos pessoais</x:String>
+                    <x:String>ECD</x:String>
+                    <x:String>Edital/Citação</x:String>
+                    <x:String>Edital/Citação e Intimação</x:String>
+                    <x:String>Edital de Licitação</x:String>
+                    <x:String>Edital/Intimação</x:String>
+                    <x:String>E-mail</x:String>
+                    <x:String>FAC</x:String>
+                    <x:String>Fiança Arbitrada pelo Delegado</x:String>
+                    <x:String>Folha de Identificação SESP</x:String>
+                    <x:String>Formal de Partilha</x:String>
+                    <x:String>Fotos / Imagens</x:String>
+                    <x:String>Guia de execução</x:String>
+                    <x:String>Guia de execução definitiva</x:String>
+                    <x:String>Guia de execução provisória</x:String>
+                    <x:String>Identificação Criminal</x:String>
+                    <x:String>Impugnação à Contestação</x:String>
+                    <x:String>Informações</x:String>
+                    <x:String>Informações Geográficas</x:String>
+                    <x:String>Inquérito policial</x:String>
+                    <x:String>Intimação</x:String>
+                    <x:String>Intimação de Recolhimento das Custas Processuais do Oficial de Justiça</x:String>
+                    <x:String>Intimação Realizada em Cartório</x:String>
+                    <x:String>Laudo</x:String>
+                    <x:String>Laudo da Polícia de Trânsito</x:String>
+                    <x:String>Laudo da Vigilância Sanitária</x:String>
+                    <x:String>Laudo de Arma</x:String>
+                    <x:String>Laudo de Confronto Balístico</x:String>
+                    <x:String>Laudo de Conjunção Carnal e/ou Ato Libidinoso</x:String>
+                    <x:String>Laudo de degravação de mídia</x:String>
+                    <x:String>Laudo de Estado Puerperal</x:String>
+                    <x:String>Laudo de Exame Cadavérico (necropsia)</x:String>
+                    <x:String>Laudo de Gravidez</x:String>
+                    <x:String>Laudo de habilitação</x:String>
+                    <x:String>Laudo de Incêndio/Materiais Inflamáveis</x:String>
+                    <x:String>Laudo de Lesões Corporais</x:String>
+                    <x:String>Laudo de Munição/Materiais explosivos</x:String>
+                    <x:String>Laudo de Órgão do Meio Ambiente</x:String>
+                    <x:String>Laudo de Órgão Público</x:String>
+                    <x:String>Laudo de Perícia de Objetos Apreendidos</x:String>
+                    <x:String>Laudo de Perícia de Veículos Automotores</x:String>
+                    <x:String>Laudo de Sanidade Mental</x:String>
+                    <x:String>Laudo de Violação de Propriedade Imaterial</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" ContentHash="7pgjE6Wf802u0ayjqEzy5g" DesignTimeRectangle="834, 561, 357, 17" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="5eb175e7-f1ff-48a1-9216-88f9e9326c30" InformativeScreenshot="20a1dbe14e0547f6c61bddb9d5f0f098.png" Reference="NkYqdf221EmIXN1TRDnl6w/9SfqfSYKR0in8y89Xsl6HA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="822, 532, 386, 29" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Tipo do Arquivo &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' tag='TH' class='' check:innerText='Tipo do Arquivo' /&gt;" Guid="9cdf7e87-d274-4b1f-9426-7a3da68518c4" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirmar Inclusão'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" ContentHash="MVKYpWXXv0mLwcbkpqRoYg" DesignTimeRectangle="1146, 651, 130, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Confirmar Inclusão' check:text='Confirmar Inclusão' /&gt;" Guid="3080bf00-9170-49a6-82e5-c73a1b97ad2f" InformativeScreenshot="e9cc8175e6fb4a274e2fe95b6a35a77b.png" Reference="NkYqdf221EmIXN1TRDnl6w/hxn_1nDiTU2tg-I2yXRZjw" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1278, 651, 130, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Cancelar' type='button' tag='INPUT' class='button' check:text='Cancelar' /&gt;" Guid="e8892398-0e0a-4b64-ac8b-e0a5fc69332a" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Text="tabajara1" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" ContentHash="upgD6Zk3FU6K84iEvnlqBw" DesignTimeRectangle="186, 925, 195, 17" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='password' tag='INPUT' class='' aaname='' /&gt;" Guid="3681a1c2-2647-4254-bf51-13fe87b6c4e4" InformativeScreenshot="22cac7e8759e2c676db5cd5c2b9c896d.png" Reference="NkYqdf221EmIXN1TRDnl6w/9Lr-NbASmUiyA-kx750LsA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="137, 926, 42, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Senha:' check:innerText='Senha:' /&gt;" Guid="be79fbca-62db-4725-bd67-55881e9b2b7d" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Assinar e Concluir Movi…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" ContentHash="MC45G69gu0mPpkd79sTJIg" DesignTimeRectangle="1618, 955, 160, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Assinar e Concluir Movimento' check:text='Assinar e Concluir Movimento' /&gt;" Guid="3ab9b16e-6345-4710-895b-3436842064c6" InformativeScreenshot="dde4f66eea6fb87c29493b06f5717d0e.png" Reference="NkYqdf221EmIXN1TRDnl6w/yjpQjABiokC6KMjAWCjC3g" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1784, 955, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Voltar' type='button' tag='INPUT' class='button' check:text='Voltar' /&gt;" Guid="a0a771c7-623a-49c7-a8fc-4054b2182e98" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Arquivar Processo ()'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" ContentHash="WcMWXKs950COn_qDO_6gWg" DesignTimeRectangle="44, 699, 145, 13" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Data Evento' class='form' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Arquivar Processo (*) &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' tag='A' class='link' check:innerText='Arquivar Processo (*)' /&gt;" Guid="4e74437f-5043-4b6a-b033-a6ee7312b18c" InformativeScreenshot="2703a8621f43c1d269be55efb1ab7bdc.png" Reference="NkYqdf221EmIXN1TRDnl6w/Ed282alTd0qXm5BOSvXFKg" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="44, 677, 161, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Data Evento' class='form' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Transitar em Julgado (*) &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' tag='A' class='link' check:innerText='Transitar em Julgado (*)' /&gt;" Guid="de3f94c0-d7f9-4450-8001-b7a06cac9223" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Arquivamento de Processo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" ContentHash="NvsFpFU01EqUddX-leCSdw" DesignTimeRectangle="702, 340, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="e3ef58c2-3b8b-4380-a917-f800843c1299" InformativeScreenshot="415d916893ba65586497e4134454512c.png" Reference="NkYqdf221EmIXN1TRDnl6w/ib9mz9iaPkSaT3uqdPpEDQ" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="528, 299, 591, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='H3' type='' class='' aaname='Arquivamento de Processo' check:innerText='Arquivamento de Processo' /&gt;" Guid="67218f46-f7df-4460-b5af-cf50562375a5" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Arquivar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c31347e4-6557-46a0-b569-ef8ac2e4f70c" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" ContentHash="EV3UiWsAM02N0OL6KwPc_w" DesignTimeRectangle="1152, 416, 120, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Arquivar' check:text='Arquivar' /&gt;" Guid="548288d8-c62e-42b3-9016-e8b0875f9fd5" InformativeScreenshot="7c2aeb5c881fc2c919977b8959a93f9e.png" Reference="NkYqdf221EmIXN1TRDnl6w/l0Dg7fZdk0uiH7SVqpDXxw" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1278, 416, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Cancelar' type='button' tag='INPUT' class='button' check:text='Cancelar' /&gt;" Guid="2a170194-1557-4537-b6a6-709453bff2c8" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="ZeLd28NzzU2u-n1QDbZIwQ" IconBase64="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" InformativeScreenshot="5eae33abd939b26d26f02be48369e521.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ" Selector="&lt;html app='msedge.exe' title='0836540-31.2024.8.23.0010' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

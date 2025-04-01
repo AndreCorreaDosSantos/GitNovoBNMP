@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MC45G69gu0mPpkd79sTJIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" DesignTimeRectangle="1618, 955, 160, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Assinar e Concluir Movimento' check:text='Assinar e Concluir Movimento' /&gt;" Guid="3ab9b16e-6345-4710-895b-3436842064c6" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1784, 955, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Voltar' type='button' tag='INPUT' class='button' check:text='Voltar' /&gt;" Guid="a0a771c7-623a-49c7-a8fc-4054b2182e98" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dde4f66eea6fb87c29493b06f5717d0e.png" xmlns="">05QMmn6t9yUm_LbSWb_C-jg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

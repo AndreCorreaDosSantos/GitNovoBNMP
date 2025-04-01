@@ -1,0 +1,17 @@
+﻿{
+  "Name": "online.pdf - baixa o mandado",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "o5CnH-wpO0WWll8uJE7Vsg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/o5CnH-wpO0WWll8uJE7Vsg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/ZtrNPKJBVUCk8PJqlhL_xA",
+  "Created": "2025-03-30T23:18:48.8948731Z",
+  "Updated": "2025-03-30T23:21:04.6281923Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

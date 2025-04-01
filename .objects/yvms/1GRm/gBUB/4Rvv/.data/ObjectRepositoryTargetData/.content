@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MPfK4HMh3UC3mUXX8ybCAQ" Reference="NkYqdf221EmIXN1TRDnl6w/qrXEanbmSke-R1tcx9WfIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="1032, 472, 381, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' type='' aaname='' parentid='cdk-step-content-2-0' tag='DIV' /&gt;" Guid="01bb938c-a4f7-44c8-8a2d-8be6e7a964c9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="964, 276, 467, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='DADOS DE ENTRADA DO AGRESSOR*' parentid='cdk-step-label-2-2' tag='DIV' type='' class='mat-step-text-label ng-star-inserted' check:innerText='DADOS DE ENTRADA DO AGRESSOR*' /&gt;" Guid="b615cda5-3688-4817-8d08-f832079fcd3e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8c61e6bba4a220aede60264ed7744e14.png" xmlns="">0wVCTU6W_AUm3Od18H2Qb3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

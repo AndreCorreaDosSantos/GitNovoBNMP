@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Acesso via SSO",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "QfX8DIUS6keeKNmBFtuNqA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/QfX8DIUS6keeKNmBFtuNqA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/ogBnN5eQVEKvkp_4CeIXXw",
+  "Created": "2025-03-30T18:07:24.6129401Z",
+  "Updated": "2025-03-30T18:07:24.6129401Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

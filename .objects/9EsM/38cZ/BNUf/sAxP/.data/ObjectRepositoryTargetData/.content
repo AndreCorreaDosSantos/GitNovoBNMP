@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o03cD3d9nEiycw0PyTPF2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" DesignTimeRectangle="1096, 565, 160, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Juntar Documento' type='button' tag='INPUT' class='button' check:text='Juntar Documento' /&gt;" Guid="dbb3ef80-7e6c-4faf-9567-c6e27efeb70e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="930, 565, 160, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Pedido Incidental' type='button' tag='INPUT' class='button' check:text='Pedido Incidental' /&gt;" Guid="d9a7366e-dfdc-4fd5-8cbf-a8b76b2b433b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="09366d391ff172d240ade36aa8bc007f.png" xmlns="">0Sfp1en4CsUyR6Cw5esva8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

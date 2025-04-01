@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9j3OdNuWG02w_CP-i1QrjA" Reference="NkYqdf221EmIXN1TRDnl6w/-nyKxfpRCUGSD-sOS8DsIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="32267071-8315-4145-a996-e4bcd3230f45" CvElementArea="1123, 370, 445, 39" CvTextArea="1333, 380, 25, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1124, 371, 443, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary w-100' aaname='Ok' check:text='Ok' /&gt;" Guid="69d5eabe-78ea-48ce-a9c7-63c7fce8b835" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="32267071-8315-4145-a996-e4bcd3230f45" CvTextArea="1123, 292, 124, 18" CvTextArgument="Informe o código" CvType="Text" DesignTimeRectangle="1124, 289, 123, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Informe o código' check:innerText='Informe o código' /&gt;" Guid="472d5d45-b696-4ad8-a83d-73f14ad23ae8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e42e0dd8bd303cda18f3aa8c2e91eeef.png" xmlns="">0h_B17Er0CkOZEM0d1U2QkQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

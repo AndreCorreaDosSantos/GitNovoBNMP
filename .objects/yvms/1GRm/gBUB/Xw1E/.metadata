@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Número - Se não houver CEP",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Xw1Elz7DREi4W_5WdJts4Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Xw1Elz7DREi4W_5WdJts4Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:36:21.0710474Z",
+  "Updated": "2025-03-30T23:36:33.8788061Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

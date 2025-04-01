@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="p-k_taoBbEOR9V5s2pjvdQ" Reference="NkYqdf221EmIXN1TRDnl6w/XBN-b9djck2As_ImwIUVaw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="4c4fd951-2c39-48ab-9423-4bcb60cbcaf7" CvTextArea="781, 537, 184, 17" CvTextArgument="Você não possui permissão." CvType="Text" DesignTimeRectangle="783, 534, 370, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='alert' tag='DIV' type='' class='toast-message ng-star-inserted' aaname=' Você não possui permissão. ' check:innerText='Você não possui permissão.' /&gt;" Guid="f7b02ce5-e27e-4dea-b44b-c94e3fb9f1fd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="4c4fd951-2c39-48ab-9423-4bcb60cbcaf7" CvElementArea="1137, 475, 27, 26" CvTextArea="898, 472, 138, 16" CvTextArgument="Ops! Algo aconteceu." CvType="CloseButton" DesignTimeRectangle="768, 468, 400, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='toast-container' tag='P' type='' class='ng-tns-c40-7' aaname='Ops! Algo aconteceu.' check:innerText='Ops! Algo aconteceu.' /&gt;" Guid="99169d57-88c4-43c8-bf0c-4f519defa410" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00ae41e542a7f961672576230845f620.png" xmlns="">0wTOjsz92Hk2K8SvfT4_haw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

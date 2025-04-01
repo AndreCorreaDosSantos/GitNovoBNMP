@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="a91k7GFPw0-yRiNQx9e47Q" Reference="NkYqdf221EmIXN1TRDnl6w/cytHjQ4SYEOqJEVDUfNFEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="196b8526-46be-49e9-9176-ee6aa4c41b72" CvElementArea="956, 893, 120, 39" CvTextArea="1005, 904, 55, 14" CvTextArgument="Concluir" CvType="Button" DesignTimeRectangle="974, 904, 85, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Concluir ' class='mat-button-wrapper' parentid='cdk-step-content-1-3' tag='SPAN' type='' check:innerText='Concluir' /&gt;" Guid="3e36da04-e0ff-493c-b999-3c0f870a1653" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="196b8526-46be-49e9-9176-ee6aa4c41b72" CvElementArea="820, 892, 111, 41" CvTextArea="860, 905, 53, 13" CvTextArgument="Anterior" CvType="Button" DesignTimeRectangle="839, 904, 73, 17" FuzzySelectorArgument="&lt;webctrl aaname='Anterior ' class='mat-button-wrapper' parentid='cdk-step-content-1-3' tag='SPAN' type='' check:innerText='Anterior' /&gt;" Guid="c1c5ef1e-6ed0-404d-b0c7-8ba2dcc3e5fe" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6469ff33fcf43e30dc1491ca2b3ef91e.png" xmlns="">0F1ekPIbKDUmriGn4bKCZMw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

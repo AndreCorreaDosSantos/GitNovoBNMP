@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="F2Gw6naQ10SpfUZ8u-HY0w" Reference="NkYqdf221EmIXN1TRDnl6w/sfWmgfDJM0iwJkNCfdnowg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="641, 589, 656, 57" DesignTimeScaleFactor="1.5625" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='otp' tag='INPUT' /&gt;" Guid="4063738b-c835-40e0-bb87-efc32420adeb" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="641, 558, 177, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl parentid='kc-otp-login-form' tag='LABEL' type='' class='pf-c-form__label pf-c-form__label-text' aaname='Código de uso único' check:innerText='Código de uso único' /&gt;" Guid="dec67ea5-c287-4d7e-9f97-43a6bae07d5a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4eae544c867099d750c59dda3a19c2ec.png" xmlns="">031xKVNePpUStNSBcUBHueg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

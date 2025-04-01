@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1DO0d0DoBUGAfcv5BAbhgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" CVScreenId="1a17f9f4-0174-4447-8f37-29c1a9f52bb7" CvElementArea="369, 728, 19, 19" CvType="CheckBox" DesignTimeRectangle="371, 730, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-113' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="2534899e-6af4-4192-b22e-ecc406585c3a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1a17f9f4-0174-4447-8f37-29c1a9f52bb7" CvTextArea="394, 729, 527, 17" CvTextArgument="Recondução de dependentes ao respectivo domicílio, após afastamento do agressor" CvType="Text" DesignTimeRectangle="395, 726, 525, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-113' tag='SPAN' type='' aaname='Recondução de dependentes ao respectivo domicílio, após afastamento do agressor' check:innerText='Recondução de dependentes ao respectivo domicílio, após afastamento do agressor' /&gt;" Guid="8515329a-2d7c-44eb-b223-f4b5781837c1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f1e387e2b1febfff70b2b6c14a25aa26.png" xmlns="">0vtV46l6Rr0WSF91L1SxWPg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Processo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "x73aLZvMsU-dgEvuGxbF6Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/x73aLZvMsU-dgEvuGxbF6Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/_GCwBxkfTEeVtgJ-lwFgmw",
+  "Created": "2025-03-30T19:13:09.5077736Z",
+  "Updated": "2025-03-30T19:13:09.5077736Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

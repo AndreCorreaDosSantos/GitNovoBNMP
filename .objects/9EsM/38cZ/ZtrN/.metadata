@@ -1,0 +1,12 @@
+﻿{
+  "Name": "7 - Leitura Decisão e Sentença",
+  "Type": "Screen",
+  "Id": "ZtrNPKJBVUCk8PJqlhL_xA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/ZtrNPKJBVUCk8PJqlhL_xA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-03-30T23:18:25.6242217Z",
+  "Updated": "2025-03-30T23:18:25.6242217Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

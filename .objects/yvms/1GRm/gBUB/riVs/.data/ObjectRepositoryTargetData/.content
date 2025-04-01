@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="F_geTS11K0WmLVx1LzJg0g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/lista/24587915072" DesignTimeRectangle="1861, 358, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='MAT-ICON' class='mat-icon notranslate material-icons mat-icon-no-color' aaname='more_horiz' check:innerText='more_horiz' /&gt;" Guid="ebf908e3-9f11-429f-8e31-d5a7d5d9f5ef" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1664, 345, 187, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='mat-cell cdk-column-status mat-column-status ng-star-inserted' tag='TD' aaname=' Aguardando Assinatura ' check:innerText='AGUARDANDO ASSINATURA' /&gt;" Guid="daeca33c-52a5-4a0e-b387-2bee4970e0bd" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa903e5b345e545bccd8a0434091f3f1.png" xmlns="">0u5dWVTs4_kerGEaB-D-Fxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

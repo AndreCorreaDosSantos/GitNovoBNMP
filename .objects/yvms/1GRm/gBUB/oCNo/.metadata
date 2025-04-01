@@ -1,0 +1,14 @@
+﻿{
+  "Name": "PeçasIncluir Peça",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "oCNoDejax0SXHSNNsK3HGA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/oCNoDejax0SXHSNNsK3HGA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T17:04:26.034797Z",
+  "Updated": "2025-03-31T17:04:26.034797Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Se erro de autenticação BNMP",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ql_MuJ1R5kaRHvOzfeqTfQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/ql_MuJ1R5kaRHvOzfeqTfQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Vo5YtFPsQ0aecZlQ3nq1Eg",
+  "Created": "2025-03-30T23:13:29.4277879Z",
+  "Updated": "2025-03-30T23:13:29.4277879Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

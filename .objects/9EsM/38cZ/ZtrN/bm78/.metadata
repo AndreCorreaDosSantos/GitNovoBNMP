@@ -1,0 +1,17 @@
+﻿{
+  "Name": "online.pdf - baixa a decisão",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bm78OiRMD0euMwbWyqVVQA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/bm78OiRMD0euMwbWyqVVQA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/ZtrNPKJBVUCk8PJqlhL_xA",
+  "Created": "2025-03-30T23:21:32.5774862Z",
+  "Updated": "2025-03-30T23:21:57.4639841Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

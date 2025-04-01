@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d42R7H_GzUuucdbRYvbmwA" Reference="NkYqdf221EmIXN1TRDnl6w/1f1zTAJZFU2_gtjXDUfEqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" DesignTimeRectangle="54, 345, 282, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='mat-cell cdk-column-numPeca mat-column-numPeca ng-star-inserted' /&gt;" Guid="c1c052a5-20d1-4608-b013-244817f082ab" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="64, 305, 272, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='mat-sort-header-content' type='' tag='DIV' aaname=' Número da peça ' check:innerText='NÚMERO DA PEÇA' /&gt;" Guid="d1186654-c9ae-4a93-8575-242038732726" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="adbda867184c52c6fd635102df53ad8b.png" xmlns="">00tFfdiBjOUC-fXN9e8D12A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1zMLlo02Vky1_KJ133an0Q" Reference="NkYqdf221EmIXN1TRDnl6w/otpIvS_CPUmXw5-cMcfyPA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="968, 545, 561, 46" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-flex' type='' parentid='cdk-accordion-child-6' tag='DIV' aaname='' check:innerText='Acre&amp;#x9;&amp;#xA;Estado&amp;#xA;clear' /&gt;" Guid="012dc69d-df17-4fc6-b66a-b001071c53d0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="265055618f4ae8d40ee88f18bfa4ccc2.png" xmlns="">0tV8w8SRw3USmoEEMwjKmgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

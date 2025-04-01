@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GGtwIw2cnEiFxynQ4Onp0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" CVScreenId="792f0ec1-6f74-41e1-b692-e5847652dae6" CvElementArea="368, 732, 21, 20" CvType="CheckBox" DesignTimeRectangle="371, 734, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-110' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="85f0c06a-68d3-43ba-82e0-34de6cdbe7f5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="792f0ec1-6f74-41e1-b692-e5847652dae6" CvTextArea="394, 733, 598, 14" CvTextArgument="Encaminhamento da ofendida a programa oficial ou comunitário de proteção ou de atendimento" CvType="Text" DesignTimeRectangle="395, 730, 597, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-110' tag='SPAN' type='' aaname='Encaminhamento da ofendida a programa oficial ou comunitário de proteção ou de atendimento' check:innerText='Encaminhamento da ofendida a programa oficial ou comunitário de proteção ou de atendimento' /&gt;" Guid="ff9fd880-0f95-499b-b027-505d59100efa" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d104eac411a6bc0e7e054f7b3e185723.png" xmlns="">0x9bL_hWiAU-f1a9J9hyBJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
