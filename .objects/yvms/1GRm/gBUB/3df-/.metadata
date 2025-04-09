@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Tipo de peça",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "3df-5sj_4km73BJ-8B7aLQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/3df-5sj_4km73BJ-8B7aLQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:41:46.4788091Z",
+  "Updated": "2025-03-30T23:41:46.4788091Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

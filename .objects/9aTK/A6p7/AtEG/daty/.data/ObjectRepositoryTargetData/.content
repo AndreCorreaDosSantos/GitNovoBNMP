@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MdDOtnFB4EOrbn-FtqnE8Q" Reference="NkYqdf221EmIXN1TRDnl6w/BayPQ87BdEmtDkZRkqssng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="google.com.br/maps/place/R.+Palmas,+882+-+Nova+Cidade,+Boa+Vista+-+RR,+69316-256/@2.760533,-60.7366789,17z/data=!3m1!4b1!4m6!3m5!1s0x8d93036e11835ba5:0x5c04b510c2529a97!8m2!3d2.760533!4d-60.734104!16s%2Fg%2F11x12dznnp" DesignTimeRectangle="84, 82, 408, 954" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aria-role='main' tag='DIV' type='' class='m6QErb WNBkOb XiKgde ' aaname='' /&gt;" Guid="d32b3d01-4f17-4c52-bbf2-5a632235534b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='R. Palmas, 882 - Nova Cidade - Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="3">
+          <Target DesignTimeRectangle="12, 948, 72, 72" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='      App móvel Instalar o aplicativo  ' tag='BUTTON' type='' class='wR3cXd Ijds6e fontLabelMedium' check:innerText='&amp;#xA;Instalar o aplicativo' /&gt;" Guid="b67c8538-05c2-4071-888c-8b1a641495fc" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="20, 260, 55, 11" CvTextArgument="Recentes" CvType="Text" DesignTimeRectangle="12, 222, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Recentes  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Recentes' /&gt;" Guid="6e601a97-c112-4cbf-b832-29bae2611e13" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="5d9cdf7e-6923-410d-b902-491a76893618" CvTextArea="28, 187, 39, 12" CvTextArgument="Salvos" CvType="Text" DesignTimeRectangle="12, 150, 72, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='     Salvos  ' tag='BUTTON' type='' class='wR3cXd fontLabelMedium' check:innerText='&amp;#xA;Salvos' /&gt;" Guid="b77b5f18-623d-4a64-a12f-3e248bfdf0d5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6d22f13b4584993149c5e16ab2ae30c7.png" xmlns="">0-KoCM7k-Fk-1kj4ejhCZQQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

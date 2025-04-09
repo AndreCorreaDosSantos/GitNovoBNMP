@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZW95wtjhlUi7y1txkdrKgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="1776, 863, 11, 12" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-6' tag='TABLE' /&gt;&lt;webctrl type='' tag='I' class='fas fa-trash-alt ng-star-inserted' aaname='' /&gt;" Guid="bacfa143-b836-4157-b234-de3060d3710d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1758, 789, 100, 56" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-6' tag='TABLE' /&gt;&lt;webctrl aaname='Ações' type='' tag='TH' class='mat-header-cell cdk-column-acoes mat-column-acoes ng-star-inserted' check:innerText='Ações' /&gt;" Guid="440b6704-c001-4f88-aa22-bdefb5a6c36f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="60fcb4248baedd2d3b8173177753e5d2.png" xmlns="">0TL6GKBWTykG4S7QDVJ3dHw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

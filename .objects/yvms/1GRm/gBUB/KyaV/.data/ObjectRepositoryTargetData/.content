@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="emG0z4mrxUeEi5do-AZDnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24574166130" CVScreenId="e20da5f7-4427-48f7-a2d6-a81770b971e4" CvTextArea="393, 613, 514, 15" CvType="AnyWordGroup" DesignTimeRectangle="394, 598, 676, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-option-1645' tag='SPAN' type='' class='mat-option-text' /&gt;" Guid="b27dce26-057e-4c90-bc3a-8fa778be0d74" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e20da5f7-4427-48f7-a2d6-a81770b971e4" CvElementArea="380, 545, 705, 53" CvType="InputBox" DesignTimeRectangle="391, 563, 682, 18" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-63' tag='INPUT' type='text' class='mat-autocomplete-trigger mat-input-element mat-form-field-autofill-control ng-untouched cdk-text-field-autofill-monitored ng-pristine ng-invalid' aaname='Classe*' /&gt;" Guid="10bf371f-b04d-4fe3-9f2c-6278958b1c5d" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="e20da5f7-4427-48f7-a2d6-a81770b971e4" CvTextArea="215, 237, 117, 17" CvTextArgument="DADOS DA PEÇA*" CvType="Text" DesignTimeRectangle="30, 210, 467, 73" FuzzySelectorArgument="&lt;webctrl id='cdk-step-label-5-0' tag='MAT-STEP-HEADER' type='' class='mat-horizontal-stepper-header mat-step-header mat-focus-indicator mat-primary ng-tns-c44-159 ng-star-inserted' aaname='' check:innerText='lock&amp;#xA;DADOS DA PEÇA*' /&gt;" Guid="fca112c5-3408-47d9-9195-74d89e99654a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9058461961b4188c9945739f6556708e.png" xmlns="">0d_ORi6QdoUeHd1XwudQIcA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

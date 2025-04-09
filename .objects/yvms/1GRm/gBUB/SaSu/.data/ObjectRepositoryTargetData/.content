@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qOBAYH744k28_OZZ8WmORQ" Reference="NkYqdf221EmIXN1TRDnl6w/FO5D_HvXZ0S0V3jpXlIx9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" DesignTimeRectangle="1154, 445, 682, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-11' tag='INPUT' type='date' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched' aaname='Data de Decisão*' /&gt;" Guid="e2fd2ecb-5627-4bd9-bca8-15069222882f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1154, 424, 92, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-23' tag='LABEL' type='' class='mat-form-field-label ng-tns-c36-22 ng-star-inserted' aaname='' check:innerText='Data de Decisão*' /&gt;" Guid="f99f17fa-70b6-4736-b5d3-617bb84c459a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1cdaf76472336f90e38115f91bf7f412.png" xmlns="">076nP-uLxXEunTEipbiF8mg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

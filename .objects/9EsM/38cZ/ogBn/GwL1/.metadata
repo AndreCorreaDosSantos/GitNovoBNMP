@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Botão 'Entrar' - token",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "GwL1O1Nt7ECGFjHroRF4uQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/GwL1O1Nt7ECGFjHroRF4uQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/ogBnN5eQVEKvkp_4CeIXXw",
+  "Created": "2025-03-30T18:34:33.9014823Z",
+  "Updated": "2025-03-30T18:35:09.0629614Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

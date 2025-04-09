@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cPW_6WhYR0yIVbwE45bOOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="993b2cba-c78f-4bfe-82d0-1cd56cdc6959" CvElementArea="369, 604, 21, 20" CvTextArea="394, 605, 546, 17" CvTextArgument="Proibição de contato com Os familiares da ofendida por qualquer meio de comunicação" CvType="CheckBox" DesignTimeRectangle="371, 602, 568, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-206' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="14e923d6-8ce6-4914-a4c0-e400db1f1ae5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="993b2cba-c78f-4bfe-82d0-1cd56cdc6959" CvTextArea="394, 573, 454, 17" CvTextArgument="Proibição de contato com a ofendida por qualquer meio de comunicação" CvType="Text" DesignTimeRectangle="395, 570, 453, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-205' tag='SPAN' type='' aaname='Proibição de contato com a ofendida por qualquer meio de comunicação' check:innerText='Proibição de contato com a ofendida por qualquer meio de comunicação' /&gt;" Guid="ffe56834-aa1b-4d09-b00f-c1843427f657" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="efe321fd35b07e886e90693193c9db77.png" xmlns="">0HG4Mo6qC1kCiQgmAsf5hMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

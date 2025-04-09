@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Tipo de Documento(3)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "UykctIbGakCgjd9vPT1sfw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/UykctIbGakCgjd9vPT1sfw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "Created": "2025-04-08T18:15:16.320839Z",
+  "Updated": "2025-04-08T18:15:16.320839Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

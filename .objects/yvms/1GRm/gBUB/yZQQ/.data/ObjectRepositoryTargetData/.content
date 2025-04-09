@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BDaS9J0sGE6zwbw3TEjFqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="46ba6ac9-afa1-4e69-9b51-32d64dae454a" CvTextArea="1100, 673, 21, 13" CvTextArgument="OK" CvType="Text" DesignTimeRectangle="1102, 672, 18, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' OK ' class='mat-button-wrapper' parentid='mat-dialog-2' tag='SPAN' type='' check:innerText='OK' /&gt;" Guid="ea041acb-da50-4ec4-a167-4e4852b87b2a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="46ba6ac9-afa1-4e69-9b51-32d64dae454a" CvTextArea="991, 672, 57, 14" CvTextArgument="Cancelar" CvType="Text" DesignTimeRectangle="992, 672, 55, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='mat-button-wrapper' parentid='mat-dialog-2' tag='SPAN' type='' aaname=' Cancelar ' check:innerText='Cancelar' /&gt;" Guid="beec8e9f-f763-4769-8aa0-259935b5acf9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="03652cdd70891be27c41dfbc99746ac0.png" xmlns="">0ZuIc9YuxRU6J9lF1DnwTpA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

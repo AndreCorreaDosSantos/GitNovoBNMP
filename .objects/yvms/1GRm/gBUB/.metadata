@@ -1,0 +1,15 @@
+﻿{
+  "Name": "3 - Preenche o BNMP",
+  "Type": "Screen",
+  "Id": "gBUBfIb1dEu4Lfriqm90AA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/1GRmZZzA60OIlGoICBujCw",
+  "Created": "2025-03-30T23:27:42.9093888Z",
+  "Updated": "2025-03-31T01:35:49.398608Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

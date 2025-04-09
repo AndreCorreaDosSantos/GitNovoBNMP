@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-d0_JCmIbkGGxVlcR2xsFA" Reference="NkYqdf221EmIXN1TRDnl6w/uaBq0Z1r9UCC7kq9iKoM6w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="f370fb3a-6a07-436f-ac3d-cb462eb7c8c7" CvElementArea="369, 372, 25, 25" CvType="RadioButton" DesignTimeRectangle="372, 374, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-14' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-14' tag='SPAN' type='' aaname='' /&gt;" Guid="442ce967-1013-4c9d-9f07-62d7cec7171d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f370fb3a-6a07-436f-ac3d-cb462eb7c8c7" CvTextArea="399, 375, 117, 17" CvTextArgument="Endereço no Brasil" CvType="Text" DesignTimeRectangle="392, 374, 124, 20" FuzzySelectorArgument="&lt;webctrl class='mat-radio-label-content' parentid='mat-radio-14' tag='SPAN' aaname='Endereço no Brasil' type='' check:text='Endereço no Brasil' /&gt;" Guid="31a2a791-9dee-49de-bbec-c69fe520afaf" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f31dd9ca452c27514d6452fe259d6a3a.png" xmlns="">062qbH4YM806kUMOBPWMR-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

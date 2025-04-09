@@ -1,0 +1,12 @@
+﻿{
+  "Name": "6 - Coleta de dados Vítimas",
+  "Type": "Screen",
+  "Id": "gNEMyYK-l0KSSq6bFwI5cw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/gNEMyYK-l0KSSq6bFwI5cw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-03-30T23:11:11.4730564Z",
+  "Updated": "2025-03-30T23:11:11.4730564Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

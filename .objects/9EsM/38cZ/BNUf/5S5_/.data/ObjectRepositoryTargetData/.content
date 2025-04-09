@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-fLlZrB_m0eX1tmWjjqoVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" DesignTimeRectangle="167, 642, 671, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='text' aaname='Ao digitar, escolha uma das opções sugeridas ou selecione através da pesquisa ao lado' /&gt;" Guid="fe43f4b6-0b94-4fc3-9512-aa396c7caeb3" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="34, 642, 124, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Tipo de Documento:' check:innerText='Tipo de Documento:' /&gt;" Guid="97fa37a7-422d-4b9f-84fc-20b17e8cc704" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="98d135ae9642e64577968910ea3de2c0.png" xmlns="">0alI_3_5IDEqoNu0ksVLOSQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

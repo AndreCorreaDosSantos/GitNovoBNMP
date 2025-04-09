@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="z0qKeysvy0ivl4us2dqf1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/lista/24587915072" DesignTimeRectangle="1773, 605, 62, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Download' parentid='mat-menu-panel-4' tag='SPAN' type='' class='' check:innerText='Download' /&gt;" Guid="cd172660-9ae5-429c-b856-f57319628ef4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1735, 590, 150, 48" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Download' aria-role='menuitem' tag='BUTTON' type='' class='mat-focus-indicator mat-menu-item' check:innerText='Download' /&gt;" Guid="1b76bece-9ba6-4a76-b1a2-a28e5c23010c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9127d24c94e3f6f25856ddd63f5f0646.png" xmlns="">0zUK5PAINdka-zUWIVldvbw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HYSWaC5Y2k2I-ysAHxSCPw" Reference="NkYqdf221EmIXN1TRDnl6w/yZeuOoiE6k-Oayn9C6XV9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" DesignTimeRectangle="1474, 391, 108, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='kc-login' tag='INPUT' type='submit' class='btn btn-primary btn-block ' aaname='Entrar' check:text='Entrar' /&gt;" Guid="ec8d4857-c1ce-4350-be24-a028c0f71302" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b4978a9f24512e70443049816d9c69b6.png" xmlns="">0px6sWIw6BEeOLMzOM_UnMA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

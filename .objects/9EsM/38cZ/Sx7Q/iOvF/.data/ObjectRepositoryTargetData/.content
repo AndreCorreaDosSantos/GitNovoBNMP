@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v7Y8ZODM40eB7wMhaLB0xA" Reference="NkYqdf221EmIXN1TRDnl6w/-VHvGl_QLkmFhdmblK8gPQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="20, 146, 32, 16" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Início' check:innerText='Início' /&gt;" Guid="ca626627-b99a-4e86-811a-44d3b90c11db" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="37, 99, 629, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl name='topFrame' tag='FRAME' /&gt;&lt;webctrl tag='A' type='' class='header-title-large' aaname='Projudi - Processo Eletrônico do Judiciário de Roraima' check:innerText='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Guid="4b134f3b-bfbc-471f-9fe1-bd4e9c5b32a3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dd7046ac7ea7b20a1fe3ad59045a771d.png" xmlns="">05BNUjLPMpE6NSad6tl_NrQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

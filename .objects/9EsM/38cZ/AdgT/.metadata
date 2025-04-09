@@ -1,0 +1,16 @@
+﻿{
+  "Name": "9.4 - Ler MANDADO DE INTIMAÇÃO",
+  "Type": "Screen",
+  "Id": "AdgTwqZrEk6-87EbTp1XGw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/AdgTwqZrEk6-87EbTp1XGw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-04-08T14:00:51.7432378Z",
+  "Updated": "2025-04-08T14:01:18.7851056Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

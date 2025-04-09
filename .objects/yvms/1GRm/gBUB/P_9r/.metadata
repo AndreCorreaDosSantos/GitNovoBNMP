@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Biometria coletada e nã…",
+  "Type": "Element",
+  "Id": "P_9r1sk0L0itZnBo3QLkKA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/P_9r1sk0L0itZnBo3QLkKA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:34:55.131617Z",
+  "Updated": "2025-03-30T23:34:55.131617Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

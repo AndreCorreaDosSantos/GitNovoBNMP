@@ -1,0 +1,17 @@
+﻿{
+  "Name": "unchecked 15 - réu",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "4TOPiHkJ_EW6W_iyynnMvQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/4TOPiHkJ_EW6W_iyynnMvQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T13:45:14.9708547Z",
+  "Updated": "2025-03-31T13:45:43.5509549Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

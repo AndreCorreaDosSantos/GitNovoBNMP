@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9LmC7YHx1UyvFwnQBmsiKg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" CVScreenId="434c3f80-359e-4fdb-b820-b508afcdfce9" CvElementArea="390, 813, 344, 47" CvType="InputBox" DesignTimeRectangle="402, 829, 321, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-47' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored' aaname='Limite mínimo, de afastamento em metros*' /&gt;" Guid="6d87e092-dede-40cf-a884-9c34a75f9238" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="434c3f80-359e-4fdb-b820-b508afcdfce9" CvElementArea="390, 813, 344, 47" CvType="InputBox" DesignTimeRectangle="402, 810, 202, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-97' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-127 ng-star-inserted' aaname='' check:innerText='Limite mínimo, de afastamento em metros*' /&gt;" Guid="25927a1a-e4e6-4bfd-9081-9fbc598b126d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2b82a4ba8031536b1185bf61b181ce85.png" xmlns="">01jzpYqjG10mrHfXYCf8OZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

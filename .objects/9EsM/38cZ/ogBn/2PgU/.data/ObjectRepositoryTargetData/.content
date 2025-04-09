@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eZk1cy0UkkWjQQqiR0RtcA" Reference="NkYqdf221EmIXN1TRDnl6w/xQWqiDEY2EKngvIgFyD34A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="e7ff6459-cfc9-418c-9c81-783562c50996" DesignTimeRectangle="409, 211, 1118, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Selecione o Perfil de Usuário do Projudi:' /&gt;" Guid="5d0517f4-d9cb-4192-aef1-220253463a34" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9527c110f5ba7b62a621077b34ec41c1.png" xmlns="">0XW3SL34Hn0iWqrLfwasHVA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vQ52470kQUSxzwFCUkEeKQ" Reference="NkYqdf221EmIXN1TRDnl6w/2zUmx4cNW0ylqVDSXmDzaw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="1557, 440, 38, 40" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='cdk-accordion-child-1' tag='I' type='' class='fa fa-plus' aaname='' /&gt;" Guid="d87ecb99-fabf-4a7d-95e1-d552bf5f3c47" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1661, 445, 143, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-3' tag='SPAN' type='' aaname='Filiação não informada' check:innerText='Filiação não informada' /&gt;" Guid="c4636946-45aa-4b62-b490-94c16b558a9e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fd32d5bc93ccd08b6de94982e92ebb63.png" xmlns="">0efQlkJGzPUGuj3qnKcKlXw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rgiSrkj7OkmiePzQ-LRrdQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="f8921143-2892-4fde-9c73-e77e4d49b830" CvTextArea="71, 159, 169, 11" CvTextArgument="ANDRE CORREA DOS SANTOS" CvType="Text" DesignTimeRectangle="73, 158, 167, 13" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='ANDRE CORREA DOS SANTOS' check:innerText='ANDRE CORREA DOS SANTOS' /&gt;" Guid="49a9c40b-46a6-4bc4-8e7c-e3ce82982994" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f8921143-2892-4fde-9c73-e77e4d49b830" CvTextArea="16, 158, 53, 12" CvTextArgument="Usuário:" CvType="Text" DesignTimeRectangle="17, 158, 52, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='userinfo_label' aaname='Usuário:' check:innerText='Usuário:' /&gt;" Guid="17f14732-388f-4772-9e4f-529b91b28dbd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="597d8affce194112a072969506b2e43e.png" xmlns="">0Gry7B1wDC0yneBqOWTeD8Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

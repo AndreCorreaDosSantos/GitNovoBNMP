@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yDdtzfCF3UixSsyllAliwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="ffa8e791-0cc2-4515-b8e4-bb18a55784b5" CvTextArea="54, 135, 48, 11" CvTextArgument="Processos" CvType="Text" DesignTimeRectangle="55, 134, 47, 13" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Processos' check:innerText='Processos' /&gt;" Guid="54a627c8-74ca-4a30-8341-f30322d83fd2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ffa8e791-0cc2-4515-b8e4-bb18a55784b5" CvTextArea="17, 134, 28, 12" CvTextArgument="Início" CvType="Text" DesignTimeRectangle="19, 134, 25, 13" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Início' check:innerText='Início' /&gt;" Guid="6033fa7c-6477-407c-b2f3-0406a48f0d01" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7fe50df4e60afd5ebf628bef9feeba42.png" xmlns="">0l1gB8QXxw0iqnxFFLAci8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

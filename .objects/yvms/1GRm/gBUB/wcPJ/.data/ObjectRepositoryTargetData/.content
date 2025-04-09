@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kaJoR4Lp7UGLz8bShdJOqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" CVScreenId="a33667a9-593a-4d2b-b6ce-515b71c00a15" CvElementArea="369, 760, 19, 19" CvType="CheckBox" DesignTimeRectangle="371, 762, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-136' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="13dd56ff-2e5d-4de2-9a37-7111d2beca12" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a33667a9-593a-4d2b-b6ce-515b71c00a15" CvTextArea="393, 761, 651, 14" CvTextArgument="Afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos" CvType="Text" DesignTimeRectangle="394, 761, 650, 17" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-136' tag='SPAN' type='' aaname='Afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos' check:innerText='Afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e' /&gt;" Guid="eb1c17a8-32aa-4cb1-8372-b6c3ff292d71" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3816d681ac66e4d3ed22be4cc3ccfc46.png" xmlns="">0Cy1_0JeU70SEuZ25g8BpGQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

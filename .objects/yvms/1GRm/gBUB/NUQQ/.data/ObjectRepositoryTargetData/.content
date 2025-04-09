@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qb2OY18c0kGIbHYgutll0g" Reference="NkYqdf221EmIXN1TRDnl6w/0BZU3PnYr0CZWxlrIQ_esQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="994, 984, 75, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Próximo' class='mat-button-wrapper' parentid='cdk-step-content-1-1' tag='SPAN' type='' check:innerText='Próximo' /&gt;" Guid="6e2edbe3-6f8e-49d1-a500-5c2d55ae69f1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e385a6d6b5ec7605e325942e2e98288e.png" xmlns="">0v2omsVMdwUuCx0I7fO4ETQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

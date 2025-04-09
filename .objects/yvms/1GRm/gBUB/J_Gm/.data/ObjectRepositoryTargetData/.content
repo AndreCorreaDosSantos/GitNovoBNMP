@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HqhZlV_NpkmbthqHS1ZNnw" Reference="NkYqdf221EmIXN1TRDnl6w/pyqOSIQ8e0mEz-BJfyjymA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" DesignTimeRectangle="1109, 267, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control' placeholder='000.000.000-00' aaname='                                           CPF/CNPJ                                           ' /&gt;" Guid="8f1813c9-dcb5-4534-91ca-1a0bd09d8d93" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1109, 243, 72, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='username-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                           CPF/CNPJ                                           ' check:innerText='CPF/CNPJ' /&gt;" Guid="622365e7-caa8-4540-b91d-cd4ffe22d489" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7e25f824e6101cff371d6a976afaa31c.png" xmlns="">0pvU6fIyqNUi7FgCn74ygZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

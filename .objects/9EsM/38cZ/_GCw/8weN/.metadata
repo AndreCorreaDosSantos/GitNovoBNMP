@@ -1,0 +1,12 @@
+﻿{
+  "Name": "NomeUrl",
+  "Type": "Element",
+  "Id": "8weNpJhUzkuuvr2rt1y-vg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/8weNpJhUzkuuvr2rt1y-vg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/_GCwBxkfTEeVtgJ-lwFgmw",
+  "Created": "2025-03-30T19:17:56.1845492Z",
+  "Updated": "2025-03-30T19:17:56.1845492Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

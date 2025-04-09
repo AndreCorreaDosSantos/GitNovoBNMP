@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Primeira Página",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "r0clMonw2066B0Nf4pBi-w",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/r0clMonw2066B0Nf4pBi-w",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "Created": "2025-03-30T19:08:29.8271148Z",
+  "Updated": "2025-03-30T19:08:29.8271148Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

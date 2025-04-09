@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Assinar e Concluir Movi…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "VIKYL6GMvUurV6JX-qmzmA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/VIKYL6GMvUurV6JX-qmzmA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "Created": "2025-04-08T18:22:31.1909133Z",
+  "Updated": "2025-04-08T18:22:31.1909133Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

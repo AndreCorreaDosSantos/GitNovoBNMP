@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Peças",
+  "Type": "Element",
+  "Id": "mwVJ4cwnGkORC1rxvqU3CA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/mwVJ4cwnGkORC1rxvqU3CA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-04-08T13:50:16.3817749Z",
+  "Updated": "2025-04-08T13:50:16.3817749Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

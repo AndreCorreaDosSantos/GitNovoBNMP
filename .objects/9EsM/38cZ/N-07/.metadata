@@ -1,0 +1,15 @@
+﻿{
+  "Name": "5 - Coleta dados Réus",
+  "Type": "Screen",
+  "Id": "N-07e6zGM0eX0cR5bnbQbA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/N-07e6zGM0eX0cR5bnbQbA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-03-30T19:02:16.9984485Z",
+  "Updated": "2025-03-30T19:18:10.0145163Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

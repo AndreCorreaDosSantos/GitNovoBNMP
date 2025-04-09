@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Bz_c6XocY06bosFjkf_Cjw" Reference="NkYqdf221EmIXN1TRDnl6w/dxe9zAUFVU-nzCSnsUjnrQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="c0230223-eb74-4160-97b7-00b930da6ba1" CvElementArea="1123, 236, 701, 49" CvType="InputBox" DesignTimeRectangle="1134, 252, 679, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-19' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='Logradouro' /&gt;" Guid="a5fe913d-6480-49c0-a029-a953b3e6823b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="c0230223-eb74-4160-97b7-00b930da6ba1" CvElementArea="1123, 236, 701, 49" CvType="InputBox" DesignTimeRectangle="1134, 255, 679, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-69' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-82 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='Logradouro' /&gt;" Guid="9e42fd72-5586-4858-8735-5042f3133675" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="59ca3557b3f1aded0b73764110c2cc37.png" xmlns="">0mZCulfJiIEudS7zeqds0Hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

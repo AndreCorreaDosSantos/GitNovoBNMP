@@ -1,0 +1,1083 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Consulta_se_o_Processo_foi_Cadastrado_no_BNMP" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugagf="clr-namespace:UiPath.GSuite.Activities.Gmail.Filters;assembly=UiPath.GSuite.Activities" xmlns:ugagm="clr-namespace:UiPath.GSuite.Activities.Gmail.Models;assembly=UiPath.GSuite.Activities" xmlns:ugm="clr-namespace:UiPath.GSuite.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_nProcesso" Type="InArgument(x:String)" />
+    <x:Property Name="in_TransactionNumber" Type="InArgument(x:Int32)" />
+    <x:Property Name="BL_StatusMedida" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Consulta_se_o_Processo_foi_Cadastrado_no_BNMP_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Contracts</x:String>
+      <x:String>UiPath.GSuite</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Consulta_se_o_Processo_foi_Cadastrado_no_BNMP" sap:VirtualizedContainerService.HintSize="1384,7451" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strCPF" />
+      <Variable x:TypeArguments="x:String" Name="Processo" />
+      <Variable x:TypeArguments="x:String" Name="codigoVerificacao" />
+      <Variable x:TypeArguments="ugm:GmailMessage" Name="emailRecebido" />
+      <Variable x:TypeArguments="ui:UiElement" Name="elementoDeSaída">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:04" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1384,117" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;COLETANDO O CPF DO REQUERIDO!&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="1384,113" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[BL_StatusMedida]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Browser(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1384,1615" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[elementoDeSaída]" ScopeGuid="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,1326" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Processo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="b5zhMDJKskiKet35tH92qw" DesignTimeRectangle="1416, 184, 104, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='shortcuts' type='' tag='A' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Processo &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;' check:innerText='Processo' /&gt;" Guid="e3aa9352-a0a9-4ef8-baee-d8946243d95e" InformativeScreenshot="058be186a1a4ac972abffa4eb39cfece.png" Reference="NkYqdf221EmIXN1TRDnl6w/4Aq9IiW_lUSQDrfVPnJH1Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1530, 184, 104, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Histórico &amp;#x9;&amp;#x9;    &amp;#x9;' class='shortcuts' type='' tag='A' check:innerText='Histórico' /&gt;" Guid="2d79784a-7728-4955-8864-f2a97421a1ab" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Processo]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[in_nProcesso]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Número do Processo'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" Text="[Processo]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="IDplvMbNukK4dax6hg4lQg" DesignTimeRectangle="243, 341, 269, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='Número do Processo:' /&gt;" Guid="e1cae652-28f6-4a11-8b07-ca8e3b2294c8" InformativeScreenshot="b179fe87e288e4934f545f510243da58.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/wyKo_YKq7EmPOAqLpudBnQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="68, 342, 164, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Número do Processo:' check:innerText='Número do Processo:' /&gt;" Guid="3c2e0973-6f9c-4abb-91bb-f1f3d863f0f4" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pesquisar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="G5eW4qqzHUWeL6S0HBd8uQ" DesignTimeRectangle="1784, 310, 120, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='button' aaname='Pesquisar' check:text='Pesquisar' /&gt;" Guid="6e39ba09-6d48-46f5-8c26-5eb1994b28fb" InformativeScreenshot="75dda93aac320e42462e80d12b086eae.png" Reference="NkYqdf221EmIXN1TRDnl6w/lLFNjYZcLkOET1_3KZn2gA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="32, 310, 1750, 21" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname=' ' /&gt;" Guid="5cfb6769-a48c-4dcf-bf27-20b62492e454" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Partes'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="vyxZEBpQ9U-P3aP-wrwFNQ" DesignTimeRectangle="386, 809, 67, 18" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Seq. Data Evento Movimentado Por Ações' tag='TABLE' /&gt;&lt;webctrl aaname='Partes' type='' tag='A' class='' check:innerText='Partes' /&gt;" Guid="10f989a4-155d-44ff-b2d9-45f6d6a5eecb" InformativeScreenshot="4eb7e015a942a8e1ab6e6b1c87ec22e6.png" Reference="NkYqdf221EmIXN1TRDnl6w/Hgg_1B4VtEmKjDVqS7ScIw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="208, 809, 156, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Seq. Data Evento Movimentado Por Ações' tag='TABLE' /&gt;&lt;webctrl aaname='Informações Adicionais' type='' tag='A' class='' check:innerText='Informações Adicionais' /&gt;" Guid="ac941af2-8ef8-4f2a-8fe0-76f717f7769b" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'Vítimas'" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DelayAfter="3" DisplayName="Get Text 'CPF/CNPJ'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" TextString="[strCPF]" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="f739daa7-b440-4bc9-bcb7-5775be6c698c" ContentHash="aAwvsJ5vmESqvpzLV9GCrA" CvTextArea="918, 802, 114, 13" CvType="AnyWordGroup" DesignTimeRectangle="853, 797, 244, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' /&gt;" Guid="e206e58a-cfd6-4a7f-ab09-22af48a77abd" InformativeScreenshot="b5b3d0fd5864fd79de64268a3c631543.png" Reference="NkYqdf221EmIXN1TRDnl6w/i3OYyx7dhEqAwJpIydl6bg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f739daa7-b440-4bc9-bcb7-5775be6c698c" CvElementArea="466, 545, 111, 28" CvTextArea="492, 554, 48, 12" CvTextArgument="Partes" CvType="Button" DesignTimeRectangle="479, 548, 84, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl aaname='Partes' type='' tag='A' class='' check:innerText='Partes' /&gt;" Guid="dd01ee21-bcb9-428f-91c7-5ce800a687de" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text 'Partes'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="f6d9ca40-8b2b-4777-afb0-67a3f5f3f4b0" TextString="[strCPF]" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="b6554309-0952-48d4-b64a-63da0f7545c2" ContentHash="qTV__qFltUqMI9THlEXqfA" CvTextArea="913, 932, 115, 14" CvType="AnyWordGroup" DesignTimeRectangle="849, 915, 243, 46" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' /&gt;" Guid="07b63468-cb45-4c96-96ae-7c2d60af74de" InformativeScreenshot="40f9acf3ba3409884b54eba8e1510815.png" Reference="NkYqdf221EmIXN1TRDnl6w/UHmFxuwmy0S6jD0q8fWX9Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="b6554309-0952-48d4-b64a-63da0f7545c2" CvElementArea="466, 616, 111, 28" CvTextArea="492, 624, 48, 12" CvTextArgument="Partes" CvType="Button" DesignTimeRectangle="479, 619, 84, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl aaname='Partes' type='' tag='A' class='' check:innerText='Partes' /&gt;" Guid="52fbdf1a-2f30-4f15-9dfa-43e22d361a81" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="2565065f-94c9-473d-934f-f7a0f12ab72b" ContentHash="mFQ4KJENwUCAxn9FPIKgyg" CvTextArea="77, 935, 62, 13" CvTextArgument="Vítimas" CvType="Text" DesignTimeRectangle="58, 931, 1211, 26" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='H4' aaname='Vítimas' check:innerText='Vítimas' /&gt;" Guid="fc1d25d0-ba8c-4ddd-8b98-f484f1a6b19f" InformativeScreenshot="4870e3c903eae99bfada30d2aad6c288.png" Reference="NkYqdf221EmIXN1TRDnl6w/j-rMJRGAK0mzmoElrq7TXQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="2565065f-94c9-473d-934f-f7a0f12ab72b" CvTextArea="78, 842, 101, 14" CvTextArgument="Polo Passivo" CvType="Text" DesignTimeRectangle="58, 838, 1211, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='H4' aaname='Polo Passivo' check:innerText='Polo Passivo' /&gt;" Guid="50092bf8-7b82-42d7-a190-5469758e5e8a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'DIV  container'" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="GetFullText_1">
+              <ui:GetFullText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8ee1507-c0f2-49cb-9590-3ca4345ab66f" InformativeScreenshot="fe5c45c3f7a4bf1d33718f9b517cc871" Selector="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl aaname=' Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados  Nome RG CPF/CNPJ Observação Advogados' tag='TABLE' /&gt;&lt;webctrl class='masterBlockSubInfoHorz' tableRow='2' tag='TD' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetFullText.Target>
+              <ui:GetFullText.Text>
+                <OutArgument x:TypeArguments="x:String">[strCPF]</OutArgument>
+              </ui:GetFullText.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:GetFullText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="X4sNq7i-lEe3Hl4js1mKaw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALtSURBVDhPPZPbU9JREMd/f2HvPTTTU700ZZPVlFOa3Wa6aBCTDpkklbfEELylBCkkKHiDkYxM04w0xEi5C3zac5p62HP27H73e3b3nDUolyGbhdIRVCCXKUBVjiU51sSVh5rsyqZFMNp4JHiJNWp5CVYkCiSi/Ml0jqLsqRwIndZ3M2Xt+4erFcV6VMLIVssakKlUECr2Ra5ZrJj63Jy42Mjx8w2cvdtCU9szvmSy/MiX/pNKkhipapXfoiSF9bvIumR2f8BNXFAfBZEUX2S/QHcgwspBnrVcibTYdEy5iKFufBdPcPrmXS6Y2zC7PVzp7OG6fZDzbS85Vn+DM+ZnNNkHuNPj5Gr7c04132Eqsa6JNMHMRpKWbhfOyCqvQ3EeDExSZ7JjGQ/R6YvyaGiaZvsQ9SYbT1xeTjbcIpD4rss1DmR541ugrtHM2OwXvLEdTD1emp44mN0q4vB/xjYSweoM4pj+yOYhnGt6hMu3xI402VANGfbFaLzfRVLYVG3tvVOY7R5S0vaMnKdiKaz9fibnNnWjLzW3MzAW1s00DqVxve4gLVandqYlyGx/qwNUcFrefvbTAa73CfrGF0lLYzt6vVhsbiSBvyW8HAlieTWmm7InhJ3OAB1DMyTlRVJiGw1/1bZ+z5Imtbs/0PrcpbM11uRT2b1zuBYSbMhtnyQv67ifnkCUXQEoCW4f4AjH6Q/F+CoX2CaDmAcn+KEIFMDsHOdyu40r1i6eevw8Hp7kRSBMQjJQpPP7OXpnlzjz0EJDxwu9m96MaXJjW5ah+WUm5C+MLK/g39iS51xkcG6e+d09JmKrBL8lmV7fpPX1IPe6+7nd9Yru6RldnvFLlpFgmLY+hxbPwhKhxBr+6Aq+hWVGP4S0vvpzj/jOT6LbO4KJMhqKsC5f2yjIHBUl1f1fWapSX1VeoaamTvR/omxqr6gBFClJzGG+qofLQAxqTAtqjJVFTYgSRZQTZEEUhVGSr1HJyVnhlL8EfwAueoB2bgMvmAAAAABJRU5ErkJggg==" InformativeScreenshot="e47e2ac7cb3dd8c4d81965f3b364e11d.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/zlUQpUCD2k2Fu1Ir1e3-Bw" Selector="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <Sequence sap:VirtualizedContainerService.HintSize="1384,5470" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:04" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1350,117" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;CONSULTANDO SE O PROCESSO FOI CADASTRADO NO BNMP&quot;]" />
+      <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Edge PDPJ - Plataforma Digital do Poder Judic" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1350,5261" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="55ac78c2-a17d-4904-b464-2e483696068e" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1316,5021" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Se erro de autenticação BNMP" sap:VirtualizedContainerService.HintSize="1282,57" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,730" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rótulo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="4c4fd951-2c39-48ab-9423-4bcb60cbcaf7" ContentHash="XuNXXWWzp0yO7QsEq6-sBQ" CvElementArea="1137, 475, 27, 26" CvType="CloseButton" DesignTimeRectangle="1144, 471, 14, 32" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='toast-container' tag='SPAN' type='' class='ng-tns-c40-7' aaname='×' check:innerText='×' /&gt;" Guid="640b3ba4-c1e7-4074-be18-f54700c29d30" InformativeScreenshot="34f24b1417c0620f5b3b28c8e2c97379.png" Reference="NkYqdf221EmIXN1TRDnl6w/KcD30YJ7vEa6rf0McXe4WQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="4c4fd951-2c39-48ab-9423-4bcb60cbcaf7" CvElementArea="1137, 475, 27, 26" CvTextArea="898, 472, 138, 16" CvTextArgument="Ops! Algo aconteceu." CvType="CloseButton" DesignTimeRectangle="768, 468, 400, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='toast-container' tag='P' type='' class='ng-tns-c40-7' aaname='Ops! Algo aconteceu.' check:innerText='Ops! Algo aconteceu.' /&gt;" Guid="c90d7a7d-f920-4f51-a4ef-e4e6b2302e1e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ANDRE CORREA DOS SANTOS'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="c364fe25-bd0f-4cfb-a98c-9932741efc49" ContentHash="KpLzJwPFhkGTb9m3-uxQgg" CvElementArea="1704, 96, 38, 34" CvType="Icon" DesignTimeRectangle="1708, 100, 26, 26" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aria-label='Example icon-button with a heart icon' tag='MAT-ICON' type='' class='fas fa-user mat-icon notranslate material-icons mat-icon-no-color ng-star-inserted' aaname='' /&gt;" Guid="dc61dd4f-616c-4f2a-a65c-7e721547b0da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALQSURBVEhLzZZPaBNBFMajKHgRvOlJyMGDx5zEay/ivxx6SxDFP6eWghLiQeLNixoUJIeIFWKlKEovYj0IUhBrieISG1tLaZOKpUmRJtoikbI7n/O2s9vZ3cnuJlb0gw/a2ffeb2f2zWQi+Ef6v8Frv4AXHxmuPDVw5KaBA5d17Dy7YfqbxugZxVBsGAWCH00wnLxlIHJaD2WKpZwgtQXPLAEDDw1sO6MG+JlyKJdqtJMS/K7CcKKDWbYz1aBaKnnA9Ja9d/4caplqqWbuAfc92DqoZarplgM8NM66+qZB3s5rUm1ZDnD47jVw7K6BJHdPWvXca6otywbTHqQ3UyXJjhYYKusiiaQD2svgF6baxLBkg+kAUCU4nGbQZKikV8OKeJeJYckG0+mjCnZ4TAQr1Jpj6hzJxLBkg/cOqIMdfi2CVfoaDCaGJRM8Pgvs4OeuKtjheww1M82ryoRzxfZf0nH9OUOZv9A655E/Lbq+cWgwd2razHPqO0NK6u4L9w0T5KfOltq0gf4xhukV/l1XeUfzTk26oKYayxjMT+Jg4j0ix4UTGnryVWgNHrsRFa65YnypB98w5B4biFpjtw3kaOyJgaN8eWmmTe0zonEJ6HZc2wT7bqe0gZG6CPQT32rNt1PYo4K5LVJ8DxDld1VJX0K/vLR+Fimm1EcmPzQCGsVS7dmkXTiaKeOw6iUSJSQz0lKT6CD3zpo3kngepNEbonimiiYN1KvodTRXGcN1msWaE0zy/iyGBa8g2ycA8RKuzYuz1YLbUL4b5me9YNVFIFXkTdPiCb5uYeiqAHvgy+YWIhE0Rh1v/udSt1effac+bIIFPLsgNciCgNIzMeRRV5e95Ax2y2AZLkPJgtNWnV1vf+DQOdes21nU91VHF/qf35C9qAC5LWpvrfRVjOZL2KU6NvlYLL/4l8CWWg1oxS/IFaZwvjCHkWIdtRY1G/AbQfsCMleMYa8AAAAASUVORK5CYII=" InformativeScreenshot="51adaae5edb198d39aa5cc42d0a28a74.png" Reference="NkYqdf221EmIXN1TRDnl6w/XIuE5wLaEEyJWeWIuQHcZQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="c364fe25-bd0f-4cfb-a98c-9932741efc49" CvTextArea="1751, 106, 155, 13" CvTextArgument="ANDRE CORREA DOS S..." CvType="Text" DesignTimeRectangle="1753, 105, 155, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='name' tag='SPAN' type='' aaname='ANDRE CORREA DOS SANTOS' check:innerText='ANDRE CORREA DOS SANTOS' /&gt;" Guid="94759701-6455-4ba6-a022-3e000f33e15a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="c6658f0c-6964-4378-9f3b-ef26443e3e91" ContentHash="fGYD1A3yuEOje1IPCmo0Tw" CvElementArea="1653, 348, 22, 20" CvType="Icon" DesignTimeRectangle="1657, 350, 16, 16" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='mat-menu-panel-3' tag='SPAN' class='fas fa-sign-out-alt' aaname='' /&gt;" Guid="b49bb8f8-be72-4e7e-8de7-17a53294fe21" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVDhPY/hPZTCSDfzy7ef/hhk7/qv6tv6XdW8EY/ukKf9fv/sCln/38dt/79zZ//sWH/j/+/dfsBg2ADbw37//YMNgBmEz8OXbz/9tEib9V/Bswmso2ECQJpBmneDO/+euPwFLoAOYgSCL8BkKNhCmGIRBbBD4+Pk7mA3DV+48/28ZNxHuelyGYjUQ5mKYZlwYm6FYDYTxsRmCjkGGzlp7HGwYCFDFwOmrj4IjFgTo42UQoChSqJ5sqJ6wQYCqWY+aYMQZ+P8/ABj2YF9aJ1I/AAAAAElFTkSuQmCC" InformativeScreenshot="1edc77e81b716521d95ddef31bcf3ef3.png" Reference="NkYqdf221EmIXN1TRDnl6w/GxWTbsVF6EuIcxwTt7IdLQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="c6658f0c-6964-4378-9f3b-ef26443e3e91" CvTextArea="1619, 349, 31, 15" CvTextArgument="Sair" CvType="Text" DesignTimeRectangle="1605, 334, 303, 48" FuzzySelectorArgument="&lt;webctrl aaname='Sair' class='mat-list-item-content' parentid='mat-menu-panel-3' tag='DIV' type='' check:innerText='Sair' /&gt;" Guid="43947184-b536-4e69-90fa-8a2dfd62b81e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="4c4fd951-2c39-48ab-9423-4bcb60cbcaf7" ContentHash="3eAKmJXVwUWEkMNnU_YzCg" CvTextArea="781, 537, 184, 17" CvTextArgument="Você não possui permissão." CvType="Text" DesignTimeRectangle="783, 534, 370, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='alert' tag='DIV' type='' class='toast-message ng-star-inserted' aaname=' Você não possui permissão. ' check:innerText='Você não possui permissão.' /&gt;" Guid="f7b02ce5-e27e-4dea-b44b-c94e3fb9f1fd" InformativeScreenshot="00ae41e542a7f961672576230845f620.png" Reference="NkYqdf221EmIXN1TRDnl6w/XBN-b9djck2As_ImwIUVaw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="4c4fd951-2c39-48ab-9423-4bcb60cbcaf7" CvElementArea="1137, 475, 27, 26" CvTextArea="898, 472, 138, 16" CvTextArgument="Ops! Algo aconteceu." CvType="CloseButton" DesignTimeRectangle="768, 468, 400, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='toast-container' tag='P' type='' class='ng-tns-c40-7' aaname='Ops! Algo aconteceu.' check:innerText='Ops! Algo aconteceu.' /&gt;" Guid="99169d57-88c4-43c8-bf0c-4f519defa410" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Destino aparece - Informa o código de email" sap:VirtualizedContainerService.HintSize="1282,340" sap2010:WorkflowViewState.IdRef="NCheckState_3" Timeout="1" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Destino aparece - Informa o código de email" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" Length="{x:Null}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfMSIsIk5hbWUiOiJfU2VudCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEwIiwiTmFtZSI6Il9JTkJPWFwvRHJhZnRzIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTEiLCJOYW1lIjoiX0lOQk9YXC9UcmFzaCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEyIiwiTmFtZSI6IkVtZXhpcyIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEzIiwiTmFtZSI6IkVtZXhpc1wvUXVhcmFudGluZSIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzE0IiwiTmFtZSI6IkVtZXhpc1wvV2hpdGVsaXN0IiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTUiLCJOYW1lIjoiRW1leGlzXC9CbGFja2xpc3QiLCJUeXBlIjoidXNlciJ9LHsiSWQiOiJMYWJlbF84IiwiTmFtZSI6Il9JTkJPWCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzkiLCJOYW1lIjoiX0lOQk9YXC9TZW50IiwiVHlwZSI6InVzZXIifV0=" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="470,571" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_1" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+                      <uga:ForEachEmailConnections.Body>
+                        <ActivityAction x:TypeArguments="ugm:GmailMessage, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ugm:GmailMessage" Name="CurrentEmail" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentEmailIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence sap2010:Annotation.AnnotationText="Deletar email no Gmail&#xA;" DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,328" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uga:DeleteEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" AuthScopesInvalid="False" ConnectionId="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" DisplayName="Excluir e-mail no Gmail" Email="[CurrentEmail]" sap:VirtualizedContainerService.HintSize="382,226" sap2010:WorkflowViewState.IdRef="DeleteEmailConnections_2" PermanentlyDelete="True" UseConnectionService="True" />
+                          </Sequence>
+                        </ActivityAction>
+                      </uga:ForEachEmailConnections.Body>
+                      <uga:ForEachEmailConnections.Filter>
+                        <ugagf:MailFilterCollection LogicalOperator="And">
+                          <ugagf:MailFilterCollection.Filters>
+                            <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="Subject" DateOperator="NewerThan" StringOperator="Contains" Value="código de verificação" />
+                            <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="From" DateOperator="NewerThan" StringOperator="Contains" Value="naoresponda@cnj.jus.br" />
+                          </ugagf:MailFilterCollection.Filters>
+                        </ugagf:MailFilterCollection>
+                      </uga:ForEachEmailConnections.Filter>
+                      <uga:ForEachEmailConnections.Folder>
+                        <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="INBOX" BrowserFolderName="Inbox" InputMode="Browse">
+                          <ugagm:FolderArgument.Backup>
+                            <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" StoredValue="{x:Null}" x:Name="__ReferenceID0">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </ugagm:FolderArgument.Backup>
+                        </ugagm:FolderArgument>
+                      </uga:ForEachEmailConnections.Folder>
+                    </uga:ForEachEmailConnections>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CPF/CNPJ'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,286" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="93559453291" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" ContentHash="LKzCXH8U9UyuMVkX1n7M4A" CvElementArea="1107, 220, 477, 38" CvType="InputBox" DesignTimeRectangle="1109, 222, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control' placeholder='000.000.000-00' aaname='                                           CPF/CNPJ                                           ' /&gt;" Guid="adf25168-dc4b-4ca0-a44f-86a3ce74b616" InformativeScreenshot="0ecc5bf3d604a0c596450810393713ba.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/IzZRIJkJq0m43la9vk93Sg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" CvTextArea="1107, 203, 73, 13" CvTextArgument="CPF/CNPJ" CvType="Text" DesignTimeRectangle="1109, 198, 72, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='username-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                           CPF/CNPJ                                           ' check:innerText='CPF/CNPJ' /&gt;" Guid="9e052d36-4e81-42ae-9ec6-4f4480099eb9" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="93559453291" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" ContentHash="eRh7wNW2uUulRwmmugNY-Q" CvElementArea="1106, 295, 478, 39" CvType="InputBox" DesignTimeRectangle="1109, 296, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' placeholder='Digite sua senha' aaname='                                     Senha                                     ' /&gt;" Guid="a4f00c67-f705-40a5-aa2e-a8df2983cccd" InformativeScreenshot="5045b1bec53f34eeddb8cc6855fb6181.png" Reference="NkYqdf221EmIXN1TRDnl6w/MpPbLf-0Ik6eRlGksGEuuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="6d4b0723-6627-4ad3-a185-db99e26552d6" CvTextArea="1108, 277, 44, 13" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1109, 272, 43, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='password-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                     Senha                                     ' check:innerText='Senha' /&gt;" Guid="9dcbbddb-eb83-46cc-8017-781e1e3d382c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="23e25a6e-47fb-45f2-9520-31b68621a3ef" ContentHash="8PO_Y94qZkaCsIW23g7NJA" CvElementArea="1472, 344, 112, 44" CvTextArea="1505, 357, 47, 15" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="1474, 346, 108, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='kc-login' tag='INPUT' type='submit' class='btn btn-primary btn-block ' aaname='Entrar' check:text='Entrar' /&gt;" Guid="925e329e-5a5b-48fd-bdbc-4a3c0443a7d7" InformativeScreenshot="e3805ded3202548c30b4a5e06426ab11.png" Reference="NkYqdf221EmIXN1TRDnl6w/5bUSj_zsWE69ox9HNEKv7Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="23e25a6e-47fb-45f2-9520-31b68621a3ef" CvElementArea="1109, 386, 480, 26" CvType="InputBox" DesignTimeRectangle="1109, 386, 473, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='outrasopcoes' tag='DIV' type='' class='' aaname='                                     Outras opções de acesso                                  ' check:innerText='Outras opções de acesso' /&gt;" Guid="a1ccf293-31c4-4095-bf79-dc3588ce6453" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <TryCatch DisplayName="Caso entre sem Email" sap:VirtualizedContainerService.HintSize="470,1594" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="468,1257" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uga:GetNewestEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID1}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfMSIsIk5hbWUiOiJfU2VudCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEwIiwiTmFtZSI6Il9JTkJPWFwvRHJhZnRzIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTEiLCJOYW1lIjoiX0lOQk9YXC9UcmFzaCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEyIiwiTmFtZSI6IkVtZXhpcyIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzEzIiwiTmFtZSI6IkVtZXhpc1wvUXVhcmFudGluZSIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzE0IiwiTmFtZSI6IkVtZXhpc1wvV2hpdGVsaXN0IiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMTUiLCJOYW1lIjoiRW1leGlzXC9CbGFja2xpc3QiLCJUeXBlIjoidXNlciJ9LHsiSWQiOiJMYWJlbF84IiwiTmFtZSI6Il9JTkJPWCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzkiLCJOYW1lIjoiX0lOQk9YXC9TZW50IiwiVHlwZSI6InVzZXIifV0=" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" DisplayName="Get Newest Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="434,235" sap2010:WorkflowViewState.IdRef="GetNewestEmailConnections_2" ImportantOnly="False" MarkAsRead="True" Result="[emailRecebido]" StarredOnly="False" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="False">
+                            <uga:GetNewestEmailConnections.Filter>
+                              <ugagf:MailFilterCollection LogicalOperator="And">
+                                <ugagf:MailFilterCollection.Filters>
+                                  <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="Subject" DateOperator="NewerThan" StringOperator="Contains" Value="código de verificação" />
+                                </ugagf:MailFilterCollection.Filters>
+                              </ugagf:MailFilterCollection>
+                            </uga:GetNewestEmailConnections.Filter>
+                            <uga:GetNewestEmailConnections.Folder>
+                              <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="INBOX" BrowserFolderName="Inbox" ConnectionKey="9bfbfda6-eb96-4798-9cf5-622a7cfd8a7c" InputMode="Browse">
+                                <ugagm:FolderArgument.Backup>
+                                  <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" StoredValue="{x:Null}" x:Name="__ReferenceID1">
+                                    <usau:BackupSlot.BackupValues>
+                                      <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+                                    </usau:BackupSlot.BackupValues>
+                                  </usau:BackupSlot>
+                                </ugagm:FolderArgument.Backup>
+                              </ugagm:FolderArgument>
+                            </uga:GetNewestEmailConnections.Folder>
+                          </uga:GetNewestEmailConnections>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[emailRecebido.BodyAsHtml]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[codigoVerificacao]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(emailRecebido.BodyAsHtml, "(?&lt;=&lt;h1&gt;)(\d+)(?=&lt;/h1&gt;)").Value]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Fatal" Message="[codigoVerificacao]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Informe o código'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[codigoVerificacao]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="fa21862d-23d0-460c-88c5-b66de18476b0" ContentHash="YdhXQNqYtkCD74Fbr_Kv0Q" CvElementArea="1121, 319, 447, 38" CvType="InputBox" DesignTimeRectangle="1124, 321, 443, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='code' tag='INPUT' type='text' class='form-control' aaname='Informe o código' /&gt;" Guid="984266ea-44e8-4566-8d09-a24f01ef7694" InformativeScreenshot="52f40a357cd6f9a9ea915cb684c9aa67.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/_P8ZXHIqBkCaMu7XApTR0A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="fa21862d-23d0-460c-88c5-b66de18476b0" CvTextArea="1123, 292, 124, 18" CvTextArgument="Informe o código" CvType="Text" DesignTimeRectangle="1124, 289, 123, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Informe o código' check:innerText='Informe o código' /&gt;" Guid="dbb83203-bb68-471b-af45-14ad4e4b9241" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ok'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/login-actions/authenticate" CVScreenId="32267071-8315-4145-a996-e4bcd3230f45" ContentHash="bWUMakpJ30GMkrMubknMuw" CvElementArea="1123, 370, 445, 39" CvTextArea="1333, 380, 25, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1124, 371, 443, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary w-100' aaname='Ok' check:text='Ok' /&gt;" Guid="69d5eabe-78ea-48ce-a9c7-63c7fce8b835" InformativeScreenshot="e42e0dd8bd303cda18f3aa8c2e91eeef.png" Reference="NkYqdf221EmIXN1TRDnl6w/-nyKxfpRCUGSD-sOS8DsIQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="32267071-8315-4145-a996-e4bcd3230f45" CvTextArea="1123, 292, 124, 18" CvTextArgument="Informe o código" CvType="Text" DesignTimeRectangle="1124, 289, 123, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Informe o código' check:innerText='Informe o código' /&gt;" Guid="472d5d45-b696-4ad8-a83d-73f14ad23ae8" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                      <TryCatch.Finally>
+                        <Sequence DisplayName="Finalmente" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </TryCatch.Finally>
+                    </TryCatch>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6dbb1e5a-955b-4499-b669-eef8aea700ed" ContentHash="CWC_G59h-ESuEoyxMwRgrA" CvTextArea="1184, 159, 321, 17" CvTextArgument="Você está se autenticando em PDPJ" CvType="Text" DesignTimeRectangle="1094, 157, 503, 23" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Você está se autenticando em  PDPJ' check:innerText='Você está se autenticando em PDPJ' /&gt;" Guid="ad225975-76aa-4a77-a074-225332fe2a28" InformativeScreenshot="0a2036da21be4d1a6e907d9499c10415.png" Reference="NkYqdf221EmIXN1TRDnl6w/BZhwUideA0uwhCpzF75gmw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="27, 152, 1037, 693" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='' aaname='' /&gt;" Guid="d21151a4-76bd-4695-8abb-d4e3dad448f2" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1282,4562" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="4" RetryInterval="00:00:02">
+                <ui:RetryScope.ActivityBody>
+                  <ActivityAction>
+                    <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="1240,4362" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Consulta BNMP" sap:VirtualizedContainerService.HintSize="1206,4302" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="nPeca" />
+                          <Variable x:TypeArguments="x:Boolean" Name="EleExiste" />
+                          <Variable x:TypeArguments="x:Boolean" Name="existe" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="1172,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                        <uix:NSelectItem DelayBefore="1" DisplayName="Select Item '2º JUIZADO DE VIOLÊNCIA…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1172,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="2º JUIZADO DE VIOLÊNCIA DOMÉSTICA" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                          <uix:NSelectItem.Items>
+                            <scg:List x:TypeArguments="x:String" Capacity="2">
+                              <x:String>1º JUIZADO DE VIOLÊNCIA DOMÉSTICA</x:String>
+                              <x:String>2º JUIZADO DE VIOLÊNCIA DOMÉSTICA</x:String>
+                            </scg:List>
+                          </uix:NSelectItem.Items>
+                          <uix:NSelectItem.Target>
+                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="321064f6-24bc-4913-b14e-e3297d17a794" ContentHash="Wr7e0qZj1ka4A0atrpnDUw" CvElementArea="1570, 206, 336, 30" CvType="InputBox" DesignTimeRectangle="1572, 207, 332, 28" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="32e4bdfe-d883-4624-af12-665a8b4df033" InformativeScreenshot="4d26d7aed2e46589445ff6527adb1a3d.png" Reference="NkYqdf221EmIXN1TRDnl6w/z7l4Cj4cuU2nWjVBkzCYig" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NSelectItem.Target>
+                        </uix:NSelectItem>
+                        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1172,483" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:01">
+                          <ui:RetryScope.ActivityBody>
+                            <ActivityAction>
+                              <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Ver todas'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="90927354-e00b-4259-8a34-f7ae5435be4f" ContentHash="gqNI6C8Fl0KUWRtl0t8_sg" CvTextArea="690, 490, 66, 14" CvTextArgument="Ver todas" CvType="Text" DesignTimeRectangle="692, 488, 64, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Ver todas ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='Ver todas' /&gt;" Guid="4abd054b-0b9d-415b-a6ce-b4e944bd8236" InformativeScreenshot="e9573549e4408e8ccb120e7a5a2d36a1.png" Reference="NkYqdf221EmIXN1TRDnl6w/wvIlROndLEqJ0i3ayrA6VQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="90927354-e00b-4259-8a34-f7ae5435be4f" CvElementArea="770, 479, 153, 39" CvTextArea="53, 489, 838, 20" CvTextArgument="PEÇAS CADASTRADAS Ver todas + Nova Peça" CvType="Button" DesignTimeRectangle="54, 481, 868, 35" FuzzySelectorArgument="&lt;webctrl type='' class='d-flex justify-content-between align-items-center w-100' tag='DIV' aaname='' check:innerText='PEÇAS CADASTRADAS&amp;#xA;Ver todas&amp;#xA;+ Nova Peça' /&gt;" Guid="0c73ed59-5f67-4170-b448-d4aaec6913f5" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:RetryScope.ActivityBody>
+                          <ui:RetryScope.Condition>
+                            <ActivityFunc x:TypeArguments="x:Boolean" />
+                          </ui:RetryScope.Condition>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:RetryScope>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1172,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" ContentHash="3AcN_GAP-0qjTRgHJJj5gg" CvElementArea="1034, 210, 20, 19" CvType="CheckBox" DesignTimeRectangle="1036, 212, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-46' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="f7e5d5b7-4a0b-45be-95b9-fc85df5d4bed" InformativeScreenshot="01e92037802c630c91c759f1c34bdadb.png" Reference="NkYqdf221EmIXN1TRDnl6w/F5ECne93OE2DU7Eea-8FKQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" CvTextArea="1059, 211, 31, 15" CvTextArgument="CPF" CvType="Text" DesignTimeRectangle="1060, 208, 30, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-46' tag='SPAN' type='' aaname='CPF' check:innerText='CPF' /&gt;" Guid="f8c6c501-aa6e-49a5-a61c-d9a8a9289cb7" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DisplayName="Type Into 'Pesquisar'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1172,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Text="[strCPF + &quot;[k(Enter)]&quot;]" Version="V4">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" ContentHash="1DcIUgwphki1zHdI_t8a7g" CvTextArea="1441, 214, 64, 16" CvTextArgument="Pesquisar" CvType="Text" DesignTimeRectangle="1432, 209, 170, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-5' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-star-inserted' aaname='Pesquisar' /&gt;" Guid="1640430a-68a8-4dff-9f78-1516a7bd2e28" InformativeScreenshot="b04737994c3adff74374bdf1de1d0ffc.png" Reference="NkYqdf221EmIXN1TRDnl6w/WtMgfnufzEOT6FXtZxZcJw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="92f7f1bf-91bc-467a-895e-c7d0053c2345" CvTextArea="1441, 214, 64, 16" CvTextArgument="Pesquisar" CvType="Text" DesignTimeRectangle="1442, 206, 180, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-7' tag='LABEL' type='' class='mat-form-field-label ng-tns-c35-68 mat-empty mat-form-field-empty ng-star-inserted' aaname='' check:innerText='Pesquisar' /&gt;" Guid="14d0974e-c365-4667-9722-5036a6ca21da" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NCheckState DisplayName="Se aparecer alguma peça" sap:VirtualizedContainerService.HintSize="1172,2914" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" Timeout="2" Version="V4">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="650,2674" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:IfElseIfV2 Condition="[EleExiste]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="616,2612" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
+                                <ui:IfElseIfV2.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="614,89" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </ui:IfElseIfV2.Else>
+                                <ui:IfElseIfV2.ElseIfs>
+                                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+                                </ui:IfElseIfV2.ElseIfs>
+                                <ui:IfElseIfV2.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="614,2344" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGetText DisplayName="Get Text 'Número da peça'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="580,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="55ac78c2-a17d-4904-b464-2e483696068e" TextString="[nPeca]" Timeout="2" Version="V4">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas" ContentHash="CMODmW8Yt0aoJzhWLU9Yyw" DesignTimeRectangle="54, 345, 282, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='mat-cell cdk-column-numPeca mat-column-numPeca ng-star-inserted' /&gt;" Guid="c1c052a5-20d1-4608-b013-244817f082ab" InformativeScreenshot="adbda867184c52c6fd635102df53ad8b.png" Reference="NkYqdf221EmIXN1TRDnl6w/1f1zTAJZFU2_gtjXDUfEqg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="64, 305, 272, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='mat-sort-header-content' type='' tag='DIV' aaname=' Número da peça ' check:innerText='NÚMERO DA PEÇA' /&gt;" Guid="d1186654-c9ae-4a93-8575-242038732726" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Adiciona o processo do banco de dados de exclusão" sap:VirtualizedContainerService.HintSize="580,1547" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                                      <ueab:ExcelProcessScopeX.Body>
+                                        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="546,1428" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="512,1368" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" TemplatePath="Workflows\bancodedados.xlsx" UseTemplate="True" WorkbookPath="Workflows\bancodedados.xlsx">
+                                              <ueab:ExcelApplicationCard.Body>
+                                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="478,1053" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="sd:DataTable" Name="dtBanco" />
+                                                      <Variable x:TypeArguments="x:Int32" Name="intUltimaLinha" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ueab:ReadRangeX DisplayName="Colunas (nProcessoBD, status)" sap:VirtualizedContainerService.HintSize="444,201" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;processos&quot;)]" SaveTo="[dtBanco]" />
+                                                    <Assign sap:VirtualizedContainerService.HintSize="444,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Int32">[intUltimaLinha]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Int32">[dtBanco.RowCount +1]</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;processos&quot;).Cell(&quot;A&quot; &amp; intUltimaLinha +1)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,191" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[in_nProcesso]" />
+                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;processos&quot;).Cell(&quot;B&quot; &amp; intUltimaLinha +1)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,191" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;PROCESSO CADASTRADO BNMP&quot;]" />
+                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;processos&quot;).Cell(&quot;C&quot; &amp; intUltimaLinha +1)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,191" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[nPeca]" />
+                                                    <Assign sap:VirtualizedContainerService.HintSize="444,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:Boolean">[BL_StatusMedida]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </ueab:ExcelApplicationCard.Body>
+                                            </ueab:ExcelApplicationCard>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ueab:ExcelProcessScopeX.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ueab:ExcelProcessScopeX>
+                                    <ui:IfElseIfV2 Condition="[nPeca.Contains(in_nProcesso)]" DisplayName="Se a peça já está cadastrada" sap:VirtualizedContainerService.HintSize="580,548" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+                                      <ui:IfElseIfV2.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </ui:IfElseIfV2.Else>
+                                      <ui:IfElseIfV2.ElseIfs>
+                                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+                                      </ui:IfElseIfV2.ElseIfs>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:IfElseIfV2.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,282" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:04" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;PEÇA JÁ CADASTRADA, ANALISANDO NOVO PROCESSO!!&quot;]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Boolean">[BL_StatusMedida]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </ui:IfElseIfV2.Then>
+                                    </ui:IfElseIfV2>
+                                  </Sequence>
+                                </ui:IfElseIfV2.Then>
+                              </ui:IfElseIfV2>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="468,286" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:04" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;PEÇA NÃO LOCALIZADA NO BNMP, CONTINUANDO A VERFICAÇÃO&quot;]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[BL_StatusMedida]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="cf6f81f1-bce3-4145-a205-9d6d54821f9d" ContentHash="f4IOiP39qUaPQYDtQQrN5w" CvTextArea="344, 358, 558, 16" CvTextArgument="MANDADO DE MEDIDA CAUTELAR DIVERSA DA PRISÃO OU PROTETIVA DE URGÊNCIA" CvType="Text" DesignTimeRectangle="336, 345, 592, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='mat-cell cdk-column-tipoPeca mat-column-tipoPeca ng-star-inserted' tag='TD' aaname=' Mandado de Medida Cautelar Diversa da Prisão ou Protetiva de Urgência ' check:innerText='MANDADO DE MEDIDA CAUTELAR DIVERSA DA PRISÃO OU PROTETIVA DE URGÊNCIA' /&gt;" Guid="f59277ef-89ec-4019-bc96-79a205aa021b" InformativeScreenshot="20f6cd25b5d0fe8d5ffdbf6556d0dedb.png" Reference="NkYqdf221EmIXN1TRDnl6w/bxVgkHLcw0ufw-Nr3ByE9Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="cf6f81f1-bce3-4145-a205-9d6d54821f9d" CvTextArea="344, 308, 105, 18" CvTextArgument="TIPO DE PEÇA" CvType="Text" DesignTimeRectangle="346, 305, 582, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' Tipo de peça ' class='mat-sort-header-content' type='' tag='DIV' check:innerText='TIPO DE PEÇA' /&gt;" Guid="0e68dfad-0234-43a1-9a1e-d2b5b93c8db4" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:RetryScope.ActivityBody>
+                <ui:RetryScope.Condition>
+                  <ActivityFunc x:TypeArguments="x:Boolean" />
+                </ui:RetryScope.Condition>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:RetryScope>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Edge" ContentHash="Zflb8Mx2TEqxXNIIKNPEAg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAoNSURBVGhD5ZnbbxTXHcchSSuUQApJLCiXnTMzu67EQ6KqSqWSlzRKVBXUFjVczMUO2ICxsQHfYowNHuO7jVm89sw5s/baXisSEv+AI6SkylMkaCxVitSHouahGxykEImHRWZsvP2emTO7Y7z2Dr48VD3SRyAYe85nfr8z5/c7s+7/Z6RS64mmbSBaeHOwI5JHNH3botQtQvlCdpbceAO/fL24y/yhaS+R/eHN5CCu9bD7oL4R/5v9ZxYMTHyLaf5C6qO/lnpZCekxDdLJJkgH+wZMyq3gGtDAVdAEGkEDm1Tr6aT6KagB1eACqAQVoBycpfeUUl3fWtj7mrjbvBE8Fnk9VDDYGjqs3w0dNCZDHxuT+fv1e6G/6KXb/2S+Ki5bZPAnHg5vlsL0A3KThUkfuy9fp9Okh83K3eyZ3MFScjtoZSmlBWjgKmgCl0EDS0EgpdaBWlAFLoLzoIKmgudAGbXUUmOCT1Tcdd4IHDW2qEf0eOiwYUEgBYFU/seGFfyz3pz3vh2FRQZCJw0MydIAbSQR9i0ELBJmc3IfJtwLukGnEGjDZK8BLtAMuEAjgIDCBT4FXKAacIELoFIIlPsUKIDAIQgcEAL7lxLA5JVoNF8yosNk0HxEBtgc6WcpCKRsgeuAC3QBHgVXgEeBC1wBXIILXMJkuQQXqAFcQgjYUeACZRCo9CFwWAgcWEoAaSMN4ckzTN4wLQikEIFUWuAGuI706WXTEEgiCklEIYk0SkIgiSgkkUZJCCQRhSQkkhBIIo2SkEiq1eypeoHNedIot8BRCBwRAkijJQXsnDeRNiaePMXkdTCAyXOJm2yWhOn3iMIduYcNyt20TeowWuU2wTWggWZwBTQK6kGd0QqBNqWa3sFaeJKOAhco9ylQAAGkUf5BCPw1mwB/+iNDH0hD5rcQmEsLOFGwIPCVFI4Wb+8yA8FI5PWtveOvLaB2cX5V3L1JqTbqIfCTLeBEwZ/A0YwAopBdgL8qAzEzDAELAinCgGELWGSA3pIjw79dZ5o/E5cvY2BtVRsXlSr6yPM2stRzOQSOG/HQMQgcweR5Gh3KJoCnvz2O9/yIeV8axtOPCgFqziIKX9mTv337ZXH1MocQqBYCThotT+AABJzNzBlkVNsgxVgJmIZAyhbgUaDm9xKNFq/sybsDArVCgO8JLypwFJPnaYQ9IYvA6GZpbMgIjJizUsxMIY24wDPCone2m2ZAXLbCIQRqhICTRrkFCiFwHALHMHkeBbxSFwhsG4nkSWNsQho1n9kCThSmJdMcDH72WdZfbg/sGb55X3slWEerlFoIuJvaeWNGrjA+JxfDmxdcD+EdRYNvBovoeKgwhwAZ1bdJY+Y3IOUKIApJ0LZ1fDxrnfJWd2zTrk79XalL3yO1edA8NGYINND38DqN4HX62BZAFJQLdBZR+Fo+N/iRVN6/x+Z0BnJy4A/BT9hEqJDOIAqOAF6pwUPZBOJs0hYY8QhEWWtWATyhXdf1d0kv/YfcQ6fkLtAJ2kArnVJagAaugibQCBrYFDa1x9jUnqV3ZSeNptVK9gP2hCkUd1NqKTgDSsBJ+jB4gj6BQMoW4OuACxQsJTAKnCgsKSD16XtQ3E0tqI14cefWRs8Vd3Zt5BZ3GYFMbVQGSsFpcAoUgxOYfBEoxOR5GmFPWFwgLgScKOQW6PMIeGsjLuEWd7w2cou7S6hQ3eKORyHzNuK7siNwFpwBXKAEnMTkP+ECwJeAm0YxCAz7EMhS3C1VYqej4BVwa6NywAXcKHABRCHkRoGnEV6puQWcNMotcEMI9ABIoNGZRZPzIyKQUK7RBNZCAusggXWQwDpIKA3gEk1AIIEoJJBGCaRRAgIJCCQgkEAUEhBIIAoJ9RR9oBbTZPAEm/OkkU+BkRcQEGlEutiPpJ1qUou5T9LY3nk0OSAKe5U6D9Xg3HOUOsjF9BAEvsBinrWjwAWwJywtkEmjpDSSQ+AmBNwmB1GAQGJHl7mP/z+u4j3rigiUYSMrpuNYB1Z6MXOBo34ERnMLEC7g9AhCgCZ2drC9uIJPYMXD3omLjTjWQUYAm1puAU4ugX4I9HsEEAXSs8oCPAKnhID7NirC330JjEFgLLdAutVcS4ESTDqzJ6yiQAQCNzF5EQXszImdPasscBoCp54TOO5HIM4FzLa3YrFN9qKczyuBAfoeOrWMAKKwpgKZTc2vQPRpYIzdCYyyehIzL5IhYAqoWSUNsgj65ce84ZdFGpHrayBQCoHTHoET/gXm8OcTLOaf0Go+QnH3SIoCNPwSRdOvm4/JAHoGfmIhorCmApnayAoW+Ush76bm9ghup+Zt+B0BRIH0QaBvDQTOeAT4nuBbgOMREJ2at+F3jl0gwN9G5MYaCJQJgUxthD3Bv8CzQNycgYSF2siChIUoWBJjM0ij2bSAOPhaM4HS5QnMBuLsPl/IaPYnbIbBEJsIMPo5odGvkUbTnoOvtRXIlNiW4k+APcHT78Gi/SU/yPLCT/ACg+wjCPxABoUAoiCFIdC/egL824FaRm+hQp3xlNh+BXxsZAb2Aff4cQ0E1HJ9l1pufIkeYS4tYG9qxuWthZ55LUtAhwD1CCAK0s1VFqiI/hGd2r+8nRp6hGm1ZLBg98HbPxeXrVDAfhutusD6YGUkTznPhoMVeOK8U+MSZ+hc6Az9Ti6OvMOvcS7FWJZAFALMFXCiIPWvioDTB1w0KtULxkNxDO/2yzNIo9iOovib4lpnrEjA3dRWSYA/ebXGqFSqjH+7Db8tgCiEztIH8in9AL+/uNwZyxYwPQKIghRhDwL90UOBTmPLklyaz05t+A2pdkBW6s19Si0bhsDDeScWPApl9CneSGP5Z+kOMYvMWJHA/F05CYkv8DYaJ2EjTvpAD+gStINWIy5fAxpoBleMOJr+W3ID+5taT++j4bfSJxbuuREEsJjvKmXGh/yIUswiM5YtMAQBXlpwAScKc1I/m8WmZqG4s9AjWGh0LLSbltwFOkAbs5RW0AI0cAU0shnlEpuzv6d5PwpyCQgEK+k/1XJ2+O3aLHPhY8UC6TQSm5q9Kzslttvwp8+N2lnmoyA/N3I/CvJzI/5RcL7AU6TRXbWCHSYnRjeIuy8cyxVAWTGV/hjiLe5EbWQLuOdGXMDX8SMiUUdnIPFArqJjSqXx4aJP3h1cADXPPUzayoBmZYy1LCoQY7+DwH94cYcoWIiChSjwL5sWBPg3NQsltgWJhWnU/lwaNYHL+PcGOo1U+k6pozG5Rj+QX4UFi+5P3HXxkXdb30jiZilqn2YXSFwGv//N37N+nVm/fUTfhQq1JjCE601AgQ4GQD+1IWHQB3pBN+gUtINW0AKugibaLDcal7EGCuRq9s6OBrzn8ZDEvXwM/o3MNF/N0/WNXtbd1vh2nf2dnkq9xKPz/M/YaC8O/5K5W7PLg5Xu4v9LY926/wL8nfWIN+vsHwAAAABJRU5ErkJggg==" InformativeScreenshot="22ababf5f5fe272bb74e8960dfdb48f6.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/QjwbtuBoekqTj7D3YXg3xw" Selector="&lt;html app='msedge.exe' url='http://bnmp.cnj.jus.br/' /&gt;" Url="http://bnmp.cnj.jus.br/" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1384,113" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Tipo do Arquivo",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "9SfqfSYKR0in8y89Xsl6HA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/9SfqfSYKR0in8y89Xsl6HA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "Created": "2025-03-31T23:22:08.8186747Z",
+  "Updated": "2025-03-31T23:22:08.8186747Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

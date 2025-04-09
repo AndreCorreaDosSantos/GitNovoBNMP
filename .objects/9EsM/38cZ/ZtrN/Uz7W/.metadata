@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Filtros decsent",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Uz7WxOjTM06uew6wpVyaiw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Uz7WxOjTM06uew6wpVyaiw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/ZtrNPKJBVUCk8PJqlhL_xA",
+  "Created": "2025-04-08T14:17:44.375621Z",
+  "Updated": "2025-04-08T14:17:44.375621Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

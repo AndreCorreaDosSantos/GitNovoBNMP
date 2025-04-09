@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="08BknsXHwEewnAg_9MduVw" Reference="NkYqdf221EmIXN1TRDnl6w/OoXGo_pHuUqqrNAzFUiDgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25630910979" CVScreenId="e70be572-4a9e-4c38-84d4-99a4bf3a6777" CvElementArea="375, 589, 712, 55" CvType="InputBox" DesignTimeRectangle="391, 606, 55, 19" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-form-field-label-21' tag='MAT-LABEL' type='' class='ng-star-inserted' aaname='Classe*' check:innerText='Classe*' /&gt;" Guid="ee855e3b-09ac-4c87-8a04-4167772df5d2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="497, 260, 467, 64" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='cdk-step-label-2-1' tag='DIV' class='mat-step-text-label ng-star-inserted' aaname='DADOS DAS VÍTIMAS E DOS DEPENDENTES NAS MEDIDAS PROTETIVAS DE URGÊNCIA*' check:innerText='DADOS DAS VÍTIMAS E DOS DEPENDENTES NAS MEDIDAS PROTETIVAS DE URGÊNCIA*' /&gt;" Guid="379e7155-25f0-424c-9c4e-e914ef3fb254" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="e70be572-4a9e-4c38-84d4-99a4bf3a6777" CvElementArea="377, 471, 601, 54" CvType="InputBox" DesignTimeRectangle="391, 488, 225, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Medidas Protetivas de Urgência' parentid='mat-select-value-3' tag='SPAN' type='' class='mat-select-min-line ng-tns-c34-20 ng-star-inserted' check:innerText='Medidas Protetivas de Urgência' /&gt;" Guid="2c4be27a-1444-4577-8e16-7c26881f6987" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a0696c7a289ebb89d2810b4b5c8b844e.png" xmlns="">0oXAyCgFxn0OsFvxbd_Ox5w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

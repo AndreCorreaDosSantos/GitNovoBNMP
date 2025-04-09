@@ -1,0 +1,14 @@
+﻿{
+  "Name": "1268 - Medidas Protetiv…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "KyaVX8PfiEGqIDQUZ1d3ug",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/KyaVX8PfiEGqIDQUZ1d3ug",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:42:10.8500303Z",
+  "Updated": "2025-03-30T23:42:10.8500303Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

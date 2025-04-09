@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xF8U33_TbE28XF0xQfM8rA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="233f3a69-0a0c-489e-9e20-15bf90581306" CvElementArea="1393, 907, 123, 24" CvTextArea="1428, 913, 54, 12" CvTextArgument="Adicionar" CvType="Button" DesignTimeRectangle="1395, 909, 120, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Adicionar' check:text='Adicionar' /&gt;" Guid="876392bb-617b-4e56-8849-b63d20f31842" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="233f3a69-0a0c-489e-9e20-15bf90581306" CvElementArea="1519, 907, 123, 24" CvTextArea="1556, 914, 51, 11" CvTextArgument="Remover" CvType="Button" DesignTimeRectangle="1521, 909, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Remover' type='button' tag='INPUT' class='button' check:text='Remover' /&gt;" Guid="9d44987c-27ab-470e-b505-09b78b976fcc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="594bfa43648dd9f43d916e8b2c7ac1d5.png" xmlns="">0W5q6V-FBr0aGc4fAmM4tVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

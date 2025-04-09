@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MjvMoKgOx0GnqqoHb7edyw" Reference="NkYqdf221EmIXN1TRDnl6w/DAZVvPKME0uuZts_tXRX4g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="979, 942, 75, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Próximo' class='mat-button-wrapper' parentid='cdk-step-content-1-0' tag='SPAN' type='' check:innerText='Próximo' /&gt;" Guid="69d7df45-e83d-4b7d-a88f-35ce19ccc64d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="844, 942, 73, 17" FuzzySelectorArgument="&lt;webctrl aaname='Anterior ' class='mat-button-wrapper' parentid='cdk-step-content-1-0' tag='SPAN' type='' check:innerText='Anterior' /&gt;" Guid="85ca62e5-2b4d-48fe-b419-9864a311d56f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4a071f75597fde8ab3792e0d18b505f4.png" xmlns="">0SNnbYbQcxkWhN_3z_sbe2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

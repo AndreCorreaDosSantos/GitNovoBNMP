@@ -1,0 +1,16 @@
+﻿{
+  "Name": "9.1 - Ler CONCEDIDA EM PARTE MEDIDA PROTETIVA",
+  "Type": "Screen",
+  "Id": "9bRk7YKyE06-51zoWhqs_A",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/9bRk7YKyE06-51zoWhqs_A",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-04-08T13:56:12.8852412Z",
+  "Updated": "2025-04-08T13:58:27.8744983Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CEP, Logradouro, Numero, Complemento, Bairro, Cidade, Estado",
+  "Type": "Element",
+  "Id": "8M9lwoq4S0agbbI58fznGA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/8M9lwoq4S0agbbI58fznGA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-04-01T13:57:27.1662323Z",
+  "Updated": "2025-04-01T13:57:27.1662323Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "Name": "BNMP",
+  "Type": "App",
+  "Id": "yvms3YXC8kKV_GYNEyillg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/yvms3YXC8kKV_GYNEyillg",
+  "Created": "2025-03-30T18:18:04.9471636Z",
+  "Updated": "2025-03-30T18:18:56.862073Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

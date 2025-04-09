@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7-FJnOsKRkyt9cdU9zZ3wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/lista/25630852324" CVScreenId="9db9d96e-c72a-439a-a586-7526c7832dc3" CvTextArea="58, 283, 87, 17" CvTextArgument="Página Inicial" CvType="Text" DesignTimeRectangle="30, 283, 115, 13" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Página Inicial ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='Página Inicial' /&gt;" Guid="dbff9e5d-b15b-481c-9f58-5d9dbb0019e2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9db9d96e-c72a-439a-a586-7526c7832dc3" CvTextArea="58, 327, 40, 16" CvTextArgument="Peças" CvType="Text" DesignTimeRectangle="30, 326, 68, 13" FuzzySelectorArgument="&lt;webctrl aaname=' Peças ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='Peças' /&gt;" Guid="d5b1789f-7dd8-4088-82c7-fff16b124825" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f3d0f8eb2e585e75e030ae1a2bb9e53f.png" xmlns="">03MFyJqJZe064T70F4h-zoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

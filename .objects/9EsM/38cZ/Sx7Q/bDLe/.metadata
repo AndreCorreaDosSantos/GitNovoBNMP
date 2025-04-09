@@ -1,0 +1,14 @@
+﻿{
+  "Name": "261 - Carta Precatória",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bDLeB1ErV0Ot_gdaATQB0w",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/bDLeB1ErV0Ot_gdaATQB0w",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "Created": "2025-03-30T19:08:39.1212893Z",
+  "Updated": "2025-03-30T19:08:39.1212893Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
