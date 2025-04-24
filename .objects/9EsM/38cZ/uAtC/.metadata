@@ -1,0 +1,16 @@
+﻿{
+  "Name": "9.3 - Ler JULGADA PROCEDENTE EM PARTE A AÇÃO",
+  "Type": "Screen",
+  "Id": "uAtCSVJZZU6eudCyWZqSCw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/uAtCSVJZZU6eudCyWZqSCw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-04-08T13:59:47.8695703Z",
+  "Updated": "2025-04-08T14:00:04.3831128Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

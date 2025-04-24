@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MGSWyLEFc0CxwVmT5keXbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" DesignTimeRectangle="1192, 949, 104, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='texto-btn' parentid='cdk-step-content-2-3' tag='SPAN' type='' /&gt;" Guid="fa05b4e6-75b8-4390-89b2-1cf3bfceab8d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1176, 935, 166, 46" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='cdk-step-content-2-3' tag='BUTTON' type='submit' class='full-width btn-success mat-focus-indicator mat-stepper-next mat-raised-button mat-button-base' aaname='Finalizar Peça' check:innerText='Finalizar Peça' /&gt;" Guid="24e94077-1c1c-4cc8-863d-db9a59baa9f3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3b788338fcf8d1eb86610c6efae6f307.png" xmlns="">0pBWQUfRD5E6R51QfoCLsmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

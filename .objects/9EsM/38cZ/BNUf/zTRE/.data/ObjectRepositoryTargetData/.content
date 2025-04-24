@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_IfXLYbJ-ka_gXBk8McR8Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" DesignTimeRectangle="183, 465, 532, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="9ae11b8e-4189-4c36-91ee-04a29a4ddbce" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="138, 464, 36, 15" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nome:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='&amp;amp;Nome:' check:text='&amp;amp;Nome:' /&gt;" Guid="b20f348e-1cd5-4ad8-9b53-26015b988ba8" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2c9a5a0b411751f7c0b99cc4b1869a3a.png" xmlns="">01UwtbnmtbU6udFYZcXBQmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

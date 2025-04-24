@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Data de Reavaliação",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "e0TNUtA-HEGY1EjInWcwqg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/e0TNUtA-HEGY1EjInWcwqg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:42:25.8688942Z",
+  "Updated": "2025-03-30T23:42:25.8688942Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

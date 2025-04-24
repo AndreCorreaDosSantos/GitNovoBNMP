@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cDJhgZwULkC1E7Ac_tbU8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="2b361e62-b911-4de1-914f-327c433cf9be" CvElementArea="1601, 977, 163, 24" CvTextArea="1604, 983, 158, 12" CvTextArgument="Assinar e Concluir Moviment" CvType="Button" DesignTimeRectangle="1603, 979, 160, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Assinar e Concluir Movimento' check:text='Assinar e Concluir Movimento' /&gt;" Guid="5f908dfd-5522-4cbd-9a92-8e9a5f16a6c1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2b361e62-b911-4de1-914f-327c433cf9be" CvElementArea="1767, 978, 123, 24" CvTextArea="1811, 984, 35, 11" CvTextArgument="Voltar" CvType="Button" DesignTimeRectangle="1769, 979, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Voltar' type='button' tag='INPUT' class='button' check:text='Voltar' /&gt;" Guid="1abe1694-9716-4f91-ae6d-f7cf2d362684" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8b55bb4cbbfa5bad21dbcd18156b1096.png" xmlns="">0GDyoetrKG0K6WuY4ltQ19g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "2- Pesquisa o réu no BNMP",
+  "Type": "Screen",
+  "Id": "1Cv352YyYUCpDhR_hofebA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/1Cv352YyYUCpDhR_hofebA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/1GRmZZzA60OIlGoICBujCw",
+  "Created": "2025-03-31T01:32:40.9162856Z",
+  "Updated": "2025-03-31T01:36:06.6113522Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

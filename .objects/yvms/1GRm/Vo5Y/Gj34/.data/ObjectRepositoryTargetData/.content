@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cjdjCSR0WkGtwAWAMUePzg" Reference="NkYqdf221EmIXN1TRDnl6w/BZhwUideA0uwhCpzF75gmw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth" CVScreenId="6dbb1e5a-955b-4499-b669-eef8aea700ed" CvTextArea="1184, 159, 321, 17" CvTextArgument="Você está se autenticando em PDPJ" CvType="Text" DesignTimeRectangle="1094, 157, 503, 23" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Você está se autenticando em  PDPJ' check:innerText='Você está se autenticando em PDPJ' /&gt;" Guid="ad225975-76aa-4a77-a074-225332fe2a28" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="27, 152, 1037, 693" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='' aaname='' /&gt;" Guid="d21151a4-76bd-4695-8abb-d4e3dad448f2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0a2036da21be4d1a6e907d9499c10415.png" xmlns="">0FJYE5UPtpUCwicFdRrgLZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

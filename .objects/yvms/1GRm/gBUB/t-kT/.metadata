@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Mandado de Medida Caute…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "t-kT56jImEG_zcKlq-q4Nw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/t-kT56jImEG_zcKlq-q4Nw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:41:51.4936492Z",
+  "Updated": "2025-03-30T23:41:51.4936492Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

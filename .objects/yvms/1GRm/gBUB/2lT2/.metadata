@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Select Item - 2º JUIZADO DE VIOLÊNCIA…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "2lT28UJSOU-VB1SjjirjuQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/2lT28UJSOU-VB1SjjirjuQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:29:57.509648Z",
+  "Updated": "2025-03-30T23:30:35.4923805Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Processo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "H6idSWW37USTyz0buAaPOg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/H6idSWW37USTyz0buAaPOg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "Created": "2025-03-30T19:08:25.5487707Z",
+  "Updated": "2025-03-30T19:15:47.5245016Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

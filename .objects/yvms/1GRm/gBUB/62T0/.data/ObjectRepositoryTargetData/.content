@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Sn1wXfRHU0eBFRkfm-wCMQ" Reference="NkYqdf221EmIXN1TRDnl6w/vhHUojFFdU61wmCoSVGgmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/22420294570" DesignTimeRectangle="391, 564, 678, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-12' tag='INPUT' type='date' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored' aaname='Inicio do período de cumprimento da medida*' /&gt;" Guid="7bddf70a-6737-4c81-bcd0-eff420b42605" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="391, 543, 243, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-25' tag='LABEL' type='' class='mat-form-field-label ng-tns-c33-24 ng-star-inserted' aaname='' check:innerText='Inicio do período de cumprimento da medida*' /&gt;" Guid="1f1397e4-8177-41ba-a2d6-293942cec4d3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0880a6d799a8f186a7027ce7acc86fc4.png" xmlns="">0TbmgUDLV2ECPt5s1QNMK-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Check State e Cria Dt'Vítimas'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Zt6zLT7mPECBWvGZSaCnaA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Zt6zLT7mPECBWvGZSaCnaA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/_GCwBxkfTEeVtgJ-lwFgmw",
+  "Created": "2025-03-30T23:09:44.6242262Z",
+  "Updated": "2025-03-30T23:09:44.6242262Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

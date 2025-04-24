@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qFFjksFZLEWQ6laWPBmNSw" Reference="NkYqdf221EmIXN1TRDnl6w/zTWirXAZpEmum2uinu0PYw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="bca1299a-7cf6-4beb-8d4d-6e3661f75914" CvTextArea="403, 621, 19, 12" CvTextArgument="Pai" CvType="Text" DesignTimeRectangle="380, 604, 250, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='mat-cell cdk-column-filiacao mat-column-filiacao ng-star-inserted' aaname=' Pai ' check:innerText='Pai' /&gt;" Guid="88268696-43d1-415d-9af6-0e26c8120204" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="bca1299a-7cf6-4beb-8d4d-6e3661f75914" CvTextArea="402, 519, 82, 17" CvTextArgument="Tipo Filiação" CvType="Text" DesignTimeRectangle="380, 500, 250, 56" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='mat-header-cell cdk-column-filiacao mat-column-filiacao ng-star-inserted' aaname=' Tipo Filiação ' check:innerText='Tipo Filiação' /&gt;" Guid="c95cc647-0ee0-405b-858b-a8518c71c717" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="476844631184886ff0618f54bc23d3e8.png" xmlns="">04sIhKZAnFEGonIW1DwTgqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

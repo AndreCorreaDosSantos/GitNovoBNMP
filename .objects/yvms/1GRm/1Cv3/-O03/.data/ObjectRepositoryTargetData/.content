@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nSRIOBYYrUCcocvlmndEsA" Reference="NkYqdf221EmIXN1TRDnl6w/bxVgkHLcw0ufw-Nr3ByE9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" CVScreenId="cf6f81f1-bce3-4145-a205-9d6d54821f9d" CvTextArea="344, 358, 558, 16" CvTextArgument="MANDADO DE MEDIDA CAUTELAR DIVERSA DA PRISÃO OU PROTETIVA DE URGÊNCIA" CvType="Text" DesignTimeRectangle="336, 345, 592, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='mat-cell cdk-column-tipoPeca mat-column-tipoPeca ng-star-inserted' tag='TD' aaname=' Mandado de Medida Cautelar Diversa da Prisão ou Protetiva de Urgência ' check:innerText='MANDADO DE MEDIDA CAUTELAR DIVERSA DA PRISÃO OU PROTETIVA DE URGÊNCIA' /&gt;" Guid="f59277ef-89ec-4019-bc96-79a205aa021b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="cf6f81f1-bce3-4145-a205-9d6d54821f9d" CvTextArea="344, 308, 105, 18" CvTextArgument="TIPO DE PEÇA" CvType="Text" DesignTimeRectangle="346, 305, 582, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' Tipo de peça ' class='mat-sort-header-content' type='' tag='DIV' check:innerText='TIPO DE PEÇA' /&gt;" Guid="0e68dfad-0234-43a1-9a1e-d2b5b93c8db4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="20f6cd25b5d0fe8d5ffdbf6556d0dedb.png" xmlns="">01ZIDdFMn1Ee-EXRoCdhJeg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

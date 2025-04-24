@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Número do Processo",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "XARPpNZDYU6rHw8Y4NPyuA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/XARPpNZDYU6rHw8Y4NPyuA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/_GCwBxkfTEeVtgJ-lwFgmw",
+  "Created": "2025-03-30T19:13:35.1911825Z",
+  "Updated": "2025-03-30T19:13:35.1911825Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

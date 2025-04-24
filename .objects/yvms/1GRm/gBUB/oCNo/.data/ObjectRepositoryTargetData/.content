@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZVNfCddj-EasZYVMVK0ZCg" Reference="NkYqdf221EmIXN1TRDnl6w/oCNoDejax0SXHSNNsK3HGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="371, 762, 1309, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-69' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="9639de23-3fa7-4434-a0c0-5b7853e13743" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="395, 730, 132, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-68' tag='SPAN' type='' aaname='Separação de corpos' check:innerText='Separação de corpos' /&gt;" Guid="dbb43f96-e909-4f1f-84e3-8738dc769d1e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="88dd43b2753d09bdd4dc0ad183b5c75f.png" xmlns="">0kWUucwUUc0yPXJe2nFLWdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

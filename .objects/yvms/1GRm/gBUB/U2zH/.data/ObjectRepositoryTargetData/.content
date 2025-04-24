@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="m-7Kv2Xuo0WsGR9Ot1yGiw" Reference="NkYqdf221EmIXN1TRDnl6w/U2zHEtsiCEWtaryW2j_u8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="402, 626, 321, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-51' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored' aaname='Limite mínimo, de afastamento em metros*' /&gt;" Guid="6784bc86-815e-4c4c-8fc4-5fd42dcf9043" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="395, 547, 332, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-135' tag='SPAN' type='' aaname='Proibição de aproximação dos familiares da ofendida' check:innerText='Proibição de aproximação dos familiares da ofendida' /&gt;" Guid="fb5923bc-e13e-4bff-a088-8a919ca0ebbe" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5fa8c377f995622d02b2ab4b6641d540.png" xmlns="">0nGouTE5LJEKWyitxAsaoFg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

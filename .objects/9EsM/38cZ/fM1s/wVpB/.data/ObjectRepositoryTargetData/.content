@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d4q9UJ6HYUam5yUG06Nz3w" Reference="NkYqdf221EmIXN1TRDnl6w/wVpBEZov5UChUkY0F3PZSw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="c46ab894-d575-4b57-9f20-30f0a0602026" CvTextArea="417, 347, 103, 12" CvTextArgument="Servidor Judiciário" CvType="Text" DesignTimeRectangle="417, 345, 352, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Servidor Judiciário   ' class='logonLinkPerfil' tag='A' type='' check:innerText='Servidor Judiciário' /&gt;" Guid="199b3f21-259e-442b-99f5-6ec835ee26df" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c46ab894-d575-4b57-9f20-30f0a0602026" CvTextArea="434, 287, 825, 15" CvTextArgument="Perfis Ativos !" CvType="Text" DesignTimeRectangle="409, 282, 862, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl type='' tag='P' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;  &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Perfis Ativos &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Perfis Ativos' /&gt;" Guid="71422915-fc0f-4302-a186-229b8fb58753" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="834625fb0b2545284fc80dabe2a85724.png" xmlns="">0q-y9jwHjrEK1uEyRrR6cog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

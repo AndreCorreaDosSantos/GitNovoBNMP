@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H0gz1Qt9oUKtEW_uUI90Vw" Reference="NkYqdf221EmIXN1TRDnl6w/rD9FXYTnl02Kfz4WpqMc1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" CVScreenId="cda252d7-18c0-4d44-9866-dbfb2b495bd8" CvElementArea="1653, 348, 22, 20" CvType="Icon" DesignTimeRectangle="1657, 350, 16, 16" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='mat-menu-panel-3' tag='SPAN' class='fas fa-sign-out-alt' aaname='' /&gt;" Guid="724c84cc-de5a-46fb-b20b-dc91c10d7dcc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVDhPY/hPZTCSDfzy7ef/hhk7/qv6tv6XdW8EY/ukKf9fv/sCln/38dt/79zZ//sWH/j/+/dfsBg2ADbw37//YMNgBmEz8OXbz/9tEib9V/Bswmso2ECQJpBmneDO/+euPwFLoAOYgSCL8BkKNhCmGIRBbBD4+Pk7mA3DV+48/28ZNxHuelyGYjUQ5mKYZlwYm6FYDYTxsRmCjkGGzlp7HGwYCFDFwOmrj4IjFgTo42UQoChSqJ5sqJ6wQYCqWY+aYMQZ+P8/ABj2YF9aJ1I/AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="cda252d7-18c0-4d44-9866-dbfb2b495bd8" CvTextArea="1619, 349, 31, 15" CvTextArgument="Sair" CvType="Text" DesignTimeRectangle="1605, 334, 303, 48" FuzzySelectorArgument="&lt;webctrl aaname='Sair' class='mat-list-item-content' parentid='mat-menu-panel-3' tag='DIV' type='' check:innerText='Sair' /&gt;" Guid="b76829e3-8d77-449c-ad85-fed01b3dbbcc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1edc77e81b716521d95ddef31bcf3ef3.png" xmlns="">0936pOdzvYkq1byxd0aasFQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

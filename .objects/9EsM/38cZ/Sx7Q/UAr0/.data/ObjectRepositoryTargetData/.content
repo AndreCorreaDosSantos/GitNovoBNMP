@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nAqsJCGkckKl1FX8HKLCWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="12, 154, 1912, 864" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;" Guid="cc9b392f-dfca-47a0-811a-eb83435e177a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V5">
+      <imageRef attrName="InformativeScreenshot" originalValue="221354a7df7c2a6dd5da42f5eb10a2fd.png" xmlns="">0678-Xs_XQECwUK7fHucN9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">KeyboardTrigger</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

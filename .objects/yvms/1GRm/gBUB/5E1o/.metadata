@@ -1,0 +1,17 @@
+﻿{
+  "Name": "unchecked - réu",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "5E1oGbSZ2k2__KHLQj8DLA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/5E1oGbSZ2k2__KHLQj8DLA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:48:35.5969214Z",
+  "Updated": "2025-03-30T23:49:00.5773747Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

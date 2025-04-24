@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dWwcmkn-_0ywkaw9bYMIxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" DesignTimeRectangle="1432, 209, 170, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-2' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-star-inserted' aaname='Pesquisar' /&gt;" Guid="5e01dd9c-703f-4771-a4b2-b98ee9e2ac5e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1256, 208, 161, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-4' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='NOME DA PESSOA' /&gt;" Guid="84516088-d392-48ff-819b-f867352e5dfb" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="48c72f4bd84af8e6c485aab4d6725ec1.png" xmlns="">0_sIaOlw3B0-I7WALUSyHLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

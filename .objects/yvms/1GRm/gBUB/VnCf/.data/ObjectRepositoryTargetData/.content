@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="41AGx68E_kOBmJ1myjCRVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="5fa9c843-92d5-4abf-9fb1-62dec0768b28" CvElementArea="369, 535, 19, 19" CvTextArea="395, 536, 232, 17" CvTextArgument="Busca e apreensão de armas de fogo" CvType="CheckBox" DesignTimeRectangle="371, 533, 255, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-301' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="15d5e77a-2799-4493-8ffa-252e7356fab2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5fa9c843-92d5-4abf-9fb1-62dec0768b28" CvTextArea="395, 536, 232, 17" CvTextArgument="Busca e apreensão de armas de fogo" CvType="Text" DesignTimeRectangle="395, 533, 231, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-301' tag='SPAN' type='' aaname='Busca e apreensão de armas de fogo' check:innerText='Busca e apreensão de armas de fogo' /&gt;" Guid="10e26c77-7663-43f8-8921-f9357a915636" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bf9681d641aaec9ba2db9ef378a254f6.png" xmlns="">0xatYuqf8l0aV7pqZ5dJnUw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

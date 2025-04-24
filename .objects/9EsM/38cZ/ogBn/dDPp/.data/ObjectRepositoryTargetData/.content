@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2Nu9rDRdc0m3RbmUXOagjA" Reference="NkYqdf221EmIXN1TRDnl6w/AIGEYwevmUCzr705m2MqgQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="631, 786, 657, 57" DesignTimeScaleFactor="1.5625" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="4bcf5d45-607c-4e0d-94c4-fda6b530e9cf" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="631, 755, 55, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Senha' tag='LABEL' type='' class='pf-c-form__label pf-c-form__label-text' check:innerText='Senha' /&gt;" Guid="8154c802-d0dc-4eaf-930a-ea6252d844ca" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="baf91ca0eddecd21f12395318fbd2dfe.png" xmlns="">079DJw59UGUencF2SfZ9mpg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

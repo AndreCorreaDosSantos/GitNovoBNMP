@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EV3UiWsAM02N0OL6KwPc_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" DesignTimeRectangle="1152, 416, 120, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Arquivar' check:text='Arquivar' /&gt;" Guid="548288d8-c62e-42b3-9016-e8b0875f9fd5" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1278, 416, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Cancelar' type='button' tag='INPUT' class='button' check:text='Cancelar' /&gt;" Guid="2a170194-1557-4537-b6a6-709453bff2c8" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7c2aeb5c881fc2c919977b8959a93f9e.png" xmlns="">0zXt4g-gXs06xG1_w8ZxnWg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

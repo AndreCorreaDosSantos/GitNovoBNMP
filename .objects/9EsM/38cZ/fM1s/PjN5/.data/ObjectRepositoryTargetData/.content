@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aMI2D17VtkW3MJr6nyiqQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="ce6f38f8-bb2c-4c9f-aac2-fe428d2b02fc" CvTextArea="417, 347, 103, 12" CvTextArgument="Servidor Judiciário" CvType="Text" DesignTimeRectangle="417, 345, 352, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Servidor Judiciário   ' class='logonLinkPerfil' tag='A' type='' check:innerText='Servidor Judiciário' /&gt;" Guid="4583af00-5cd0-4f2b-91d2-a4846f345f5a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ce6f38f8-bb2c-4c9f-aac2-fe428d2b02fc" CvTextArea="434, 287, 825, 15" CvTextArgument="Perfis Ativos !" CvType="Text" DesignTimeRectangle="409, 282, 862, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl type='' tag='P' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;  &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Perfis Ativos &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Perfis Ativos' /&gt;" Guid="f07e923f-6be1-4834-a940-61a446fac19e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1b017dd868a54d6611695f71430673c5.png" xmlns="">07oJVfoCLtkCuDwosznBM2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

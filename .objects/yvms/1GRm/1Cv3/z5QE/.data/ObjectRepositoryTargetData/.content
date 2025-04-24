@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZArTbXANEke-sl24UKJ9Cw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pagina-inicial" DesignTimeRectangle="692, 488, 64, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='mat-button-wrapper' tag='SPAN' type='' /&gt;" Guid="98c1d5f9-22c9-4a7e-b3b3-1e1e216474e4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="805, 489, 85, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' + Nova Peça ' class='mat-button-wrapper' tag='SPAN' type='' check:innerText='+ Nova Peça' /&gt;" Guid="faa4347f-62fb-49bc-b473-32fb1346626f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1b720e54dd2cda331dde4ffb982a0b3e.png" xmlns="">0ILzptGCxEkizkM9ftFW7lA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

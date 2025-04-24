@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FfO4HTZDSkWGOlWZTxnDVQ" Reference="NkYqdf221EmIXN1TRDnl6w/9cmbpuYnwkmx5f2FMecbZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="google.com.br/maps/@2.8278784,-60.6896128,13z" CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='fontBodyMedium searchboxinput xiQnY ' aaname='Pesquise no Google Maps' /&gt;" Guid="20b92948-55a0-4513-aabb-a8b7ea7b943d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="ae3cf5d8-7e31-4991-8497-8b528e71bcd2" CvTextArea="123, 110, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="124, 105, 246, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='z1Srse fontBodyMedium' aaname='Pesquise no Google Maps' check:innerText='Pesquise no Google Maps' /&gt;" Guid="04f4cc69-ae1f-4247-b76f-d7af96596e2e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="afb9a4be46eeb94e841229d60315d5c4.png" xmlns="">0cOdyL3qjGkabajjcLYZGUA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

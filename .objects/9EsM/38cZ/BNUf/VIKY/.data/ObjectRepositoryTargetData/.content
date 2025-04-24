@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-6D76tyIEEyQBHDEp_SeeQ" Reference="NkYqdf221EmIXN1TRDnl6w/VIKYL6GMvUurV6JX-qmzmA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="4096c843-ceeb-4f85-86a7-8a9d4421b3ce" CvElementArea="1601, 977, 163, 24" CvTextArea="1604, 983, 158, 12" CvTextArgument="Assinar e Concluir Moviment" CvType="Button" DesignTimeRectangle="1603, 979, 160, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Assinar e Concluir Movimento' check:text='Assinar e Concluir Movimento' /&gt;" Guid="83cca583-1426-4a70-8925-1082ee349bcb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4096c843-ceeb-4f85-86a7-8a9d4421b3ce" CvElementArea="1767, 978, 123, 24" CvTextArea="1811, 984, 35, 11" CvTextArgument="Voltar" CvType="Button" DesignTimeRectangle="1769, 979, 120, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Voltar' type='button' tag='INPUT' class='button' check:text='Voltar' /&gt;" Guid="dff1fa8f-44a8-4a33-b3af-2d60c410ecf6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8b55bb4cbbfa5bad21dbcd18156b1096.png" xmlns="">0DbiJ1fcdaEK0k1qKpsW03Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z6F6ZGFo6ECkX6SDrYFCKA" Reference="NkYqdf221EmIXN1TRDnl6w/if_SU9HjE0-t563u2TupiA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="ddba871d-2589-404b-9742-bfbb096532a4" CvTextArea="417, 452, 305, 12" CvTextArgument="20 Juizado de Violência Doméstica - Competência Cível" CvType="Text" DesignTimeRectangle="417, 452, 305, 13" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;2º Juizado de Violência Doméstica - Competência Cível &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='A' type='' class='' check:innerText='2º Juizado de Violência Doméstica - Competência Cível' /&gt;" Guid="f4feae1e-fc23-4da8-b209-675d9ee370d0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ddba871d-2589-404b-9742-bfbb096532a4" CvTextArea="416, 373, 61, 14" CvTextArgument="- Varas" CvType="Text" DesignTimeRectangle="409, 367, 1118, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl class='title' type='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Varas &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='P' check:innerText='Varas' /&gt;" Guid="7f22872e-0ac7-4611-a2ea-7b2542008323" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d01858f6f1cfb7731f57129cd8a8b30e.png" xmlns="">0Wemmok4BRUWSzDKNC7_RSw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

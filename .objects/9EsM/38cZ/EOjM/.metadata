@@ -1,0 +1,16 @@
+﻿{
+  "Name": "9 - Ler CONCEDIDA A MEDIDA PROTETIVA",
+  "Type": "Screen",
+  "Id": "EOjMebJT_UyqJaliloDBKw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/EOjMebJT_UyqJaliloDBKw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-04-08T13:29:05.1853514Z",
+  "Updated": "2025-04-08T13:55:31.7374345Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

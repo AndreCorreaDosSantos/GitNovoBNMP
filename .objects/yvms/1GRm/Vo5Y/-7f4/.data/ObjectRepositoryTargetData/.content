@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tNgqTGnWAEGiiHP5Rft5yQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="4b0a32fd-632f-4a1d-a1fc-37b1442f33e0" CvElementArea="1108, 221, 474, 36" CvType="InputBox" DesignTimeRectangle="1109, 222, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' aaname='                                           CPF/CNPJ                                           ' /&gt;" Guid="4a0efc71-d0d5-4815-a8ed-ae56721ac701" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="Selector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4b0a32fd-632f-4a1d-a1fc-37b1442f33e0" CvTextArea="1107, 203, 74, 13" CvTextArgument="CPF/CNPJ" CvType="Text" DesignTimeRectangle="1109, 198, 72, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='username-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                           CPF/CNPJ                                           ' check:innerText='CPF/CNPJ' /&gt;" Guid="cf030c76-448d-489d-a014-397b9cbcb14b" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="4b0a32fd-632f-4a1d-a1fc-37b1442f33e0" CvTextArea="1180, 159, 329, 17" CvTextArgument="Você está se autenticando em BNMP" CvType="Text" DesignTimeRectangle="1094, 157, 503, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname='Você está se autenticando em  BNMP' /&gt;" Guid="5a8c8a2f-8fa7-4897-8718-653d245084b2" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0a6ce66f0f3815ca28a42b4159fd2f58.png" xmlns="">00a3nfV9xKEqcDr95v-2rHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

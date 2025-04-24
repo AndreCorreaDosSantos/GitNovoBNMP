@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H8bE0LlLmE6locdDSPo2JA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="961b3b28-40fa-4ef3-ba8f-e147b9575945" CvElementArea="396, 301, 893, 48" CvType="InputBox" DesignTimeRectangle="410, 319, 43, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl tag='MAT-LABEL' type='' class='required ng-star-inserted' aaname='CPF' check:innerText='CPF' /&gt;" Guid="bc79e336-efc9-4889-abd2-5c93129d59fa" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="961b3b28-40fa-4ef3-ba8f-e147b9575945" CvTextArea="393, 212, 210, 22" CvTextArgument="1 - Dados Pessoais" CvType="Text" DesignTimeRectangle="394, 212, 1406, 28" FuzzySelectorArgument="&lt;webctrl tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='1 - Dados Pessoais' check:innerText='1 - Dados Pessoais' /&gt;" Guid="8b903da6-6d23-455b-bd99-e8094abce90e" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="961b3b28-40fa-4ef3-ba8f-e147b9575945" CvElementArea="396, 301, 893, 48" CvType="InputBox" DesignTimeRectangle="410, 317, 868, 16" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-11' tag='INPUT' type='' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='CPF' /&gt;" Guid="550f73d3-0c62-4c5c-80b4-a8ee8f83bac6" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="961b3b28-40fa-4ef3-ba8f-e147b9575945" CvElementArea="1306, 305, 254, 39" CvTextArea="1366, 316, 174, 13" CvTextArgument="Buscar CPF na base da RFB" CvType="Button" DesignTimeRectangle="1308, 307, 250, 35" FuzzySelectorArgument="&lt;webctrl aaname='Buscar CPF na base da RFB' parentid='cdk-accordion-child-0' tag='SPAN' type='' class='btn-buscar-rfb ng-star-inserted' check:innerText='Buscar CPF na base da RFB' /&gt;" Guid="b42b9c95-ba74-4775-8b92-e86ad96a46cb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="BottomRight" X="-21" Y="-11" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="caf97042addf6a6207bcb9a17d2f70fa.png" xmlns="">0R8fnyBZzJEWym-kTDaLd9A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

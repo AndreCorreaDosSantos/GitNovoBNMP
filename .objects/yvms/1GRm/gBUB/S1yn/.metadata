@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Ações",
+  "Type": "Element",
+  "Id": "S1ynXeYdB0GTateV-4asdg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/S1ynXeYdB0GTateV-4asdg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:35:29.48755Z",
+  "Updated": "2025-03-30T23:35:29.48755Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

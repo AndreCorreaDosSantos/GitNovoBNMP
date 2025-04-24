@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pugihgXjtkiybv6MjT5F7w" Reference="NkYqdf221EmIXN1TRDnl6w/rgmbx2CIK02ec-Va3FdrTg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="f49ce82f-b57b-484e-9fed-7b4d2e3fe538" CvElementArea="368, 790, 21, 21" CvTextArea="395, 791, 318, 17" CvTextArgument="Prestação de alimentos provisionais ou provisórios" CvType="CheckBox" DesignTimeRectangle="371, 788, 341, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-310' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="c6ce78bc-d618-457d-940b-4e170c0e63f6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f49ce82f-b57b-484e-9fed-7b4d2e3fe538" CvTextArea="394, 759, 488, 17" CvTextArgument="Proibição de contato com as testemunhas por qualquer meio de comunicação" CvType="Text" DesignTimeRectangle="395, 756, 487, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-309' tag='SPAN' type='' aaname='Proibição de contato com as testemunhas por qualquer meio de comunicação' check:innerText='Proibição de contato com as testemunhas por qualquer meio de comunicação' /&gt;" Guid="5393bdc4-e59e-4567-bbee-e732dd2a19ed" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e5c594684511076631e0e12566021e0c.png" xmlns="">0MWmWyi2ZFU2UItTQtdbl3w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

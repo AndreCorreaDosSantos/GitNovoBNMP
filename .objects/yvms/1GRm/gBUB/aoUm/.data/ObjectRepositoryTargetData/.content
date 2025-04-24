@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="B4EIebC8bkWVbF-dbQMc9g" Reference="NkYqdf221EmIXN1TRDnl6w/aoUmW9l6zk2SDqgauQbtHw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25630910979" CVScreenId="196d24ac-1527-4491-90b6-d9029bef648e" CvElementArea="1268, 553, 207, 49" CvType="InputBox" DesignTimeRectangle="1281, 568, 56, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-form-field-label-55' tag='MAT-LABEL' type='' class='ng-star-inserted' aaname='Número*' check:innerText='Número*' /&gt;" Guid="6f032cdf-62cf-4750-b751-dd9edb5cb354" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="196d24ac-1527-4491-90b6-d9029bef648e" CvTextArea="409, 304, 80, 15" CvTextArgument="1 - Vítimas" CvType="Text" DesignTimeRectangle="410, 286, 1279, 39" FuzzySelectorArgument="&lt;webctrl tag='MAT-PANEL-TITLE' type='' class='titulo titulo-vitima mat-expansion-panel-header-title' aaname=' 1 - Vítimas ' check:innerText='1 - Vítimas' /&gt;" Guid="34e8d991-2762-458e-97b8-21ac4238048b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6a58a807464e9280733fe4ab90b14c4f.png" xmlns="">0UcDYf93KbkC2tWTlritPmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

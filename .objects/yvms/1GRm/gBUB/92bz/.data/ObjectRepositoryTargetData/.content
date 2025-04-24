@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0nyFANQ2G065b_xU0x5DIQ" Reference="NkYqdf221EmIXN1TRDnl6w/92bzKUPpT0uqYbbJBi-Cww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="371, 858, 435, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-72' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="d8fab0ba-b3a9-4024-89cf-41f7d8ae11bc" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="395, 858, 411, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-116' tag='SPAN' type='' aaname='Suspensão das procurações conferidas pela ofendida ao agressor' check:innerText='Suspensão das procurações conferidas pela ofendida ao agressor' /&gt;" Guid="90c7d713-11cc-4257-8da0-a77e4ab33c85" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="02fb70b3a5872943411ce612d9231feb.png" xmlns="">0UTuKTjs1kE2r3j_oXvcC3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

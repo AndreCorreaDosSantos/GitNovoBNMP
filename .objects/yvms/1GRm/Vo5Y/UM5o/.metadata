@@ -1,0 +1,17 @@
+﻿{
+  "Name": "click - ANDRE CORREA DOS SANTOS",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "UM5oeNTZzkuGzPk5kp_cOw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/UM5oeNTZzkuGzPk5kp_cOw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Vo5YtFPsQ0aecZlQ3nq1Eg",
+  "Created": "2025-03-30T23:13:39.6346729Z",
+  "Updated": "2025-03-30T23:16:45.3108353Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

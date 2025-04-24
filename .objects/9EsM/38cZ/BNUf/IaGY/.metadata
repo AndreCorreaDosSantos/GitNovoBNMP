@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Adicionar",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "IaGYIqyiQ0mtBg-Sxc9lIg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/IaGYIqyiQ0mtBg-Sxc9lIg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "Created": "2025-03-31T23:16:54.4084757Z",
+  "Updated": "2025-03-31T23:16:54.4084757Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

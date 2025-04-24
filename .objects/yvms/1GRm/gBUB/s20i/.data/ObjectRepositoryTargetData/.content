@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6d53U49KEkqj1VyvIWF7cQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="371, 826, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentid='mat-checkbox-194' tag='SPAN' /&gt;" Guid="ec62a958-a10d-4657-a8fc-76368db2c39f" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8315e1fd7360383e5ddcd2be3ae16f13.png" xmlns="">04I4My8GLQkqs8yfdrAzLRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

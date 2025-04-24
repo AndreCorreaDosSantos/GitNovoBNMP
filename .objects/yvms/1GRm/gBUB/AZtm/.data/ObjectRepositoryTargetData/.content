@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Dk6pQZ0n0USlDPdVrfgsMw" Reference="NkYqdf221EmIXN1TRDnl6w/TK_w-lK-zUSdYLFQrS4OsQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" DesignTimeRectangle="379, 811, 1406, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-5' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='6 - Dados Adicionais' check:innerText='6 - Dados Adicionais' /&gt;" Guid="080dbed8-6e43-42cc-ad46-dec86536f76e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="355, 801, 1498, 48" FuzzySelectorArgument="&lt;webctrl id='mat-expansion-panel-header-5' tag='MAT-EXPANSION-PANEL-HEADER' type='' class='mat-expansion-panel-header mat-focus-indicator ng-tns-c52-40 ng-star-inserted' aaname='' check:innerText='6 - Dados Adicionais' /&gt;" Guid="257516de-fb24-4f6d-9517-0f1f2b943f59" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ce068147b114b93ca8e383fc4262e7ed.png" xmlns="">0ZjLpZ-l5f0ik3mjFfN3UWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

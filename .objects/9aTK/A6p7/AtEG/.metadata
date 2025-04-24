@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Maps",
+  "Type": "Screen",
+  "Id": "AtEG_-Jsv0mFLNgmmHdPAg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/AtEG_-Jsv0mFLNgmmHdPAg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/A6p78UncBEekgYa2iaEJrA",
+  "Created": "2025-03-30T19:02:54.9049531Z",
+  "Updated": "2025-03-30T19:02:54.9049531Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

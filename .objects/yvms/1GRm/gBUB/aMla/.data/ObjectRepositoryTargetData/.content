@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0nyqxoeTsk2unAnXIqqpKQ" Reference="NkYqdf221EmIXN1TRDnl6w/aMlavjpFB0WyKKTaPgV6vw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25630990123" CVScreenId="c3839401-31e1-4cb5-aa81-bc770cef1bc8" CvElementArea="474, 910, 25, 25" CvType="RadioButton" DesignTimeRectangle="477, 913, 20, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-6' tag='SPAN' type='' aaname='' /&gt;" Guid="9ad3d870-80b5-4cfd-9cfb-4291f148bdaa" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c3839401-31e1-4cb5-aa81-bc770cef1bc8" CvTextArea="379, 885, 418, 18" CvTextArgument="Abrigamento tempofario da ofendida e/ou dependentes*" CvType="Text" DesignTimeRectangle="381, 884, 1502, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H6' aaname='Abrigamento tempoŕario da ofendida e/ou dependentes*' /&gt;" Guid="92442390-0b6a-46fd-bed0-09b1ff854254" SearchSteps="Selector, CV" />
+          <Target CVScreenId="f98bc94b-242d-48f2-a452-8a0bd58d9430" CvTextArea="504, 914, 32, 15" CvTextArgument="Não" CvType="Text" DesignTimeRectangle="497, 911, 38, 24" FuzzySelectorArgument="&lt;webctrl class='mat-radio-label-content' parentid='mat-radio-15' tag='SPAN' type='' aaname='Não' check:innerText='Não' /&gt;" Guid="c1132a9a-5488-4030-9359-0c7bb08a6ea8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopRight" X="-11" Y="13" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="810d68b6e26490ee06b30292642b333b.png" xmlns="">0xWoS-AEcjEK3SiBghiVZtQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

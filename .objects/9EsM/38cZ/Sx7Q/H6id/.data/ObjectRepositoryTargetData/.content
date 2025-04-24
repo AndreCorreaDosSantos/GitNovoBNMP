@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WS77vNJ0_0CCgBKW14eVGw" Reference="NkYqdf221EmIXN1TRDnl6w/4Aq9IiW_lUSQDrfVPnJH1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="1416, 184, 104, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='shortcuts' type='' tag='A' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Processo &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;' check:innerText='Processo' /&gt;" Guid="e3aa9352-a0a9-4ef8-baee-d8946243d95e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1530, 184, 104, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Histórico &amp;#x9;&amp;#x9;    &amp;#x9;' class='shortcuts' type='' tag='A' check:innerText='Histórico' /&gt;" Guid="2d79784a-7728-4955-8864-f2a97421a1ab" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="058be186a1a4ac972abffa4eb39cfece.png" xmlns="">09cJzh6kZnEuC1FRxIKLEew</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

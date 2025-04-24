@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Telefone de Contato - - vítima",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "YvlY-FqlH0i58C7hC8yG5g",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/YvlY-FqlH0i58C7hC8yG5g",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:43:45.1574735Z",
+  "Updated": "2025-03-30T23:43:58.8365244Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "8 - Junta a peça no projudi",
+  "Type": "Screen",
+  "Id": "BNUfF13UVkyLWYbxW-xXOQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-03-31T23:10:51.18855Z",
+  "Updated": "2025-03-31T23:11:41.8314706Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

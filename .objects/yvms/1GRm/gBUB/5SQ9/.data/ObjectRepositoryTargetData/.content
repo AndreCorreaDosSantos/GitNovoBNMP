@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-VwSRcovYk-doap2YmFkeA" Reference="NkYqdf221EmIXN1TRDnl6w/5SQ9blTuHk-FfowlEpKujA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="5ebe4a95-8eaa-42d6-8bda-a378a60afde2" CvElementArea="403, 970, 25, 25" CvType="RadioButton" DesignTimeRectangle="406, 972, 20, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-8' tag='SPAN' type='' aaname='' /&gt;" Guid="86971f4a-2f32-4480-8ea2-dfcfe7cf4388" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5ebe4a95-8eaa-42d6-8bda-a378a60afde2" CvTextArea="380, 944, 325, 18" CvTextArgument="Serviço Patrulha Maria da Penha ou similar*" CvType="Text" DesignTimeRectangle="381, 943, 1502, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H6' aaname='Serviço Patrulha Maria da Penha ou similar*' /&gt;" Guid="4a51eace-bad0-403c-aebb-438fafe7fead" SearchSteps="Selector, CV" />
+          <Target CVScreenId="e399667e-365f-4d73-9821-85f705ebf591" CvTextArea="433, 973, 30, 15" CvTextArgument="Sim" CvType="Text" DesignTimeRectangle="426, 970, 36, 24" FuzzySelectorArgument="&lt;webctrl class='mat-radio-label-content' parentid='mat-radio-17' tag='SPAN' type='' aaname='Sim' check:innerText='Sim' /&gt;" Guid="5cb36dbb-fe04-4016-924c-45613d5be67f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="72a57065c7c855d740a3e0388ce45559.png" xmlns="">0jd1B6YziXEaCWQbzUXrGNg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

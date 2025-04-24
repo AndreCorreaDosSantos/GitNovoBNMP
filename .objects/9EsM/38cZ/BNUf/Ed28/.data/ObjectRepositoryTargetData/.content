@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WcMWXKs950COn_qDO_6gWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" DesignTimeRectangle="44, 699, 145, 13" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Data Evento' class='form' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Arquivar Processo (*) &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' tag='A' class='link' check:innerText='Arquivar Processo (*)' /&gt;" Guid="4e74437f-5043-4b6a-b033-a6ee7312b18c" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="44, 677, 161, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Data Evento' class='form' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Transitar em Julgado (*) &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' tag='A' class='link' check:innerText='Transitar em Julgado (*)' /&gt;" Guid="de3f94c0-d7f9-4450-8001-b7a06cac9223" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2703a8621f43c1d269be55efb1ab7bdc.png" xmlns="">06oOV_tWj80inStn_xCfOWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

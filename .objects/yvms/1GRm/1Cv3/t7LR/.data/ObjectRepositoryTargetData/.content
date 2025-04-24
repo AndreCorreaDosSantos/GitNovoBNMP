@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NTGtzQvp5UyNE8KOF0O1pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/lista/25630852324" CVScreenId="d279d31a-e6b7-4868-9a51-ae1028190b75" CvElementArea="24, 141, 39, 33" CvType="Icon" DesignTimeRectangle="32, 150, 25, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='hamburger-box' tag='SPAN' type='' aaname='' /&gt;" Guid="c7154643-a64e-4fa2-a00f-f4194b876b97" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAVCAYAAAC6wOViAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABQSURBVEhLY2DwPv2f7hirIK0xjDF1y8v/tAQg8zEspQfAsHRAfEpXjFWQ1hirIK0xVkFaYxhjNMtQC4xmGfphrIK0xjDGaJahFhiJWeb0fwBQJ5bT7YLACQAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="95, 136, 131, 45" FuzzySelectorArgument="&lt;webctrl type='' class='logodesk is-desktop' isleaf='1' tag='DIV' aaname='' /&gt;" Guid="6918ce79-fd74-4993-b0ab-1bbb53a46fc3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0189418457239a28c5603cbd00b11b25.png" xmlns="">0EUEfaJhCDUmSNc8SPBAtZQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

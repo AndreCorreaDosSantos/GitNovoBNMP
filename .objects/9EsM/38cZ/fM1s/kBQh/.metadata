@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Processos - aba que abre",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "kBQhFmir30GR3Y8u6BCoXA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/kBQhFmir30GR3Y8u6BCoXA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg",
+  "Created": "2025-03-30T18:50:57.2417824Z",
+  "Updated": "2025-03-30T18:53:38.5293128Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

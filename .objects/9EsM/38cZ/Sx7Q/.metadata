@@ -1,0 +1,12 @@
+﻿{
+  "Name": "3 - Coleta Processos",
+  "Type": "Screen",
+  "Id": "Sx7QoFgXGE6ha-MwveBWFA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-03-30T18:55:42.627786Z",
+  "Updated": "2025-03-30T18:55:42.627786Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

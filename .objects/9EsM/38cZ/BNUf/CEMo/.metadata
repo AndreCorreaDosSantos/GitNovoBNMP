@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Arquivamento de Processo(1)",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "CEMo1FWTzkSVRm6t-_VvuQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/CEMo1FWTzkSVRm6t-_VvuQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "Created": "2025-04-08T18:25:41.8782479Z",
+  "Updated": "2025-04-08T18:25:41.8782479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

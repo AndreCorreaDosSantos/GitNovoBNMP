@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JygeIxQu-0yQJxJ7FD_xeA" Reference="NkYqdf221EmIXN1TRDnl6w/6SLGxH6qnUKynjBYQ2GlQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="e78837b0-0874-4c1e-88f0-d1ce2c5184a2" CvElementArea="369, 320, 19, 19" CvTextArea="395, 321, 623, 14" CvTextArgument="Encaminhamento de dependentes a programa oficial ou comunitário de proteção ou de atendimento" CvType="CheckBox" DesignTimeRectangle="371, 318, 647, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-76' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="73cb8abd-a89c-407f-8316-66f4c5837bfe" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e78837b0-0874-4c1e-88f0-d1ce2c5184a2" CvTextArea="395, 289, 598, 14" CvTextArgument="Encaminhamento da ofendida a programa oficial ou comunitário de proteção ou de atendimento" CvType="Text" DesignTimeRectangle="395, 286, 597, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-75' tag='SPAN' type='' aaname='Encaminhamento da ofendida a programa oficial ou comunitário de proteção ou de atendimento' check:innerText='Encaminhamento da ofendida a programa oficial ou comunitário de proteção ou de atendimento' /&gt;" Guid="f4b6fba4-4c31-4e2b-aa29-bd9016996ccf" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa0f36bbe70a1ede0eb4af36c9aa8514.png" xmlns="">0QrCgxEu7Dk6QjAZHtUSiPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

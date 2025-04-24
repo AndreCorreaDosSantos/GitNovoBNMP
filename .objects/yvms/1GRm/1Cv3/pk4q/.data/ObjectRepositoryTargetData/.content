@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="y7JDFfkdD0a7apHCz1vu8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas" DesignTimeRectangle="1036, 212, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-1' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="c1f44312-d623-4aad-8874-2399c4baf303" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1036, 208, 54, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-1' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' check:innerText='CPF' /&gt;" Guid="f7b828e2-3248-4f54-a839-05288dc6caee" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="508ede148e3adcd000f2d04f3b7b15ce.png" xmlns="">05KnOOz_Lg0WEIa9SfUy2Qg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

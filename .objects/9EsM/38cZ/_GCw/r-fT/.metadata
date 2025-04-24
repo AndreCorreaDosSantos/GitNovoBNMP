@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Partes",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "r-fTpE1V8kyLZk0cBMMZqA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/r-fTpE1V8kyLZk0cBMMZqA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/_GCwBxkfTEeVtgJ-lwFgmw",
+  "Created": "2025-03-30T19:13:43.6671562Z",
+  "Updated": "2025-03-30T19:13:43.6671562Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

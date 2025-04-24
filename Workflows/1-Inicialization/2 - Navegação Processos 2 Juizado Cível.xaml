@@ -1,0 +1,293 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_2___Navegação_Processos_2_Juizado_Cível" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="_2___Navegação_Processos_2_Juizado_Cível_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_2___Navegação_Processos_2_Juizado_Cível" sap:VirtualizedContainerService.HintSize="1276,2153" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Projudi - Processo Eletrônico do Judiciá" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,2130" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2f35b478-f28d-4e18-95be-ec0398363629" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,1890" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Teste" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Servidor Judiciário'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="c46ab894-d575-4b57-9f20-30f0a0602026" ContentHash="d4q9UJ6HYUam5yUG06Nz3w" CvTextArea="417, 347, 103, 12" CvTextArgument="Servidor Judiciário" CvType="Text" DesignTimeRectangle="417, 345, 352, 19" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname='Servidor Judiciário   ' class='logonLinkPerfil' tag='A' type='' check:innerText='Servidor Judiciário' /&gt;" Guid="199b3f21-259e-442b-99f5-6ec835ee26df" InformativeScreenshot="834625fb0b2545284fc80dabe2a85724.png" Reference="NkYqdf221EmIXN1TRDnl6w/wVpBEZov5UChUkY0F3PZSw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="c46ab894-d575-4b57-9f20-30f0a0602026" CvTextArea="434, 287, 825, 15" CvTextArgument="Perfis Ativos !" CvType="Text" DesignTimeRectangle="409, 282, 862, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl type='' tag='P' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;  &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Perfis Ativos &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Perfis Ativos' /&gt;" Guid="71422915-fc0f-4302-a186-229b8fb58753" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2º Juizado de Violência…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="d338d2e7-235a-4d79-a5a7-42d07e09fc0f" ContentHash="HkdOCPs7HkGbNYctvN3gxQ" CvTextArea="417, 470, 305, 12" CvTextArgument="20 Juizado de Violência Doméstica - Competência Cível" CvType="Text" DesignTimeRectangle="417, 470, 305, 13" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;2º Juizado de Violência Doméstica - Competência Cível &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='A' type='' class='' check:innerText='2º Juizado de Violência Doméstica - Competência Cível' /&gt;" Guid="44a0fb86-7b3e-4b6b-b768-9eaf07f0a890" InformativeScreenshot="836fdb9e40d67e887b2b66eda9a0c217.png" Reference="NkYqdf221EmIXN1TRDnl6w/l3PmDueFIEuC-npgDq4kpQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d338d2e7-235a-4d79-a5a7-42d07e09fc0f" CvTextArea="433, 392, 44, 14" CvTextArgument="Varas" CvType="Text" DesignTimeRectangle="409, 386, 1118, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl class='title' type='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Varas &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='P' check:innerText='Varas' /&gt;" Guid="98110cb4-8d60-45fa-a5c8-cfc40adb5d63" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Processos'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="ffa8e791-0cc2-4515-b8e4-bb18a55784b5" ContentHash="yDdtzfCF3UixSsyllAliwA" CvTextArea="54, 135, 48, 11" CvTextArgument="Processos" CvType="Text" DesignTimeRectangle="55, 134, 47, 13" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Processos' check:innerText='Processos' /&gt;" Guid="54a627c8-74ca-4a30-8341-f30322d83fd2" InformativeScreenshot="7fe50df4e60afd5ebf628bef9feeba42.png" Reference="NkYqdf221EmIXN1TRDnl6w/Z9AjqMNwF0KpPST6CYnQ1Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ffa8e791-0cc2-4515-b8e4-bb18a55784b5" CvTextArea="17, 134, 28, 12" CvTextArgument="Início" CvType="Text" DesignTimeRectangle="19, 134, 25, 13" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Início' check:innerText='Início' /&gt;" Guid="6033fa7c-6477-407c-b2f3-0406a48f0d01" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Processos'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="d9ca479a-b8c9-4c75-93f5-a22dc3dde44f" ContentHash="SL-AIaekqUSxM2zLBJWgfQ" CvTextArea="56, 326, 29, 11" CvTextArgument="Busca" CvType="Text" DesignTimeRectangle="57, 325, 28, 13" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Busca' check:innerText='Busca' /&gt;" Guid="64d66b48-472e-4037-a829-a6f9c71de868" InformativeScreenshot="839151d10e30e9b9719dbebaf1a36c38.png" Reference="NkYqdf221EmIXN1TRDnl6w/kBQhFmir30GR3Y8u6BCoXA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="d9ca479a-b8c9-4c75-93f5-a22dc3dde44f" CvElementArea="50, 128, 58, 24" CvTextArea="54, 135, 48, 11" CvTextArgument="Processos" CvType="Button" DesignTimeRectangle="51, 130, 55, 21" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='st_tdcss' aaname='' check:innerText='Processos' /&gt;" Guid="ee4a783f-d649-49cb-8373-fc4714fd0b76" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ativos'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="81da851e-b78d-46f3-bccd-b9390a361603" ContentHash="cFxF5nGGWk2dHBN7eP6UCQ" CvTextArea="284, 349, 47, 13" CvTextArgument="Avançada" CvType="Text" DesignTimeRectangle="286, 348, 45, 13" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='st_ftcss' aaname='Avançada' check:innerText='Avançada' /&gt;" Guid="5ea9d47d-1d75-4438-a7a9-92a7687e62cd" InformativeScreenshot="0238228b013144eeed3c43cb1d2aef98.png" Reference="NkYqdf221EmIXN1TRDnl6w/-__TNpbE40-TmpJ5EaowQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="81da851e-b78d-46f3-bccd-b9390a361603" CvTextArea="56, 326, 29, 11" CvTextArgument="Busca" CvType="Text" DesignTimeRectangle="54, 322, 212, 19" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='st_tdcss' aaname='' check:innerText='Busca' /&gt;" Guid="88f074a0-a541-4cd5-93a0-45202efeb2d4" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NSelectItem DisplayName="Select Item 'Juízo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="2º Juizado de Violência Doméstica - Competência Cível" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>Todos</x:String>
+                  <x:String>2º Juizado de Violência Doméstica - Competência Cível</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="417c75ab-5533-4e85-b5ce-ad4512649c2b" ContentHash="O1Rj2-3dQEOojuBklwPGQQ" CvElementArea="232, 452, 329, 19" CvType="InputBox" DesignTimeRectangle="233, 453, 327, 17" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='Juízo:' /&gt;" Guid="ae649a45-c7f9-46f7-8151-280f88bd1e0b" InformativeScreenshot="cbfa954c53426c91646377748ff3550f.png" Reference="NkYqdf221EmIXN1TRDnl6w/bfIldKiHoUacYgC38j3RDQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="417c75ab-5533-4e85-b5ce-ad4512649c2b" CvTextArea="187, 454, 37, 12" CvTextArgument="Juízo:" CvType="Text" DesignTimeRectangle="188, 454, 36, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Juízo:' check:innerText='Juízo:' /&gt;" Guid="4a915585-89ae-49e0-8a1c-238461f63847" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Status Processual'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="ARQUIVADO" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="12">
+                  <x:String>Selecione Para Busca</x:String>
+                  <x:String>ATIVO</x:String>
+                  <x:String>ARQUIVADO</x:String>
+                  <x:String>SUSPENSO OU SOBRESTADO</x:String>
+                  <x:String>EM INSTÂNCIA SUPERIOR</x:String>
+                  <x:String>ARQUIVADO PROVISORIAMENTE</x:String>
+                  <x:String>ARQUIVADO SEM DISTRIBUIÇÃO</x:String>
+                  <x:String>ARQUIVADO DECLÍNIO DE COMPETÊNCIA</x:String>
+                  <x:String>INVÁLIDO</x:String>
+                  <x:String>ARQUIVADO POR CANCELAMENTO DE DISTRIBUIÇÃO</x:String>
+                  <x:String>ARQUIVADO PROVISORIAMENTE - MENOR EM CONFLITO COM A LEI AGUARDANDO APREENSÃO</x:String>
+                  <x:String>ARQUIVADO PROVISORIAMENTE - AGUARDANDO CAPTURA DE RÉU CONDENADO</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="57a48df4-f550-4327-ab71-2a935f42ebb0" ContentHash="SVNKlUSH7Eep9ONsbbQyxQ" CvElementArea="287, 749, 694, 23" CvType="InputBox" DesignTimeRectangle="287, 750, 695, 21" DesignTimeScaleFactor="1.25" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='Status Processual:' /&gt;" Guid="08dcfddd-7f6f-478b-9443-6ed66a438646" InformativeScreenshot="34962d4612c7873dee1a12a533e79b4c.png" Reference="NkYqdf221EmIXN1TRDnl6w/41Z1WDgWxECcnm_6Zb7gJg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="57a48df4-f550-4327-ab71-2a935f42ebb0" CvTextArea="132, 752, 144, 14" CvTextArgument="Status Processual:" CvType="Text" DesignTimeRectangle="133, 751, 143, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Status Processual:' check:innerText='Status Processual:' /&gt;" Guid="29b4eefa-3634-49de-aa9a-dc4c699b8d50" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Inicial de Distrib…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Text="01082024" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="dba8e285-2460-4992-8fd2-f3108c0cbecf" ContentHash="Z_eegvhSl0KC9YiFwq1b1g" CvElementArea="233, 689, 162, 19" CvType="InputBox" DesignTimeRectangle="233, 690, 160, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='text input_mask mask_date_br' aaname='Data Inicial de Distribuição:' /&gt;" Guid="920ea661-6b28-4b2e-a2f1-7537771b13b4" InformativeScreenshot="84e49c5d50698e731358d3b53de6129b.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/XQSvP3gJTke1MfD-cI-v-A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="dba8e285-2460-4992-8fd2-f3108c0cbecf" CvTextArea="51, 690, 173, 14" CvTextArgument="Data Inicial de Distribuição:" CvType="Text" DesignTimeRectangle="51, 690, 173, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Data Inicial de Distribuição:' check:innerText='Data Inicial de Distribuição:' /&gt;" Guid="9ce67f8e-a5c3-40be-995c-82ede38a505a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Final de Distrib…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Text="30092024" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" ContentHash="0kdBwzPGiEOVz0XKpCs9gg" DesignTimeRectangle="575, 846, 188, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl class='text input_mask mask_date_br' type='text' tag='INPUT' aaname='' /&gt;" Guid="510a3a4e-8ec6-4c46-806c-ba7c23867b5a" InformativeScreenshot="5603b9a0c20a810d12a28f9fda86efa7.png" IsResponsive="True" Reference="NkYqdf221EmIXN1TRDnl6w/l2kG_aeG90qnj6OCenEk4A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="60, 846, 216, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Data Inicial de Distribuição:' check:innerText='Data Inicial de Distribuição:' /&gt;" Guid="776ab4b4-b80a-4b9b-8147-91d0553fbb03" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pesquisar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f35b478-f28d-4e18-95be-ec0398363629" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="fbaee9d3-e75b-4d2c-bdee-4f5deabd8aa7" ContentHash="eiOohB6iGku0Y9mlUf3jSg" CvElementArea="1782, 795, 123, 24" CvTextArea="1817, 801, 54, 13" CvTextArgument="Pesquisar" CvType="Button" DesignTimeRectangle="1784, 796, 120, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='button' aaname='Pesquisar' check:text='Pesquisar' /&gt;" Guid="960eed4f-524f-4910-b1b2-5ca503d4ede8" InformativeScreenshot="715ba903c9684fb8b942336d53df722f.png" Reference="NkYqdf221EmIXN1TRDnl6w/fE2DAbgdCUGh_UrWYXa7oA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="fbaee9d3-e75b-4d2c-bdee-4f5deabd8aa7" CvTextArea="604, 158, 306, 12" CvTextArgument="20 Juizado de Violência Doméstica - Competência Cível" CvType="Text" DesignTimeRectangle="606, 158, 304, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='2º Juizado de Violência Doméstica - Competência Cível' type='' tag='A' class='' check:innerText='2º Juizado de Violência Doméstica - Competência Cível' /&gt;" Guid="b44bb22d-5159-4518-9ac4-19416933382b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="7UQ4g0pfUEy37_rlqR9FxQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALWSURBVDhPPZPbU1JRFMbPX9h7D830VC9Nl+k25ZRmt5kuFsSkQyZJ5S0xhLykBCkkKEgKIxmZZhlpiBGeAxzO5dfsTfWwZq/51re+vdea/Sk0GqCqoBtgglaugQW6DqYNahVsG4nJMGmChoHoVeyqKhMEyW7WCyWNOlDUoAYy3yk3ZO0fz67XwdBRVKshCWXTRAX2gEsuN47BIIfOtnLwVAvHb3bQ1vmYz2WVH1X9v6gOKEXL4re41YbvNqwbcHs4SK4GH3QoAKm9Gn2xFCuVKmuaTgmaPY06irjxTS7P0as3Oe3sxBkMcaGnn8veEU51PuPAmSsccz6mzTvMjX4/F7uecKT9BjP5dSkkBeY2CnT0BfCnVnmRyHFneJqTDi+uyQQ9kQz3R2dp945yxuHhYSDM4ZZrxPLf5bhKBXgZSXOy1cnE/GfC2W0c/WHaHvqY/1rHF/2EZyyF2x/HN/uBzX040XafQGSJbQ0UsZBXkSytt3spVJqzdQ3M4PSGKJpQBmayRdxDUaYXNuWiz7V3MTyRlMtU9m0YCMbpcPtlsWSC0/taNojmkgXzHysE3uYZnHxPSYfugTAuTxDt3wjPxuK4nk/Ipeza0OOP0T06R8GAIjCe/CKxodCSFPUG33HvSUC+Vlmrgje8QCCdZ8OCjzVwT0bpj2XYER8IiG9V8CVzDCWyfLHBMx3HOTLFDyEgCE7/JOe7PFxw9/IoFOXBq2mexpLkDaTo4p7GwPwSx+66aOl+Kk/HywkprmwBo4vLTOXyjC2vEN34ij/1npGFRRZ3dpnKrhL/VmB2fZN7L0a41TfE9d7n9M3OyfGUX8BYPEnnoE9GKL1EIr9GNLNCJL3M+LuEzFd/7pLb/klma5tQOsN4IsV6WUWpNaBuwN4vFcsGywRbuO6vaUQITBpNGNAAvQH7VUuaS8Fo2rQmbCwQ4RARQkhrQM1EckRUbUzNbPJEXYc/LnqAdgCM0nwAAAAASUVORK5CYII=" InformativeScreenshot="3ff7b4e45c4738de49545a4919ccba84.jpg" Reference="NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg" Selector="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" Url="https://projudi.tjrr.jus.br/projudi/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

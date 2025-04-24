@@ -1,0 +1,17 @@
+﻿{
+  "Name": "unchecked 18 - réu",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "nnr0Rf3uXkqzh9xS3xyb_Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/nnr0Rf3uXkqzh9xS3xyb_Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T20:22:44.2448124Z",
+  "Updated": "2025-03-31T20:23:09.7317273Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

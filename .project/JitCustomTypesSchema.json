@@ -1,0 +1,353 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "4ETzH7iMofwwjnaQNNxedDHiEYJhjRcZF0Bm0kQrpe1fBfMhS1W9SaDGbP29ZQmMoqeAMQLBmVzENtrx+9TIlA==",
+        "bundleName": "C2CFDCDB09B_geocode_sub_json_Retrieve",
+        "entitiesBundle": {
+          "Types": {
+            "southwest": {
+              "name": "southwest",
+              "properties": [
+                {
+                  "name": "lat",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "lng",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "northeast": {
+              "name": "northeast",
+              "properties": [
+                {
+                  "name": "lat",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "lng",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "viewport": {
+              "name": "viewport",
+              "properties": [
+                {
+                  "name": "southwest",
+                  "type": {
+                    "definitionName": "southwest"
+                  }
+                },
+                {
+                  "name": "northeast",
+                  "type": {
+                    "definitionName": "northeast"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "location": {
+              "name": "location",
+              "properties": [
+                {
+                  "name": "lng",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "lat",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Double, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "geometry": {
+              "name": "geometry",
+              "properties": [
+                {
+                  "name": "viewport",
+                  "type": {
+                    "definitionName": "viewport"
+                  }
+                },
+                {
+                  "name": "location",
+                  "type": {
+                    "definitionName": "location"
+                  }
+                },
+                {
+                  "name": "location_type",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "address_components": {
+              "name": "address_components",
+              "properties": [
+                {
+                  "name": "short_name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "types",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "isCollection": true,
+                  "collectionGenericType": {
+                    "ClrType": "System.Collections.Generic.List`1, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "long_name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "plus_code": {
+              "name": "plus_code",
+              "properties": [
+                {
+                  "name": "global_code",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "compound_code",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "geocode_sub_json_Retrieve": {
+              "name": "geocode_sub_json_Retrieve",
+              "properties": [
+                {
+                  "name": "geometry",
+                  "type": {
+                    "definitionName": "geometry"
+                  }
+                },
+                {
+                  "name": "address_components",
+                  "type": {
+                    "definitionName": "address_components"
+                  },
+                  "isCollection": true,
+                  "collectionGenericType": {
+                    "ClrType": "System.Collections.Generic.List`1, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "plus_code",
+                  "type": {
+                    "definitionName": "plus_code"
+                  }
+                },
+                {
+                  "name": "formatted_address",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "types",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "isCollection": true,
+                  "collectionGenericType": {
+                    "ClrType": "System.Collections.Generic.List`1, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "partial_match",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "place_id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "status",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C2CFDCDB09B_geocode_sub_json_Retrieve",
+        "hash": "NEVUekg3aU1vZnd3am5hUU5OeGVkREhpRVlKaGpSY1pGMEJtMGtRcnBlMWZCZk1oUzFXOVNhREdiUDI5WlFtTW9xZUFNUUxCbVZ6RU50cngrOVRJbEE9PQ",
+        "assemblyName": "C2CFDCDB09B_geocode_.j6Wov1GXVyM1z2OH73AlPPZ3"
+      }
+    },
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "ysWdb0PTbTdTLw8OO3Yet21wrYkwZLa3kfK4cP9xhKdGetQWs3dQGLmH4JihL4ZhJwVepveAWhSJC5f9DucTbg==",
+        "bundleName": "C09BED99F9B_chat_sub_completions_Create",
+        "entitiesBundle": {
+          "Types": {
+            "chat_sub_completions_Create": {
+              "name": "chat_sub_completions_Create",
+              "properties": [
+                {
+                  "name": "text",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "reasoningContent",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.C09BED99F9B_chat_sub_completions_Create",
+        "hash": "eXNXZGIwUFRiVGRUTHc4T08zWWV0MjF3cllrd1pMYTNrZks0Y1A5eGhLZEdldFFXczNkUUdMbUg0SmloTDRaaEp3VmVwdmVBV2hTSkM1ZjlEdWNUYmc9PQ",
+        "assemblyName": "C09BED99F9B_chat_sub.m0mg330aknB1m8c6Q4YwV3r2"
+      }
+    }
+  ]
+}

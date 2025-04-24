@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Seq.",
+  "Type": "Element",
+  "Id": "HPbuS35xRkeOqZu-iuNLQQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/HPbuS35xRkeOqZu-iuNLQQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "Created": "2025-03-30T19:08:33.0384135Z",
+  "Updated": "2025-03-30T19:08:33.0384135Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

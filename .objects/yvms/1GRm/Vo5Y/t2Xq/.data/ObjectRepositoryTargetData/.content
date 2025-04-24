@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UezhoHWHaUW3RB-UibP2oA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="1109, 222, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control' placeholder='000.000.000-00' aaname='                                           CPF/CNPJ                                           ' /&gt;" Guid="2ee8c77f-ff68-48d9-bbd7-f2e0d70c930c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1109, 198, 72, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='username-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                           CPF/CNPJ                                           ' check:innerText='CPF/CNPJ' /&gt;" Guid="5b6006b0-3562-4d1a-86d4-264a63fc364b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="45e1c41a692734b5ae38d6450563442d.png" xmlns="">0cIOm7iwFW0SQnf87Ubggfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

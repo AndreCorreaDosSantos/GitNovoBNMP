@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lIi8IxlIokSWteWmOFJzFw" Reference="NkYqdf221EmIXN1TRDnl6w/atSc2QGhuk2rzPjnEL3tyg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="631, 676, 657, 56" DesignTimeScaleFactor="1.5625" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='username' tag='INPUT' /&gt;" Guid="593c797a-8a60-485f-81f5-734e632e9da7" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="631, 644, 198, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='pf-c-form__label pf-c-form__label-text' aaname='CPF (Apenas números)' check:innerText='CPF (Apenas números)' /&gt;" Guid="9a3a45da-9174-444b-800a-dbfecdc44903" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="787bcc4acd8a2d2898535b2f3cdc681b.png" xmlns="">0SEPSeT6VAk6kALfxAz8wVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

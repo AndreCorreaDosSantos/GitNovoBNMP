@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7pgjE6Wf802u0ayjqEzy5g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" DesignTimeRectangle="834, 561, 357, 17" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="5eb175e7-f1ff-48a1-9216-88f9e9326c30" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="822, 532, 386, 29" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='resultTable' tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Tipo do Arquivo &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' type='' tag='TH' class='' check:innerText='Tipo do Arquivo' /&gt;" Guid="9cdf7e87-d274-4b1f-9426-7a3da68518c4" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="20a1dbe14e0547f6c61bddb9d5f0f098.png" xmlns="">0yqcH80D3HkixPWGnOTXgvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

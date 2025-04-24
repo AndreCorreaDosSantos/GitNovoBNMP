@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Número do Processo",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "G89EV7jxo0eT07pyJ_kLJg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/G89EV7jxo0eT07pyJ_kLJg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "Created": "2025-03-30T19:08:27.6337802Z",
+  "Updated": "2025-03-30T19:14:20.7018017Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lJVFw8i9I0ul1r7fC4E1Zg" Reference="NkYqdf221EmIXN1TRDnl6w/KyaVX8PfiEGqIDQUZ1d3ug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24576163023" CVScreenId="3840b4d5-2715-4b3a-9cfc-a95ec5a94ccc" CvTextArea="393, 613, 514, 15" CvType="AnyWordGroup" DesignTimeRectangle="394, 598, 676, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='mat-option-text' innerText='1268 - Medidas Protetivas de Urgência*' /&gt;" Guid="6a556351-469e-463b-b42e-6260d99d8297" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3840b4d5-2715-4b3a-9cfc-a95ec5a94ccc" CvTextArea="215, 237, 117, 17" CvTextArgument="DADOS DA PEÇA*" CvType="Text" DesignTimeRectangle="215, 237, 117, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='mat-option-text' innerText='1268 - Medidas Protetivas de Urgência*' check:innerText='DADOS DA PEÇA*' /&gt;" Guid="afe9b488-7d53-4068-bacc-f4b719008106" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f9d73cd90141b550f36584834efc8aca.png" xmlns="">0DHjV2Rd1I0qxd7_wY2Bjsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

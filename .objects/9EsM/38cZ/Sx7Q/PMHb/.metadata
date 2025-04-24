@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Seq. Data Evento EventoUrl MovimentadoPor",
+  "Type": "Element",
+  "Id": "PMHbXs7x80SQL_CACwH8LQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/PMHbXs7x80SQL_CACwH8LQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Sx7QoFgXGE6ha-MwveBWFA",
+  "Created": "2025-03-30T18:56:15.590632Z",
+  "Updated": "2025-03-30T18:56:15.590632Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

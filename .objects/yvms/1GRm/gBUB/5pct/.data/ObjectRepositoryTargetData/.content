@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ApkjPiGP9ES5LtXsgyKPZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/24587915072" CVScreenId="80ac1d1c-f16f-44d6-aeab-ddef643e4f60" CvElementArea="369, 696, 19, 19" CvType="CheckBox" DesignTimeRectangle="371, 698, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-112' tag='SPAN' type='' class='mat-checkbox-inner-container' aaname='' /&gt;" Guid="82a7d921-f8fb-4c3d-b50e-fc7d33ec1c8f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="80ac1d1c-f16f-44d6-aeab-ddef643e4f60" CvTextArea="394, 697, 501, 17" CvTextArgument="Recondução da ofendida ao respectivo domicílio, após afastamento do agressor" CvType="Text" DesignTimeRectangle="395, 694, 500, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-112' tag='SPAN' type='' aaname='Recondução da ofendida ao respectivo domicílio, após afastamento do agressor' check:innerText='Recondução da ofendida ao respectivo domicílio, após afastamento do agressor' /&gt;" Guid="0c2a586b-8a4e-47a5-b732-ba24268c1265" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="027b5d8debc6b349532e7b5f1a4ee070.png" xmlns="">0S05EZppbt0C3uWQ1XaLBPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

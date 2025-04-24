@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Rótulo 'Rótulo '2º Juizado de Violência…''",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "if_SU9HjE0-t563u2TupiA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/if_SU9HjE0-t563u2TupiA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg",
+  "Created": "2025-03-30T18:47:36.9518695Z",
+  "Updated": "2025-03-30T18:47:36.9518695Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

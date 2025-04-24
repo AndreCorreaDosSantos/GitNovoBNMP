@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Qn7VkScnbUCZKHIheQwprA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="24a3cf84-b487-48e3-9c6d-20ef09232f1b" CvElementArea="368, 821, 21, 21" CvTextArea="394, 823, 455, 17" CvTextArgument="Comparecimento do agressor a programas de recuperação e reeducação" CvType="CheckBox" DesignTimeRectangle="371, 820, 478, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-311' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="9d414fb1-d398-46f5-b1f8-6fd0d4c5f290" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="24a3cf84-b487-48e3-9c6d-20ef09232f1b" CvTextArea="395, 791, 318, 17" CvTextArgument="Prestação de alimentos provisionais ou provisórios" CvType="Text" DesignTimeRectangle="395, 788, 317, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-310' tag='SPAN' type='' aaname='Prestação de alimentos provisionais ou provisórios' check:innerText='Prestação de alimentos provisionais ou provisórios' /&gt;" Guid="9cd3b5ab-1e1b-44fc-9ee2-257f6932931c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="896d3575fa361eea00b62ba62fff7ba1.png" xmlns="">01r59S6hb6ESSgY6VBQY_OA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

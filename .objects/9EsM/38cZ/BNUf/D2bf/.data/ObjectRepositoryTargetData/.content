@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="deK864aVrE2hYv5OcYLS1Q" Reference="NkYqdf221EmIXN1TRDnl6w/D2bfyXBBBU-prkoRvCYoag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/visualizacaoProcesso.do" DesignTimeRectangle="1010, 156, 79, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="38393bf5-98b2-452d-a0cf-abb3bc9598fb" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='0836052-76.2024.8.23.0010 - Pessoal — Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1097, 156, 79, 32" ElementType="Button" FullSelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='projudi.tjrr.jus.br diz' role='dialog' /&gt;&lt;ctrl name='Cancelar' role='push button' automationid='' check:fulltext='Cancelar' /&gt;" Guid="b5c25a12-19d3-4993-a3ae-454be1fd253f" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="04444992a9842cab6b968851b3a68cc5.png" xmlns="">0DVFOpl6WOkqXuC5vbJ5Qmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

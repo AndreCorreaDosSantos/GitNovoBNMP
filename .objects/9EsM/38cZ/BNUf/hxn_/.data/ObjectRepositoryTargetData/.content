@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MVKYpWXXv0mLwcbkpqRoYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/movimentarProcesso.do" DesignTimeRectangle="1146, 651, 130, 21" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='button' aaname='Confirmar Inclusão' check:text='Confirmar Inclusão' /&gt;" Guid="3080bf00-9170-49a6-82e5-c73a1b97ad2f" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='0833905-77.2024.8.23.0010' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1278, 651, 130, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Cancelar' type='button' tag='INPUT' class='button' check:text='Cancelar' /&gt;" Guid="e8892398-0e0a-4b64-ac8b-e0a5fc69332a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e9cc8175e6fb4a274e2fe95b6a35a77b.png" xmlns="">0bsIwYsWe_kuXsoqEW569sw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

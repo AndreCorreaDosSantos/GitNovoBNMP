@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9Sv6l_S3XUiyzU8RQH3SPw" Reference="NkYqdf221EmIXN1TRDnl6w/g0Nzez1ypEyl20Gj2hTfFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25630910979" CVScreenId="196d24ac-1527-4491-90b6-d9029bef648e" CvElementArea="404, 554, 286, 48" CvType="InputBox" DesignTimeRectangle="417, 568, 32, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-form-field-label-51' tag='MAT-LABEL' type='' class='ng-star-inserted' aaname='CEP*' check:innerText='CEP*' /&gt;" Guid="b5eaf017-5a56-4de3-acfe-1d039fbe03fb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="196d24ac-1527-4491-90b6-d9029bef648e" CvTextArea="409, 304, 80, 15" CvTextArgument="1 - Vítimas" CvType="Text" DesignTimeRectangle="410, 286, 1279, 39" FuzzySelectorArgument="&lt;webctrl tag='MAT-PANEL-TITLE' type='' class='titulo titulo-vitima mat-expansion-panel-header-title' aaname=' 1 - Vítimas ' check:innerText='1 - Vítimas' /&gt;" Guid="9a4ed363-0693-4772-9d93-e57704bc7451" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="196d24ac-1527-4491-90b6-d9029bef648e" CvElementArea="190, 213, 18, 20" CvTextArea="132, 214, 174, 18" CvTextArgument="Peças Incluir Peça" CvType="ArrowButton" DesignTimeRectangle="107, 211, 215, 24" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='' aaname='' check:innerText='Peças&amp;#xA;Incluir Peça' /&gt;" Guid="2bdd8f8c-09ec-4861-a21a-62bf9462d4ba" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="de125b38592a211a0a9ea9ad5cd3163a.png" xmlns="">0vET2GVJbi0mzOzEwhVH73g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

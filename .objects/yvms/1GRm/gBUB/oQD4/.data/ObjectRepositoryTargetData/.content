@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hN_Diuwz2k6Al8IszKFdFQ" Reference="NkYqdf221EmIXN1TRDnl6w/yz1Oe0JfLUa9Y5r_jLZt1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" CVScreenId="6e36b91f-96fc-4ceb-8fae-909c8e9f1f40" CvElementArea="360, 773, 726, 217" CvType="InputBox" DesignTimeRectangle="376, 792, 142, 19" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-form-field-label-29' tag='MAT-LABEL' type='' class='ng-star-inserted' aaname='Síntese da Decisão*' check:innerText='Síntese da Decisão*' /&gt;" Guid="0ba256d6-9cb5-4318-b467-91b09772c5f7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="6e36b91f-96fc-4ceb-8fae-909c8e9f1f40" CvElementArea="360, 773, 726, 217" CvType="InputBox" DesignTimeRectangle="376, 792, 694, 184" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-14' tag='TEXTAREA' type='text' class='text-area mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' aaname='Síntese da Decisão*' /&gt;" Guid="76c7b0a4-491b-49f8-b57d-d684c9be3dd9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2ebb1582572b9b06f149fb23cae971e6.png" xmlns="">0-QDlhuN_mUuxOlNy4dDCjQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

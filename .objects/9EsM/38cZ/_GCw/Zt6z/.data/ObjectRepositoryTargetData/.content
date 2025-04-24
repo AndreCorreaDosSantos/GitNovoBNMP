@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WpYwshXZnEaDpQJYc_0P3Q" Reference="NkYqdf221EmIXN1TRDnl6w/zg_Nv8AiH0-4SD5WaLy7xQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="5587e5b2-5de0-4691-8445-8d51f9127f58" DesignTimeRectangle="69, 838, 1202, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='2' tag='H4' aaname='Vítimas' /&gt;" Guid="c3ffe375-e772-4272-b964-7edf5750aa1c" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="5587e5b2-5de0-4691-8445-8d51f9127f58" CvTextArea="92, 844, 78, 17" CvTextArgument="Vítimas" CvType="Text" DesignTimeRectangle="92, 844, 78, 17" ElementType="Text" Guid="2fceacbc-570a-4f09-b43f-532e6e4975b5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e155373b8a6e8b26ef2a97188914f122.png" xmlns="">0nEv6ICeWuEagi9mRjRze_A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

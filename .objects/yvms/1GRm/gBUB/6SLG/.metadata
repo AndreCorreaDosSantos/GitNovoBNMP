@@ -1,0 +1,17 @@
+﻿{
+  "Name": "unchecked - vítima",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "6SLGxH6qnUKynjBYQ2GlQg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/6SLGxH6qnUKynjBYQ2GlQg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:45:26.8158826Z",
+  "Updated": "2025-03-30T23:46:05.0385995Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LkvPeVnZjECbPEnbazZDEg" Reference="NkYqdf221EmIXN1TRDnl6w/HmdUCjHQIUulYrcfnjVDBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="eed9beb9-10d7-4596-872e-4e65d66eb04d" CvTextArea="1438, 188, 63, 12" CvTextArgument="Processo" CvType="Text" DesignTimeRectangle="1416, 184, 104, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='shortcuts' type='' tag='A' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Processo &amp;#x9;&amp;#x9;&amp;#x9;    &amp;#x9;' check:innerText='Processo' /&gt;" Guid="8dae517e-3f96-4382-9c00-354284fec5a8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="eed9beb9-10d7-4596-872e-4e65d66eb04d" CvTextArea="1555, 187, 60, 13" CvTextArgument="Histórico" CvType="Text" DesignTimeRectangle="1530, 184, 104, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;    &amp;#x9;&amp;#x9;Histórico &amp;#x9;&amp;#x9;    &amp;#x9;' class='shortcuts' type='' tag='A' check:innerText='Histórico' /&gt;" Guid="5211d964-2b31-4e4a-824f-0382e9ad6d95" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="058be186a1a4ac972abffa4eb39cfece.png" xmlns="">0E___neUUeUCagl0fqRdkwA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

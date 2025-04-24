@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Dados sigilosos",
+  "Type": "Element",
+  "Id": "RoQdg2bcR0ecR-6dIMSlxw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/RoQdg2bcR0ecR-6dIMSlxw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:44:04.6996004Z",
+  "Updated": "2025-03-30T23:44:04.6996004Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

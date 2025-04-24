@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YZRB8lmQ9EmHR3iHjxyNJg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="25b0e4cb-576b-4387-b743-17aeed9ae754" CvElementArea="164, 757, 673, 20" CvType="InputBox" DesignTimeRectangle="167, 759, 671, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='text' aaname='Ao digitar, escolha uma das opções sugeridas ou selecione através da pesquisa ao lado' /&gt;" Guid="b70f5733-3d97-425e-833f-aa0902f15ec1" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="25b0e4cb-576b-4387-b743-17aeed9ae754" CvTextArea="32, 760, 126, 13" CvTextArgument="Tipo de Documento:" CvType="Text" DesignTimeRectangle="34, 759, 124, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Tipo de Documento:' check:innerText='Tipo de Documento:' /&gt;" Guid="285abc7f-29ce-49f2-a383-c813104aa804" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0ea64190aee3489d4b7347f627d8bd13.png" xmlns="">0ew5cfJo7V0O2zekPax4o4A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

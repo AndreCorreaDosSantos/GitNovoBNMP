@@ -1,0 +1,17 @@
+﻿{
+  "Name": "checa se aparece: ANDRE CORREA DOS SANTOS(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "sC-YH7eQ1EO0vLXNW2i_pg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/sC-YH7eQ1EO0vLXNW2i_pg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/Vo5YtFPsQ0aecZlQ3nq1Eg",
+  "Created": "2025-03-30T18:19:23.2415493Z",
+  "Updated": "2025-03-30T18:19:48.9810934Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

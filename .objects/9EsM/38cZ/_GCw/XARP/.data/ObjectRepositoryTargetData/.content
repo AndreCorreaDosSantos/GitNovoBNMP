@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_sky0uad4kiArx-Bvp35Yg" Reference="NkYqdf221EmIXN1TRDnl6w/vvELjw7zZk-RqAQf76PxJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="3d97e4fc-5a26-47a4-8867-605752cfd731" CvElementArea="242, 339, 271, 23" CvType="InputBox" DesignTimeRectangle="243, 341, 269, 21" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='Número do Processo:' /&gt;" Guid="8921b840-8ab8-422c-ab44-a75cd6d9782f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="3d97e4fc-5a26-47a4-8867-605752cfd731" CvTextArea="67, 343, 165, 14" CvTextArgument="Número do Processo:" CvType="Text" DesignTimeRectangle="68, 342, 164, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Número do Processo:' check:innerText='Número do Processo:' /&gt;" Guid="36f3615f-c49c-4d6e-bd92-ef4cba969463" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="011632904c2a31cfc0397eda06468880.png" xmlns="">0cd49UwanYUuxWBgTpN8YRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Avpi_f3K00i8unA_-gDM5w" Reference="NkYqdf221EmIXN1TRDnl6w/Is27s6Yvs0S0sXrr6qiWHg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/buscar-pessoa" CVScreenId="d1bd8271-8df0-4021-80c9-5444f6cf08e5" CvElementArea="965, 892, 110, 39" CvTextArea="982, 903, 54, 14" CvTextArgument="Próximo" CvType="Button" DesignTimeRectangle="983, 903, 75, 17" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname=' Próximo' class='mat-button-wrapper' parentid='cdk-step-content-1-2' tag='SPAN' type='' check:innerText='Próximo' /&gt;" Guid="f18ad00b-4833-4c13-9e5d-b6f2bcac3fd4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="d1bd8271-8df0-4021-80c9-5444f6cf08e5" CvElementArea="829, 891, 111, 41" CvTextArea="870, 904, 52, 13" CvTextArgument="Anterior" CvType="Button" DesignTimeRectangle="848, 903, 73, 17" FuzzySelectorArgument="&lt;webctrl aaname='Anterior ' class='mat-button-wrapper' parentid='cdk-step-content-1-2' tag='SPAN' type='' check:innerText='Anterior' /&gt;" Guid="eed86a59-235a-4e77-823b-44752fa2f50d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a5a32b366a09db65001c37005d0fde62.png" xmlns="">05-UTfVtMnEy4wj6qeCQ5Ug</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

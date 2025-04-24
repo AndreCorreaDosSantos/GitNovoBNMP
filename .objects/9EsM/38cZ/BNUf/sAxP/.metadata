@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Juntar Documento",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "sAxPvXazYkmULFrNYeBHuA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/sAxPvXazYkmULFrNYeBHuA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/BNUfF13UVkyLWYbxW-xXOQ",
+  "Created": "2025-03-31T23:12:56.79329Z",
+  "Updated": "2025-03-31T23:12:56.79329Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pMgJkfvznUaILbL5bNh3FQ" Reference="NkYqdf221EmIXN1TRDnl6w/aOin0IUmXkyCkZ-nrR6x6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" CVScreenId="349c84c7-4f01-4f2b-8ae8-9ee92e00ab3a" CvElementArea="389, 479, 346, 47" CvType="InputBox" DesignTimeRectangle="402, 494, 284, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-90' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored' aaname='Limite mínimo, de afastamento em metros*' /&gt;" Guid="0151f14c-053d-4bfc-9f77-c6b15a7a9d69" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="349c84c7-4f01-4f2b-8ae8-9ee92e00ab3a" CvTextArea="394, 419, 241, 17" CvTextArgument="Proibição de aproximação da ofendida" CvType="Text" DesignTimeRectangle="395, 416, 240, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-304' tag='SPAN' type='' aaname='Proibição de aproximação da ofendida' check:innerText='Proibição de aproximação da ofendida' /&gt;" Guid="36989e8e-ee32-412c-aec1-f082420a8ff0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4735c0a34cd093e310570282eefaebb3.png" xmlns="">0YuIhq4o7IEqIzb8bSPnyzw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

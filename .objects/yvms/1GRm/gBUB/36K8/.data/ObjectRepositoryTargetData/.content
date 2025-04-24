@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_OqOoUCXaEu2DoyAl5sfOg" Reference="NkYqdf221EmIXN1TRDnl6w/qbD0N91r10aDA2ykbVEx3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="ed9171d3-2869-4757-bcf2-354cd7516362" CvElementArea="1306, 439, 254, 39" CvTextArea="1366, 450, 174, 13" CvTextArgument="Buscar CPF na base da RFB" CvType="Button" DesignTimeRectangle="1308, 441, 250, 35" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname='Buscar CPF na base da RFB' parentid='cdk-accordion-child-0' tag='SPAN' type='' class='btn-buscar-rfb ng-star-inserted' check:innerText='Buscar CPF na base da RFB' /&gt;" Guid="aec2b5f3-6eda-4810-8056-ba1ad9477206" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="431011f760aa174bcb21cb8abca27ebf.png" xmlns="">0GakQsbzyJ0-Rf3NoXXkR0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

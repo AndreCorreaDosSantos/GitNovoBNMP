@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Síntese da Decisão(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "2DSvyQq8MU2SzCSV7pyJuQ",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/2DSvyQq8MU2SzCSV7pyJuQ",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-04-07T15:30:59.7083266Z",
+  "Updated": "2025-04-07T15:30:59.7083266Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Afastamento da ofendida…",
+  "Type": "Element",
+  "Id": "hDYQ1RssyUa6ISl2SxyceA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/hDYQ1RssyUa6ISl2SxyceA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-31T15:30:01.7486189Z",
+  "Updated": "2025-03-31T15:30:01.7486189Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

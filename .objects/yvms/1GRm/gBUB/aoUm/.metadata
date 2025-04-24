@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Número - vítima",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "aoUmW9l6zk2SDqgauQbtHw",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/aoUmW9l6zk2SDqgauQbtHw",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/gBUBfIb1dEu4Lfriqm90AA",
+  "Created": "2025-03-30T23:43:23.1003143Z",
+  "Updated": "2025-03-30T23:43:44.2553921Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

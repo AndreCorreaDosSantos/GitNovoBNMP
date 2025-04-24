@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OnqMdBwsWU6G8UZA-w5SWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="ee648596-6441-4182-901a-c8a42e75026d" CvElementArea="756, 466, 424, 34" CvTextArea="947, 476, 42, 13" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="758, 468, 420, 31" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='kc-login' tag='INPUT' type='submit' class='pf-c-button pf-m-primary pf-m-block btn-lg' aaname='Entrar' check:text='Entrar' /&gt;" Guid="0dd2e107-58f8-4fc1-abe7-72ff728250cc" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ee648596-6441-4182-901a-c8a42e75026d" CvTextArea="680, 213, 571, 26" CvTextArgument="TRIBUNAL DE JUSTIÇA DE RORAIMA" CvType="Text" DesignTimeRectangle="12, 147, 1912, 117" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl id='kc-header-wrapper' tag='DIV' type='' class='' aaname='Tribunal de Justiça de Roraima' check:innerText='TRIBUNAL DE JUSTIÇA DE RORAIMA' /&gt;" Guid="5ba2d4f4-3913-43ad-ac22-10a08f05e3c8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2ea04854528f19efdbd60e79948e031b.png" xmlns="">0aS4o6ZNnI0igrR68uftECg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

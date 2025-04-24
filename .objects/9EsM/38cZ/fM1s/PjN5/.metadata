@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Rótulo 'Servidor Judiciário'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "PjN5Jf_ZjEqCd_JNbBP0FA",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/PjN5Jf_ZjEqCd_JNbBP0FA",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg",
+  "Created": "2025-03-30T18:46:32.4644743Z",
+  "Updated": "2025-03-30T18:46:32.4644743Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

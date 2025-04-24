@@ -1,0 +1,15 @@
+﻿{
+  "Name": "2 - Navegação Processos",
+  "Type": "Screen",
+  "Id": "fM1seWFsdEmClVFuBXIlGg",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/fM1seWFsdEmClVFuBXIlGg",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-03-30T18:37:52.2020685Z",
+  "Updated": "2025-03-30T18:56:08.4480012Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

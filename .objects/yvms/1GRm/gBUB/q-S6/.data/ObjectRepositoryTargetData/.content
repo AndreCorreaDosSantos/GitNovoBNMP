@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4Hbv8JLWbUqY9TejDQhYdg" Reference="NkYqdf221EmIXN1TRDnl6w/2hKwi-QT902sP4fyCscoaQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/buscar-pessoa" CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" CvElementArea="1100, 589, 180, 41" CvTextArea="1118, 601, 144, 17" CvTextArgument="Cadastrar nova pessoa" CvType="Button" DesignTimeRectangle="1119, 601, 143, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Cadastrar nova pessoa' class='mat-button-wrapper' parentid='mat-dialog-4' tag='SPAN' type='' check:innerText='Cadastrar nova pessoa' /&gt;" Guid="8fe27070-7855-412b-baf2-a1a8d3ac295c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" CvElementArea="1100, 589, 180, 41" CvTextArea="1118, 601, 144, 17" CvTextArgument="Cadastrar nova pessoa" CvType="Button" DesignTimeRectangle="1103, 592, 175, 35" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Cadastrar nova pessoa' parentid='mat-dialog-4' tag='BUTTON' type='button' class='btn-confirmar mat-focus-indicator mat-raised-button mat-button-base' check:innerText='Cadastrar nova pessoa' /&gt;" Guid="6014207e-c521-45c4-af7e-cdda42964edb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a9940700bdecbcdf5e7d24e309095ea2.png" xmlns="">0ZI8pPeljXUCo9GJpr5xQdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

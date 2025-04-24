@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UaTWE8PVDUyA6mrHythGOA" Reference="NkYqdf221EmIXN1TRDnl6w/RoQdg2bcR0ecR-6dIMSlxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25630852324" DesignTimeRectangle="406, 879, 20, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-radio-outer-circle' parentid='mat-radio-41' tag='SPAN' type='' aaname='' /&gt;" Guid="52b25390-b358-4c27-a1dd-b5a910e496c0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="45b6cba8-386a-44dd-b8d6-b0facbc99a72" CvTextArea="433, 880, 30, 15" CvTextArgument="Sim" CvType="Text" DesignTimeRectangle="426, 877, 36, 24" FuzzySelectorArgument="&lt;webctrl class='mat-radio-label-content' parentid='mat-radio-2' tag='SPAN' type='' aaname='Sim' check:innerText='Sim' /&gt;" Guid="97ece9e3-53c5-4033-8ca1-249cfb29e7a3" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="45b6cba8-386a-44dd-b8d6-b0facbc99a72" CvTextArea="381, 851, 197, 18" CvTextArgument="Dados da vítima sigilosos*" CvType="Text" DesignTimeRectangle="381, 850, 1502, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H6' type='' class='' aaname='Dados da vítima sigilosos*' check:innerText='Dados da vítima sigilosos*' /&gt;" Guid="495bd0ea-6b99-4526-81dd-fa45a8c32682" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1de6e2fce82d9552144f167227d72ad6.png" xmlns="">0A_-QzMPIz0egaix7Qhw-MQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

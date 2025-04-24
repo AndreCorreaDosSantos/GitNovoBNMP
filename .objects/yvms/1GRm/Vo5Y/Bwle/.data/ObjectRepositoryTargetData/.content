@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GUp6BZyXbUyt17WSo9W73Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" DesignTimeRectangle="1109, 296, 473, 35" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' placeholder='Digite sua senha' aaname='                                     Senha                                     ' /&gt;" Guid="1e903691-c595-42da-85c6-a40f75d622fd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PDPJ - Plataforma Digital do Poder Judiciário' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1109, 272, 43, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='password-label' tag='LABEL' type='' class='mat-form-field-label' aaname='                                     Senha                                     ' check:innerText='Senha' /&gt;" Guid="e5efe62a-4323-4674-8725-93910f5e85f5" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8396277ddbda05626825c82d68939474.png" xmlns="">0245z1FtBBkWmoA13tmVH1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

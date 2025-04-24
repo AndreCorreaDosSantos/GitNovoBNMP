@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gaH9ZDfthEWnszNjT-9CVA" Reference="NkYqdf221EmIXN1TRDnl6w/M4EypDPsjEaT3MlAXImrkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/movimentacao.do" DesignTimeRectangle="1574, 472, 312, 26" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Voltar' type='button' tag='INPUT' class='button' check:text='Voltar' /&gt;" Guid="8a2519db-9b5f-4b0f-96f3-764fd7fcfa44" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1254, 472, 313, 26" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='buttonBar' tag='TABLE' /&gt;&lt;webctrl aaname='Ocultar Visibilidade Externa' type='button' tag='INPUT' class='button' check:text='Ocultar Visibilidade Externa' /&gt;" Guid="0ba5b1fe-cfee-4c61-976b-2e079692be80" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="996c1fbb473df99665e8e3bd2a47d909.png" xmlns="">0RHXud_SE7EmGfCe9L3pG6g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

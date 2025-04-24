@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="teV7cSKrQk2Mj7fcZLy3QQ" Reference="NkYqdf221EmIXN1TRDnl6w/UPiByhyA7E2MtLRXxRoOxQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/incluir/rji/25627755291" DesignTimeRectangle="371, 730, 156, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-checkbox-68' tag='LABEL' type='' class='mat-checkbox-layout' aaname='' /&gt;" Guid="125ec9af-a87a-450e-8dcf-8383c882bcdf" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="395, 666, 525, 24" FuzzySelectorArgument="&lt;webctrl class='mat-checkbox-label' parentid='mat-checkbox-66' tag='SPAN' type='' aaname='Recondução de dependentes ao respectivo domicílio, após afastamento do agressor' check:innerText='Recondução de dependentes ao respectivo domicílio, após afastamento do agressor' /&gt;" Guid="f243ce91-7656-4ac6-94d4-571d03126c48" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc1b8e3d9d494679d3a6b2d3889f462c.png" xmlns="">0kCRiWh4p3Ea8uOnQT_8DcA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Gmjs7W8ZikKyly5RUdLenw" Reference="NkYqdf221EmIXN1TRDnl6w/6emPjEwXvEml-gO22x81_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pessoas/cadastro-pessoa" CVScreenId="7ecbf0cd-5ffe-45a8-8485-c29b81b42055" CvElementArea="397, 566, 206, 49" CvType="InputBox" DesignTimeRectangle="383, 566, 206, 47" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='mat-form-field-infix' parentid='cdk-accordion-child-7' tag='DIV' type='' aaname='' check:innerText='Tipo de Telefone' /&gt;" Guid="fe0c690f-ffcc-4e25-9150-753ede60d7e6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="7ecbf0cd-5ffe-45a8-8485-c29b81b42055" CvTextArea="392, 479, 222, 23" CvTextArgument="2 - Telefone e E-mail" CvType="Text" DesignTimeRectangle="377, 479, 222, 23" FuzzySelectorArgument="&lt;webctrl parentid='mat-expansion-panel-header-7' tag='MAT-PANEL-TITLE' type='' class='mat-expansion-panel-header-title' aaname='2 - Telefone e E-mail' check:innerText='2 - Telefone e E-mail' /&gt;" Guid="627d0e56-d56b-448b-8192-2cf8d1e9ba23" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dbe16d458840ab72a3b075822b327e1e.png" xmlns="">0pmQZ0ubSWk6qqBZrGt830w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

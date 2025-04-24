@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vkpqAZaZk0aZXAkKmVhB4A" Reference="NkYqdf221EmIXN1TRDnl6w/N0wtwJLRUE65pHWFhaWU7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo.do" CVScreenId="bbe30a8b-502d-48d5-918d-a33b4ecfc78a" CvElementArea="1130, 656, 704, 69" CvType="InputBox" DesignTimeRectangle="1159, 564, 677, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mat-input-13' tag='INPUT' type='date' class='mat-input-element mat-form-field-autofill-control ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored' aaname='Data de Reavaliação*' /&gt;" Guid="e1abc364-d1e7-444e-8fcc-3b0631982097" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="bbe30a8b-502d-48d5-918d-a33b4ecfc78a" CvElementArea="1130, 656, 704, 69" CvType="InputBox" DesignTimeRectangle="1159, 543, 113, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-27' tag='LABEL' type='' class='mat-form-field-label ng-tns-c36-24 ng-star-inserted' aaname='' check:innerText='Data de Reavaliação*' /&gt;" Guid="e534e727-d7b6-4c5a-ae97-95b9e46450ca" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b2c6d5efb4d818a73457b736d3aee96d.png" xmlns="">0Dd0L0ezOKE6hkNZr-xG8Bw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

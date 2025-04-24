@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NvsFpFU01EqUddX-leCSdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi/processo/juntarDocumento.do" DesignTimeRectangle="702, 340, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="e3ef58c2-3b8b-4380-a917-f800843c1299" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='PETIÇÃO - REQUERIMENTO DE CERTIDÃO' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="528, 299, 591, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='H3' type='' class='' aaname='Arquivamento de Processo' check:innerText='Arquivamento de Processo' /&gt;" Guid="67218f46-f7df-4460-b5af-cf50562375a5" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="415d916893ba65586497e4134454512c.png" xmlns="">0b9yVuanII0Wn7KmwvOIHfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

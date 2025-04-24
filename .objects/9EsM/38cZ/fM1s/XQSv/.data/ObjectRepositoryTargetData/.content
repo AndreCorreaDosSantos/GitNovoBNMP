@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z_eegvhSl0KC9YiFwq1b1g" Reference="NkYqdf221EmIXN1TRDnl6w/1Wt-fDcu_kWOtdB4zsbxQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="projudi.tjrr.jus.br/projudi" CVScreenId="dba8e285-2460-4992-8fd2-f3108c0cbecf" CvElementArea="233, 689, 162, 19" CvType="InputBox" DesignTimeRectangle="233, 690, 160, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='text input_mask mask_date_br' aaname='Data Inicial de Distribuição:' /&gt;" Guid="920ea661-6b28-4b2e-a2f1-7537771b13b4" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Projudi - Processo Eletrônico do Judiciário de Roraima' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="dba8e285-2460-4992-8fd2-f3108c0cbecf" CvTextArea="51, 690, 173, 14" CvTextArgument="Data Inicial de Distribuição:" CvType="Text" DesignTimeRectangle="51, 690, 173, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='mainFrame' tag='FRAME' /&gt;&lt;webctrl name='userMainFrame' tag='IFRAME' /&gt;&lt;webctrl class='form' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Data Inicial de Distribuição:' check:innerText='Data Inicial de Distribuição:' /&gt;" Guid="9ce67f8e-a5c3-40be-995c-82ede38a505a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="84e49c5d50698e731358d3b53de6129b.png" xmlns="">0wJMgH-rSWEefdOHlnkCtSQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "9.2 - Ler JULGADA PROCEDENTE A AÇÃO",
+  "Type": "Screen",
+  "Id": "ZNPVeW8sAk-g81dAoaAz7Q",
+  "Reference": "NkYqdf221EmIXN1TRDnl6w/ZNPVeW8sAk-g81dAoaAz7Q",
+  "ParentRef": "NkYqdf221EmIXN1TRDnl6w/38cZDs5ebUWMznWNFoyUDA",
+  "Created": "2025-04-08T13:57:42.4661339Z",
+  "Updated": "2025-04-08T13:58:39.8626964Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

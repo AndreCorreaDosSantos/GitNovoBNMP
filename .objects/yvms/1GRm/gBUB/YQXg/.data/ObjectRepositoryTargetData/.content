@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5_SlESz5UUaLh4qSJ_C-Jg" Reference="NkYqdf221EmIXN1TRDnl6w/yzBoLg8nUk2cmQdMl4HUSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bnmp2.cnj.jus.br/pecas/nova-peca/buscar-pessoa" CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" CvTextArea="656, 505, 212, 19" CvTextArgument="Pessoa não encontrada" CvType="Text" DesignTimeRectangle="658, 503, 209, 24" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='mat-dialog-title-4' tag='B' type='' class='' aaname='Pessoa não encontrada' check:innerText='Pessoa não encontrada' /&gt;" Guid="97e61eb0-d8a6-48c6-9461-b8de10553f15" ScopeSelectorArgument="&lt;html app='msedge.exe' title='BNMP - Banco Nacional de Monitoramento de Prisões' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9239744f-eb36-448c-ae46-76ec0e7d21f0" CvTextArea="657, 554, 621, 15" CvTextArgument="Não foi localizada nenhuma pessoa com OS dados informados cadastrada no BNMP." CvType="Text" DesignTimeRectangle="634, 551, 668, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-dialog-4' tag='DIV' type='' class='mat-dialog-content' aaname=' Não foi localizada nenhuma pessoa com os dados informados cadastrada no BNMP. ' check:innerText='Não foi localizada nenhuma pessoa com os dados informados cadastrada no BNMP.' /&gt;" Guid="4555abbe-687b-4d5c-b5bd-985ea466b275" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b7e9832292a625f7dc3bf2080068015e.png" xmlns="">0WqnWcLMq0kaMH2adyWGXsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

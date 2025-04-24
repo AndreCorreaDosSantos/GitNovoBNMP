@@ -1,0 +1,115 @@
+{
+  "name": "GitNovoBNMP",
+  "projectId": "bbdc6fb8-c7ae-415d-8570-25ca7f4583f0",
+  "description": "Estrutura Empresarial Robótica",
+  "main": "Main.xaml",
+  "dependencies": {
+    "OpenAI.ChatGPT": "[4.1.0]",
+    "Portable.BouncyCastle": "[1.9.0]",
+    "UiPath.Cryptography.Activities": "[1.6.1]",
+    "UiPath.Excel.Activities": "[2.25.1-preview]",
+    "UiPath.GSuite.Activities": "[3.0.1-preview]",
+    "UiPath.IntegrationService.Activities": "[1.14.0]",
+    "UiPath.Mail.Activities": "[1.24.2]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.0.10]",
+    "UiPath.OpenAI.IntegrationService.Activities": "[6.1.2]",
+    "UiPath.PDF.Activities": "[3.20.2]",
+    "UiPath.System.Activities": "25.2.2",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]",
+    "UiPath.WebAPI.Activities": "[1.21.1]",
+    "UiPathTeam.TwoStepAuthentication.Activities": "[2.0.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dbacada5-1800-4708-b415-3733527d203f",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c68fcedb-683f-420c-9ca1-2ca6a1b336ec",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0a2dd6a5-9e81-419c-9288-16b3d1124c85",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fbdf65db-687f-46e3-b991-cbed0ce29209",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3e724476-adf8-4816-8e53-d4ddc3dec175",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a68d9d9f-9e35-45e4-986c-a7aef4d6bf92",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "8ec462be-dd3c-49a7-bbb6-6bfd6b1eeab0",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
